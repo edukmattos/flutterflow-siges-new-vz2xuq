@@ -5971,29 +5971,67 @@ Future abOVESelectedTeamUsers(
 }
 
 Future abDbUsersOVEFilters(BuildContext context) async {
+  ApiCallResponse? resTeamsDescendants;
   ApiCallResponse? resDbUserOve;
 
-  resDbUserOve =
-      await ApiOrdersVisitsExtrasGroup.apiOveNoFiledByTeamLeaderIdCall.call(
+  FFAppState().stDBUserNavBarOption = 'orders_visits_extras';
+  FFAppState().stFiltersOVE = DtFiltersOVEStruct();
+  resTeamsDescendants = await ApiTeamsGroup.apiTeamsDescendantsByIdCall.call(
     apiUrl: FFDevEnvironmentValues().envApiUrl,
     apiKey: FFDevEnvironmentValues().envApiKey,
     accessToken: currentJwtToken,
-    teamLeaderId: valueOrDefault<int>(
-      FFAppState().stUserCurrent.id,
-      0,
-    ),
+    teamId: FFAppState().stUserCurrent.teamId,
   );
 
-  if ((resDbUserOve.succeeded ?? true)) {
-    FFAppState().stDBUsersOVEFilters = ((resDbUserOve.jsonBody ?? '')
+  if ((resTeamsDescendants.succeeded ?? true)) {
+    FFAppState().updateStFiltersOVEStruct(
+      (e) => e
+        ..teamsIds = ((resTeamsDescendants?.jsonBody ?? '')
+                .toList()
+                .map<DtTeamDescendantStruct?>(
+                    DtTeamDescendantStruct.maybeFromMap)
+                .toList() as Iterable<DtTeamDescendantStruct?>)
+            .withoutNulls
+            .map((e) => e.id)
             .toList()
-            .map<DtOrderVisitExtraStruct?>(DtOrderVisitExtraStruct.maybeFromMap)
-            .toList() as Iterable<DtOrderVisitExtraStruct?>)
-        .withoutNulls
-        .toList()
-        .cast<DtOrderVisitExtraStruct>();
+            .toList(),
+    );
     FFAppState().update(() {});
+    resDbUserOve =
+        await ApiOrdersVisitsExtrasGroup.apiOveNoFiledFiltersCall.call(
+      apiUrl: FFDevEnvironmentValues().envApiUrl,
+      apiKey: FFDevEnvironmentValues().envApiKey,
+      accessToken: currentJwtToken,
+      teamsIdsList: FFAppState().stFiltersOVE.teamsIds,
+    );
+
+    if ((resDbUserOve.succeeded ?? true)) {
+      FFAppState().stDBUsersOVEFilters = ((resDbUserOve.jsonBody ?? '')
+              .toList()
+              .map<DtOrderVisitExtraStruct?>(
+                  DtOrderVisitExtraStruct.maybeFromMap)
+              .toList() as Iterable<DtOrderVisitExtraStruct?>)
+          .withoutNulls
+          .toList()
+          .cast<DtOrderVisitExtraStruct>();
+      FFAppState().update(() {});
+    }
+  } else {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          'Ops ... Error abDbUsersOVEFilters',
+          style: TextStyle(),
+        ),
+        duration: Duration(milliseconds: 4000),
+        backgroundColor: FlutterFlowTheme.of(context).secondary,
+      ),
+    );
+    return;
   }
+
+  FFAppState().stFiltersOVE = DtFiltersOVEStruct();
+  FFAppState().update(() {});
 }
 
 Future abDBAdminOVEFilters(BuildContext context) async {

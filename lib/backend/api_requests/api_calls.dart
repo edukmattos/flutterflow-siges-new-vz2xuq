@@ -413,6 +413,8 @@ class ApiTeamsGroup {
       ApiTeamsByCompanyIdCall();
   static ApiTeamsByDepartmentIdCall apiTeamsByDepartmentIdCall =
       ApiTeamsByDepartmentIdCall();
+  static ApiTeamsDescendantsByIdCall apiTeamsDescendantsByIdCall =
+      ApiTeamsDescendantsByIdCall();
 }
 
 class ApiTeamsAllCall {
@@ -548,6 +550,48 @@ class ApiTeamsByDepartmentIdCall {
         'Content-Type': 'application/json',
       },
       params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class ApiTeamsDescendantsByIdCall {
+  Future<ApiCallResponse> call({
+    int? teamId,
+    String? apiKey,
+    String? accessToken,
+    String? apiUrl,
+  }) async {
+    apiKey ??= FFDevEnvironmentValues().envApiKey;
+    accessToken ??= FFDevEnvironmentValues().envApiKey;
+    apiUrl ??= FFDevEnvironmentValues().envApiUrl;
+    final baseUrl = ApiTeamsGroup.getBaseUrl(
+      apiKey: apiKey,
+      accessToken: accessToken,
+      apiUrl: apiUrl,
+    );
+
+    final ffApiRequestBody = '''
+{
+  "team_id": ${teamId}
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'apiTeamsDescendantsById',
+      apiUrl: '${baseUrl}rpc/fc_team_descendants',
+      callType: ApiCallType.POST,
+      headers: {
+        'apiKey': '${apiKey}',
+        'Authorization': 'Bearer ${accessToken}',
+        'Content-Type': 'application/json',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
       returnBody: true,
       encodeBodyUtf8: false,
       decodeUtf8: false,

@@ -57,6 +57,7 @@ export 'dt_permission_struct.dart';
 export 'dt_profile_struct.dart';
 export 'dt_system_struct.dart';
 export 'dt_team_struct.dart';
+export 'dt_team_descendant_struct.dart';
 export 'dt_technical_manual_struct.dart';
 export 'dt_technical_manual_type_struct.dart';
 export 'dt_unit_struct.dart';

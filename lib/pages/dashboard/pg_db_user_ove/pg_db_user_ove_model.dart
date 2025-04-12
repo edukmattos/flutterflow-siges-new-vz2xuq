@@ -1,3 +1,4 @@
+import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/components/cp_menu/cp_menu_widget.dart';
 import '/pages/dashboard/cp_d_b_user_nav_bar/cp_d_b_user_nav_bar_widget.dart';
@@ -14,6 +15,20 @@ class PgDbUserOveModel extends FlutterFlowModel<PgDbUserOveWidget> {
   bool lpsvOveProcessingIsFiled = false;
 
   bool lpsvOveFollowingIsVisible = false;
+
+  List<DtTeamDescendantStruct> lpsvTeamsDescedants = [];
+  void addToLpsvTeamsDescedants(DtTeamDescendantStruct item) =>
+      lpsvTeamsDescedants.add(item);
+  void removeFromLpsvTeamsDescedants(DtTeamDescendantStruct item) =>
+      lpsvTeamsDescedants.remove(item);
+  void removeAtIndexFromLpsvTeamsDescedants(int index) =>
+      lpsvTeamsDescedants.removeAt(index);
+  void insertAtIndexInLpsvTeamsDescedants(
+          int index, DtTeamDescendantStruct item) =>
+      lpsvTeamsDescedants.insert(index, item);
+  void updateLpsvTeamsDescedantsAtIndex(
+          int index, Function(DtTeamDescendantStruct) updateFn) =>
+      lpsvTeamsDescedants[index] = updateFn(lpsvTeamsDescedants[index]);
 
   ///  State fields for stateful widgets in this page.
 

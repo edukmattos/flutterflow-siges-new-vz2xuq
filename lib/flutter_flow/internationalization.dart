@@ -3884,11 +3884,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'SE nr',
       'en': '',
     },
-    'ts0rlfk4': {
+    '6c4w9e5y': {
       'pt': 'Busca rápida',
       'en': '',
     },
-    'vz30kd1q': {
+    '6iirir4c': {
       'pt': 'Busca por data',
       'en': '',
     },

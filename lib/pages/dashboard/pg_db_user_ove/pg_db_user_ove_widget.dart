@@ -49,8 +49,6 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      FFAppState().stDBUserNavBarOption = 'orders_visits_extras';
-      safeSetState(() {});
       await action_blocks.abDbUsersOVEFilters(context);
       safeSetState(() {});
       await actions.caSupabaseDisconnect(
@@ -1421,8 +1419,10 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                           child: Container(
                                             width: double.infinity,
                                             constraints: BoxConstraints(
+                                              minWidth: 390.0,
                                               minHeight: 300.0,
-                                              maxHeight: 400.0,
+                                              maxWidth: 390.0,
+                                              maxHeight: 420.0,
                                             ),
                                             decoration: BoxDecoration(),
                                             child: Builder(
@@ -1456,7 +1456,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                         gcOveFollwing[
                                                             gcOveFollwingIndex];
                                                     return Container(
-                                                      width: 400.0,
+                                                      width: 430.0,
                                                       height: 460.0,
                                                       decoration:
                                                           BoxDecoration(),

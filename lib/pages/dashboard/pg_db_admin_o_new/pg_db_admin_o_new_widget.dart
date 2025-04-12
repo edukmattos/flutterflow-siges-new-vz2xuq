@@ -737,7 +737,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'ts0rlfk4' /* Busca rápida */,
+                                                  '6c4w9e5y' /* Busca rápida */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -880,7 +880,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                           padding: EdgeInsets.all(4.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'vz30kd1q' /* Busca por data */,
+                                              '6iirir4c' /* Busca por data */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
