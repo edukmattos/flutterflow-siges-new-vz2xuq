@@ -1,0 +1,5 @@
+NSLocationWhenInUseUsageDescription = "Necessário permissão a sua localização";
+NSCameraUsageDescription = "Necessário permissão a câmera";
+NSPhotoLibraryUsageDescription = "Necessário permissão a sua galeria";
+PermissionGroupNotification = "Necessário permissão as sua notificações";
+NSMicrophoneUsageDescription = "Necessário permissão do seu microfone.";

@@ -1,0 +1,79 @@
+import '../database.dart';
+
+class JrUnitsTable extends SupabaseTable<JrUnitsRow> {
+  @override
+  String get tableName => 'jr_units';
+
+  @override
+  JrUnitsRow createRow(Map<String, dynamic> data) => JrUnitsRow(data);
+}
+
+class JrUnitsRow extends SupabaseDataRow {
+  JrUnitsRow(Map<String, dynamic> data) : super(data);
+
+  @override
+  SupabaseTable get table => JrUnitsTable();
+
+  int get id => getField<int>('id')!;
+  set id(int value) => setField<int>('id', value);
+
+  int? get companyId => getField<int>('company_id');
+  set companyId(int? value) => setField<int>('company_id', value);
+
+  String? get unitTypeDescription => getField<String>('unit_type_description');
+  set unitTypeDescription(String? value) =>
+      setField<String>('unit_type_description', value);
+
+  String? get code => getField<String>('code');
+  set code(String? value) => setField<String>('code', value);
+
+  String? get description => getField<String>('description');
+  set description(String? value) => setField<String>('description', value);
+
+  String? get streetName => getField<String>('street_name');
+  set streetName(String? value) => setField<String>('street_name', value);
+
+  String? get streetComplement => getField<String>('street_complement');
+  set streetComplement(String? value) =>
+      setField<String>('street_complement', value);
+
+  double? get latitude => getField<double>('latitude');
+  set latitude(double? value) => setField<double>('latitude', value);
+
+  double? get longitude => getField<double>('longitude');
+  set longitude(double? value) => setField<double>('longitude', value);
+
+  String? get descriptionFull => getField<String>('description_full');
+  set descriptionFull(String? value) =>
+      setField<String>('description_full', value);
+
+  String? get unitTypeParentDescription =>
+      getField<String>('unit_type_parent_description');
+  set unitTypeParentDescription(String? value) =>
+      setField<String>('unit_type_parent_description', value);
+
+  String? get systemParentDescription =>
+      getField<String>('system_parent_description');
+  set systemParentDescription(String? value) =>
+      setField<String>('system_parent_description', value);
+
+  String? get systemDescription => getField<String>('system_description');
+  set systemDescription(String? value) =>
+      setField<String>('system_description', value);
+
+  String? get addressFull => getField<String>('address_full');
+  set addressFull(String? value) => setField<String>('address_full', value);
+
+  String? get statusDescription => getField<String>('status_description');
+  set statusDescription(String? value) =>
+      setField<String>('status_description', value);
+
+  int? get streetNumber => getField<int>('street_number');
+  set streetNumber(int? value) => setField<int>('street_number', value);
+
+  String? get userUuid => getField<String>('user_uuid');
+  set userUuid(String? value) => setField<String>('user_uuid', value);
+
+  String? get unitTypeCode => getField<String>('unit_type_code');
+  set unitTypeCode(String? value) => setField<String>('unit_type_code', value);
+}

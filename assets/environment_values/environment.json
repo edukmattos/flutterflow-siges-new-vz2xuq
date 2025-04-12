@@ -1,0 +1,13 @@
+{
+  "envApiUrl": "https://dyralkrlidpceatkhacg.supabase.co",
+"envApiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5cmFsa3JsaWRwY2VhdGtoYWNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg2MDIyMTAsImV4cCI6MjA1NDE3ODIxMH0.aCEaFp8pIq2cY33uG2tSXcWMgSUR_zp1M-hLTDRRUhQ",
+"envStorageUrl": "https://dyralkrlidpceatkhacg.supabase.co/storage/v1/object/public",
+"envJSReport": "https://reports-jserver820.n4rbtj.easypanel.host/jasperserver/rest_v2/reports",
+"envJSReportUser": "siges",
+"envJSReportPassword": "!Siges@Jasper!",
+"envStorageBucket": "siges",
+"envStorageAccessKey": "HMCKBR97MS175I4WUVJV",
+"envStorageSecretKey": "elMztVGL8yamqKma4Nu90B8XHd1v8s7J9epVSJXV",
+"envStorageRegion": "us-east-1",
+"envStorageService": "s3"
+}

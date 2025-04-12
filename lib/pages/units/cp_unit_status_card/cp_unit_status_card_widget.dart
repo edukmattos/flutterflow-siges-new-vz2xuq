@@ -1,0 +1,235 @@
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'cp_unit_status_card_model.dart';
+export 'cp_unit_status_card_model.dart';
+
+class CpUnitStatusCardWidget extends StatefulWidget {
+  const CpUnitStatusCardWidget({
+    super.key,
+    this.cpStatusId,
+    this.cpStatusDescription,
+  });
+
+  final int? cpStatusId;
+  final String? cpStatusDescription;
+
+  @override
+  State<CpUnitStatusCardWidget> createState() => _CpUnitStatusCardWidgetState();
+}
+
+class _CpUnitStatusCardWidgetState extends State<CpUnitStatusCardWidget> {
+  late CpUnitStatusCardModel _model;
+
+  @override
+  void setState(VoidCallback callback) {
+    super.setState(callback);
+    _model.onUpdate();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _model = createModel(context, () => CpUnitStatusCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _model.maybeDispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Builder(
+      builder: (context) {
+        if (widget.cpStatusId == 1) {
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FFButtonWidget(
+                onPressed: true
+                    ? null
+                    : () {
+                        print('Button pressed ...');
+                      },
+                text: widget.cpStatusDescription!,
+                options: FFButtonOptions(
+                  height: 30.0,
+                  padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  iconPadding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).tertiary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        color: Colors.white,
+                        letterSpacing: 0.0,
+                        useGoogleFonts: GoogleFonts.asMap().containsKey(
+                            FlutterFlowTheme.of(context).titleSmallFamily),
+                      ),
+                  elevation: 3.0,
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                showLoadingIndicator: false,
+              ),
+            ],
+          );
+        } else if (widget.cpStatusId == 2) {
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FFButtonWidget(
+                onPressed: true
+                    ? null
+                    : () {
+                        print('Button pressed ...');
+                      },
+                text: widget.cpStatusDescription!,
+                options: FFButtonOptions(
+                  height: 30.0,
+                  padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  iconPadding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        color: FlutterFlowTheme.of(context).primaryText,
+                        letterSpacing: 0.0,
+                        useGoogleFonts: GoogleFonts.asMap().containsKey(
+                            FlutterFlowTheme.of(context).titleSmallFamily),
+                      ),
+                  elevation: 3.0,
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                showLoadingIndicator: false,
+              ),
+            ],
+          );
+        } else if (widget.cpStatusId == 3) {
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FFButtonWidget(
+                onPressed: true
+                    ? null
+                    : () {
+                        print('Button pressed ...');
+                      },
+                text: widget.cpStatusDescription!,
+                options: FFButtonOptions(
+                  height: 30.0,
+                  padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  iconPadding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).success,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        color: Colors.white,
+                        letterSpacing: 0.0,
+                        useGoogleFonts: GoogleFonts.asMap().containsKey(
+                            FlutterFlowTheme.of(context).titleSmallFamily),
+                      ),
+                  elevation: 3.0,
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                showLoadingIndicator: false,
+              ),
+            ],
+          );
+        } else if (widget.cpStatusId == 4) {
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FFButtonWidget(
+                onPressed: true
+                    ? null
+                    : () {
+                        print('Button pressed ...');
+                      },
+                text: widget.cpStatusDescription!,
+                options: FFButtonOptions(
+                  height: 30.0,
+                  padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  iconPadding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).error,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        color: Colors.white,
+                        letterSpacing: 0.0,
+                        useGoogleFonts: GoogleFonts.asMap().containsKey(
+                            FlutterFlowTheme.of(context).titleSmallFamily),
+                      ),
+                  elevation: 3.0,
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                showLoadingIndicator: false,
+              ),
+            ],
+          );
+        } else {
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FFButtonWidget(
+                onPressed: true
+                    ? null
+                    : () {
+                        print('Button pressed ...');
+                      },
+                text: widget.cpStatusDescription!,
+                options: FFButtonOptions(
+                  height: 30.0,
+                  padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  iconPadding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).secondaryText,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        color: Colors.white,
+                        letterSpacing: 0.0,
+                        useGoogleFonts: GoogleFonts.asMap().containsKey(
+                            FlutterFlowTheme.of(context).titleSmallFamily),
+                      ),
+                  elevation: 3.0,
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                showLoadingIndicator: false,
+              ),
+            ],
+          );
+        }
+      },
+    );
+  }
+}
