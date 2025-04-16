@@ -4662,6 +4662,7 @@ class ApiOrdersVisitsExtrasGroup {
   static ApiOveNoFiledFiltersCall apiOveNoFiledFiltersCall =
       ApiOveNoFiledFiltersCall();
   static ApiOVEFiltersCall apiOVEFiltersCall = ApiOVEFiltersCall();
+  static ApiAddManyToJrOveCall apiAddManyToJrOveCall = ApiAddManyToJrOveCall();
 }
 
 class ApiOVEByIdCall {
@@ -5003,6 +5004,47 @@ class ApiOVEFiltersCall {
     return ApiManager.instance.makeApiCall(
       callName: 'apiOVEFilters',
       apiUrl: '${baseUrl}rpc/fc_dash_admin_orders_extras_filters',
+      callType: ApiCallType.POST,
+      headers: {
+        'apiKey': '${apiKey}',
+        'Authorization': 'Bearer ${accessToken}',
+        'Content-Type': 'application/json',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class ApiAddManyToJrOveCall {
+  Future<ApiCallResponse> call({
+    dynamic dataJson,
+    String? apiKey,
+    String? accessToken,
+    String? apiUrl,
+  }) async {
+    apiKey ??= FFDevEnvironmentValues().envApiKey;
+    accessToken ??= FFDevEnvironmentValues().envApiKey;
+    apiUrl ??= FFDevEnvironmentValues().envApiUrl;
+    final baseUrl = ApiOrdersVisitsExtrasGroup.getBaseUrl(
+      apiKey: apiKey,
+      accessToken: accessToken,
+      apiUrl: apiUrl,
+    );
+
+    final data = _serializeJson(dataJson, true);
+    final ffApiRequestBody = '''
+${data}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'apiAddManyToJrOve',
+      apiUrl: '${baseUrl}jr_orders_visits_extras',
       callType: ApiCallType.POST,
       headers: {
         'apiKey': '${apiKey}',

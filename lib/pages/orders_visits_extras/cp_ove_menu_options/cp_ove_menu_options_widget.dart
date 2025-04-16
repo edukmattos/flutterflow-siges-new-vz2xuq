@@ -130,7 +130,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
 
     return Row(
       mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         if (_model.lcsvIsVisibleDraft)

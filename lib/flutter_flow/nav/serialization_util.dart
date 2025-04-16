@@ -392,6 +392,8 @@ dynamic deserializeParam<T>(
             return VDepartmentsRow(data);
           case CfgAssetsCouplingsModelsRow:
             return CfgAssetsCouplingsModelsRow(data);
+          case VUsersNotificationsRow:
+            return VUsersNotificationsRow(data);
           case CfgOrdersCounterRow:
             return CfgOrdersCounterRow(data);
           case MaterialsRow:
@@ -468,6 +470,8 @@ dynamic deserializeParam<T>(
             return OrdersVisitsExtrasTeamsRow(data);
           case UsersTrackerRow:
             return UsersTrackerRow(data);
+          case JrOrdersVisitsExtrasRow:
+            return JrOrdersVisitsExtrasRow(data);
           case CfgProfilesPermissionsRow:
             return CfgProfilesPermissionsRow(data);
           case VAssetsMaterialsRow:

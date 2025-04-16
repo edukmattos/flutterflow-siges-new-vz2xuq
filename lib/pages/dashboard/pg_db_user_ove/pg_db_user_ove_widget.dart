@@ -124,62 +124,6 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
         child: Scaffold(
           key: scaffoldKey,
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-          floatingActionButton: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
-            child: FloatingActionButton(
-              onPressed: () {
-                print('FloatingActionButton pressed ...');
-              },
-              elevation: 8.0,
-              child: FlutterFlowIconButton(
-                borderColor: FlutterFlowTheme.of(context).primary,
-                borderRadius: 16.0,
-                borderWidth: 6.0,
-                buttonSize: 54.0,
-                icon: FaIcon(
-                  FontAwesomeIcons.plusCircle,
-                  color: FlutterFlowTheme.of(context).primary,
-                  size: 24.0,
-                ),
-                showLoadingIndicator: true,
-                onPressed: () async {
-                  var _shouldSetState = false;
-                  _model.isAllowedOveCreate = await action_blocks.abGuardian(
-                    context,
-                    abPgRequestedId: 28,
-                  );
-                  _shouldSetState = true;
-                  if (_model.isAllowedOveCreate!) {
-                    await showModalBottomSheet(
-                      isScrollControlled: true,
-                      backgroundColor: Colors.transparent,
-                      enableDrag: false,
-                      context: context,
-                      builder: (context) {
-                        return GestureDetector(
-                          onTap: () {
-                            FocusScope.of(context).unfocus();
-                            FocusManager.instance.primaryFocus?.unfocus();
-                          },
-                          child: Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: MdOVECreateWidget(),
-                          ),
-                        );
-                      },
-                    ).then((value) => safeSetState(() {}));
-                  } else {
-                    context.pushNamed(PgNotAllowedWidget.routeName);
-
-                    if (_shouldSetState) safeSetState(() {});
-                    return;
-                  }
-
-                  if (_shouldSetState) safeSetState(() {});
-                },
-              ),
-            ),
-          ),
           endDrawer: Drawer(
             elevation: 16.0,
             child: wrapWithModel(
@@ -241,170 +185,85 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Flex(
-                                  direction:
-                                      (MediaQuery.sizeOf(context).width > 400.0)
-                                          ? Axis.horizontal
-                                          : Axis.vertical,
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '90wtdvzs' /* Serviços EXTRAS */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .headlineMediumFamily,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineMediumFamily),
-                                                      ),
-                                            ),
-                                            Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '3hdsyjg1' /* Atualização automática */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmallFamily,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                        badges.Badge(
-                                          badgeContent: Text(
-                                            FFAppState()
-                                                .stUserOveFollowing
-                                                .length
-                                                .toString(),
-                                            style: FlutterFlowTheme.of(context)
-                                                .titleSmall
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmallFamily,
-                                                  color: Colors.white,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily),
-                                                ),
-                                          ),
-                                          showBadge: FFAppState()
-                                                  .stUserOveFollowing
-                                                  .length >
-                                              0,
-                                          shape: badges.BadgeShape.circle,
-                                          badgeColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .tertiary,
-                                          elevation: 4.0,
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  8.0, 8.0, 8.0, 8.0),
-                                          position:
-                                              badges.BadgePosition.topEnd(),
-                                          animationType:
-                                              badges.BadgeAnimationType.scale,
-                                          toAnimate: true,
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 8.0, 0.0),
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: FaIcon(
-                                                FontAwesomeIcons.solidBookmark,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                size: 24.0,
-                                              ),
-                                              showLoadingIndicator: true,
-                                              onPressed: (FFAppState()
-                                                          .stUserOveFollowing
-                                                          .length ==
-                                                      0)
-                                                  ? null
-                                                  : () async {
-                                                      if (_model
-                                                          .lpsvOveFollowingIsVisible) {
-                                                        _model.lpsvOveFollowingIsVisible =
-                                                            false;
-                                                        safeSetState(() {});
-                                                      } else {
-                                                        _model.lpsvOveFollowingIsVisible =
-                                                            true;
-                                                        safeSetState(() {});
-                                                      }
-                                                    },
-                                            ),
-                                          ),
-                                        ),
-                                      ].divide(SizedBox(width: 8.0)),
-                                    ),
-                                    SingleChildScrollView(
-                                      scrollDirection: Axis.horizontal,
-                                      child: Row(
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 12.0, 0.0, 0.0),
+                                  child: Flex(
+                                    direction:
+                                        (MediaQuery.sizeOf(context).width >
+                                                400.0)
+                                            ? Axis.horizontal
+                                            : Axis.vertical,
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
                                         mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
+                                          Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '90wtdvzs' /* Serviços EXTRAS */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .headlineMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .headlineMediumFamily,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .headlineMediumFamily),
+                                                        ),
+                                              ),
+                                              Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '3hdsyjg1' /* Atualização automática */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelSmallFamily,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelSmallFamily),
+                                                        ),
+                                              ),
+                                            ],
+                                          ),
                                           badges.Badge(
                                             badgeContent: Text(
                                               FFAppState()
-                                                  .stDBUsersOVEFilters
-                                                  .where((e) =>
-                                                      e.processingId == 1)
-                                                  .toList()
+                                                  .stUserOveFollowing
                                                   .length
                                                   .toString(),
                                               style:
@@ -426,342 +285,498 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                       ),
                                             ),
                                             showBadge: FFAppState()
+                                                    .stUserOveFollowing
+                                                    .length >
+                                                0,
+                                            shape: badges.BadgeShape.circle,
+                                            badgeColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .tertiary,
+                                            elevation: 4.0,
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    8.0, 8.0, 8.0, 8.0),
+                                            position:
+                                                badges.BadgePosition.topEnd(),
+                                            animationType:
+                                                badges.BadgeAnimationType.scale,
+                                            toAnimate: true,
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 8.0, 0.0),
+                                              child: FlutterFlowIconButton(
+                                                borderColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                borderRadius: 16.0,
+                                                borderWidth: 6.0,
+                                                buttonSize: 54.0,
+                                                icon: FaIcon(
+                                                  FontAwesomeIcons
+                                                      .solidBookmark,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  size: 24.0,
+                                                ),
+                                                showLoadingIndicator: true,
+                                                onPressed: (FFAppState()
+                                                            .stUserOveFollowing
+                                                            .length ==
+                                                        0)
+                                                    ? null
+                                                    : () async {
+                                                        if (_model
+                                                            .lpsvOveFollowingIsVisible) {
+                                                          _model.lpsvOveFollowingIsVisible =
+                                                              false;
+                                                          safeSetState(() {});
+                                                        } else {
+                                                          _model.lpsvOveFollowingIsVisible =
+                                                              true;
+                                                          safeSetState(() {});
+                                                        }
+                                                      },
+                                              ),
+                                            ),
+                                          ),
+                                          FlutterFlowIconButton(
+                                            borderColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .primary,
+                                            borderRadius: 16.0,
+                                            borderWidth: 6.0,
+                                            buttonSize: 54.0,
+                                            icon: FaIcon(
+                                              FontAwesomeIcons.plusCircle,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              size: 24.0,
+                                            ),
+                                            showLoadingIndicator: true,
+                                            onPressed: () async {
+                                              var _shouldSetState = false;
+                                              _model.isAllowedOveCreate =
+                                                  await action_blocks
+                                                      .abGuardian(
+                                                context,
+                                                abPgRequestedId: 28,
+                                              );
+                                              _shouldSetState = true;
+                                              if (_model.isAllowedOveCreate!) {
+                                                await showModalBottomSheet(
+                                                  isScrollControlled: true,
+                                                  backgroundColor:
+                                                      Colors.transparent,
+                                                  enableDrag: false,
+                                                  context: context,
+                                                  builder: (context) {
+                                                    return GestureDetector(
+                                                      onTap: () {
+                                                        FocusScope.of(context)
+                                                            .unfocus();
+                                                        FocusManager.instance
+                                                            .primaryFocus
+                                                            ?.unfocus();
+                                                      },
+                                                      child: Padding(
+                                                        padding: MediaQuery
+                                                            .viewInsetsOf(
+                                                                context),
+                                                        child:
+                                                            MdOVECreateWidget(),
+                                                      ),
+                                                    );
+                                                  },
+                                                ).then((value) =>
+                                                    safeSetState(() {}));
+                                              } else {
+                                                context.pushNamed(
+                                                    PgNotAllowedWidget
+                                                        .routeName);
+
+                                                if (_shouldSetState)
+                                                  safeSetState(() {});
+                                                return;
+                                              }
+
+                                              if (_shouldSetState)
+                                                safeSetState(() {});
+                                            },
+                                          ),
+                                        ].divide(SizedBox(width: 8.0)),
+                                      ),
+                                      SingleChildScrollView(
+                                        scrollDirection: Axis.horizontal,
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            badges.Badge(
+                                              badgeContent: Text(
+                                                FFAppState()
                                                     .stDBUsersOVEFilters
                                                     .where((e) =>
                                                         e.processingId == 1)
                                                     .toList()
-                                                    .length >
-                                                0,
-                                            shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .tertiary,
-                                            elevation: 4.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 8.0, 8.0, 8.0),
-                                            position:
-                                                badges.BadgePosition.topEnd(),
-                                            animationType:
-                                                badges.BadgeAnimationType.scale,
-                                            toAnimate: true,
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
+                                                    .length
+                                                    .toString(),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                              ),
+                                              showBadge: FFAppState()
+                                                      .stDBUsersOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId == 1)
+                                                      .toList()
+                                                      .length >
+                                                  0,
+                                              shape: badges.BadgeShape.circle,
+                                              badgeColor:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: Icon(
-                                                Icons.draw,
-                                                color:
+                                                      .tertiary,
+                                              elevation: 4.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
+                                              position:
+                                                  badges.BadgePosition.topEnd(),
+                                              animationType: badges
+                                                  .BadgeAnimationType.scale,
+                                              toAnimate: true,
+                                              child: FlutterFlowIconButton(
+                                                borderColor:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,
-                                                size: 30.0,
+                                                borderRadius: 16.0,
+                                                borderWidth: 6.0,
+                                                buttonSize: 54.0,
+                                                icon: Icon(
+                                                  Icons.draw,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  size: 30.0,
+                                                ),
+                                                showLoadingIndicator: true,
+                                                onPressed: () async {
+                                                  _model.lpsvOveFollowingIsVisible =
+                                                      false;
+                                                  safeSetState(() {});
+                                                  _model.lpsvOveProcessingId =
+                                                      1;
+                                                  _model.lpsvOveProcessingIsFiled =
+                                                      false;
+                                                  safeSetState(() {});
+                                                },
                                               ),
-                                              showLoadingIndicator: true,
-                                              onPressed: () async {
-                                                _model.lpsvOveFollowingIsVisible =
-                                                    false;
-                                                safeSetState(() {});
-                                                _model.lpsvOveProcessingId = 1;
-                                                _model.lpsvOveProcessingIsFiled =
-                                                    false;
-                                                safeSetState(() {});
-                                              },
                                             ),
-                                          ),
-                                          badges.Badge(
-                                            badgeContent: Text(
-                                              FFAppState()
-                                                  .stDBUsersOVEFilters
-                                                  .where((e) =>
-                                                      e.processingId == 2)
-                                                  .toList()
-                                                  .length
-                                                  .toString(),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                            ),
-                                            showBadge: FFAppState()
+                                            badges.Badge(
+                                              badgeContent: Text(
+                                                FFAppState()
                                                     .stDBUsersOVEFilters
                                                     .where((e) =>
                                                         e.processingId == 2)
                                                     .toList()
-                                                    .length >
-                                                0,
-                                            shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .tertiary,
-                                            elevation: 4.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 8.0, 8.0, 8.0),
-                                            position:
-                                                badges.BadgePosition.topEnd(),
-                                            animationType:
-                                                badges.BadgeAnimationType.scale,
-                                            toAnimate: true,
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
+                                                    .length
+                                                    .toString(),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                              ),
+                                              showBadge: FFAppState()
+                                                      .stDBUsersOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId == 2)
+                                                      .toList()
+                                                      .length >
+                                                  0,
+                                              shape: badges.BadgeShape.circle,
+                                              badgeColor:
                                                   FlutterFlowTheme.of(context)
                                                       .tertiary,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: Icon(
-                                                Icons.report_problem_outlined,
-                                                color:
+                                              elevation: 4.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
+                                              position:
+                                                  badges.BadgePosition.topEnd(),
+                                              animationType: badges
+                                                  .BadgeAnimationType.scale,
+                                              toAnimate: true,
+                                              child: FlutterFlowIconButton(
+                                                borderColor:
                                                     FlutterFlowTheme.of(context)
                                                         .tertiary,
-                                                size: 30.0,
+                                                borderRadius: 16.0,
+                                                borderWidth: 6.0,
+                                                buttonSize: 54.0,
+                                                icon: Icon(
+                                                  Icons.report_problem_outlined,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .tertiary,
+                                                  size: 30.0,
+                                                ),
+                                                showLoadingIndicator: true,
+                                                onPressed: () async {
+                                                  _model.lpsvOveFollowingIsVisible =
+                                                      false;
+                                                  safeSetState(() {});
+                                                  _model.lpsvOveProcessingId =
+                                                      2;
+                                                  safeSetState(() {});
+                                                },
                                               ),
-                                              showLoadingIndicator: true,
-                                              onPressed: () async {
-                                                _model.lpsvOveFollowingIsVisible =
-                                                    false;
-                                                safeSetState(() {});
-                                                _model.lpsvOveProcessingId = 2;
-                                                safeSetState(() {});
-                                              },
                                             ),
-                                          ),
-                                          badges.Badge(
-                                            badgeContent: Text(
-                                              FFAppState()
-                                                  .stDBUsersOVEFilters
-                                                  .where((e) =>
-                                                      e.processingId == 3)
-                                                  .toList()
-                                                  .length
-                                                  .toString(),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                            ),
-                                            showBadge: FFAppState()
+                                            badges.Badge(
+                                              badgeContent: Text(
+                                                FFAppState()
                                                     .stDBUsersOVEFilters
                                                     .where((e) =>
                                                         e.processingId == 3)
                                                     .toList()
-                                                    .length >
-                                                0,
-                                            shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .tertiary,
-                                            elevation: 4.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 8.0, 8.0, 8.0),
-                                            position:
-                                                badges.BadgePosition.topEnd(),
-                                            animationType:
-                                                badges.BadgeAnimationType.scale,
-                                            toAnimate: true,
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
+                                                    .length
+                                                    .toString(),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                              ),
+                                              showBadge: FFAppState()
+                                                      .stDBUsersOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId == 3)
+                                                      .toList()
+                                                      .length >
+                                                  0,
+                                              shape: badges.BadgeShape.circle,
+                                              badgeColor:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: Icon(
-                                                Icons.remove_red_eye_outlined,
-                                                color:
+                                                      .tertiary,
+                                              elevation: 4.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
+                                              position:
+                                                  badges.BadgePosition.topEnd(),
+                                              animationType: badges
+                                                  .BadgeAnimationType.scale,
+                                              toAnimate: true,
+                                              child: FlutterFlowIconButton(
+                                                borderColor:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                size: 30.0,
+                                                borderRadius: 16.0,
+                                                borderWidth: 6.0,
+                                                buttonSize: 54.0,
+                                                icon: Icon(
+                                                  Icons.remove_red_eye_outlined,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  size: 30.0,
+                                                ),
+                                                showLoadingIndicator: true,
+                                                onPressed: () async {
+                                                  _model.lpsvOveFollowingIsVisible =
+                                                      false;
+                                                  safeSetState(() {});
+                                                  _model.lpsvOveProcessingId =
+                                                      3;
+                                                  safeSetState(() {});
+                                                },
                                               ),
-                                              showLoadingIndicator: true,
-                                              onPressed: () async {
-                                                _model.lpsvOveFollowingIsVisible =
-                                                    false;
-                                                safeSetState(() {});
-                                                _model.lpsvOveProcessingId = 3;
-                                                safeSetState(() {});
-                                              },
                                             ),
-                                          ),
-                                          badges.Badge(
-                                            badgeContent: Text(
-                                              FFAppState()
-                                                  .stDBUsersOVEFilters
-                                                  .where((e) =>
-                                                      e.processingId == 4)
-                                                  .toList()
-                                                  .length
-                                                  .toString(),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                            ),
-                                            showBadge: FFAppState()
+                                            badges.Badge(
+                                              badgeContent: Text(
+                                                FFAppState()
                                                     .stDBUsersOVEFilters
                                                     .where((e) =>
                                                         e.processingId == 4)
                                                     .toList()
-                                                    .length >
-                                                0,
-                                            shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .tertiary,
-                                            elevation: 4.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 8.0, 8.0, 8.0),
-                                            position:
-                                                badges.BadgePosition.topEnd(),
-                                            animationType:
-                                                badges.BadgeAnimationType.scale,
-                                            toAnimate: true,
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
+                                                    .length
+                                                    .toString(),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                              ),
+                                              showBadge: FFAppState()
+                                                      .stDBUsersOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId == 4)
+                                                      .toList()
+                                                      .length >
+                                                  0,
+                                              shape: badges.BadgeShape.circle,
+                                              badgeColor:
                                                   FlutterFlowTheme.of(context)
-                                                      .error,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: FaIcon(
-                                                FontAwesomeIcons.thumbsDown,
-                                                color:
+                                                      .tertiary,
+                                              elevation: 4.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
+                                              position:
+                                                  badges.BadgePosition.topEnd(),
+                                              animationType: badges
+                                                  .BadgeAnimationType.scale,
+                                              toAnimate: true,
+                                              child: FlutterFlowIconButton(
+                                                borderColor:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
-                                                size: 30.0,
+                                                borderRadius: 16.0,
+                                                borderWidth: 6.0,
+                                                buttonSize: 54.0,
+                                                icon: FaIcon(
+                                                  FontAwesomeIcons.thumbsDown,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  size: 30.0,
+                                                ),
+                                                showLoadingIndicator: true,
+                                                onPressed: () async {
+                                                  _model.lpsvOveFollowingIsVisible =
+                                                      false;
+                                                  safeSetState(() {});
+                                                  _model.lpsvOveProcessingId =
+                                                      4;
+                                                  safeSetState(() {});
+                                                },
                                               ),
-                                              showLoadingIndicator: true,
-                                              onPressed: () async {
-                                                _model.lpsvOveFollowingIsVisible =
-                                                    false;
-                                                safeSetState(() {});
-                                                _model.lpsvOveProcessingId = 4;
-                                                safeSetState(() {});
-                                              },
                                             ),
-                                          ),
-                                          badges.Badge(
-                                            badgeContent: Text(
-                                              FFAppState()
-                                                  .stDBUsersOVEFilters
-                                                  .where((e) =>
-                                                      e.processingId == 5)
-                                                  .toList()
-                                                  .length
-                                                  .toString(),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                            ),
-                                            showBadge: FFAppState()
+                                            badges.Badge(
+                                              badgeContent: Text(
+                                                FFAppState()
                                                     .stDBUsersOVEFilters
                                                     .where((e) =>
                                                         e.processingId == 5)
                                                     .toList()
-                                                    .length >
-                                                0,
-                                            shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .tertiary,
-                                            elevation: 4.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 8.0, 8.0, 8.0),
-                                            position:
-                                                badges.BadgePosition.topEnd(),
-                                            animationType:
-                                                badges.BadgeAnimationType.scale,
-                                            toAnimate: true,
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
+                                                    .length
+                                                    .toString(),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                              ),
+                                              showBadge: FFAppState()
+                                                      .stDBUsersOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId == 5)
+                                                      .toList()
+                                                      .length >
+                                                  0,
+                                              shape: badges.BadgeShape.circle,
+                                              badgeColor:
                                                   FlutterFlowTheme.of(context)
-                                                      .success,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: FaIcon(
-                                                FontAwesomeIcons.thumbsUp,
-                                                color:
+                                                      .tertiary,
+                                              elevation: 4.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
+                                              position:
+                                                  badges.BadgePosition.topEnd(),
+                                              animationType: badges
+                                                  .BadgeAnimationType.scale,
+                                              toAnimate: true,
+                                              child: FlutterFlowIconButton(
+                                                borderColor:
                                                     FlutterFlowTheme.of(context)
                                                         .success,
-                                                size: 30.0,
+                                                borderRadius: 16.0,
+                                                borderWidth: 6.0,
+                                                buttonSize: 54.0,
+                                                icon: FaIcon(
+                                                  FontAwesomeIcons.thumbsUp,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .success,
+                                                  size: 30.0,
+                                                ),
+                                                showLoadingIndicator: true,
+                                                onPressed: () async {
+                                                  _model.lpsvOveFollowingIsVisible =
+                                                      false;
+                                                  safeSetState(() {});
+                                                  _model.lpsvOveProcessingId =
+                                                      5;
+                                                  safeSetState(() {});
+                                                },
                                               ),
-                                              showLoadingIndicator: true,
-                                              onPressed: () async {
-                                                _model.lpsvOveFollowingIsVisible =
-                                                    false;
-                                                safeSetState(() {});
-                                                _model.lpsvOveProcessingId = 5;
-                                                safeSetState(() {});
-                                              },
                                             ),
-                                          ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
+                                        ),
                                       ),
-                                    ),
-                                  ].divide(
-                                      (MediaQuery.sizeOf(context).width > 400.0)
-                                          ? SizedBox(width: 8.0)
-                                          : SizedBox(height: 8.0)),
+                                    ].divide((MediaQuery.sizeOf(context).width >
+                                            400.0)
+                                        ? SizedBox(width: 8.0)
+                                        : SizedBox(height: 8.0)),
+                                  ),
                                 ),
                                 if (false)
                                   Row(

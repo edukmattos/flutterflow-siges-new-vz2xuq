@@ -1,6 +1,7 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/backend/schema/structs/index.dart';
+import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -283,1037 +284,203 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                     children: [
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.end,
                                         children: [
-                                          Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.0, 0.0),
-                                                child: Stack(
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 8.0, 0.0, 0.0),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Align(
                                                   alignment:
                                                       AlignmentDirectional(
                                                           1.0, 0.0),
-                                                  children: [
-                                                    Container(
-                                                      width: 180.0,
-                                                      height: 50.0,
-                                                      decoration:
-                                                          BoxDecoration(),
-                                                      child: TextFormField(
-                                                        controller: _model
-                                                            .tfOveDateStartTextController,
-                                                        focusNode: _model
-                                                            .tfOveDateStartFocusNode,
-                                                        onChanged: (_) =>
-                                                            EasyDebounce
-                                                                .debounce(
-                                                          '_model.tfOveDateStartTextController',
-                                                          Duration(
-                                                              milliseconds:
-                                                                  2000),
-                                                          () => safeSetState(
-                                                              () {}),
-                                                        ),
-                                                        autofocus: false,
-                                                        autofillHints: [
-                                                          AutofillHints.name
-                                                        ],
-                                                        textCapitalization:
-                                                            TextCapitalization
-                                                                .none,
-                                                        readOnly: true,
-                                                        obscureText: false,
+                                                  child: Stack(
+                                                    alignment:
+                                                        AlignmentDirectional(
+                                                            1.0, 0.0),
+                                                    children: [
+                                                      Container(
+                                                        width: 180.0,
+                                                        height: 50.0,
                                                         decoration:
-                                                            InputDecoration(
-                                                          labelText:
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                            'wzhf2wog' /* Data inicial */,
+                                                            BoxDecoration(),
+                                                        child: TextFormField(
+                                                          controller: _model
+                                                              .tfOveDateStartTextController,
+                                                          focusNode: _model
+                                                              .tfOveDateStartFocusNode,
+                                                          onChanged: (_) =>
+                                                              EasyDebounce
+                                                                  .debounce(
+                                                            '_model.tfOveDateStartTextController',
+                                                            Duration(
+                                                                milliseconds:
+                                                                    2000),
+                                                            () => safeSetState(
+                                                                () {}),
                                                           ),
-                                                          labelStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily),
-                                                                  ),
-                                                          hintStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelMediumFamily,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).labelMediumFamily),
-                                                                  ),
-                                                          errorStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .error,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                  ),
-                                                          enabledBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .alternate,
-                                                              width: 2.0,
+                                                          autofocus: false,
+                                                          autofillHints: [
+                                                            AutofillHints.name
+                                                          ],
+                                                          textCapitalization:
+                                                              TextCapitalization
+                                                                  .none,
+                                                          readOnly: true,
+                                                          obscureText: false,
+                                                          decoration:
+                                                              InputDecoration(
+                                                            labelText:
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                              'wzhf2wog' /* Data inicial */,
                                                             ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          focusedBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          errorBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .error,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          focusedErrorBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .error,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          filled: true,
-                                                          fillColor: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBackground,
-                                                          contentPadding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      16.0,
-                                                                      12.0,
-                                                                      0.0,
-                                                                      12.0),
-                                                          suffixIcon: _model
-                                                                  .tfOveDateStartTextController!
-                                                                  .text
-                                                                  .isNotEmpty
-                                                              ? InkWell(
-                                                                  onTap:
-                                                                      () async {
-                                                                    _model
-                                                                        .tfOveDateStartTextController
-                                                                        ?.clear();
-                                                                    safeSetState(
-                                                                        () {});
-                                                                  },
-                                                                  child: Icon(
-                                                                    Icons.clear,
-                                                                    color: Color(
-                                                                        0xFF757575),
-                                                                    size: 22.0,
-                                                                  ),
-                                                                )
-                                                              : null,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyLarge
-                                                                .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily),
-                                                                ),
-                                                        minLines: 1,
-                                                        cursorColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        validator: _model
-                                                            .tfOveDateStartTextControllerValidator
-                                                            .asValidator(
-                                                                context),
-                                                      ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  0.0,
-                                                                  4.0,
-                                                                  4.0),
-                                                      child:
-                                                          FlutterFlowIconButton(
-                                                        borderRadius: 8.0,
-                                                        buttonSize: 40.0,
-                                                        fillColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .success,
-                                                        icon: Icon(
-                                                          Icons.calendar_month,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .info,
-                                                          size: 24.0,
-                                                        ),
-                                                        showLoadingIndicator:
-                                                            true,
-                                                        onPressed: () async {
-                                                          final _datePicked1Date =
-                                                              await showDatePicker(
-                                                            context: context,
-                                                            initialDate:
-                                                                getCurrentTimestamp,
-                                                            firstDate:
-                                                                DateTime(1900),
-                                                            lastDate:
-                                                                DateTime(2050),
-                                                            builder: (context,
-                                                                child) {
-                                                              return wrapInMaterialDatePickerTheme(
-                                                                context,
-                                                                child!,
-                                                                headerBackgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primary,
-                                                                headerForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .info,
-                                                                headerTextStyle:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .headlineLarge
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).headlineLargeFamily,
-                                                                          fontSize:
-                                                                              32.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.w600,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
-                                                                        ),
-                                                                pickerBackgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                                pickerForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                selectedDateTimeBackgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .success,
-                                                                selectedDateTimeForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .info,
-                                                                actionButtonForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                iconSize: 24.0,
-                                                              );
-                                                            },
-                                                          );
-
-                                                          if (_datePicked1Date !=
-                                                              null) {
-                                                            safeSetState(() {
-                                                              _model.datePicked1 =
-                                                                  DateTime(
-                                                                _datePicked1Date
-                                                                    .year,
-                                                                _datePicked1Date
-                                                                    .month,
-                                                                _datePicked1Date
-                                                                    .day,
-                                                              );
-                                                            });
-                                                          } else if (_model
-                                                                  .datePicked1 !=
-                                                              null) {
-                                                            safeSetState(() {
-                                                              _model.datePicked1 =
-                                                                  getCurrentTimestamp;
-                                                            });
-                                                          }
-                                                          await Future.wait([
-                                                            Future(() async {
-                                                              safeSetState(() {
-                                                                _model.tfOveDateStartTextController
-                                                                        ?.text =
-                                                                    dateTimeFormat(
-                                                                  "dd/MM/y",
-                                                                  _model
-                                                                      .datePicked1,
-                                                                  locale: FFLocalizations.of(
-                                                                          context)
-                                                                      .languageCode,
-                                                                );
-                                                              });
-                                                            }),
-                                                            Future(() async {
-                                                              FFAppState()
-                                                                  .updateStFiltersOVEStruct(
-                                                                (e) => e
-                                                                  ..dateStart =
-                                                                      functions.cfSetDatetime(
-                                                                          _model
-                                                                              .datePicked1!,
-                                                                          0,
-                                                                          0,
-                                                                          0),
-                                                              );
-                                                              safeSetState(
-                                                                  () {});
-                                                            }),
-                                                          ]);
-                                                        },
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.0, 0.0),
-                                                child: Stack(
-                                                  alignment:
-                                                      AlignmentDirectional(
-                                                          1.0, 0.0),
-                                                  children: [
-                                                    Container(
-                                                      width: 180.0,
-                                                      height: 50.0,
-                                                      decoration:
-                                                          BoxDecoration(),
-                                                      child: TextFormField(
-                                                        controller: _model
-                                                            .tfOveDateEndTextController,
-                                                        focusNode: _model
-                                                            .tfOveDateEndFocusNode,
-                                                        onChanged: (_) =>
-                                                            EasyDebounce
-                                                                .debounce(
-                                                          '_model.tfOveDateEndTextController',
-                                                          Duration(
-                                                              milliseconds:
-                                                                  2000),
-                                                          () => safeSetState(
-                                                              () {}),
-                                                        ),
-                                                        autofocus: false,
-                                                        autofillHints: [
-                                                          AutofillHints.name
-                                                        ],
-                                                        textCapitalization:
-                                                            TextCapitalization
-                                                                .none,
-                                                        readOnly: true,
-                                                        obscureText: false,
-                                                        decoration:
-                                                            InputDecoration(
-                                                          labelText:
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                            'wcmii5jn' /* Data final */,
-                                                          ),
-                                                          labelStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily),
-                                                                  ),
-                                                          hintStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelMediumFamily,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).labelMediumFamily),
-                                                                  ),
-                                                          errorStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .error,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                  ),
-                                                          enabledBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .alternate,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          focusedBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          errorBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .error,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          focusedErrorBorder:
-                                                              OutlineInputBorder(
-                                                            borderSide:
-                                                                BorderSide(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .error,
-                                                              width: 2.0,
-                                                            ),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
-                                                          ),
-                                                          filled: true,
-                                                          fillColor: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBackground,
-                                                          contentPadding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      16.0,
-                                                                      12.0,
-                                                                      0.0,
-                                                                      12.0),
-                                                          suffixIcon: _model
-                                                                  .tfOveDateEndTextController!
-                                                                  .text
-                                                                  .isNotEmpty
-                                                              ? InkWell(
-                                                                  onTap:
-                                                                      () async {
-                                                                    _model
-                                                                        .tfOveDateEndTextController
-                                                                        ?.clear();
-                                                                    safeSetState(
-                                                                        () {});
-                                                                  },
-                                                                  child: Icon(
-                                                                    Icons.clear,
-                                                                    color: Color(
-                                                                        0xFF757575),
-                                                                    size: 22.0,
-                                                                  ),
-                                                                )
-                                                              : null,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyLarge
-                                                                .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily),
-                                                                ),
-                                                        minLines: 1,
-                                                        cursorColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        validator: _model
-                                                            .tfOveDateEndTextControllerValidator
-                                                            .asValidator(
-                                                                context),
-                                                      ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  0.0,
-                                                                  4.0,
-                                                                  4.0),
-                                                      child:
-                                                          FlutterFlowIconButton(
-                                                        borderRadius: 8.0,
-                                                        buttonSize: 40.0,
-                                                        fillColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .tertiary,
-                                                        icon: Icon(
-                                                          Icons.calendar_month,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .info,
-                                                          size: 24.0,
-                                                        ),
-                                                        showLoadingIndicator:
-                                                            true,
-                                                        onPressed: () async {
-                                                          final _datePicked2Date =
-                                                              await showDatePicker(
-                                                            context: context,
-                                                            initialDate:
-                                                                getCurrentTimestamp,
-                                                            firstDate:
-                                                                DateTime(1900),
-                                                            lastDate:
-                                                                DateTime(2050),
-                                                            builder: (context,
-                                                                child) {
-                                                              return wrapInMaterialDatePickerTheme(
-                                                                context,
-                                                                child!,
-                                                                headerBackgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primary,
-                                                                headerForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .info,
-                                                                headerTextStyle:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .headlineLarge
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).headlineLargeFamily,
-                                                                          fontSize:
-                                                                              32.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.w600,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
-                                                                        ),
-                                                                pickerBackgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                                pickerForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                selectedDateTimeBackgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .tertiary,
-                                                                selectedDateTimeForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .info,
-                                                                actionButtonForegroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                iconSize: 24.0,
-                                                              );
-                                                            },
-                                                          );
-
-                                                          if (_datePicked2Date !=
-                                                              null) {
-                                                            safeSetState(() {
-                                                              _model.datePicked2 =
-                                                                  DateTime(
-                                                                _datePicked2Date
-                                                                    .year,
-                                                                _datePicked2Date
-                                                                    .month,
-                                                                _datePicked2Date
-                                                                    .day,
-                                                              );
-                                                            });
-                                                          } else if (_model
-                                                                  .datePicked2 !=
-                                                              null) {
-                                                            safeSetState(() {
-                                                              _model.datePicked2 =
-                                                                  getCurrentTimestamp;
-                                                            });
-                                                          }
-                                                          await Future.wait([
-                                                            Future(() async {
-                                                              safeSetState(() {
-                                                                _model.tfOveDateEndTextController
-                                                                        ?.text =
-                                                                    dateTimeFormat(
-                                                                  "dd/MM/y",
-                                                                  _model
-                                                                      .datePicked2,
-                                                                  locale: FFLocalizations.of(
-                                                                          context)
-                                                                      .languageCode,
-                                                                );
-                                                              });
-                                                            }),
-                                                            Future(() async {
-                                                              FFAppState()
-                                                                  .updateStFiltersOVEStruct(
-                                                                (e) => e
-                                                                  ..dateEnd = functions
-                                                                      .cfSetDatetime(
-                                                                          _model
-                                                                              .datePicked2!,
-                                                                          23,
-                                                                          59,
-                                                                          59),
-                                                              );
-                                                              safeSetState(
-                                                                  () {});
-                                                            }),
-                                                          ]);
-                                                        },
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 50.0,
-                                                icon: FaIcon(
-                                                  FontAwesomeIcons.search,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primary,
-                                                  size: 24.0,
-                                                ),
-                                                showLoadingIndicator: true,
-                                                onPressed: () async {
-                                                  await action_blocks
-                                                      .abDBAdminOVEFilters(
-                                                          context);
-                                                  safeSetState(() {});
-                                                },
-                                              ),
-                                              badges.Badge(
-                                                badgeContent: Text(
-                                                  FFAppState()
-                                                      .stFiltersOveCount
-                                                      .toString(),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
+                                                            labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                                ),
-                                                showBadge: FFAppState()
-                                                        .stFiltersOveCount >
-                                                    0,
-                                                shape: badges.BadgeShape.circle,
-                                                badgeColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .tertiary,
-                                                elevation: 4.0,
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        8.0, 8.0, 8.0, 8.0),
-                                                position: badges.BadgePosition
-                                                    .topEnd(),
-                                                animationType: badges
-                                                    .BadgeAnimationType.scale,
-                                                toAnimate: true,
-                                                child: FlutterFlowIconButton(
-                                                  borderColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .primary,
-                                                  borderRadius: 16.0,
-                                                  borderWidth: 6.0,
-                                                  buttonSize: 50.0,
-                                                  icon: Icon(
-                                                    Icons.filter_alt,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    size: 24.0,
-                                                  ),
-                                                  showLoadingIndicator: true,
-                                                  onPressed: () async {
-                                                    FFAppState()
-                                                        .updateStFiltersOVEStruct(
-                                                      (e) => e
-                                                        ..pgAdmin = 'OVE'
-                                                        ..teamsIds =
-                                                            FFAppState()
-                                                                .stFiltersOVE
-                                                                .teamsIds
-                                                                .toList()
-                                                        ..unitsIds =
-                                                            FFAppState()
-                                                                .stFiltersOVE
-                                                                .unitsIds
-                                                                .toList()
-                                                        ..oTypesIds =
-                                                            FFAppState()
-                                                                .stFiltersOVE
-                                                                .oTypesIds
-                                                                .toList()
-                                                        ..assetsTagsIds =
-                                                            FFAppState()
-                                                                .stFiltersOVE
-                                                                .assetsTagsIds
-                                                                .toList(),
-                                                    );
-                                                    safeSetState(() {});
-                                                    await showModalBottomSheet(
-                                                      isScrollControlled: true,
-                                                      backgroundColor:
-                                                          Colors.transparent,
-                                                      enableDrag: false,
-                                                      context: context,
-                                                      builder: (context) {
-                                                        return GestureDetector(
-                                                          onTap: () {
-                                                            FocusScope.of(
-                                                                    context)
-                                                                .unfocus();
-                                                            FocusManager
-                                                                .instance
-                                                                .primaryFocus
-                                                                ?.unfocus();
-                                                          },
-                                                          child: Padding(
-                                                            padding: MediaQuery
-                                                                .viewInsetsOf(
-                                                                    context),
-                                                            child:
-                                                                MdDbAdminFiltersOveWidget(),
-                                                          ),
-                                                        );
-                                                      },
-                                                    ).then((value) =>
-                                                        safeSetState(() {}));
-                                                  },
-                                                ),
-                                              ),
-                                              Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  Container(
-                                                    width: 150.0,
-                                                    height: 50.0,
-                                                    decoration: BoxDecoration(),
-                                                    child: TextFormField(
-                                                      controller: _model
-                                                          .tfOveIdTextController,
-                                                      focusNode: _model
-                                                          .tfOveIdFocusNode,
-                                                      onChanged: (_) =>
-                                                          EasyDebounce.debounce(
-                                                        '_model.tfOveIdTextController',
-                                                        Duration(
-                                                            milliseconds: 2000),
-                                                        () =>
-                                                            safeSetState(() {}),
-                                                      ),
-                                                      autofocus: false,
-                                                      autofillHints: [
-                                                        AutofillHints.name
-                                                      ],
-                                                      textCapitalization:
-                                                          TextCapitalization
-                                                              .none,
-                                                      obscureText: false,
-                                                      decoration:
-                                                          InputDecoration(
-                                                        labelStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyLarge
-                                                                .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      fontFamily:
                                                                           FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily),
-                                                                ),
-                                                        hintText:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'g1vsulug' /* SE nr */,
-                                                        ),
-                                                        hintStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMedium
-                                                                .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
+                                                                              .bodyLargeFamily,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
+                                                                    ),
+                                                            hintStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .override(
+                                                                      fontFamily:
                                                                           FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
-                                                                ),
-                                                        errorStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily,
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .error,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
+                                                                              .labelMediumFamily,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).labelMediumFamily),
+                                                                    ),
+                                                            errorStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
                                                                           FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
-                                                                ),
-                                                        enabledBorder:
-                                                            OutlineInputBorder(
-                                                          borderSide:
-                                                              BorderSide(
-                                                            color: FlutterFlowTheme
+                                                                              .bodyMediumFamily,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .error,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                    ),
+                                                            enabledBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .alternate,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            focusedBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            errorBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            focusedErrorBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            filled: true,
+                                                            fillColor: FlutterFlowTheme
                                                                     .of(context)
-                                                                .alternate,
-                                                            width: 2.0,
-                                                          ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      12.0),
-                                                        ),
-                                                        focusedBorder:
-                                                            OutlineInputBorder(
-                                                          borderSide:
-                                                              BorderSide(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary,
-                                                            width: 2.0,
-                                                          ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      12.0),
-                                                        ),
-                                                        errorBorder:
-                                                            OutlineInputBorder(
-                                                          borderSide:
-                                                              BorderSide(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .error,
-                                                            width: 2.0,
-                                                          ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      12.0),
-                                                        ),
-                                                        focusedErrorBorder:
-                                                            OutlineInputBorder(
-                                                          borderSide:
-                                                              BorderSide(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .error,
-                                                            width: 2.0,
-                                                          ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      12.0),
-                                                        ),
-                                                        filled: true,
-                                                        fillColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
                                                                 .primaryBackground,
-                                                        contentPadding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    16.0,
-                                                                    12.0,
-                                                                    0.0,
-                                                                    12.0),
-                                                        suffixIcon: _model
-                                                                .tfOveIdTextController!
-                                                                .text
-                                                                .isNotEmpty
-                                                            ? InkWell(
-                                                                onTap:
-                                                                    () async {
-                                                                  _model
-                                                                      .tfOveIdTextController
-                                                                      ?.clear();
-                                                                  safeSetState(
-                                                                      () {});
-                                                                },
-                                                                child: Icon(
-                                                                  Icons.clear,
-                                                                  color: Color(
-                                                                      0xFF757575),
-                                                                  size: 22.0,
-                                                                ),
-                                                              )
-                                                            : null,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                            contentPadding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        16.0,
+                                                                        12.0,
+                                                                        0.0,
+                                                                        12.0),
+                                                            suffixIcon: _model
+                                                                    .tfOveDateStartTextController!
+                                                                    .text
+                                                                    .isNotEmpty
+                                                                ? InkWell(
+                                                                    onTap:
+                                                                        () async {
+                                                                      _model
+                                                                          .tfOveDateStartTextController
+                                                                          ?.clear();
+                                                                      safeSetState(
+                                                                          () {});
+                                                                    },
+                                                                    child: Icon(
+                                                                      Icons
+                                                                          .clear,
+                                                                      color: Color(
+                                                                          0xFF757575),
+                                                                      size:
+                                                                          22.0,
+                                                                    ),
+                                                                  )
+                                                                : null,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
                                                               .bodyLarge
                                                               .override(
                                                                 fontFamily: FlutterFlowTheme.of(
@@ -1327,18 +494,529 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                         FlutterFlowTheme.of(context)
                                                                             .bodyLargeFamily),
                                                               ),
-                                                      minLines: 1,
-                                                      keyboardType:
-                                                          TextInputType.number,
-                                                      cursorColor:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      validator: _model
-                                                          .tfOveIdTextControllerValidator
-                                                          .asValidator(context),
-                                                    ),
+                                                          minLines: 1,
+                                                          cursorColor:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .primary,
+                                                          validator: _model
+                                                              .tfOveDateStartTextControllerValidator
+                                                              .asValidator(
+                                                                  context),
+                                                        ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    4.0,
+                                                                    4.0),
+                                                        child:
+                                                            FlutterFlowIconButton(
+                                                          borderRadius: 8.0,
+                                                          buttonSize: 40.0,
+                                                          fillColor:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .success,
+                                                          icon: Icon(
+                                                            Icons
+                                                                .calendar_month,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .info,
+                                                            size: 24.0,
+                                                          ),
+                                                          showLoadingIndicator:
+                                                              true,
+                                                          onPressed: () async {
+                                                            final _datePicked1Date =
+                                                                await showDatePicker(
+                                                              context: context,
+                                                              initialDate:
+                                                                  getCurrentTimestamp,
+                                                              firstDate:
+                                                                  DateTime(
+                                                                      1900),
+                                                              lastDate:
+                                                                  DateTime(
+                                                                      2050),
+                                                              builder: (context,
+                                                                  child) {
+                                                                return wrapInMaterialDatePickerTheme(
+                                                                  context,
+                                                                  child!,
+                                                                  headerBackgroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                  headerForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .info,
+                                                                  headerTextStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .headlineLarge
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        fontSize:
+                                                                            32.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                        useGoogleFonts:
+                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
+                                                                      ),
+                                                                  pickerBackgroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                  pickerForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                  selectedDateTimeBackgroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .success,
+                                                                  selectedDateTimeForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .info,
+                                                                  actionButtonForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                  iconSize:
+                                                                      24.0,
+                                                                );
+                                                              },
+                                                            );
+
+                                                            if (_datePicked1Date !=
+                                                                null) {
+                                                              safeSetState(() {
+                                                                _model.datePicked1 =
+                                                                    DateTime(
+                                                                  _datePicked1Date
+                                                                      .year,
+                                                                  _datePicked1Date
+                                                                      .month,
+                                                                  _datePicked1Date
+                                                                      .day,
+                                                                );
+                                                              });
+                                                            } else if (_model
+                                                                    .datePicked1 !=
+                                                                null) {
+                                                              safeSetState(() {
+                                                                _model.datePicked1 =
+                                                                    getCurrentTimestamp;
+                                                              });
+                                                            }
+                                                            await Future.wait([
+                                                              Future(() async {
+                                                                safeSetState(
+                                                                    () {
+                                                                  _model.tfOveDateStartTextController
+                                                                          ?.text =
+                                                                      dateTimeFormat(
+                                                                    "dd/MM/y",
+                                                                    _model
+                                                                        .datePicked1,
+                                                                    locale: FFLocalizations.of(
+                                                                            context)
+                                                                        .languageCode,
+                                                                  );
+                                                                });
+                                                              }),
+                                                              Future(() async {
+                                                                FFAppState()
+                                                                    .updateStFiltersOVEStruct(
+                                                                  (e) => e
+                                                                    ..dateStart =
+                                                                        functions.cfSetDatetime(
+                                                                            _model.datePicked1!,
+                                                                            0,
+                                                                            0,
+                                                                            0),
+                                                                );
+                                                                safeSetState(
+                                                                    () {});
+                                                              }),
+                                                            ]);
+                                                          },
+                                                        ),
+                                                      ),
+                                                    ],
                                                   ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          1.0, 0.0),
+                                                  child: Stack(
+                                                    alignment:
+                                                        AlignmentDirectional(
+                                                            1.0, 0.0),
+                                                    children: [
+                                                      Container(
+                                                        width: 180.0,
+                                                        height: 50.0,
+                                                        decoration:
+                                                            BoxDecoration(),
+                                                        child: TextFormField(
+                                                          controller: _model
+                                                              .tfOveDateEndTextController,
+                                                          focusNode: _model
+                                                              .tfOveDateEndFocusNode,
+                                                          onChanged: (_) =>
+                                                              EasyDebounce
+                                                                  .debounce(
+                                                            '_model.tfOveDateEndTextController',
+                                                            Duration(
+                                                                milliseconds:
+                                                                    2000),
+                                                            () => safeSetState(
+                                                                () {}),
+                                                          ),
+                                                          autofocus: false,
+                                                          autofillHints: [
+                                                            AutofillHints.name
+                                                          ],
+                                                          textCapitalization:
+                                                              TextCapitalization
+                                                                  .none,
+                                                          readOnly: true,
+                                                          obscureText: false,
+                                                          decoration:
+                                                              InputDecoration(
+                                                            labelText:
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                              'wcmii5jn' /* Data final */,
+                                                            ),
+                                                            labelStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyLargeFamily,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
+                                                                    ),
+                                                            hintStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .labelMediumFamily,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).labelMediumFamily),
+                                                                    ),
+                                                            errorStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyMediumFamily,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .error,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                    ),
+                                                            enabledBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .alternate,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            focusedBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            errorBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            focusedErrorBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            filled: true,
+                                                            fillColor: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            contentPadding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        16.0,
+                                                                        12.0,
+                                                                        0.0,
+                                                                        12.0),
+                                                            suffixIcon: _model
+                                                                    .tfOveDateEndTextController!
+                                                                    .text
+                                                                    .isNotEmpty
+                                                                ? InkWell(
+                                                                    onTap:
+                                                                        () async {
+                                                                      _model
+                                                                          .tfOveDateEndTextController
+                                                                          ?.clear();
+                                                                      safeSetState(
+                                                                          () {});
+                                                                    },
+                                                                    child: Icon(
+                                                                      Icons
+                                                                          .clear,
+                                                                      color: Color(
+                                                                          0xFF757575),
+                                                                      size:
+                                                                          22.0,
+                                                                    ),
+                                                                  )
+                                                                : null,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLargeFamily,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyLargeFamily),
+                                                              ),
+                                                          minLines: 1,
+                                                          cursorColor:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .primary,
+                                                          validator: _model
+                                                              .tfOveDateEndTextControllerValidator
+                                                              .asValidator(
+                                                                  context),
+                                                        ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    4.0,
+                                                                    4.0),
+                                                        child:
+                                                            FlutterFlowIconButton(
+                                                          borderRadius: 8.0,
+                                                          buttonSize: 40.0,
+                                                          fillColor:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .tertiary,
+                                                          icon: Icon(
+                                                            Icons
+                                                                .calendar_month,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .info,
+                                                            size: 24.0,
+                                                          ),
+                                                          showLoadingIndicator:
+                                                              true,
+                                                          onPressed: () async {
+                                                            final _datePicked2Date =
+                                                                await showDatePicker(
+                                                              context: context,
+                                                              initialDate:
+                                                                  getCurrentTimestamp,
+                                                              firstDate:
+                                                                  DateTime(
+                                                                      1900),
+                                                              lastDate:
+                                                                  DateTime(
+                                                                      2050),
+                                                              builder: (context,
+                                                                  child) {
+                                                                return wrapInMaterialDatePickerTheme(
+                                                                  context,
+                                                                  child!,
+                                                                  headerBackgroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                  headerForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .info,
+                                                                  headerTextStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .headlineLarge
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        fontSize:
+                                                                            32.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                        useGoogleFonts:
+                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
+                                                                      ),
+                                                                  pickerBackgroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                  pickerForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                  selectedDateTimeBackgroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .tertiary,
+                                                                  selectedDateTimeForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .info,
+                                                                  actionButtonForegroundColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                  iconSize:
+                                                                      24.0,
+                                                                );
+                                                              },
+                                                            );
+
+                                                            if (_datePicked2Date !=
+                                                                null) {
+                                                              safeSetState(() {
+                                                                _model.datePicked2 =
+                                                                    DateTime(
+                                                                  _datePicked2Date
+                                                                      .year,
+                                                                  _datePicked2Date
+                                                                      .month,
+                                                                  _datePicked2Date
+                                                                      .day,
+                                                                );
+                                                              });
+                                                            } else if (_model
+                                                                    .datePicked2 !=
+                                                                null) {
+                                                              safeSetState(() {
+                                                                _model.datePicked2 =
+                                                                    getCurrentTimestamp;
+                                                              });
+                                                            }
+                                                            await Future.wait([
+                                                              Future(() async {
+                                                                safeSetState(
+                                                                    () {
+                                                                  _model.tfOveDateEndTextController
+                                                                          ?.text =
+                                                                      dateTimeFormat(
+                                                                    "dd/MM/y",
+                                                                    _model
+                                                                        .datePicked2,
+                                                                    locale: FFLocalizations.of(
+                                                                            context)
+                                                                        .languageCode,
+                                                                  );
+                                                                });
+                                                              }),
+                                                              Future(() async {
+                                                                FFAppState()
+                                                                    .updateStFiltersOVEStruct(
+                                                                  (e) => e
+                                                                    ..dateEnd =
+                                                                        functions.cfSetDatetime(
+                                                                            _model.datePicked2!,
+                                                                            23,
+                                                                            59,
+                                                                            59),
+                                                                );
+                                                                safeSetState(
+                                                                    () {});
+                                                              }),
+                                                            ]);
+                                                          },
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                if (false)
                                                   FlutterFlowIconButton(
                                                     borderColor:
                                                         FlutterFlowTheme.of(
@@ -1347,8 +1025,8 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                     borderRadius: 16.0,
                                                     borderWidth: 6.0,
                                                     buttonSize: 50.0,
-                                                    icon: Icon(
-                                                      Icons.flash_on,
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons.search,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -1357,100 +1035,597 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {
-                                                      var _shouldSetState =
-                                                          false;
-                                                      FFAppState()
-                                                          .stDBAdminOVEFilters = [];
+                                                      await action_blocks
+                                                          .abDBAdminOVEFilters(
+                                                              context);
                                                       safeSetState(() {});
-                                                      _model.resOve =
-                                                          await ApiOrdersVisitsExtrasGroup
-                                                              .apiOVEByIdCall
-                                                              .call(
-                                                        apiUrl:
-                                                            FFDevEnvironmentValues()
-                                                                .envApiUrl,
-                                                        apiKey:
-                                                            FFDevEnvironmentValues()
-                                                                .envApiKey,
-                                                        accessToken:
-                                                            currentJwtToken,
-                                                        oveId: int.tryParse(_model
-                                                            .tfOveIdTextController
-                                                            .text),
-                                                      );
-
-                                                      _shouldSetState = true;
-                                                      if ((_model.resOve
-                                                              ?.succeeded ??
-                                                          true)) {
-                                                        FFAppState()
-                                                            .stDBAdminOVEFilters = ((_model
-                                                                            .resOve
-                                                                            ?.jsonBody ??
-                                                                        '')
-                                                                    .toList()
-                                                                    .map<DtOrderVisitExtraStruct?>(
-                                                                        DtOrderVisitExtraStruct
-                                                                            .maybeFromMap)
-                                                                    .toList()
-                                                                as Iterable<
-                                                                    DtOrderVisitExtraStruct?>)
-                                                            .withoutNulls
-                                                            .toList()
-                                                            .cast<
-                                                                DtOrderVisitExtraStruct>();
-                                                        safeSetState(() {});
-                                                        if (FFAppState()
-                                                                .stDBAdminOVEFilters
-                                                                .length >
-                                                            0) {
-                                                          _model.lpsvOveProcessingId =
-                                                              valueOrDefault<
-                                                                  int>(
-                                                            FFAppState()
-                                                                .stDBAdminOVEFilters
-                                                                .firstOrNull
-                                                                ?.processingId,
-                                                            0,
-                                                          );
-                                                          safeSetState(() {});
-                                                        } else {
-                                                          ScaffoldMessenger.of(
-                                                                  context)
-                                                              .showSnackBar(
-                                                            SnackBar(
-                                                              content: Text(
-                                                                'Ops... Nenhum registro localizado.',
-                                                                style:
-                                                                    TextStyle(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .info,
-                                                                ),
-                                                              ),
-                                                              duration: Duration(
-                                                                  milliseconds:
-                                                                      4000),
-                                                              backgroundColor:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .error,
-                                                            ),
-                                                          );
-                                                          if (_shouldSetState)
-                                                            safeSetState(() {});
-                                                          return;
-                                                        }
-                                                      }
-                                                      if (_shouldSetState)
-                                                        safeSetState(() {});
                                                     },
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
-                                              ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                                badges.Badge(
+                                                  badgeContent: Text(
+                                                    FFAppState()
+                                                        .stFiltersOveCount
+                                                        .toString(),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                                  ),
+                                                  showBadge: FFAppState()
+                                                          .stFiltersOveCount >
+                                                      0,
+                                                  shape:
+                                                      badges.BadgeShape.circle,
+                                                  badgeColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .tertiary,
+                                                  elevation: 4.0,
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          8.0, 8.0, 8.0, 8.0),
+                                                  position: badges.BadgePosition
+                                                      .topEnd(),
+                                                  animationType: badges
+                                                      .BadgeAnimationType.scale,
+                                                  toAnimate: true,
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
+                                                    borderRadius: 16.0,
+                                                    borderWidth: 6.0,
+                                                    buttonSize: 50.0,
+                                                    icon: Icon(
+                                                      Icons.filter_alt,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                      size: 24.0,
+                                                    ),
+                                                    showLoadingIndicator: true,
+                                                    onPressed: () async {
+                                                      FFAppState()
+                                                          .updateStFiltersOVEStruct(
+                                                        (e) => e
+                                                          ..pgAdmin = 'OVE'
+                                                          ..teamsIds =
+                                                              FFAppState()
+                                                                  .stFiltersOVE
+                                                                  .teamsIds
+                                                                  .toList()
+                                                          ..unitsIds =
+                                                              FFAppState()
+                                                                  .stFiltersOVE
+                                                                  .unitsIds
+                                                                  .toList()
+                                                          ..oTypesIds =
+                                                              FFAppState()
+                                                                  .stFiltersOVE
+                                                                  .oTypesIds
+                                                                  .toList()
+                                                          ..assetsTagsIds =
+                                                              FFAppState()
+                                                                  .stFiltersOVE
+                                                                  .assetsTagsIds
+                                                                  .toList(),
+                                                      );
+                                                      safeSetState(() {});
+                                                      await showModalBottomSheet(
+                                                        isScrollControlled:
+                                                            true,
+                                                        backgroundColor:
+                                                            Colors.transparent,
+                                                        enableDrag: false,
+                                                        context: context,
+                                                        builder: (context) {
+                                                          return GestureDetector(
+                                                            onTap: () {
+                                                              FocusScope.of(
+                                                                      context)
+                                                                  .unfocus();
+                                                              FocusManager
+                                                                  .instance
+                                                                  .primaryFocus
+                                                                  ?.unfocus();
+                                                            },
+                                                            child: Padding(
+                                                              padding: MediaQuery
+                                                                  .viewInsetsOf(
+                                                                      context),
+                                                              child:
+                                                                  MdDbAdminFiltersOveWidget(),
+                                                            ),
+                                                          );
+                                                        },
+                                                      ).then((value) =>
+                                                          safeSetState(() {}));
+                                                    },
+                                                  ),
+                                                ),
+                                                Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  children: [
+                                                    Container(
+                                                      width: 150.0,
+                                                      height: 50.0,
+                                                      decoration:
+                                                          BoxDecoration(),
+                                                      child: Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    8.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: TextFormField(
+                                                          controller: _model
+                                                              .tfOveIdTextController,
+                                                          focusNode: _model
+                                                              .tfOveIdFocusNode,
+                                                          onChanged: (_) =>
+                                                              EasyDebounce
+                                                                  .debounce(
+                                                            '_model.tfOveIdTextController',
+                                                            Duration(
+                                                                milliseconds:
+                                                                    2000),
+                                                            () => safeSetState(
+                                                                () {}),
+                                                          ),
+                                                          autofocus: false,
+                                                          autofillHints: [
+                                                            AutofillHints.name
+                                                          ],
+                                                          textCapitalization:
+                                                              TextCapitalization
+                                                                  .none,
+                                                          obscureText: false,
+                                                          decoration:
+                                                              InputDecoration(
+                                                            labelStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyLargeFamily,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
+                                                                    ),
+                                                            hintText:
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                              'g1vsulug' /* SE nr */,
+                                                            ),
+                                                            hintStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .labelMediumFamily,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).labelMediumFamily),
+                                                                    ),
+                                                            errorStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyMediumFamily,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .error,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      useGoogleFonts: GoogleFonts
+                                                                              .asMap()
+                                                                          .containsKey(
+                                                                              FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                    ),
+                                                            enabledBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .alternate,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            focusedBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            errorBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            focusedErrorBorder:
+                                                                OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                width: 2.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                            ),
+                                                            filled: true,
+                                                            fillColor: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            contentPadding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        16.0,
+                                                                        12.0,
+                                                                        0.0,
+                                                                        12.0),
+                                                            suffixIcon: _model
+                                                                    .tfOveIdTextController!
+                                                                    .text
+                                                                    .isNotEmpty
+                                                                ? InkWell(
+                                                                    onTap:
+                                                                        () async {
+                                                                      _model
+                                                                          .tfOveIdTextController
+                                                                          ?.clear();
+                                                                      safeSetState(
+                                                                          () {});
+                                                                    },
+                                                                    child: Icon(
+                                                                      Icons
+                                                                          .clear,
+                                                                      color: Color(
+                                                                          0xFF757575),
+                                                                      size:
+                                                                          22.0,
+                                                                    ),
+                                                                  )
+                                                                : null,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLargeFamily,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyLargeFamily),
+                                                              ),
+                                                          minLines: 1,
+                                                          keyboardType:
+                                                              TextInputType
+                                                                  .number,
+                                                          cursorColor:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .primary,
+                                                          validator: _model
+                                                              .tfOveIdTextControllerValidator
+                                                              .asValidator(
+                                                                  context),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    FlutterFlowIconButton(
+                                                      borderColor:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                      borderRadius: 16.0,
+                                                      borderWidth: 6.0,
+                                                      buttonSize: 50.0,
+                                                      icon: Icon(
+                                                        Icons.flash_on,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
+                                                      showLoadingIndicator:
+                                                          true,
+                                                      onPressed: () async {
+                                                        var _shouldSetState =
+                                                            false;
+                                                        FFAppState()
+                                                            .stDBAdminOVEFilters = [];
+                                                        safeSetState(() {});
+                                                        _model.resOve =
+                                                            await ApiOrdersVisitsExtrasGroup
+                                                                .apiOVEByIdCall
+                                                                .call(
+                                                          apiUrl:
+                                                              FFDevEnvironmentValues()
+                                                                  .envApiUrl,
+                                                          apiKey:
+                                                              FFDevEnvironmentValues()
+                                                                  .envApiKey,
+                                                          accessToken:
+                                                              currentJwtToken,
+                                                          oveId: int.tryParse(_model
+                                                              .tfOveIdTextController
+                                                              .text),
+                                                        );
+
+                                                        _shouldSetState = true;
+                                                        if ((_model.resOve
+                                                                ?.succeeded ??
+                                                            true)) {
+                                                          FFAppState()
+                                                              .stDBAdminOVEFilters = ((_model
+                                                                          .resOve
+                                                                          ?.jsonBody ??
+                                                                      '')
+                                                                  .toList()
+                                                                  .map<DtOrderVisitExtraStruct?>(
+                                                                      DtOrderVisitExtraStruct
+                                                                          .maybeFromMap)
+                                                                  .toList() as Iterable<DtOrderVisitExtraStruct?>)
+                                                              .withoutNulls
+                                                              .toList()
+                                                              .cast<DtOrderVisitExtraStruct>();
+                                                          safeSetState(() {});
+                                                          if (FFAppState()
+                                                                  .stDBAdminOVEFilters
+                                                                  .length >
+                                                              0) {
+                                                            _model.lpsvOveProcessingId =
+                                                                valueOrDefault<
+                                                                    int>(
+                                                              FFAppState()
+                                                                  .stDBAdminOVEFilters
+                                                                  .firstOrNull
+                                                                  ?.processingId,
+                                                              0,
+                                                            );
+                                                            safeSetState(() {});
+                                                          } else {
+                                                            ScaffoldMessenger
+                                                                    .of(context)
+                                                                .showSnackBar(
+                                                              SnackBar(
+                                                                content: Text(
+                                                                  'Ops... Nenhum registro localizado.',
+                                                                  style:
+                                                                      TextStyle(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .info,
+                                                                  ),
+                                                                ),
+                                                                duration: Duration(
+                                                                    milliseconds:
+                                                                        4000),
+                                                                backgroundColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .error,
+                                                              ),
+                                                            );
+                                                            if (_shouldSetState)
+                                                              safeSetState(
+                                                                  () {});
+                                                            return;
+                                                          }
+                                                        }
+                                                        if (_shouldSetState)
+                                                          safeSetState(() {});
+                                                      },
+                                                    ),
+                                                  ].divide(
+                                                      SizedBox(width: 4.0)),
+                                                ),
+                                              ].divide(SizedBox(width: 8.0)),
+                                            ),
                                           ),
-                                        ],
+                                          if (false)
+                                            FlutterFlowIconButton(
+                                              borderColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              borderRadius: 16.0,
+                                              borderWidth: 6.0,
+                                              buttonSize: 50.0,
+                                              icon: FaIcon(
+                                                FontAwesomeIcons.print,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                size: 24.0,
+                                              ),
+                                              showLoadingIndicator: true,
+                                              onPressed: () async {
+                                                await JrOrdersVisitsExtrasTable()
+                                                    .delete(
+                                                  matchingRows: (rows) =>
+                                                      rows.eqOrNull(
+                                                    'created_user_id',
+                                                    FFAppState()
+                                                        .stUserCurrent
+                                                        .id,
+                                                  ),
+                                                );
+                                                FFAppState().stCounterLoop = 0;
+                                                FFAppState()
+                                                        .stCounterLoopFinal =
+                                                    valueOrDefault<int>(
+                                                  FFAppState()
+                                                      .stDBAdminOVEFilters
+                                                      .length,
+                                                  0,
+                                                );
+                                                safeSetState(() {});
+                                                await showDialog(
+                                                  context: context,
+                                                  builder:
+                                                      (alertDialogContext) {
+                                                    return AlertDialog(
+                                                      title: Text('Total'),
+                                                      content: Text(
+                                                          valueOrDefault<
+                                                              String>(
+                                                        FFAppState()
+                                                            .stDBAdminOVEFilters
+                                                            .length
+                                                            .toString(),
+                                                        '0',
+                                                      )),
+                                                      actions: [
+                                                        TextButton(
+                                                          onPressed: () =>
+                                                              Navigator.pop(
+                                                                  alertDialogContext),
+                                                          child: Text('Ok'),
+                                                        ),
+                                                      ],
+                                                    );
+                                                  },
+                                                );
+                                                while (FFAppState()
+                                                        .stCounterLoop <
+                                                    FFAppState()
+                                                        .stCounterLoopFinal) {
+                                                  await JrOrdersVisitsExtrasTable()
+                                                      .insert({
+                                                    'created_user_id':
+                                                        FFAppState()
+                                                            .stUserCurrent
+                                                            .id,
+                                                    'o_mask': FFAppState()
+                                                        .stDBAdminOVEFilters
+                                                        .elementAtOrNull(
+                                                            FFAppState()
+                                                                .stCounterLoop)
+                                                        ?.oMask,
+                                                    'approved_user_id':
+                                                        FFAppState()
+                                                            .stDBAdminOVEFilters
+                                                            .elementAtOrNull(
+                                                                FFAppState()
+                                                                    .stCounterLoop)
+                                                            ?.approvedUserId,
+                                                    'approved_at': supaSerialize<
+                                                            DateTime>(
+                                                        functions.cfConvDatetimeEnStringToDatetimeEn(
+                                                            FFAppState()
+                                                                .stDBAdminOVEFilters
+                                                                .elementAtOrNull(
+                                                                    FFAppState()
+                                                                        .stCounterLoop)!
+                                                                .approvedAt)),
+                                                    'disapproved_user_id':
+                                                        FFAppState()
+                                                            .stDBAdminOVEFilters
+                                                            .elementAtOrNull(
+                                                                FFAppState()
+                                                                    .stCounterLoop)
+                                                            ?.disapprovedUserId,
+                                                    'disapproved_at': supaSerialize<
+                                                            DateTime>(
+                                                        functions.cfConvDatetimeEnStringToDatetimeEn(
+                                                            FFAppState()
+                                                                .stDBAdminOVEFilters
+                                                                .elementAtOrNull(
+                                                                    FFAppState()
+                                                                        .stCounterLoop)!
+                                                                .disapprovedAt)),
+                                                    'started_at': supaSerialize<
+                                                            DateTime>(
+                                                        functions.cfConvDatetimeEnStringToDatetimeEn(
+                                                            FFAppState()
+                                                                .stDBAdminOVEFilters
+                                                                .elementAtOrNull(
+                                                                    FFAppState()
+                                                                        .stCounterLoop)!
+                                                                .startedAt)),
+                                                    'ended_at': supaSerialize<
+                                                            DateTime>(
+                                                        functions.cfConvDatetimeEnStringToDatetimeEn(
+                                                            FFAppState()
+                                                                .stDBAdminOVEFilters
+                                                                .elementAtOrNull(
+                                                                    FFAppState()
+                                                                        .stCounterLoop)!
+                                                                .endedAt)),
+                                                  });
+                                                  FFAppState().stCounterLoop =
+                                                      FFAppState()
+                                                              .stCounterLoop +
+                                                          1;
+                                                  safeSetState(() {});
+                                                }
+                                              },
+                                            ),
+                                        ].divide(SizedBox(width: 8.0)),
                                       ),
                                     ].divide(SizedBox(width: 8.0)),
                                   ),

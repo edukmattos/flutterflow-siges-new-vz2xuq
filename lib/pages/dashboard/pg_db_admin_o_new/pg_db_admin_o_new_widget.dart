@@ -1729,7 +1729,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               .map((e) => e)
                                               .toList()
                                               .sortedList(
-                                                  keyOf: (e) => e.id,
+                                                  keyOf: (e) => e.startedAt,
                                                   desc: true)
                                               .toList();
 

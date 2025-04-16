@@ -375,6 +375,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: PgUnitsSearchWidget.routeName,
               path: PgUnitsSearchWidget.routePath,
+              requireAuth: true,
               builder: (context, params) => PgUnitsSearchWidget(),
             ),
             FFRoute(

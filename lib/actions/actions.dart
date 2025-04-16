@@ -6509,6 +6509,18 @@ Future abOVEProcessing(
     );
     FFAppState().stCounterLoop = FFAppState().stCounterLoop + 1;
   }
+  await OrdersVisitsExtrasTable().update(
+    data: {
+      'team_amount': valueOrDefault<int>(
+        FFAppState().stOVESelectedTeamUsers.length,
+        0,
+      ),
+    },
+    matchingRows: (rows) => rows.eqOrNull(
+      'id',
+      abOVEId,
+    ),
+  );
 }
 
 Future abFiltersOveCount(BuildContext context) async {
