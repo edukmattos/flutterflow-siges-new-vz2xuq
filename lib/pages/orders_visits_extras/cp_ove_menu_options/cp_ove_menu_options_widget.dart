@@ -88,7 +88,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
               safeSetState(() {});
             } else {
               if ((widget.cpDtOve?.processingId == 5) &&
-                  (widget.cpDtOve?.isFiled == false)) {
+                  (widget.cpDtOve?.isArchived == false)) {
                 _model.lcsvIsVisibleDraft = false;
                 _model.lcsvIsVisibleReported = false;
                 _model.lcsvIsVisibleRevised = false;
@@ -99,7 +99,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                 safeSetState(() {});
               } else {
                 if ((widget.cpDtOve?.processingId == 5) &&
-                    (widget.cpDtOve?.isFiled == true)) {
+                    (widget.cpDtOve?.isArchived == true)) {
                   _model.lcsvIsVisibleDraft = false;
                   _model.lcsvIsVisibleReported = false;
                   _model.lcsvIsVisibleRevised = false;
@@ -381,7 +381,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                     },
                   ),
                 ),
-              if (_model.lcsvIsVisibleFiled && !widget.cpDtOve!.isFiled)
+              if (_model.lcsvIsVisibleFiled && !widget.cpDtOve!.isArchived)
                 AlignedTooltip(
                   content: Padding(
                     padding: EdgeInsets.all(4.0),

@@ -751,7 +751,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               showLoadingIndicator: true,
                                               onPressed: () async {
                                                 await action_blocks
-                                                    .abOveSearchById(
+                                                    .abOVESearchById(
                                                   context,
                                                   abOveId: int.tryParse(_model
                                                       .tfOveIdTextController
@@ -1444,7 +1444,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         .where((e) =>
                                                             (e.processingId ==
                                                                 5) &&
-                                                            (e.isFiled ==
+                                                            (e.isArchived ==
                                                                 false))
                                                         .toList()
                                                         .length
@@ -1465,7 +1465,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                           .where((e) =>
                                                               (e.processingId ==
                                                                   5) &&
-                                                              (e.isFiled ==
+                                                              (e.isArchived ==
                                                                   false))
                                                           .toList()
                                                           .length >
@@ -1558,7 +1558,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                             .stOVEProcessingId,
                                                         1,
                                                       )) &&
-                                                  (e.isFiled ==
+                                                  (e.isArchived ==
                                                       FFAppState()
                                                           .stOVEIsFiled))
                                               .toList()

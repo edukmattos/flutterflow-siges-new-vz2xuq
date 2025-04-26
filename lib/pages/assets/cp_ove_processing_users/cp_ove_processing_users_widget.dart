@@ -787,7 +787,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                             alignment: AlignmentDirectional(1.0, 0.0),
                             child: Text(
                               valueOrDefault<String>(
-                                widget.cpDtOve?.filedUserNameShort,
+                                widget.cpDtOve?.archivedUserNameShort,
                                 'N/I',
                               ),
                               style: FlutterFlowTheme.of(context)
@@ -807,7 +807,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                             child: Text(
                               valueOrDefault<String>(
                                 '${functions.cfConvDatetimeEnStringToDatetimeBrString(valueOrDefault<String>(
-                                  widget.cpDtOve?.filedAt,
+                                  widget.cpDtOve?.archivedAt,
                                   '0',
                                 ))} h',
                                 'N/I',

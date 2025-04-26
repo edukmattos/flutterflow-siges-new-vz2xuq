@@ -1,20 +1,20 @@
 import '../database.dart';
 
-class VOrdersVisitsExtrasNoFiledTable
-    extends SupabaseTable<VOrdersVisitsExtrasNoFiledRow> {
+class VOrdersVisitsExtrasNoArchivedTable
+    extends SupabaseTable<VOrdersVisitsExtrasNoArchivedRow> {
   @override
-  String get tableName => 'v_orders_visits_extras_no_filed';
+  String get tableName => 'v_orders_visits_extras_no_archived';
 
   @override
-  VOrdersVisitsExtrasNoFiledRow createRow(Map<String, dynamic> data) =>
-      VOrdersVisitsExtrasNoFiledRow(data);
+  VOrdersVisitsExtrasNoArchivedRow createRow(Map<String, dynamic> data) =>
+      VOrdersVisitsExtrasNoArchivedRow(data);
 }
 
-class VOrdersVisitsExtrasNoFiledRow extends SupabaseDataRow {
-  VOrdersVisitsExtrasNoFiledRow(Map<String, dynamic> data) : super(data);
+class VOrdersVisitsExtrasNoArchivedRow extends SupabaseDataRow {
+  VOrdersVisitsExtrasNoArchivedRow(Map<String, dynamic> data) : super(data);
 
   @override
-  SupabaseTable get table => VOrdersVisitsExtrasNoFiledTable();
+  SupabaseTable get table => VOrdersVisitsExtrasNoArchivedTable();
 
   int? get id => getField<int>('id');
   set id(int? value) => setField<int>('id', value);
@@ -172,8 +172,8 @@ class VOrdersVisitsExtrasNoFiledRow extends SupabaseDataRow {
   String? get comments => getField<String>('comments');
   set comments(String? value) => setField<String>('comments', value);
 
-  bool? get isFiled => getField<bool>('is_filed');
-  set isFiled(bool? value) => setField<bool>('is_filed', value);
+  bool? get isArchived => getField<bool>('is_archived');
+  set isArchived(bool? value) => setField<bool>('is_archived', value);
 
   DateTime? get createdAt => getField<DateTime>('created_at');
   set createdAt(DateTime? value) => setField<DateTime>('created_at', value);
@@ -258,15 +258,16 @@ class VOrdersVisitsExtrasNoFiledRow extends SupabaseDataRow {
   set approvedUserNameShort(String? value) =>
       setField<String>('approved_user_name_short', value);
 
-  DateTime? get filedAt => getField<DateTime>('filed_at');
-  set filedAt(DateTime? value) => setField<DateTime>('filed_at', value);
+  DateTime? get archivedAt => getField<DateTime>('archived_at');
+  set archivedAt(DateTime? value) => setField<DateTime>('archived_at', value);
 
-  int? get filedUserId => getField<int>('filed_user_id');
-  set filedUserId(int? value) => setField<int>('filed_user_id', value);
+  int? get archivedUserId => getField<int>('archived_user_id');
+  set archivedUserId(int? value) => setField<int>('archived_user_id', value);
 
-  String? get filedUserNameShort => getField<String>('filed_user_name_short');
-  set filedUserNameShort(String? value) =>
-      setField<String>('filed_user_name_short', value);
+  String? get archivedUserNameShort =>
+      getField<String>('archived_user_name_short');
+  set archivedUserNameShort(String? value) =>
+      setField<String>('archived_user_name_short', value);
 
   DateTime? get unarchivedAt => getField<DateTime>('unarchived_at');
   set unarchivedAt(DateTime? value) =>

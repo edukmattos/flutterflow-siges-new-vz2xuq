@@ -219,7 +219,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                               cpSize: 60,
                               cpShowLoadingIndicator: false,
                               cpDisabled: false,
-                              cpIsFiled: widget.cpDtOVE!.isFiled,
+                              cpIsFiled: widget.cpDtOVE!.isArchived,
                               cpOveId: widget.cpDtOVE!.id,
                             ),
                           ),
@@ -514,7 +514,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                           0,
                                                                     ),
                                                                     FFButtonWidget(
-                                                                      onPressed: (widget.cpDtOVE!.isFiled ||
+                                                                      onPressed: (widget.cpDtOVE!.isArchived ||
                                                                               (widget.cpDtOVE?.teamLeaderId == gcOVETeamUsersItem.userId))
                                                                           ? null
                                                                           : () async {
@@ -585,7 +585,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                 ),
                                                                 if (!widget
                                                                         .cpDtOVE!
-                                                                        .isFiled &&
+                                                                        .isArchived &&
                                                                     (gcOVETeamUsersItem
                                                                             .userId !=
                                                                         widget
@@ -709,7 +709,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                           ),
                         ].divide(SizedBox(width: 20.0)),
                       ),
-                      if (widget.cpDtOVE?.isFiled == false)
+                      if (widget.cpDtOVE?.isArchived == false)
                         Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

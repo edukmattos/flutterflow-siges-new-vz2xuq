@@ -263,44 +263,61 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
                         );
                         _shouldSetState = true;
                         if (_model.isAllowUnarchived!) {
-                          await OrdersVisitsExtrasTable().update(
-                            data: {
-                              'is_filed': false,
-                              'unarchived_at':
-                                  supaSerialize<DateTime>(getCurrentTimestamp),
-                              'unarchived_user_id':
-                                  FFAppState().stUserCurrent.id,
-                            },
-                            matchingRows: (rows) => rows.eqOrNull(
-                              'id',
-                              widget.cpOveId,
-                            ),
-                          );
-                          FFAppState().stDBAdminOVEFilters = [];
-                          FFAppState().stDBAdminOOVEFilters = [];
-                          safeSetState(() {});
-                          await action_blocks.abOVESelected(
-                            context,
-                            abOVEId: widget.cpOveId,
-                          );
-                          FFAppState().addToStDBAdminOVEFilters(
-                              FFAppState().stOVESelected);
-                          FFAppState().addToStDBAdminOOVEFilters(
-                              FFAppState().stOVESelected);
-                          safeSetState(() {});
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                'Serviço Extraordinário DESARQUIVADO !',
-                                style: TextStyle(
-                                  color: FlutterFlowTheme.of(context).info,
-                                ),
+                          var confirmDialogResponse = await showDialog<bool>(
+                                context: context,
+                                builder: (alertDialogContext) {
+                                  return AlertDialog(
+                                    title: Text('Ops ...'),
+                                    content:
+                                        Text('Deseja realmente DESARQUIVAR ?'),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(
+                                            alertDialogContext, false),
+                                        child: Text('Cancelar'),
+                                      ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(
+                                            alertDialogContext, true),
+                                        child: Text('Confirmar'),
+                                      ),
+                                    ],
+                                  );
+                                },
+                              ) ??
+                              false;
+                          if (confirmDialogResponse) {
+                            await OrdersVisitsExtrasTable().update(
+                              data: {
+                                'is_archived': false,
+                                'unarchived_at': supaSerialize<DateTime>(
+                                    getCurrentTimestamp),
+                                'unarchived_user_id':
+                                    FFAppState().stUserCurrent.id,
+                              },
+                              matchingRows: (rows) => rows.eqOrNull(
+                                'id',
+                                widget.cpOveId,
                               ),
-                              duration: Duration(milliseconds: 4000),
-                              backgroundColor:
-                                  FlutterFlowTheme.of(context).secondary,
-                            ),
-                          );
+                            );
+                            await action_blocks.abOVESearchById(
+                              context,
+                              abOveId: widget.cpOveId,
+                            );
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Serviço Extraordinário DESARQUIVADO !',
+                                  style: TextStyle(
+                                    color: FlutterFlowTheme.of(context).info,
+                                  ),
+                                ),
+                                duration: Duration(milliseconds: 4000),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).secondary,
+                              ),
+                            );
+                          }
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
@@ -374,44 +391,61 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
                         );
                         _shouldSetState = true;
                         if (_model.isAllowUnarchivedCopy!) {
-                          await OrdersVisitsExtrasTable().update(
-                            data: {
-                              'is_filed': false,
-                              'unarchived_at':
-                                  supaSerialize<DateTime>(getCurrentTimestamp),
-                              'unarchived_user_id':
-                                  FFAppState().stUserCurrent.id,
-                            },
-                            matchingRows: (rows) => rows.eqOrNull(
-                              'id',
-                              widget.cpOveId,
-                            ),
-                          );
-                          FFAppState().stDBAdminOVEFilters = [];
-                          FFAppState().stDBAdminOOVEFilters = [];
-                          safeSetState(() {});
-                          await action_blocks.abOVESelected(
-                            context,
-                            abOVEId: widget.cpOveId,
-                          );
-                          FFAppState().addToStDBAdminOVEFilters(
-                              FFAppState().stOVESelected);
-                          FFAppState().addToStDBAdminOOVEFilters(
-                              FFAppState().stOVESelected);
-                          safeSetState(() {});
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                'Serviço Extraordinário DESARQUIVADO !',
-                                style: TextStyle(
-                                  color: FlutterFlowTheme.of(context).info,
-                                ),
+                          var confirmDialogResponse = await showDialog<bool>(
+                                context: context,
+                                builder: (alertDialogContext) {
+                                  return AlertDialog(
+                                    title: Text('Ops ...'),
+                                    content:
+                                        Text('Deseja realmente DESARQUIVAR ?'),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(
+                                            alertDialogContext, false),
+                                        child: Text('Cancelar'),
+                                      ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(
+                                            alertDialogContext, true),
+                                        child: Text('Confirmar'),
+                                      ),
+                                    ],
+                                  );
+                                },
+                              ) ??
+                              false;
+                          if (confirmDialogResponse) {
+                            await OrdersVisitsExtrasTable().update(
+                              data: {
+                                'is_archived': false,
+                                'unarchived_at': supaSerialize<DateTime>(
+                                    getCurrentTimestamp),
+                                'unarchived_user_id':
+                                    FFAppState().stUserCurrent.id,
+                              },
+                              matchingRows: (rows) => rows.eqOrNull(
+                                'id',
+                                widget.cpOveId,
                               ),
-                              duration: Duration(milliseconds: 4000),
-                              backgroundColor:
-                                  FlutterFlowTheme.of(context).secondary,
-                            ),
-                          );
+                            );
+                            await action_blocks.abOVESearchById(
+                              context,
+                              abOveId: widget.cpOveId,
+                            );
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Serviço Extraordinário DESARQUIVADO !',
+                                  style: TextStyle(
+                                    color: FlutterFlowTheme.of(context).info,
+                                  ),
+                                ),
+                                duration: Duration(milliseconds: 4000),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).secondary,
+                              ),
+                            );
+                          }
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(

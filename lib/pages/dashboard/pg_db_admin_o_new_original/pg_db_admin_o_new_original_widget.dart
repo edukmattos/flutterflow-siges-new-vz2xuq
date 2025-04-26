@@ -1457,7 +1457,7 @@ class _PgDbAdminONewOriginalWidgetState
                                                         .where((e) =>
                                                             (e.processingId ==
                                                                 5) &&
-                                                            (e.isFiled ==
+                                                            (e.isArchived ==
                                                                 false))
                                                         .toList()
                                                         .length
@@ -1478,7 +1478,7 @@ class _PgDbAdminONewOriginalWidgetState
                                                           .where((e) =>
                                                               (e.processingId ==
                                                                   5) &&
-                                                              (e.isFiled ==
+                                                              (e.isArchived ==
                                                                   false))
                                                           .toList()
                                                           .length >
@@ -1568,7 +1568,7 @@ class _PgDbAdminONewOriginalWidgetState
                                                   (e.processingId ==
                                                       _model
                                                           .lpsvOveProcessingId) &&
-                                                  (e.isFiled ==
+                                                  (e.isArchived ==
                                                       _model.lpsvOveIsFiled))
                                               .toList()
                                               .map((e) => e)

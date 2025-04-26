@@ -81,8 +81,8 @@ class OrdersVisitsExtrasRow extends SupabaseDataRow {
   String? get comments => getField<String>('comments');
   set comments(String? value) => setField<String>('comments', value);
 
-  bool? get isFiled => getField<bool>('is_filed');
-  set isFiled(bool? value) => setField<bool>('is_filed', value);
+  bool? get isArchived => getField<bool>('is_archived');
+  set isArchived(bool? value) => setField<bool>('is_archived', value);
 
   String? get teamNamesShort => getField<String>('team_names_short');
   set teamNamesShort(String? value) =>
@@ -133,11 +133,11 @@ class OrdersVisitsExtrasRow extends SupabaseDataRow {
   int? get teamId => getField<int>('team_id');
   set teamId(int? value) => setField<int>('team_id', value);
 
-  int? get filedUserId => getField<int>('filed_user_id');
-  set filedUserId(int? value) => setField<int>('filed_user_id', value);
+  int? get archivedUserId => getField<int>('archived_user_id');
+  set archivedUserId(int? value) => setField<int>('archived_user_id', value);
 
-  DateTime? get filedAt => getField<DateTime>('filed_at');
-  set filedAt(DateTime? value) => setField<DateTime>('filed_at', value);
+  DateTime? get archivedAt => getField<DateTime>('archived_at');
+  set archivedAt(DateTime? value) => setField<DateTime>('archived_at', value);
 
   DateTime? get deletedAt => getField<DateTime>('deleted_at');
   set deletedAt(DateTime? value) => setField<DateTime>('deleted_at', value);

@@ -35,7 +35,7 @@ class DtOrderVisitExtraStruct extends BaseStruct {
     int? processingId,
     String? processingDescription,
     String? comments,
-    bool? isFiled,
+    bool? isArchived,
     String? reportedAt,
     DateTime? reportedDatetime,
     int? reportedUserId,
@@ -53,9 +53,9 @@ class DtOrderVisitExtraStruct extends BaseStruct {
     DateTime? approvedDatetime,
     int? approvedUserId,
     String? approvedUserNameShort,
-    String? filedAt,
-    int? filedUserId,
-    String? filedUserNameShort,
+    String? archivedAt,
+    int? archivedUserId,
+    String? archivedUserNameShort,
     int? teamLeaderId,
     String? teamLeaderUserNameShort,
     String? teamLeaderUserImgFilePath,
@@ -111,7 +111,7 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         _processingId = processingId,
         _processingDescription = processingDescription,
         _comments = comments,
-        _isFiled = isFiled,
+        _isArchived = isArchived,
         _reportedAt = reportedAt,
         _reportedDatetime = reportedDatetime,
         _reportedUserId = reportedUserId,
@@ -129,9 +129,9 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         _approvedDatetime = approvedDatetime,
         _approvedUserId = approvedUserId,
         _approvedUserNameShort = approvedUserNameShort,
-        _filedAt = filedAt,
-        _filedUserId = filedUserId,
-        _filedUserNameShort = filedUserNameShort,
+        _archivedAt = archivedAt,
+        _archivedUserId = archivedUserId,
+        _archivedUserNameShort = archivedUserNameShort,
         _teamLeaderId = teamLeaderId,
         _teamLeaderUserNameShort = teamLeaderUserNameShort,
         _teamLeaderUserImgFilePath = teamLeaderUserImgFilePath,
@@ -380,12 +380,12 @@ class DtOrderVisitExtraStruct extends BaseStruct {
 
   bool hasComments() => _comments != null;
 
-  // "is_filed" field.
-  bool? _isFiled;
-  bool get isFiled => _isFiled ?? false;
-  set isFiled(bool? val) => _isFiled = val;
+  // "is_archived" field.
+  bool? _isArchived;
+  bool get isArchived => _isArchived ?? false;
+  set isArchived(bool? val) => _isArchived = val;
 
-  bool hasIsFiled() => _isFiled != null;
+  bool hasIsArchived() => _isArchived != null;
 
   // "reported_at" field.
   String? _reportedAt;
@@ -518,28 +518,29 @@ class DtOrderVisitExtraStruct extends BaseStruct {
 
   bool hasApprovedUserNameShort() => _approvedUserNameShort != null;
 
-  // "filed_at" field.
-  String? _filedAt;
-  String get filedAt => _filedAt ?? '';
-  set filedAt(String? val) => _filedAt = val;
+  // "archived_at" field.
+  String? _archivedAt;
+  String get archivedAt => _archivedAt ?? '';
+  set archivedAt(String? val) => _archivedAt = val;
 
-  bool hasFiledAt() => _filedAt != null;
+  bool hasArchivedAt() => _archivedAt != null;
 
-  // "filed_user_id" field.
-  int? _filedUserId;
-  int get filedUserId => _filedUserId ?? 0;
-  set filedUserId(int? val) => _filedUserId = val;
+  // "archived_user_id" field.
+  int? _archivedUserId;
+  int get archivedUserId => _archivedUserId ?? 0;
+  set archivedUserId(int? val) => _archivedUserId = val;
 
-  void incrementFiledUserId(int amount) => filedUserId = filedUserId + amount;
+  void incrementArchivedUserId(int amount) =>
+      archivedUserId = archivedUserId + amount;
 
-  bool hasFiledUserId() => _filedUserId != null;
+  bool hasArchivedUserId() => _archivedUserId != null;
 
-  // "filed_user_name_short" field.
-  String? _filedUserNameShort;
-  String get filedUserNameShort => _filedUserNameShort ?? '';
-  set filedUserNameShort(String? val) => _filedUserNameShort = val;
+  // "archived_user_name_short" field.
+  String? _archivedUserNameShort;
+  String get archivedUserNameShort => _archivedUserNameShort ?? '';
+  set archivedUserNameShort(String? val) => _archivedUserNameShort = val;
 
-  bool hasFiledUserNameShort() => _filedUserNameShort != null;
+  bool hasArchivedUserNameShort() => _archivedUserNameShort != null;
 
   // "team_leader_id" field.
   int? _teamLeaderId;
@@ -794,7 +795,7 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         processingId: castToType<int>(data['processing_id']),
         processingDescription: data['processing_description'] as String?,
         comments: data['comments'] as String?,
-        isFiled: data['is_filed'] as bool?,
+        isArchived: data['is_archived'] as bool?,
         reportedAt: data['reported_at'] as String?,
         reportedDatetime: data['reported_datetime'] as DateTime?,
         reportedUserId: castToType<int>(data['reported_user_id']),
@@ -813,9 +814,9 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         approvedDatetime: data['approved_datetime'] as DateTime?,
         approvedUserId: castToType<int>(data['approved_user_id']),
         approvedUserNameShort: data['approved_user_name_short'] as String?,
-        filedAt: data['filed_at'] as String?,
-        filedUserId: castToType<int>(data['filed_user_id']),
-        filedUserNameShort: data['filed_user_name_short'] as String?,
+        archivedAt: data['archived_at'] as String?,
+        archivedUserId: castToType<int>(data['archived_user_id']),
+        archivedUserNameShort: data['archived_user_name_short'] as String?,
         teamLeaderId: castToType<int>(data['team_leader_id']),
         teamLeaderUserNameShort: data['team_leader_user_name_short'] as String?,
         teamLeaderUserImgFilePath:
@@ -880,7 +881,7 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         'processing_id': _processingId,
         'processing_description': _processingDescription,
         'comments': _comments,
-        'is_filed': _isFiled,
+        'is_archived': _isArchived,
         'reported_at': _reportedAt,
         'reported_datetime': _reportedDatetime,
         'reported_user_id': _reportedUserId,
@@ -898,9 +899,9 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         'approved_datetime': _approvedDatetime,
         'approved_user_id': _approvedUserId,
         'approved_user_name_short': _approvedUserNameShort,
-        'filed_at': _filedAt,
-        'filed_user_id': _filedUserId,
-        'filed_user_name_short': _filedUserNameShort,
+        'archived_at': _archivedAt,
+        'archived_user_id': _archivedUserId,
+        'archived_user_name_short': _archivedUserNameShort,
         'team_leader_id': _teamLeaderId,
         'team_leader_user_name_short': _teamLeaderUserNameShort,
         'team_leader_user_img_file_path': _teamLeaderUserImgFilePath,
@@ -1044,8 +1045,8 @@ class DtOrderVisitExtraStruct extends BaseStruct {
           _comments,
           ParamType.String,
         ),
-        'is_filed': serializeParam(
-          _isFiled,
+        'is_archived': serializeParam(
+          _isArchived,
           ParamType.bool,
         ),
         'reported_at': serializeParam(
@@ -1116,16 +1117,16 @@ class DtOrderVisitExtraStruct extends BaseStruct {
           _approvedUserNameShort,
           ParamType.String,
         ),
-        'filed_at': serializeParam(
-          _filedAt,
+        'archived_at': serializeParam(
+          _archivedAt,
           ParamType.String,
         ),
-        'filed_user_id': serializeParam(
-          _filedUserId,
+        'archived_user_id': serializeParam(
+          _archivedUserId,
           ParamType.int,
         ),
-        'filed_user_name_short': serializeParam(
-          _filedUserNameShort,
+        'archived_user_name_short': serializeParam(
+          _archivedUserNameShort,
           ParamType.String,
         ),
         'team_leader_id': serializeParam(
@@ -1381,8 +1382,8 @@ class DtOrderVisitExtraStruct extends BaseStruct {
           ParamType.String,
           false,
         ),
-        isFiled: deserializeParam(
-          data['is_filed'],
+        isArchived: deserializeParam(
+          data['is_archived'],
           ParamType.bool,
           false,
         ),
@@ -1471,18 +1472,18 @@ class DtOrderVisitExtraStruct extends BaseStruct {
           ParamType.String,
           false,
         ),
-        filedAt: deserializeParam(
-          data['filed_at'],
+        archivedAt: deserializeParam(
+          data['archived_at'],
           ParamType.String,
           false,
         ),
-        filedUserId: deserializeParam(
-          data['filed_user_id'],
+        archivedUserId: deserializeParam(
+          data['archived_user_id'],
           ParamType.int,
           false,
         ),
-        filedUserNameShort: deserializeParam(
-          data['filed_user_name_short'],
+        archivedUserNameShort: deserializeParam(
+          data['archived_user_name_short'],
           ParamType.String,
           false,
         ),
@@ -1657,7 +1658,7 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         processingId == other.processingId &&
         processingDescription == other.processingDescription &&
         comments == other.comments &&
-        isFiled == other.isFiled &&
+        isArchived == other.isArchived &&
         reportedAt == other.reportedAt &&
         reportedDatetime == other.reportedDatetime &&
         reportedUserId == other.reportedUserId &&
@@ -1675,9 +1676,9 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         approvedDatetime == other.approvedDatetime &&
         approvedUserId == other.approvedUserId &&
         approvedUserNameShort == other.approvedUserNameShort &&
-        filedAt == other.filedAt &&
-        filedUserId == other.filedUserId &&
-        filedUserNameShort == other.filedUserNameShort &&
+        archivedAt == other.archivedAt &&
+        archivedUserId == other.archivedUserId &&
+        archivedUserNameShort == other.archivedUserNameShort &&
         teamLeaderId == other.teamLeaderId &&
         teamLeaderUserNameShort == other.teamLeaderUserNameShort &&
         teamLeaderUserImgFilePath == other.teamLeaderUserImgFilePath &&
@@ -1737,7 +1738,7 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         processingId,
         processingDescription,
         comments,
-        isFiled,
+        isArchived,
         reportedAt,
         reportedDatetime,
         reportedUserId,
@@ -1755,9 +1756,9 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         approvedDatetime,
         approvedUserId,
         approvedUserNameShort,
-        filedAt,
-        filedUserId,
-        filedUserNameShort,
+        archivedAt,
+        archivedUserId,
+        archivedUserNameShort,
         teamLeaderId,
         teamLeaderUserNameShort,
         teamLeaderUserImgFilePath,
@@ -1817,7 +1818,7 @@ DtOrderVisitExtraStruct createDtOrderVisitExtraStruct({
   int? processingId,
   String? processingDescription,
   String? comments,
-  bool? isFiled,
+  bool? isArchived,
   String? reportedAt,
   DateTime? reportedDatetime,
   int? reportedUserId,
@@ -1835,9 +1836,9 @@ DtOrderVisitExtraStruct createDtOrderVisitExtraStruct({
   DateTime? approvedDatetime,
   int? approvedUserId,
   String? approvedUserNameShort,
-  String? filedAt,
-  int? filedUserId,
-  String? filedUserNameShort,
+  String? archivedAt,
+  int? archivedUserId,
+  String? archivedUserNameShort,
   int? teamLeaderId,
   String? teamLeaderUserNameShort,
   String? teamLeaderUserImgFilePath,
@@ -1895,7 +1896,7 @@ DtOrderVisitExtraStruct createDtOrderVisitExtraStruct({
       processingId: processingId,
       processingDescription: processingDescription,
       comments: comments,
-      isFiled: isFiled,
+      isArchived: isArchived,
       reportedAt: reportedAt,
       reportedDatetime: reportedDatetime,
       reportedUserId: reportedUserId,
@@ -1913,9 +1914,9 @@ DtOrderVisitExtraStruct createDtOrderVisitExtraStruct({
       approvedDatetime: approvedDatetime,
       approvedUserId: approvedUserId,
       approvedUserNameShort: approvedUserNameShort,
-      filedAt: filedAt,
-      filedUserId: filedUserId,
-      filedUserNameShort: filedUserNameShort,
+      archivedAt: archivedAt,
+      archivedUserId: archivedUserId,
+      archivedUserNameShort: archivedUserNameShort,
       teamLeaderId: teamLeaderId,
       teamLeaderUserNameShort: teamLeaderUserNameShort,
       teamLeaderUserImgFilePath: teamLeaderUserImgFilePath,

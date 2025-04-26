@@ -352,6 +352,8 @@ dynamic deserializeParam<T>(
             return VOrdersSuspendedReasonsRow(data);
           case OrdersVisitsTeamsRow:
             return OrdersVisitsTeamsRow(data);
+          case VOrdersVisitsExtrasNoArchivedRow:
+            return VOrdersVisitsExtrasNoArchivedRow(data);
           case UsersNotificationsRow:
             return UsersNotificationsRow(data);
           case CfgSystemsRow:
@@ -478,8 +480,6 @@ dynamic deserializeParam<T>(
             return CfgProfilesPermissionsRow(data);
           case VAssetsMaterialsRow:
             return VAssetsMaterialsRow(data);
-          case VOrdersVisitsExtrasNoFiledRow:
-            return VOrdersVisitsExtrasNoFiledRow(data);
           case VOrdersObjectsRow:
             return VOrdersObjectsRow(data);
           default:

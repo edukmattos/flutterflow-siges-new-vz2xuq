@@ -298,7 +298,7 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                           cpDisabled: true,
                                           cpIsFiled: FFAppState()
                                               .stOVESelected
-                                              .isFiled,
+                                              .isArchived,
                                           cpOveId:
                                               FFAppState().stOVESelected.id,
                                         ),
@@ -539,7 +539,7 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                                               FFButtonWidget(
                                                                 onPressed: FFAppState()
                                                                         .stOVESelected
-                                                                        .isFiled
+                                                                        .isArchived
                                                                     ? null
                                                                     : () async {
                                                                         _model.resTeamLeader =
@@ -706,7 +706,7 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                                           ),
                                                           if (!FFAppState()
                                                                   .stOVESelected
-                                                                  .isFiled &&
+                                                                  .isArchived &&
                                                               (gcOVETeamUsersItem
                                                                       .userId !=
                                                                   FFAppState()
@@ -841,7 +841,8 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                   ),
                                 ],
                               ),
-                              if (FFAppState().stOVESelected.isFiled == false)
+                              if (FFAppState().stOVESelected.isArchived ==
+                                  false)
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [

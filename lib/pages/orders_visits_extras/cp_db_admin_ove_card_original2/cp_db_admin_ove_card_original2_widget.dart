@@ -232,7 +232,7 @@ class _CpDbAdminOveCardOriginal2WidgetState
                               cpSize: 60,
                               cpShowLoadingIndicator: true,
                               cpDisabled: false,
-                              cpIsFiled: widget.cpDtOVE!.isFiled,
+                              cpIsFiled: widget.cpDtOVE!.isArchived,
                               cpOveId: widget.cpDtOVE!.id,
                             ),
                           ),
@@ -506,7 +506,7 @@ class _CpDbAdminOveCardOriginal2WidgetState
                           ),
                         ].divide(SizedBox(width: 20.0)),
                       ),
-                      if (!widget.cpDtOVE!.isFiled)
+                      if (!widget.cpDtOVE!.isArchived)
                         Align(
                           alignment: AlignmentDirectional(-1.0, 0.0),
                           child: wrapWithModel(

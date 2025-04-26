@@ -221,7 +221,7 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                               cpSize: 60,
                               cpShowLoadingIndicator: false,
                               cpDisabled: true,
-                              cpIsFiled: FFAppState().stOVESelected.isFiled,
+                              cpIsFiled: FFAppState().stOVESelected.isArchived,
                               cpOveId: FFAppState().stOVESelected.id,
                             ),
                           ),
@@ -425,7 +425,7 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                                                     onPressed:
                                                         FFAppState()
                                                                 .stOVESelected
-                                                                .isFiled
+                                                                .isArchived
                                                             ? null
                                                             : () async {
                                                                 _model.resTeamLeader =
@@ -637,7 +637,7 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                                               ),
                                               if (!FFAppState()
                                                       .stOVESelected
-                                                      .isFiled &&
+                                                      .isArchived &&
                                                   (gcOVETeamUsersItem.userId !=
                                                       FFAppState()
                                                           .stOVESelected
@@ -770,7 +770,7 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                           ),
                         ],
                       ),
-                      if (FFAppState().stOVESelected.isFiled == false)
+                      if (FFAppState().stOVESelected.isArchived == false)
                         Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [

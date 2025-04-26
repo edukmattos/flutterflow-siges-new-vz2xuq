@@ -6206,7 +6206,7 @@ Future abDBAdminOVEFilters(BuildContext context) async {
                 if (FFAppState()
                         .stDBAdminOVEFilters
                         .elementAtOrNull(FFAppState().stCounterLoop)
-                        ?.isFiled ==
+                        ?.isArchived ==
                     false) {
                   FFAppState().stDBAdminOVEProcessingId5Hours = FFAppState()
                           .stDBAdminOVEProcessingId5Hours +
@@ -6537,9 +6537,9 @@ Future abOVEProcessing(
     } else {
       await OrdersVisitsExtrasTable().update(
         data: {
-          'is_filed': abIsFiled,
-          'filed_at': supaSerialize<DateTime>(getCurrentTimestamp),
-          'filed_user_id': abUserId,
+          'archived_at': supaSerialize<DateTime>(getCurrentTimestamp),
+          'archived_user_id': FFAppState().stUserCurrent.id,
+          'is_archived': true,
         },
         matchingRows: (rows) => rows.eqOrNull(
           'id',
@@ -6737,7 +6737,7 @@ Future abDbAdminOOVENoFiledFilters(BuildContext context) async {
   }
 }
 
-Future abOveSearchById(
+Future abOVESearchById(
   BuildContext context, {
   required int? abOveId,
 }) async {
@@ -6774,7 +6774,7 @@ Future abOveSearchById(
         1,
       );
       FFAppState().stOVEIsFiled = valueOrDefault<bool>(
-        FFAppState().stDBAdminOOVEFilters.firstOrNull?.isFiled,
+        FFAppState().stDBAdminOOVEFilters.firstOrNull?.isArchived,
         false,
       );
     } else {
