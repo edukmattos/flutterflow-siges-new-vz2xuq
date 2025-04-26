@@ -4929,7 +4929,7 @@ class ApiOveNoFiledFiltersCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'apiOveNoFiledFilters',
-      apiUrl: '${baseUrl}rpc/fc_dash_admin_orders_extras_no_filed_filters',
+      apiUrl: '${baseUrl}rpc/fc_dash_admin_orders_extras_no_archived_filters',
       callType: ApiCallType.POST,
       headers: {
         'apiKey': '${apiKey}',

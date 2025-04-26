@@ -127,13 +127,13 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
             showDuration: Duration(milliseconds: 1500),
             triggerMode: TooltipTriggerMode.tap,
             child: FlutterFlowIconButton(
-              borderColor: FlutterFlowTheme.of(context).tertiary,
+              borderColor: FlutterFlowTheme.of(context).customColor3,
               borderRadius: 16.0,
               borderWidth: widget.ppBorderWidth.toDouble(),
               buttonSize: widget.ppSize.toDouble(),
               icon: Icon(
-                Icons.report_problem_outlined,
-                color: FlutterFlowTheme.of(context).tertiary,
+                FFIcons.kkfileExport,
+                color: FlutterFlowTheme.of(context).customColor3,
                 size: 30.0,
               ),
               showLoadingIndicator: widget.ppShowLoadingIndicator,
@@ -171,10 +171,10 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
               borderRadius: 16.0,
               borderWidth: widget.ppBorderWidth.toDouble(),
               buttonSize: widget.ppSize.toDouble(),
-              icon: Icon(
-                Icons.remove_red_eye_outlined,
+              icon: FaIcon(
+                FontAwesomeIcons.fileSignature,
                 color: FlutterFlowTheme.of(context).secondaryText,
-                size: 30.0,
+                size: 24.0,
               ),
               showLoadingIndicator: widget.ppShowLoadingIndicator,
               onPressed: () {

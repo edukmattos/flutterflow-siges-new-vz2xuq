@@ -181,20 +181,23 @@ class _MdOVAssetsMenuOptionsWidgetState
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context).tertiary,
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         font: FlutterFlowTheme.of(context)
                                             .titleMedium,
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryText,
+                                            .tertiary,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w800,
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).info,
+                                    color:
+                                        FlutterFlowTheme.of(context).tertiary,
                                     width: 6.0,
                                   ),
                                   borderRadius: BorderRadius.circular(16.0),
@@ -361,10 +364,12 @@ class _MdOVAssetsMenuOptionsWidgetState
                                             FlutterFlowTheme.of(context).info,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w800,
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).info,
+                                    color:
+                                        FlutterFlowTheme.of(context).tertiary,
                                     width: 6.0,
                                   ),
                                   borderRadius: BorderRadius.circular(16.0),

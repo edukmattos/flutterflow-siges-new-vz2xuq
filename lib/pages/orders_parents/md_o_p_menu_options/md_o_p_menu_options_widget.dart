@@ -259,20 +259,22 @@ class _MdOPMenuOptionsWidgetState extends State<MdOPMenuOptionsWidget> {
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context).error,
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         font: FlutterFlowTheme.of(context)
                                             .titleMedium,
                                         color:
-                                            FlutterFlowTheme.of(context).info,
+                                            FlutterFlowTheme.of(context).error,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w800,
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).info,
+                                    color: FlutterFlowTheme.of(context).error,
                                     width: 6.0,
                                   ),
                                   borderRadius: BorderRadius.circular(16.0),

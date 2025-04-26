@@ -1272,17 +1272,16 @@ class _PgDbAdminONewOriginalWidgetState
                                                     borderColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .tertiary,
+                                                            .customColor3,
                                                     borderRadius: 16.0,
                                                     borderWidth: 6.0,
                                                     buttonSize: 54.0,
                                                     icon: Icon(
-                                                      Icons
-                                                          .report_problem_outlined,
+                                                      FFIcons.kkfileExport,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .tertiary,
+                                                              .customColor3,
                                                       size: 30.0,
                                                     ),
                                                     showLoadingIndicator: true,
@@ -1351,14 +1350,14 @@ class _PgDbAdminONewOriginalWidgetState
                                                     borderRadius: 16.0,
                                                     borderWidth: 6.0,
                                                     buttonSize: 54.0,
-                                                    icon: Icon(
-                                                      Icons
-                                                          .remove_red_eye_outlined,
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons
+                                                          .fileSignature,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      size: 30.0,
+                                                      size: 24.0,
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {

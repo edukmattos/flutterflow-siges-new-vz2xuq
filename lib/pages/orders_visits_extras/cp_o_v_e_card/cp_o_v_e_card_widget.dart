@@ -1095,18 +1095,22 @@ class _CpOVECardWidgetState extends State<CpOVECardWidget>
                                         24.0, 0.0, 24.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: FlutterFlowTheme.of(context).success,
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
                                           font: FlutterFlowTheme.of(context)
                                               .titleSmall,
-                                          color: Colors.white,
+                                          color: FlutterFlowTheme.of(context)
+                                              .success,
                                           letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w900,
                                         ),
                                     elevation: 5.0,
                                     borderSide: BorderSide(
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color:
+                                          FlutterFlowTheme.of(context).success,
                                       width: 6.0,
                                     ),
                                     borderRadius: BorderRadius.circular(16.0),

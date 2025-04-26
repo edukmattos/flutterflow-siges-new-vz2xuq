@@ -313,7 +313,7 @@ class _MdOToCancelWidgetState extends State<MdOToCancelWidget> {
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .error,
+                                                        .primaryBackground,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleMedium
@@ -323,16 +323,18 @@ class _MdOToCancelWidgetState extends State<MdOToCancelWidget> {
                                                               .titleMedium,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .info,
+                                                              .error,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .error,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:

@@ -2243,7 +2243,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             0.0),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiary,
+                                                                    .primaryBackground,
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleMedium
@@ -2253,18 +2253,21 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                           .titleMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .info,
+                                                                          .customColor3,
                                                                       fontSize:
                                                                           16.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w800,
                                                                     ),
                                                                 elevation: 5.0,
                                                                 borderSide:
                                                                     BorderSide(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .info,
+                                                                      .customColor3,
                                                                   width: 6.0,
                                                                 ),
                                                                 borderRadius:
@@ -2561,7 +2564,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                               text: FFLocalizations
                                                                       .of(context)
                                                                   .getText(
-                                                                'kdee5d42' /* REVISAR */,
+                                                                'kdee5d42' /* MARCAR COMO REVISADO */,
                                                               ),
                                                               options:
                                                                   FFButtonOptions(
@@ -2953,7 +2956,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             0.0),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .error,
+                                                                    .primaryBackground,
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleMedium
@@ -2963,18 +2966,21 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                           .titleMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .info,
+                                                                          .error,
                                                                       fontSize:
                                                                           16.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w800,
                                                                     ),
                                                                 elevation: 5.0,
                                                                 borderSide:
                                                                     BorderSide(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .info,
+                                                                      .error,
                                                                   width: 6.0,
                                                                 ),
                                                                 borderRadius:
@@ -3295,7 +3301,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             0.0),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .success,
+                                                                    .primaryBackground,
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
@@ -3303,17 +3309,21 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                       font: FlutterFlowTheme.of(
                                                                               context)
                                                                           .titleSmall,
-                                                                      color: Colors
-                                                                          .white,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .success,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w900,
                                                                     ),
                                                                 elevation: 5.0,
                                                                 borderSide:
                                                                     BorderSide(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .info,
+                                                                      .success,
                                                                   width: 6.0,
                                                                 ),
                                                                 borderRadius:
@@ -3634,7 +3644,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             0.0),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .error,
+                                                                    .primaryBackground,
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleMedium
@@ -3644,18 +3654,21 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                           .titleMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .info,
+                                                                          .error,
                                                                       fontSize:
                                                                           16.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w800,
                                                                     ),
                                                                 elevation: 5.0,
                                                                 borderSide:
                                                                     BorderSide(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .info,
+                                                                      .error,
                                                                   width: 6.0,
                                                                 ),
                                                                 borderRadius:
@@ -3978,7 +3991,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                       0.0),
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .success,
+                                                              .primaryBackground,
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -3987,17 +4000,21 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                     font: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleSmall,
-                                                                    color: Colors
-                                                                        .white,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .tertiary,
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w900,
                                                                   ),
                                                           elevation: 5.0,
                                                           borderSide:
                                                               BorderSide(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .info,
+                                                                .tertiary,
                                                             width: 6.0,
                                                           ),
                                                           borderRadius:

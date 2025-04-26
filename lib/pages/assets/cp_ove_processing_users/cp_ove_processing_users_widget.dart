@@ -478,9 +478,9 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                     FlutterFlowIconButton(
                       borderRadius: 16.0,
                       buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).tertiary,
+                      fillColor: FlutterFlowTheme.of(context).customColor3,
                       icon: Icon(
-                        Icons.report_problem_outlined,
+                        FFIcons.kkfileExport,
                         color: FlutterFlowTheme.of(context).info,
                         size: 30.0,
                       ),
@@ -548,9 +548,9 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                       buttonSize: 50.0,
                       fillColor: FlutterFlowTheme.of(context).secondaryText,
                       icon: FaIcon(
-                        FontAwesomeIcons.solidEye,
+                        FontAwesomeIcons.fileSignature,
                         color: FlutterFlowTheme.of(context).info,
-                        size: 30.0,
+                        size: 24.0,
                       ),
                       onPressed: () {
                         print('IconButton pressed ...');
@@ -769,7 +769,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                     FlutterFlowIconButton(
                       borderRadius: 16.0,
                       buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).success,
+                      fillColor: FlutterFlowTheme.of(context).tertiary,
                       icon: Icon(
                         Icons.archive_sharp,
                         color: FlutterFlowTheme.of(context).info,

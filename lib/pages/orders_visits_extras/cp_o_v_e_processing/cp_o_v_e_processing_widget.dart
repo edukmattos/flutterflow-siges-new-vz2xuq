@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/actions/actions.dart' as action_blocks;
+import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
@@ -162,182 +163,303 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
     return Builder(
       builder: (context) {
         if ((widget.cpProcessingId == 1) && (widget.cpIsFiled == false)) {
-          return FlutterFlowIconButton(
-            borderRadius: 16.0,
-            borderWidth: widget.cpBorderWidth.toDouble(),
-            buttonSize: widget.cpSize.toDouble(),
-            fillColor: FlutterFlowTheme.of(context).primary,
-            icon: Icon(
-              Icons.draw,
-              color: FlutterFlowTheme.of(context).info,
-              size: 30.0,
+          return AlignedTooltip(
+            content: Padding(
+              padding: EdgeInsets.all(4.0),
+              child: Text(
+                FFLocalizations.of(context).getText(
+                  '3f94vdo8' /* Rascunho */,
+                ),
+                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      font: FlutterFlowTheme.of(context).bodyLarge,
+                      letterSpacing: 0.0,
+                    ),
+              ),
             ),
-            showLoadingIndicator: widget.cpShowLoadingIndicator!,
-            onPressed: widget.cpDisabled
-                ? null
-                : () {
-                    print('IconButton pressed ...');
-                  },
-          ).animateOnPageLoad(animationsMap['iconButtonOnPageLoadAnimation1']!);
+            offset: 4.0,
+            preferredDirection: AxisDirection.down,
+            borderRadius: BorderRadius.circular(8.0),
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            elevation: 4.0,
+            tailBaseWidth: 24.0,
+            tailLength: 12.0,
+            waitDuration: Duration(milliseconds: 100),
+            showDuration: Duration(milliseconds: 1500),
+            triggerMode: TooltipTriggerMode.tap,
+            child: FlutterFlowIconButton(
+              borderRadius: 16.0,
+              borderWidth: widget.cpBorderWidth.toDouble(),
+              buttonSize: widget.cpSize.toDouble(),
+              fillColor: FlutterFlowTheme.of(context).primary,
+              icon: Icon(
+                Icons.draw,
+                color: FlutterFlowTheme.of(context).info,
+                size: 30.0,
+              ),
+              showLoadingIndicator: widget.cpShowLoadingIndicator!,
+              onPressed: widget.cpDisabled
+                  ? null
+                  : () {
+                      print('IconButton pressed ...');
+                    },
+            ).animateOnPageLoad(
+                animationsMap['iconButtonOnPageLoadAnimation1']!),
+          );
         } else if ((widget.cpProcessingId == 2) &&
             (widget.cpIsFiled == false)) {
-          return FlutterFlowIconButton(
-            borderRadius: 16.0,
-            borderWidth: widget.cpBorderWidth.toDouble(),
-            buttonSize: widget.cpSize.toDouble(),
-            fillColor: FlutterFlowTheme.of(context).tertiary,
-            icon: Icon(
-              Icons.report_problem_outlined,
-              color: FlutterFlowTheme.of(context).info,
-              size: 30.0,
+          return AlignedTooltip(
+            content: Padding(
+              padding: EdgeInsets.all(4.0),
+              child: Text(
+                FFLocalizations.of(context).getText(
+                  'r7sc5ifz' /* Reportado */,
+                ),
+                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      font: FlutterFlowTheme.of(context).bodyLarge,
+                      letterSpacing: 0.0,
+                    ),
+              ),
             ),
-            showLoadingIndicator: widget.cpShowLoadingIndicator!,
-            onPressed: widget.cpDisabled
-                ? null
-                : () {
-                    print('IconButton pressed ...');
-                  },
-          ).animateOnPageLoad(animationsMap['iconButtonOnPageLoadAnimation2']!);
+            offset: 4.0,
+            preferredDirection: AxisDirection.down,
+            borderRadius: BorderRadius.circular(8.0),
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            elevation: 4.0,
+            tailBaseWidth: 24.0,
+            tailLength: 12.0,
+            waitDuration: Duration(milliseconds: 100),
+            showDuration: Duration(milliseconds: 1500),
+            triggerMode: TooltipTriggerMode.tap,
+            child: FlutterFlowIconButton(
+              borderRadius: 16.0,
+              borderWidth: widget.cpBorderWidth.toDouble(),
+              buttonSize: widget.cpSize.toDouble(),
+              fillColor: FlutterFlowTheme.of(context).customColor3,
+              icon: Icon(
+                FFIcons.kkfileExport,
+                color: FlutterFlowTheme.of(context).info,
+                size: 30.0,
+              ),
+              showLoadingIndicator: widget.cpShowLoadingIndicator!,
+              onPressed: widget.cpDisabled
+                  ? null
+                  : () {
+                      print('IconButton pressed ...');
+                    },
+            ).animateOnPageLoad(
+                animationsMap['iconButtonOnPageLoadAnimation2']!),
+          );
         } else if ((widget.cpProcessingId == 3) &&
             (widget.cpIsFiled == false)) {
-          return FlutterFlowIconButton(
-            borderRadius: 16.0,
-            borderWidth: widget.cpBorderWidth.toDouble(),
-            buttonSize: widget.cpSize.toDouble(),
-            fillColor: FlutterFlowTheme.of(context).secondaryText,
-            icon: FaIcon(
-              FontAwesomeIcons.solidEye,
-              color: FlutterFlowTheme.of(context).info,
-              size: 30.0,
+          return AlignedTooltip(
+            content: Padding(
+              padding: EdgeInsets.all(4.0),
+              child: Text(
+                FFLocalizations.of(context).getText(
+                  '8xu0yzus' /* Autorizado */,
+                ),
+                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      font: FlutterFlowTheme.of(context).bodyLarge,
+                      letterSpacing: 0.0,
+                    ),
+              ),
             ),
-            showLoadingIndicator: widget.cpShowLoadingIndicator!,
-            onPressed: widget.cpDisabled
-                ? null
-                : () {
-                    print('IconButton pressed ...');
-                  },
-          ).animateOnPageLoad(animationsMap['iconButtonOnPageLoadAnimation3']!);
+            offset: 4.0,
+            preferredDirection: AxisDirection.down,
+            borderRadius: BorderRadius.circular(8.0),
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            elevation: 4.0,
+            tailBaseWidth: 24.0,
+            tailLength: 12.0,
+            waitDuration: Duration(milliseconds: 100),
+            showDuration: Duration(milliseconds: 1500),
+            triggerMode: TooltipTriggerMode.tap,
+            child: FlutterFlowIconButton(
+              borderRadius: 16.0,
+              buttonSize: widget.cpSize.toDouble(),
+              fillColor: FlutterFlowTheme.of(context).success,
+              icon: FaIcon(
+                FontAwesomeIcons.thumbsUp,
+                color: FlutterFlowTheme.of(context).info,
+                size: 30.0,
+              ),
+              onPressed: () {
+                print('IconButton pressed ...');
+              },
+            ).animateOnPageLoad(
+                animationsMap['iconButtonOnPageLoadAnimation3']!),
+          );
         } else if ((widget.cpProcessingId == 4) &&
             (widget.cpIsFiled == false)) {
-          return FlutterFlowIconButton(
-            borderRadius: 16.0,
-            borderWidth: widget.cpBorderWidth.toDouble(),
-            buttonSize: widget.cpSize.toDouble(),
-            fillColor: FlutterFlowTheme.of(context).error,
-            icon: FaIcon(
-              FontAwesomeIcons.thumbsDown,
-              color: FlutterFlowTheme.of(context).info,
-              size: 30.0,
+          return AlignedTooltip(
+            content: Padding(
+              padding: EdgeInsets.all(4.0),
+              child: Text(
+                FFLocalizations.of(context).getText(
+                  'x2jqeyr3' /* Rejeitado */,
+                ),
+                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      font: FlutterFlowTheme.of(context).bodyLarge,
+                      letterSpacing: 0.0,
+                    ),
+              ),
             ),
-            showLoadingIndicator: widget.cpShowLoadingIndicator!,
-            onPressed: widget.cpDisabled
-                ? null
-                : () {
-                    print('IconButton pressed ...');
-                  },
-          ).animateOnPageLoad(animationsMap['iconButtonOnPageLoadAnimation4']!);
+            offset: 4.0,
+            preferredDirection: AxisDirection.down,
+            borderRadius: BorderRadius.circular(8.0),
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            elevation: 4.0,
+            tailBaseWidth: 24.0,
+            tailLength: 12.0,
+            waitDuration: Duration(milliseconds: 100),
+            showDuration: Duration(milliseconds: 1500),
+            triggerMode: TooltipTriggerMode.tap,
+            child: FlutterFlowIconButton(
+              borderRadius: 16.0,
+              borderWidth: widget.cpBorderWidth.toDouble(),
+              buttonSize: widget.cpSize.toDouble(),
+              fillColor: FlutterFlowTheme.of(context).error,
+              icon: FaIcon(
+                FontAwesomeIcons.thumbsDown,
+                color: FlutterFlowTheme.of(context).info,
+                size: 30.0,
+              ),
+              showLoadingIndicator: widget.cpShowLoadingIndicator!,
+              onPressed: widget.cpDisabled
+                  ? null
+                  : () {
+                      print('IconButton pressed ...');
+                    },
+            ).animateOnPageLoad(
+                animationsMap['iconButtonOnPageLoadAnimation4']!),
+          );
         } else if ((widget.cpProcessingId == 4) &&
             (widget.cpIsFiled == true)) {
           return Stack(
             alignment: AlignmentDirectional(1.0, -1.0),
             children: [
-              FlutterFlowIconButton(
-                borderColor: FlutterFlowTheme.of(context).error,
-                borderRadius: 16.0,
-                borderWidth: 6.0,
-                buttonSize: widget.cpSize.toDouble(),
-                icon: FaIcon(
-                  FontAwesomeIcons.thumbsDown,
-                  color: FlutterFlowTheme.of(context).error,
-                  size: 30.0,
+              AlignedTooltip(
+                content: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      '7kehye84' /* Rejeitar */,
+                    ),
+                    style: FlutterFlowTheme.of(context).bodyLarge.override(
+                          font: FlutterFlowTheme.of(context).bodyLarge,
+                          letterSpacing: 0.0,
+                        ),
+                  ),
                 ),
-                showLoadingIndicator: widget.cpShowLoadingIndicator!,
-                onPressed: widget.cpDisabled
-                    ? null
-                    : () async {
-                        var _shouldSetState = false;
-                        _model.isAllowUnarchived =
-                            await action_blocks.abGuardian(
-                          context,
-                          abPgRequestedId: 30,
-                        );
-                        _shouldSetState = true;
-                        if (_model.isAllowUnarchived!) {
-                          var confirmDialogResponse = await showDialog<bool>(
-                                context: context,
-                                builder: (alertDialogContext) {
-                                  return AlertDialog(
-                                    title: Text('Ops ...'),
-                                    content:
-                                        Text('Deseja realmente DESARQUIVAR ?'),
-                                    actions: [
-                                      TextButton(
-                                        onPressed: () => Navigator.pop(
-                                            alertDialogContext, false),
-                                        child: Text('Cancelar'),
-                                      ),
-                                      TextButton(
-                                        onPressed: () => Navigator.pop(
-                                            alertDialogContext, true),
-                                        child: Text('Confirmar'),
-                                      ),
-                                    ],
-                                  );
+                offset: 4.0,
+                preferredDirection: AxisDirection.down,
+                borderRadius: BorderRadius.circular(8.0),
+                backgroundColor:
+                    FlutterFlowTheme.of(context).secondaryBackground,
+                elevation: 4.0,
+                tailBaseWidth: 24.0,
+                tailLength: 12.0,
+                waitDuration: Duration(milliseconds: 100),
+                showDuration: Duration(milliseconds: 1500),
+                triggerMode: TooltipTriggerMode.tap,
+                child: FlutterFlowIconButton(
+                  borderColor: FlutterFlowTheme.of(context).error,
+                  borderRadius: 16.0,
+                  borderWidth: 6.0,
+                  buttonSize: widget.cpSize.toDouble(),
+                  icon: FaIcon(
+                    FontAwesomeIcons.thumbsDown,
+                    color: FlutterFlowTheme.of(context).error,
+                    size: 30.0,
+                  ),
+                  showLoadingIndicator: widget.cpShowLoadingIndicator!,
+                  onPressed: widget.cpDisabled
+                      ? null
+                      : () async {
+                          var _shouldSetState = false;
+                          _model.isAllowUnarchived =
+                              await action_blocks.abGuardian(
+                            context,
+                            abPgRequestedId: 30,
+                          );
+                          _shouldSetState = true;
+                          if (_model.isAllowUnarchived!) {
+                            var confirmDialogResponse = await showDialog<bool>(
+                                  context: context,
+                                  builder: (alertDialogContext) {
+                                    return AlertDialog(
+                                      title: Text('Ops ...'),
+                                      content: Text(
+                                          'Deseja realmente DESARQUIVAR ?'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () => Navigator.pop(
+                                              alertDialogContext, false),
+                                          child: Text('Cancelar'),
+                                        ),
+                                        TextButton(
+                                          onPressed: () => Navigator.pop(
+                                              alertDialogContext, true),
+                                          child: Text('Confirmar'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                ) ??
+                                false;
+                            if (confirmDialogResponse) {
+                              await OrdersVisitsExtrasTable().update(
+                                data: {
+                                  'is_archived': false,
+                                  'unarchived_at': supaSerialize<DateTime>(
+                                      getCurrentTimestamp),
+                                  'unarchived_user_id':
+                                      FFAppState().stUserCurrent.id,
                                 },
-                              ) ??
-                              false;
-                          if (confirmDialogResponse) {
-                            await OrdersVisitsExtrasTable().update(
-                              data: {
-                                'is_archived': false,
-                                'unarchived_at': supaSerialize<DateTime>(
-                                    getCurrentTimestamp),
-                                'unarchived_user_id':
-                                    FFAppState().stUserCurrent.id,
-                              },
-                              matchingRows: (rows) => rows.eqOrNull(
-                                'id',
-                                widget.cpOveId,
-                              ),
-                            );
-                            await action_blocks.abOVESearchById(
-                              context,
-                              abOveId: widget.cpOveId,
-                            );
+                                matchingRows: (rows) => rows.eqOrNull(
+                                  'id',
+                                  widget.cpOveId,
+                                ),
+                              );
+                              await action_blocks.abOVESearchById(
+                                context,
+                                abOveId: widget.cpOveId,
+                              );
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    'Serviço Extraordinário DESARQUIVADO !',
+                                    style: TextStyle(
+                                      color: FlutterFlowTheme.of(context).info,
+                                    ),
+                                  ),
+                                  duration: Duration(milliseconds: 4000),
+                                  backgroundColor:
+                                      FlutterFlowTheme.of(context).secondary,
+                                ),
+                              );
+                            }
+                          } else {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
-                                  'Serviço Extraordinário DESARQUIVADO !',
+                                  'Ops ... Acesso restrito.',
                                   style: TextStyle(
                                     color: FlutterFlowTheme.of(context).info,
                                   ),
                                 ),
                                 duration: Duration(milliseconds: 4000),
                                 backgroundColor:
-                                    FlutterFlowTheme.of(context).secondary,
+                                    FlutterFlowTheme.of(context).error,
                               ),
                             );
+                            if (_shouldSetState) safeSetState(() {});
+                            return;
                           }
-                        } else {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                'Ops ... Acesso restrito.',
-                                style: TextStyle(
-                                  color: FlutterFlowTheme.of(context).info,
-                                ),
-                              ),
-                              duration: Duration(milliseconds: 4000),
-                              backgroundColor:
-                                  FlutterFlowTheme.of(context).error,
-                            ),
-                          );
-                          if (_shouldSetState) safeSetState(() {});
-                          return;
-                        }
 
-                        if (_shouldSetState) safeSetState(() {});
-                      },
+                          if (_shouldSetState) safeSetState(() {});
+                        },
+                ),
               ),
               Icon(
                 Icons.archive_sharp,
@@ -348,128 +470,177 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
           );
         } else if ((widget.cpProcessingId == 5) &&
             (widget.cpIsFiled == false)) {
-          return FlutterFlowIconButton(
-            borderRadius: 16.0,
-            buttonSize: widget.cpSize.toDouble(),
-            fillColor: FlutterFlowTheme.of(context).success,
-            icon: FaIcon(
-              FontAwesomeIcons.thumbsUp,
-              color: FlutterFlowTheme.of(context).info,
-              size: 30.0,
+          return AlignedTooltip(
+            content: Padding(
+              padding: EdgeInsets.all(4.0),
+              child: Text(
+                FFLocalizations.of(context).getText(
+                  '846kw23l' /* Revisado */,
+                ),
+                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      font: FlutterFlowTheme.of(context).bodyLarge,
+                      letterSpacing: 0.0,
+                    ),
+              ),
             ),
-            showLoadingIndicator: widget.cpShowLoadingIndicator!,
-            onPressed: widget.cpDisabled
-                ? null
-                : () {
-                    print('IconButton pressed ...');
-                  },
+            offset: 4.0,
+            preferredDirection: AxisDirection.down,
+            borderRadius: BorderRadius.circular(8.0),
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            elevation: 4.0,
+            tailBaseWidth: 24.0,
+            tailLength: 12.0,
+            waitDuration: Duration(milliseconds: 100),
+            showDuration: Duration(milliseconds: 1500),
+            triggerMode: TooltipTriggerMode.tap,
+            child: FlutterFlowIconButton(
+              borderRadius: 16.0,
+              buttonSize: widget.cpSize.toDouble(),
+              fillColor: FlutterFlowTheme.of(context).secondaryText,
+              icon: FaIcon(
+                FontAwesomeIcons.fileSignature,
+                color: FlutterFlowTheme.of(context).info,
+                size: 24.0,
+              ),
+              showLoadingIndicator: widget.cpShowLoadingIndicator!,
+              onPressed: widget.cpDisabled
+                  ? null
+                  : () {
+                      print('IconButton pressed ...');
+                    },
+            ),
           );
         } else if ((widget.cpProcessingId == 5) &&
             (widget.cpIsFiled == true)) {
           return Stack(
             alignment: AlignmentDirectional(1.0, -1.0),
             children: [
-              FlutterFlowIconButton(
-                borderColor: FlutterFlowTheme.of(context).success,
-                borderRadius: 16.0,
-                borderWidth: 6.0,
-                buttonSize: widget.cpSize.toDouble(),
-                icon: FaIcon(
-                  FontAwesomeIcons.thumbsUp,
-                  color: FlutterFlowTheme.of(context).success,
-                  size: 30.0,
+              AlignedTooltip(
+                content: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      'rp2321h8' /* Desarquivar */,
+                    ),
+                    style: FlutterFlowTheme.of(context).bodyLarge.override(
+                          font: FlutterFlowTheme.of(context).bodyLarge,
+                          letterSpacing: 0.0,
+                        ),
+                  ),
                 ),
-                showLoadingIndicator: widget.cpShowLoadingIndicator!,
-                onPressed: widget.cpDisabled
-                    ? null
-                    : () async {
-                        var _shouldSetState = false;
-                        _model.isAllowUnarchivedCopy =
-                            await action_blocks.abGuardian(
-                          context,
-                          abPgRequestedId: 30,
-                        );
-                        _shouldSetState = true;
-                        if (_model.isAllowUnarchivedCopy!) {
-                          var confirmDialogResponse = await showDialog<bool>(
-                                context: context,
-                                builder: (alertDialogContext) {
-                                  return AlertDialog(
-                                    title: Text('Ops ...'),
-                                    content:
-                                        Text('Deseja realmente DESARQUIVAR ?'),
-                                    actions: [
-                                      TextButton(
-                                        onPressed: () => Navigator.pop(
-                                            alertDialogContext, false),
-                                        child: Text('Cancelar'),
-                                      ),
-                                      TextButton(
-                                        onPressed: () => Navigator.pop(
-                                            alertDialogContext, true),
-                                        child: Text('Confirmar'),
-                                      ),
-                                    ],
-                                  );
+                offset: 4.0,
+                preferredDirection: AxisDirection.down,
+                borderRadius: BorderRadius.circular(8.0),
+                backgroundColor:
+                    FlutterFlowTheme.of(context).secondaryBackground,
+                elevation: 4.0,
+                tailBaseWidth: 24.0,
+                tailLength: 12.0,
+                waitDuration: Duration(milliseconds: 100),
+                showDuration: Duration(milliseconds: 1500),
+                triggerMode: TooltipTriggerMode.tap,
+                child: FlutterFlowIconButton(
+                  borderColor: FlutterFlowTheme.of(context).secondaryText,
+                  borderRadius: 16.0,
+                  borderWidth: 6.0,
+                  buttonSize: widget.cpSize.toDouble(),
+                  icon: FaIcon(
+                    FontAwesomeIcons.fileSignature,
+                    color: FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  showLoadingIndicator: widget.cpShowLoadingIndicator!,
+                  onPressed: widget.cpDisabled
+                      ? null
+                      : () async {
+                          var _shouldSetState = false;
+                          _model.isAllowUnarchivedCopy =
+                              await action_blocks.abGuardian(
+                            context,
+                            abPgRequestedId: 30,
+                          );
+                          _shouldSetState = true;
+                          if (_model.isAllowUnarchivedCopy!) {
+                            var confirmDialogResponse = await showDialog<bool>(
+                                  context: context,
+                                  builder: (alertDialogContext) {
+                                    return AlertDialog(
+                                      title: Text('Ops ...'),
+                                      content: Text(
+                                          'Deseja realmente DESARQUIVAR ?'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () => Navigator.pop(
+                                              alertDialogContext, false),
+                                          child: Text('Cancelar'),
+                                        ),
+                                        TextButton(
+                                          onPressed: () => Navigator.pop(
+                                              alertDialogContext, true),
+                                          child: Text('Confirmar'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                ) ??
+                                false;
+                            if (confirmDialogResponse) {
+                              await OrdersVisitsExtrasTable().update(
+                                data: {
+                                  'is_archived': false,
+                                  'unarchived_at': supaSerialize<DateTime>(
+                                      getCurrentTimestamp),
+                                  'unarchived_user_id':
+                                      FFAppState().stUserCurrent.id,
                                 },
-                              ) ??
-                              false;
-                          if (confirmDialogResponse) {
-                            await OrdersVisitsExtrasTable().update(
-                              data: {
-                                'is_archived': false,
-                                'unarchived_at': supaSerialize<DateTime>(
-                                    getCurrentTimestamp),
-                                'unarchived_user_id':
-                                    FFAppState().stUserCurrent.id,
-                              },
-                              matchingRows: (rows) => rows.eqOrNull(
-                                'id',
-                                widget.cpOveId,
-                              ),
-                            );
-                            await action_blocks.abOVESearchById(
-                              context,
-                              abOveId: widget.cpOveId,
-                            );
+                                matchingRows: (rows) => rows.eqOrNull(
+                                  'id',
+                                  widget.cpOveId,
+                                ),
+                              );
+                              await action_blocks.abOVESearchById(
+                                context,
+                                abOveId: widget.cpOveId,
+                              );
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    'Serviço Extraordinário DESARQUIVADO !',
+                                    style: TextStyle(
+                                      color: FlutterFlowTheme.of(context).info,
+                                    ),
+                                  ),
+                                  duration: Duration(milliseconds: 4000),
+                                  backgroundColor:
+                                      FlutterFlowTheme.of(context).secondary,
+                                ),
+                              );
+                            }
+                          } else {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
-                                  'Serviço Extraordinário DESARQUIVADO !',
+                                  'Ops ... Acesso restrito.',
                                   style: TextStyle(
                                     color: FlutterFlowTheme.of(context).info,
                                   ),
                                 ),
                                 duration: Duration(milliseconds: 4000),
                                 backgroundColor:
-                                    FlutterFlowTheme.of(context).secondary,
+                                    FlutterFlowTheme.of(context).error,
                               ),
                             );
+                            if (_shouldSetState) safeSetState(() {});
+                            return;
                           }
-                        } else {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                'Ops ... Acesso restrito.',
-                                style: TextStyle(
-                                  color: FlutterFlowTheme.of(context).info,
-                                ),
-                              ),
-                              duration: Duration(milliseconds: 4000),
-                              backgroundColor:
-                                  FlutterFlowTheme.of(context).error,
-                            ),
-                          );
-                          if (_shouldSetState) safeSetState(() {});
-                          return;
-                        }
 
-                        if (_shouldSetState) safeSetState(() {});
-                      },
+                          if (_shouldSetState) safeSetState(() {});
+                        },
+                ),
               ),
               Icon(
                 Icons.archive_sharp,
-                color: FlutterFlowTheme.of(context).customColor3,
+                color: FlutterFlowTheme.of(context).tertiary,
                 size: 24.0,
               ),
             ],

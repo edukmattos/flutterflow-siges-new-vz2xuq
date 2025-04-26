@@ -751,15 +751,15 @@ class _CpOVAssetListItem1WidgetState extends State<CpOVAssetListItem1Widget>
                                   showDuration: Duration(milliseconds: 1500),
                                   triggerMode: TooltipTriggerMode.tap,
                                   child: FlutterFlowIconButton(
-                                    borderColor:
-                                        FlutterFlowTheme.of(context).tertiary,
+                                    borderColor: FlutterFlowTheme.of(context)
+                                        .customColor3,
                                     borderRadius: 16.0,
                                     borderWidth: 6.0,
                                     buttonSize: 50.0,
                                     icon: Icon(
-                                      Icons.report_problem_outlined,
-                                      color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                      FFIcons.kkfileExport,
+                                      color: FlutterFlowTheme.of(context)
+                                          .customColor3,
                                       size: 30.0,
                                     ),
                                     onPressed: () async {},
@@ -928,11 +928,11 @@ class _CpOVAssetListItem1WidgetState extends State<CpOVAssetListItem1Widget>
                                   borderRadius: 16.0,
                                   borderWidth: 6.0,
                                   buttonSize: 50.0,
-                                  icon: Icon(
-                                    Icons.remove_red_eye_outlined,
+                                  icon: FaIcon(
+                                    FontAwesomeIcons.fileSignature,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryText,
-                                    size: 30.0,
+                                    size: 24.0,
                                   ),
                                   showLoadingIndicator: true,
                                   onPressed: () async {
@@ -1096,13 +1096,13 @@ class _CpOVAssetListItem1WidgetState extends State<CpOVAssetListItem1Widget>
                               triggerMode: TooltipTriggerMode.tap,
                               child: FlutterFlowIconButton(
                                 borderColor:
-                                    FlutterFlowTheme.of(context).success,
+                                    FlutterFlowTheme.of(context).tertiary,
                                 borderRadius: 16.0,
                                 borderWidth: 6.0,
                                 buttonSize: 50.0,
                                 icon: Icon(
                                   Icons.archive_sharp,
-                                  color: FlutterFlowTheme.of(context).success,
+                                  color: FlutterFlowTheme.of(context).tertiary,
                                   size: 30.0,
                                 ),
                                 showLoadingIndicator: true,

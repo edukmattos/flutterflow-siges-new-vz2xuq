@@ -251,7 +251,7 @@ class _MdSettingsActivityCUWidgetState
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .tertiary,
+                                                        .primaryBackground,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleMedium
@@ -261,16 +261,18 @@ class _MdSettingsActivityCUWidgetState
                                                               .titleMedium,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .primaryText,
+                                                              .tertiary,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .tertiary,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:

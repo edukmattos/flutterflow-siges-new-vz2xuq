@@ -3796,24 +3796,44 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Rascunho',
       'en': '',
     },
-    '1phds7bt': {
-      'pt': 'Reportadas',
+    '94gsxpzv': {
+      'pt': 'Reportados',
       'en': '',
     },
-    'zehdxj19': {
-      'pt': 'Revisadas',
+    '963apvj0': {
+      'pt': 'Rejeitados',
       'en': '',
     },
-    'ooc8n5uz': {
-      'pt': 'Rejeitadas',
+    'mr750pps': {
+      'pt': 'Autorizados',
       'en': '',
     },
-    'vj1d19it': {
-      'pt': 'Autorizadas',
+    'ejosi0jj': {
+      'pt': 'Revisados',
       'en': '',
     },
     'wmmvvmxi': {
       'pt': 'Processamento',
+      'en': '',
+    },
+    'yykip1um': {
+      'pt': 'Rascunho',
+      'en': '',
+    },
+    'b8g6f7th': {
+      'pt': 'Reportados',
+      'en': '',
+    },
+    'vxe7xt2d': {
+      'pt': 'Rejeitados',
+      'en': '',
+    },
+    'awcf2yjy': {
+      'pt': 'Autorizados',
+      'en': '',
+    },
+    '4wjde7jy': {
+      'pt': 'Revisados',
       'en': '',
     },
     '5xw9oyzr': {
@@ -3904,6 +3924,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Atualização automática',
       'en': '',
     },
+    'q4gcjhec': {
+      'pt': 'Novo',
+      'en': '',
+    },
     '75chuq86': {
       'pt': '',
       'en': '',
@@ -3918,6 +3942,30 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '6iirir4c': {
       'pt': 'Busca por data',
+      'en': '',
+    },
+    'd4wd7m8h': {
+      'pt': 'Filtros',
+      'en': '',
+    },
+    'v2ca2lf4': {
+      'pt': 'Rascunho',
+      'en': '',
+    },
+    'sv2eht31': {
+      'pt': 'Reportados',
+      'en': '',
+    },
+    'sub82wkj': {
+      'pt': 'Rejeitados',
+      'en': '',
+    },
+    'l2cucsn1': {
+      'pt': 'Autorizados',
+      'en': '',
+    },
+    'v3s0ohcd': {
+      'pt': 'Revisados',
       'en': '',
     },
     'onrx0hga': {
@@ -3993,20 +4041,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Rascunhos',
       'en': '',
     },
-    '94gsxpzv': {
+    'm92hfz43': {
       'pt': 'Reportados',
       'en': '',
     },
-    'ejosi0jj': {
-      'pt': 'Revisados',
-      'en': '',
-    },
-    '963apvj0': {
+    'z62h16v5': {
       'pt': 'Rejeitados',
       'en': '',
     },
-    'mr750pps': {
+    'bks8wsmw': {
       'pt': 'Autorizados',
+      'en': '',
+    },
+    'du6dt8lr': {
+      'pt': 'Revisados',
       'en': '',
     },
     '8xupkg70': {
@@ -5751,6 +5799,37 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
   },
+  // cpOVEProcessing
+  {
+    '3f94vdo8': {
+      'pt': 'Rascunho',
+      'en': '',
+    },
+    'r7sc5ifz': {
+      'pt': 'Reportado',
+      'en': '',
+    },
+    '8xu0yzus': {
+      'pt': 'Autorizado',
+      'en': '',
+    },
+    'x2jqeyr3': {
+      'pt': 'Rejeitado',
+      'en': '',
+    },
+    '7kehye84': {
+      'pt': 'Rejeitar',
+      'en': '',
+    },
+    '846kw23l': {
+      'pt': 'Revisado',
+      'en': '',
+    },
+    'rp2321h8': {
+      'pt': 'Desarquivar',
+      'en': '',
+    },
+  },
   // cpOVECard
   {
     'mr4k8g05': {
@@ -5837,7 +5916,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     'kdee5d42': {
-      'pt': 'REVISAR',
+      'pt': 'MARCAR COMO REVISADO',
       'en': '',
     },
     'xwiof8z3': {
@@ -5945,7 +6024,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // cpOveMenuOptions
   {
-    '3f94vdo8': {
+    'okca4rrx': {
       'pt': 'Rascunho',
       'en': '',
     },
@@ -5965,7 +6044,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Arquivar',
       'en': '',
     },
-    '7kehye84': {
+    '3s6qzvl5': {
       'pt': 'Rejeitar',
       'en': '',
     },

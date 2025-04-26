@@ -381,6 +381,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                 ),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       valueOrDefault<String>(
@@ -845,7 +846,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                             ),
                           ].divide(SizedBox(width: 8.0)),
                         ),
-                    ],
+                    ].divide(SizedBox(height: 8.0)),
                   ),
                 ].divide(SizedBox(height: 8.0)),
               ),

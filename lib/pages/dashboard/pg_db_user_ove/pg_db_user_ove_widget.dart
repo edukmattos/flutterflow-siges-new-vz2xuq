@@ -616,7 +616,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '1phds7bt' /* Reportadas */,
+                                                      '94gsxpzv' /* Reportados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -650,16 +650,15 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   borderColor:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .tertiary,
+                                                          .customColor3,
                                                   borderRadius: 16.0,
                                                   borderWidth: 6.0,
                                                   buttonSize: 54.0,
                                                   icon: Icon(
-                                                    Icons
-                                                        .report_problem_outlined,
+                                                    FFIcons.kkfileExport,
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .tertiary,
+                                                        .customColor3,
                                                     size: 30.0,
                                                   ),
                                                   showLoadingIndicator: true,
@@ -670,111 +669,6 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FFAppState()
                                                         .stOVEProcessingId = 2;
                                                     FFAppState().stOVEIsFiled =
-                                                        false;
-                                                    safeSetState(() {});
-                                                  },
-                                                ),
-                                              ),
-                                            ),
-                                            badges.Badge(
-                                              badgeContent: Text(
-                                                FFAppState()
-                                                    .stDBUsersOVEFilters
-                                                    .where((e) =>
-                                                        e.processingId == 3)
-                                                    .toList()
-                                                    .length
-                                                    .toString(),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          font: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .titleSmall,
-                                                          color: Colors.white,
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                              ),
-                                              showBadge: FFAppState()
-                                                      .stDBUsersOVEFilters
-                                                      .where((e) =>
-                                                          e.processingId == 3)
-                                                      .toList()
-                                                      .length >
-                                                  0,
-                                              shape: badges.BadgeShape.circle,
-                                              badgeColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .tertiary,
-                                              elevation: 4.0,
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
-                                              position:
-                                                  badges.BadgePosition.topEnd(),
-                                              animationType: badges
-                                                  .BadgeAnimationType.scale,
-                                              toAnimate: true,
-                                              child: AlignedTooltip(
-                                                content: Padding(
-                                                  padding: EdgeInsets.all(4.0),
-                                                  child: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'zehdxj19' /* Revisadas */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          font: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyLarge,
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                  ),
-                                                ),
-                                                offset: 4.0,
-                                                preferredDirection:
-                                                    AxisDirection.down,
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                backgroundColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                elevation: 4.0,
-                                                tailBaseWidth: 24.0,
-                                                tailLength: 12.0,
-                                                waitDuration:
-                                                    Duration(milliseconds: 100),
-                                                showDuration: Duration(
-                                                    milliseconds: 1500),
-                                                triggerMode:
-                                                    TooltipTriggerMode.tap,
-                                                child: FlutterFlowIconButton(
-                                                  borderColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .secondaryText,
-                                                  borderRadius: 16.0,
-                                                  borderWidth: 6.0,
-                                                  buttonSize: 54.0,
-                                                  icon: Icon(
-                                                    Icons
-                                                        .remove_red_eye_outlined,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryText,
-                                                    size: 30.0,
-                                                  ),
-                                                  showLoadingIndicator: true,
-                                                  onPressed: () async {
-                                                    FFAppState()
-                                                        .stOVEProcessingId = 3;
-                                                    FFAppState().stOVEIsFiled =
-                                                        false;
-                                                    safeSetState(() {});
-                                                    _model.lpsvOveFollowingIsVisible =
                                                         false;
                                                     safeSetState(() {});
                                                   },
@@ -826,7 +720,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'ooc8n5uz' /* Rejeitadas */,
+                                                      '963apvj0' /* Rejeitados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -890,7 +784,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                 FFAppState()
                                                     .stDBUsersOVEFilters
                                                     .where((e) =>
-                                                        e.processingId == 5)
+                                                        e.processingId == 3)
                                                     .toList()
                                                     .length
                                                     .toString(),
@@ -908,7 +802,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               showBadge: FFAppState()
                                                       .stDBUsersOVEFilters
                                                       .where((e) =>
-                                                          e.processingId == 5)
+                                                          e.processingId == 3)
                                                       .toList()
                                                       .length >
                                                   0,
@@ -930,7 +824,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'vj1d19it' /* Autorizadas */,
+                                                      'mr750pps' /* Autorizados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -974,6 +868,110 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                             context)
                                                         .success,
                                                     size: 30.0,
+                                                  ),
+                                                  onPressed: () async {
+                                                    FFAppState()
+                                                        .stOVEProcessingId = 3;
+                                                    FFAppState().stOVEIsFiled =
+                                                        false;
+                                                    safeSetState(() {});
+                                                    _model.lpsvOveFollowingIsVisible =
+                                                        false;
+                                                    safeSetState(() {});
+                                                  },
+                                                ),
+                                              ),
+                                            ),
+                                            badges.Badge(
+                                              badgeContent: Text(
+                                                FFAppState()
+                                                    .stDBUsersOVEFilters
+                                                    .where((e) =>
+                                                        e.processingId == 5)
+                                                    .toList()
+                                                    .length
+                                                    .toString(),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                              ),
+                                              showBadge: FFAppState()
+                                                      .stDBUsersOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId == 5)
+                                                      .toList()
+                                                      .length >
+                                                  0,
+                                              shape: badges.BadgeShape.circle,
+                                              badgeColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiary,
+                                              elevation: 4.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
+                                              position:
+                                                  badges.BadgePosition.topEnd(),
+                                              animationType: badges
+                                                  .BadgeAnimationType.scale,
+                                              toAnimate: true,
+                                              child: AlignedTooltip(
+                                                content: Padding(
+                                                  padding: EdgeInsets.all(4.0),
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'ejosi0jj' /* Revisados */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
+                                                ),
+                                                offset: 4.0,
+                                                preferredDirection:
+                                                    AxisDirection.down,
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                elevation: 4.0,
+                                                tailBaseWidth: 24.0,
+                                                tailLength: 12.0,
+                                                waitDuration:
+                                                    Duration(milliseconds: 100),
+                                                showDuration: Duration(
+                                                    milliseconds: 1500),
+                                                triggerMode:
+                                                    TooltipTriggerMode.tap,
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondaryText,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: FaIcon(
+                                                    FontAwesomeIcons
+                                                        .fileSignature,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryText,
+                                                    size: 24.0,
                                                   ),
                                                   showLoadingIndicator: true,
                                                   onPressed: () async {
@@ -1106,428 +1104,691 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                         mainAxisSize:
                                                             MainAxisSize.max,
                                                         children: [
-                                                          badges.Badge(
-                                                            badgeContent: Text(
-                                                              FFAppState()
-                                                                  .stDBUsersOVEFilters
-                                                                  .where((e) =>
-                                                                      e.processingId ==
-                                                                      1)
-                                                                  .toList()
-                                                                  .length
-                                                                  .toString(),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleSmall
-                                                                  .override(
-                                                                    font: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall,
-                                                                    color: Colors
-                                                                        .white,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
+                                                          AlignedTooltip(
+                                                            content: Padding(
+                                                              padding:
+                                                                  EdgeInsets
+                                                                      .all(4.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'yykip1um' /* Rascunho */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
                                                             ),
-                                                            showBadge: FFAppState()
+                                                            offset: 4.0,
+                                                            preferredDirection:
+                                                                AxisDirection
+                                                                    .down,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                            backgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                            elevation: 4.0,
+                                                            tailBaseWidth: 24.0,
+                                                            tailLength: 12.0,
+                                                            waitDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        100),
+                                                            showDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        1500),
+                                                            triggerMode:
+                                                                TooltipTriggerMode
+                                                                    .tap,
+                                                            child: badges.Badge(
+                                                              badgeContent:
+                                                                  Text(
+                                                                FFAppState()
                                                                     .stDBUsersOVEFilters
                                                                     .where((e) =>
                                                                         e.processingId ==
                                                                         1)
                                                                     .toList()
-                                                                    .length >
-                                                                0,
-                                                            shape: badges
-                                                                .BadgeShape
-                                                                .circle,
-                                                            badgeColor:
-                                                                FlutterFlowTheme.of(
+                                                                    .length
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiary,
-                                                            elevation: 4.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0),
-                                                            position: badges
-                                                                    .BadgePosition
-                                                                .topEnd(),
-                                                            animationType: badges
-                                                                .BadgeAnimationType
-                                                                .scale,
-                                                            toAnimate: true,
-                                                            child:
-                                                                FlutterFlowIconButton(
-                                                              borderColor:
+                                                                    .titleSmall
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall,
+                                                                      color: Colors
+                                                                          .white,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                              showBadge: FFAppState()
+                                                                      .stDBUsersOVEFilters
+                                                                      .where((e) =>
+                                                                          e.processingId ==
+                                                                          1)
+                                                                      .toList()
+                                                                      .length >
+                                                                  0,
+                                                              shape: badges
+                                                                  .BadgeShape
+                                                                  .circle,
+                                                              badgeColor:
                                                                   FlutterFlowTheme.of(
                                                                           context)
+                                                                      .tertiary,
+                                                              elevation: 4.0,
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0),
+                                                              position: badges
+                                                                      .BadgePosition
+                                                                  .topEnd(),
+                                                              animationType: badges
+                                                                  .BadgeAnimationType
+                                                                  .scale,
+                                                              toAnimate: true,
+                                                              child:
+                                                                  FlutterFlowIconButton(
+                                                                borderColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                borderRadius:
+                                                                    16.0,
+                                                                borderWidth:
+                                                                    6.0,
+                                                                buttonSize:
+                                                                    60.0,
+                                                                icon: Icon(
+                                                                  Icons.draw,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
                                                                       .primary,
-                                                              borderRadius:
-                                                                  16.0,
-                                                              borderWidth: 6.0,
-                                                              buttonSize: 60.0,
-                                                              icon: Icon(
-                                                                Icons.draw,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                size: 30.0,
+                                                                  size: 30.0,
+                                                                ),
+                                                                showLoadingIndicator:
+                                                                    true,
+                                                                onPressed:
+                                                                    () async {
+                                                                  FFAppState()
+                                                                      .stOVEProcessingId = 1;
+                                                                  FFAppState()
+                                                                          .stOVEIsFiled =
+                                                                      false;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                },
                                                               ),
-                                                              showLoadingIndicator:
-                                                                  true,
-                                                              onPressed:
-                                                                  () async {
-                                                                FFAppState()
-                                                                    .stOVEProcessingId = 1;
-                                                                FFAppState()
-                                                                        .stOVEIsFiled =
-                                                                    false;
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
                                                             ),
                                                           ),
-                                                          badges.Badge(
-                                                            badgeContent: Text(
-                                                              FFAppState()
-                                                                  .stDBUsersOVEFilters
-                                                                  .where((e) =>
-                                                                      e.processingId ==
-                                                                      2)
-                                                                  .toList()
-                                                                  .length
-                                                                  .toString(),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleSmall
-                                                                  .override(
-                                                                    font: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall,
-                                                                    color: Colors
-                                                                        .white,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
+                                                          AlignedTooltip(
+                                                            content: Padding(
+                                                              padding:
+                                                                  EdgeInsets
+                                                                      .all(4.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'b8g6f7th' /* Reportados */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
                                                             ),
-                                                            showBadge: FFAppState()
+                                                            offset: 4.0,
+                                                            preferredDirection:
+                                                                AxisDirection
+                                                                    .down,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                            backgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                            elevation: 4.0,
+                                                            tailBaseWidth: 24.0,
+                                                            tailLength: 12.0,
+                                                            waitDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        100),
+                                                            showDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        1500),
+                                                            triggerMode:
+                                                                TooltipTriggerMode
+                                                                    .tap,
+                                                            child: badges.Badge(
+                                                              badgeContent:
+                                                                  Text(
+                                                                FFAppState()
                                                                     .stDBUsersOVEFilters
                                                                     .where((e) =>
                                                                         e.processingId ==
                                                                         2)
                                                                     .toList()
-                                                                    .length >
-                                                                0,
-                                                            shape: badges
-                                                                .BadgeShape
-                                                                .circle,
-                                                            badgeColor:
-                                                                FlutterFlowTheme.of(
+                                                                    .length
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiary,
-                                                            elevation: 4.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0),
-                                                            position: badges
-                                                                    .BadgePosition
-                                                                .topEnd(),
-                                                            animationType: badges
-                                                                .BadgeAnimationType
-                                                                .scale,
-                                                            toAnimate: true,
-                                                            child:
-                                                                FlutterFlowIconButton(
-                                                              borderColor:
+                                                                    .titleSmall
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall,
+                                                                      color: Colors
+                                                                          .white,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                              showBadge: FFAppState()
+                                                                      .stDBUsersOVEFilters
+                                                                      .where((e) =>
+                                                                          e.processingId ==
+                                                                          2)
+                                                                      .toList()
+                                                                      .length >
+                                                                  0,
+                                                              shape: badges
+                                                                  .BadgeShape
+                                                                  .circle,
+                                                              badgeColor:
                                                                   FlutterFlowTheme.of(
                                                                           context)
                                                                       .tertiary,
-                                                              borderRadius:
-                                                                  16.0,
-                                                              borderWidth: 6.0,
-                                                              buttonSize: 60.0,
-                                                              icon: Icon(
-                                                                Icons
-                                                                    .report_problem_outlined,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .tertiary,
-                                                                size: 30.0,
+                                                              elevation: 4.0,
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0),
+                                                              position: badges
+                                                                      .BadgePosition
+                                                                  .topEnd(),
+                                                              animationType: badges
+                                                                  .BadgeAnimationType
+                                                                  .scale,
+                                                              toAnimate: true,
+                                                              child:
+                                                                  FlutterFlowIconButton(
+                                                                borderColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .customColor3,
+                                                                borderRadius:
+                                                                    16.0,
+                                                                borderWidth:
+                                                                    6.0,
+                                                                buttonSize:
+                                                                    60.0,
+                                                                icon: Icon(
+                                                                  FFIcons
+                                                                      .kkfileExport,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .customColor3,
+                                                                  size: 30.0,
+                                                                ),
+                                                                showLoadingIndicator:
+                                                                    true,
+                                                                onPressed:
+                                                                    () async {
+                                                                  FFAppState()
+                                                                      .stOVEProcessingId = 2;
+                                                                  FFAppState()
+                                                                          .stOVEIsFiled =
+                                                                      false;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                },
                                                               ),
-                                                              showLoadingIndicator:
-                                                                  true,
-                                                              onPressed:
-                                                                  () async {
-                                                                FFAppState()
-                                                                    .stOVEProcessingId = 2;
-                                                                FFAppState()
-                                                                        .stOVEIsFiled =
-                                                                    false;
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
                                                             ),
                                                           ),
-                                                          badges.Badge(
-                                                            badgeContent: Text(
-                                                              FFAppState()
-                                                                  .stDBUsersOVEFilters
-                                                                  .where((e) =>
-                                                                      e.processingId ==
-                                                                      3)
-                                                                  .toList()
-                                                                  .length
-                                                                  .toString(),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleSmall
-                                                                  .override(
-                                                                    font: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall,
-                                                                    color: Colors
-                                                                        .white,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
+                                                          AlignedTooltip(
+                                                            content: Padding(
+                                                              padding:
+                                                                  EdgeInsets
+                                                                      .all(4.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'vxe7xt2d' /* Rejeitados */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
                                                             ),
-                                                            showBadge: FFAppState()
-                                                                    .stDBUsersOVEFilters
-                                                                    .where((e) =>
-                                                                        e.processingId ==
-                                                                        3)
-                                                                    .toList()
-                                                                    .length >
-                                                                0,
-                                                            shape: badges
-                                                                .BadgeShape
-                                                                .circle,
-                                                            badgeColor:
+                                                            offset: 4.0,
+                                                            preferredDirection:
+                                                                AxisDirection
+                                                                    .down,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                            backgroundColor:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiary,
+                                                                    .secondaryBackground,
                                                             elevation: 4.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0),
-                                                            position: badges
-                                                                    .BadgePosition
-                                                                .topEnd(),
-                                                            animationType: badges
-                                                                .BadgeAnimationType
-                                                                .scale,
-                                                            toAnimate: true,
-                                                            child:
-                                                                FlutterFlowIconButton(
-                                                              borderColor:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryText,
-                                                              borderRadius:
-                                                                  16.0,
-                                                              borderWidth: 6.0,
-                                                              buttonSize: 60.0,
-                                                              icon: Icon(
-                                                                Icons
-                                                                    .remove_red_eye_outlined,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .secondaryText,
-                                                                size: 30.0,
-                                                              ),
-                                                              showLoadingIndicator:
-                                                                  true,
-                                                              onPressed:
-                                                                  () async {
+                                                            tailBaseWidth: 24.0,
+                                                            tailLength: 12.0,
+                                                            waitDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        100),
+                                                            showDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        1500),
+                                                            triggerMode:
+                                                                TooltipTriggerMode
+                                                                    .tap,
+                                                            child: badges.Badge(
+                                                              badgeContent:
+                                                                  Text(
                                                                 FFAppState()
-                                                                    .stOVEProcessingId = 3;
-                                                                FFAppState()
-                                                                        .stOVEIsFiled =
-                                                                    false;
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
-                                                            ),
-                                                          ),
-                                                          badges.Badge(
-                                                            badgeContent: Text(
-                                                              FFAppState()
-                                                                  .stDBUsersOVEFilters
-                                                                  .where((e) =>
-                                                                      e.processingId ==
-                                                                      4)
-                                                                  .toList()
-                                                                  .length
-                                                                  .toString(),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleSmall
-                                                                  .override(
-                                                                    font: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall,
-                                                                    color: Colors
-                                                                        .white,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
-                                                            ),
-                                                            showBadge: FFAppState()
                                                                     .stDBUsersOVEFilters
                                                                     .where((e) =>
                                                                         e.processingId ==
                                                                         4)
                                                                     .toList()
-                                                                    .length >
-                                                                0,
-                                                            shape: badges
-                                                                .BadgeShape
-                                                                .circle,
-                                                            badgeColor:
-                                                                FlutterFlowTheme.of(
+                                                                    .length
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiary,
-                                                            elevation: 4.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0),
-                                                            position: badges
-                                                                    .BadgePosition
-                                                                .topEnd(),
-                                                            animationType: badges
-                                                                .BadgeAnimationType
-                                                                .scale,
-                                                            toAnimate: true,
-                                                            child:
-                                                                FlutterFlowIconButton(
-                                                              borderColor:
+                                                                    .titleSmall
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall,
+                                                                      color: Colors
+                                                                          .white,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                              showBadge: FFAppState()
+                                                                      .stDBUsersOVEFilters
+                                                                      .where((e) =>
+                                                                          e.processingId ==
+                                                                          4)
+                                                                      .toList()
+                                                                      .length >
+                                                                  0,
+                                                              shape: badges
+                                                                  .BadgeShape
+                                                                  .circle,
+                                                              badgeColor:
                                                                   FlutterFlowTheme.of(
                                                                           context)
+                                                                      .tertiary,
+                                                              elevation: 4.0,
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0),
+                                                              position: badges
+                                                                      .BadgePosition
+                                                                  .topEnd(),
+                                                              animationType: badges
+                                                                  .BadgeAnimationType
+                                                                  .scale,
+                                                              toAnimate: true,
+                                                              child:
+                                                                  FlutterFlowIconButton(
+                                                                borderColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .error,
+                                                                borderRadius:
+                                                                    16.0,
+                                                                borderWidth:
+                                                                    6.0,
+                                                                buttonSize:
+                                                                    60.0,
+                                                                icon: FaIcon(
+                                                                  FontAwesomeIcons
+                                                                      .thumbsDown,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
                                                                       .error,
-                                                              borderRadius:
-                                                                  16.0,
-                                                              borderWidth: 6.0,
-                                                              buttonSize: 60.0,
-                                                              icon: FaIcon(
-                                                                FontAwesomeIcons
-                                                                    .thumbsDown,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .error,
-                                                                size: 30.0,
+                                                                  size: 30.0,
+                                                                ),
+                                                                showLoadingIndicator:
+                                                                    true,
+                                                                onPressed:
+                                                                    () async {
+                                                                  FFAppState()
+                                                                      .stOVEProcessingId = 4;
+                                                                  FFAppState()
+                                                                          .stOVEIsFiled =
+                                                                      false;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                },
                                                               ),
-                                                              showLoadingIndicator:
-                                                                  true,
-                                                              onPressed:
-                                                                  () async {
-                                                                FFAppState()
-                                                                    .stOVEProcessingId = 4;
-                                                                FFAppState()
-                                                                        .stOVEIsFiled =
-                                                                    false;
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
                                                             ),
                                                           ),
-                                                          badges.Badge(
-                                                            badgeContent: Text(
-                                                              FFAppState()
-                                                                  .stDBUsersOVEFilters
-                                                                  .where((e) =>
-                                                                      e.processingId ==
-                                                                      5)
-                                                                  .toList()
-                                                                  .length
-                                                                  .toString(),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleSmall
-                                                                  .override(
-                                                                    font: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall,
-                                                                    color: Colors
-                                                                        .white,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
+                                                          AlignedTooltip(
+                                                            content: Padding(
+                                                              padding:
+                                                                  EdgeInsets
+                                                                      .all(4.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'awcf2yjy' /* Autorizados */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
                                                             ),
-                                                            showBadge: FFAppState()
+                                                            offset: 4.0,
+                                                            preferredDirection:
+                                                                AxisDirection
+                                                                    .down,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                            backgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                            elevation: 4.0,
+                                                            tailBaseWidth: 24.0,
+                                                            tailLength: 12.0,
+                                                            waitDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        100),
+                                                            showDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        1500),
+                                                            triggerMode:
+                                                                TooltipTriggerMode
+                                                                    .tap,
+                                                            child: badges.Badge(
+                                                              badgeContent:
+                                                                  Text(
+                                                                FFAppState()
+                                                                    .stDBUsersOVEFilters
+                                                                    .where((e) =>
+                                                                        e.processingId ==
+                                                                        3)
+                                                                    .toList()
+                                                                    .length
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall,
+                                                                      color: Colors
+                                                                          .white,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                              showBadge: FFAppState()
+                                                                      .stDBUsersOVEFilters
+                                                                      .where((e) =>
+                                                                          e.processingId ==
+                                                                          3)
+                                                                      .toList()
+                                                                      .length >
+                                                                  0,
+                                                              shape: badges
+                                                                  .BadgeShape
+                                                                  .circle,
+                                                              badgeColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .tertiary,
+                                                              elevation: 4.0,
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0),
+                                                              position: badges
+                                                                      .BadgePosition
+                                                                  .topEnd(),
+                                                              animationType: badges
+                                                                  .BadgeAnimationType
+                                                                  .scale,
+                                                              toAnimate: true,
+                                                              child:
+                                                                  FlutterFlowIconButton(
+                                                                borderColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .success,
+                                                                borderRadius:
+                                                                    16.0,
+                                                                borderWidth:
+                                                                    6.0,
+                                                                buttonSize:
+                                                                    60.0,
+                                                                icon: FaIcon(
+                                                                  FontAwesomeIcons
+                                                                      .thumbsUp,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .success,
+                                                                  size: 30.0,
+                                                                ),
+                                                                onPressed:
+                                                                    () async {
+                                                                  FFAppState()
+                                                                      .stOVEProcessingId = 3;
+                                                                  FFAppState()
+                                                                          .stOVEIsFiled =
+                                                                      false;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                },
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          AlignedTooltip(
+                                                            content: Padding(
+                                                              padding:
+                                                                  EdgeInsets
+                                                                      .all(4.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  '4wjde7jy' /* Revisados */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                            ),
+                                                            offset: 4.0,
+                                                            preferredDirection:
+                                                                AxisDirection
+                                                                    .down,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                            backgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                            elevation: 4.0,
+                                                            tailBaseWidth: 24.0,
+                                                            tailLength: 12.0,
+                                                            waitDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        100),
+                                                            showDuration:
+                                                                Duration(
+                                                                    milliseconds:
+                                                                        1500),
+                                                            triggerMode:
+                                                                TooltipTriggerMode
+                                                                    .tap,
+                                                            child: badges.Badge(
+                                                              badgeContent:
+                                                                  Text(
+                                                                FFAppState()
                                                                     .stDBUsersOVEFilters
                                                                     .where((e) =>
                                                                         e.processingId ==
                                                                         5)
                                                                     .toList()
-                                                                    .length >
-                                                                0,
-                                                            shape: badges
-                                                                .BadgeShape
-                                                                .circle,
-                                                            badgeColor:
-                                                                FlutterFlowTheme.of(
+                                                                    .length
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiary,
-                                                            elevation: 4.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0,
-                                                                        8.0),
-                                                            position: badges
-                                                                    .BadgePosition
-                                                                .topEnd(),
-                                                            animationType: badges
-                                                                .BadgeAnimationType
-                                                                .scale,
-                                                            toAnimate: true,
-                                                            child:
-                                                                FlutterFlowIconButton(
-                                                              borderColor:
+                                                                    .titleSmall
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall,
+                                                                      color: Colors
+                                                                          .white,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                              showBadge: FFAppState()
+                                                                      .stDBUsersOVEFilters
+                                                                      .where((e) =>
+                                                                          e.processingId ==
+                                                                          5)
+                                                                      .toList()
+                                                                      .length >
+                                                                  0,
+                                                              shape: badges
+                                                                  .BadgeShape
+                                                                  .circle,
+                                                              badgeColor:
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .success,
-                                                              borderRadius:
-                                                                  16.0,
-                                                              borderWidth: 6.0,
-                                                              buttonSize: 60.0,
-                                                              icon: FaIcon(
-                                                                FontAwesomeIcons
-                                                                    .thumbsUp,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .success,
-                                                                size: 30.0,
+                                                                      .tertiary,
+                                                              elevation: 4.0,
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0,
+                                                                          8.0),
+                                                              position: badges
+                                                                      .BadgePosition
+                                                                  .topEnd(),
+                                                              animationType: badges
+                                                                  .BadgeAnimationType
+                                                                  .scale,
+                                                              toAnimate: true,
+                                                              child:
+                                                                  FlutterFlowIconButton(
+                                                                borderColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
+                                                                borderRadius:
+                                                                    16.0,
+                                                                borderWidth:
+                                                                    6.0,
+                                                                buttonSize:
+                                                                    60.0,
+                                                                icon: FaIcon(
+                                                                  FontAwesomeIcons
+                                                                      .fileSignature,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryText,
+                                                                  size: 24.0,
+                                                                ),
+                                                                showLoadingIndicator:
+                                                                    true,
+                                                                onPressed:
+                                                                    () async {
+                                                                  FFAppState()
+                                                                      .stOVEProcessingId = 5;
+                                                                  FFAppState()
+                                                                          .stOVEIsFiled =
+                                                                      true;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                },
                                                               ),
-                                                              showLoadingIndicator:
-                                                                  true,
-                                                              onPressed:
-                                                                  () async {
-                                                                FFAppState()
-                                                                    .stOVEProcessingId = 5;
-                                                                FFAppState()
-                                                                        .stOVEIsFiled =
-                                                                    true;
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
                                                             ),
                                                           ),
                                                         ].divide(SizedBox(

@@ -317,9 +317,9 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
                   borderRadius: 16.0,
                   borderWidth: widget.cpBorderWidth.toDouble(),
                   buttonSize: widget.cpSize.toDouble(),
-                  fillColor: FlutterFlowTheme.of(context).tertiary,
+                  fillColor: FlutterFlowTheme.of(context).customColor3,
                   icon: Icon(
-                    Icons.report_problem_outlined,
+                    FFIcons.kkfileExport,
                     color: FlutterFlowTheme.of(context).info,
                     size: 30.0,
                   ),
@@ -331,13 +331,13 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
                     animationsMap['iconButtonOnPageLoadAnimation3']!),
               if (!widget.cpDisabled)
                 FlutterFlowIconButton(
-                  borderColor: FlutterFlowTheme.of(context).tertiary,
+                  borderColor: FlutterFlowTheme.of(context).customColor3,
                   borderRadius: 16.0,
                   borderWidth: widget.cpBorderWidth.toDouble(),
                   buttonSize: widget.cpSize.toDouble(),
                   icon: Icon(
-                    Icons.report_problem_outlined,
-                    color: FlutterFlowTheme.of(context).tertiary,
+                    FFIcons.kkfileExport,
+                    color: FlutterFlowTheme.of(context).customColor3,
                     size: 30.0,
                   ),
                   showLoadingIndicator: widget.cpShowLoadingIndicator!,
@@ -359,9 +359,9 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
                   buttonSize: widget.cpSize.toDouble(),
                   fillColor: FlutterFlowTheme.of(context).secondaryText,
                   icon: FaIcon(
-                    FontAwesomeIcons.solidEye,
+                    FontAwesomeIcons.fileSignature,
                     color: FlutterFlowTheme.of(context).info,
-                    size: 30.0,
+                    size: 24.0,
                   ),
                   showLoadingIndicator: widget.cpShowLoadingIndicator!,
                   onPressed: () {
@@ -375,10 +375,10 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
                   borderRadius: 16.0,
                   borderWidth: widget.cpBorderWidth.toDouble(),
                   buttonSize: widget.cpSize.toDouble(),
-                  icon: Icon(
-                    Icons.remove_red_eye_outlined,
+                  icon: FaIcon(
+                    FontAwesomeIcons.fileSignature,
                     color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 30.0,
+                    size: 24.0,
                   ),
                   showLoadingIndicator: widget.cpShowLoadingIndicator!,
                   onPressed: () {
@@ -437,7 +437,7 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
                   borderRadius: 16.0,
                   borderWidth: widget.cpBorderWidth.toDouble(),
                   buttonSize: widget.cpSize.toDouble(),
-                  fillColor: FlutterFlowTheme.of(context).success,
+                  fillColor: FlutterFlowTheme.of(context).tertiary,
                   icon: Icon(
                     Icons.archive_sharp,
                     color: FlutterFlowTheme.of(context).info,
@@ -451,13 +451,13 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
                     animationsMap['iconButtonOnPageLoadAnimation9']!),
               if (!widget.cpDisabled)
                 FlutterFlowIconButton(
-                  borderColor: FlutterFlowTheme.of(context).success,
+                  borderColor: FlutterFlowTheme.of(context).tertiary,
                   borderRadius: 16.0,
                   borderWidth: widget.cpBorderWidth.toDouble(),
                   buttonSize: widget.cpSize.toDouble(),
                   icon: Icon(
                     Icons.archive_sharp,
-                    color: FlutterFlowTheme.of(context).success,
+                    color: FlutterFlowTheme.of(context).tertiary,
                     size: 30.0,
                   ),
                   showLoadingIndicator: widget.cpShowLoadingIndicator!,
