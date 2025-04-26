@@ -12,7 +12,7 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'md_units_search_filters_model.dart';
 export 'md_units_search_filters_model.dart';
@@ -124,15 +124,10 @@ class _MdUnitsSearchFiltersWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .headlineSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
+                                                        .headlineSmall,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(FlutterFlowTheme
-                                                            .of(context)
-                                                        .headlineSmallFamily),
                                               ),
                                         ),
                                       ),
@@ -262,53 +257,35 @@ class _MdUnitsSearchFiltersWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                               errorStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -382,17 +359,10 @@ class _MdUnitsSearchFiltersWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                                 ),
                                             minLines: 1,
                                             cursorColor:
@@ -401,6 +371,20 @@ class _MdUnitsSearchFiltersWidgetState
                                             validator: _model
                                                 .tfCodeDescriptionTextControllerValidator
                                                 .asValidator(context),
+                                            inputFormatters: [
+                                              if (!isAndroid && !isiOS)
+                                                TextInputFormatter.withFunction(
+                                                    (oldValue, newValue) {
+                                                  return TextEditingValue(
+                                                    selection:
+                                                        newValue.selection,
+                                                    text: newValue.text
+                                                        .toCapitalization(
+                                                            TextCapitalization
+                                                                .none),
+                                                  );
+                                                }),
+                                            ],
                                           ),
                                           Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -450,30 +434,30 @@ class _MdUnitsSearchFiltersWidgetState
                                                                       0.0),
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .primary,
+                                                              .info,
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
-                                                                    color: Colors
-                                                                        .white,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w800,
                                                                   ),
                                                           elevation: 5.0,
                                                           borderSide:
                                                               BorderSide(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .info,
+                                                                .primary,
                                                             width: 6.0,
                                                           ),
                                                           borderRadius:
@@ -610,31 +594,30 @@ class _MdUnitsSearchFiltersWidgetState
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primary,
+                                                              .info,
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .titleSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleSmallFamily,
-                                                                color: Colors
-                                                                    .white,
+                                                                    .titleSmall,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily),
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w800,
                                                               ),
                                                       elevation: 5.0,
                                                       borderSide: BorderSide(
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .info,
+                                                                .primary,
                                                         width: 6.0,
                                                       ),
                                                       borderRadius:

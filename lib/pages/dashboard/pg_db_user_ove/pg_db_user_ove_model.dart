@@ -10,10 +10,6 @@ import 'package:flutter/material.dart';
 class PgDbUserOveModel extends FlutterFlowModel<PgDbUserOveWidget> {
   ///  Local state fields for this page.
 
-  int? lpsvOveProcessingId = 1;
-
-  bool lpsvOveProcessingIsFiled = false;
-
   bool lpsvOveFollowingIsVisible = false;
 
   List<DtTeamDescendantStruct> lpsvTeamsDescedants = [];

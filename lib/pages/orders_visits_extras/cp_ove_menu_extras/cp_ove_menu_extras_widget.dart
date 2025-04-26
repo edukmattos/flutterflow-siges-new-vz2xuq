@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/orders_parents/cp_ove_follow/cp_ove_follow_widget.dart';
 import '/pages/orders_visits_extras/md_o_v_e_create/md_o_v_e_create_widget.dart';
+import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'cp_ove_menu_extras_model.dart';
@@ -53,34 +54,58 @@ class _CpOveMenuExtrasWidgetState extends State<CpOveMenuExtrasWidget> {
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FlutterFlowIconButton(
-          borderColor: FlutterFlowTheme.of(context).customColor1,
-          borderRadius: 16.0,
-          borderWidth: 6.0,
-          buttonSize: widget.cpSize.toDouble(),
-          icon: Icon(
-            Icons.copy_all,
-            color: FlutterFlowTheme.of(context).customColor1,
-            size: 30.0,
-          ),
-          showLoadingIndicator: true,
-          onPressed: () async {
-            await showModalBottomSheet(
-              isScrollControlled: true,
-              backgroundColor: Colors.transparent,
-              enableDrag: false,
-              context: context,
-              builder: (context) {
-                return Padding(
-                  padding: MediaQuery.viewInsetsOf(context),
-                  child: MdOVECreateWidget(
-                    cpOperation: 'duplicate',
-                    cpDtOve: widget.cpDtOve,
+        AlignedTooltip(
+          content: Padding(
+            padding: EdgeInsets.all(4.0),
+            child: Text(
+              FFLocalizations.of(context).getText(
+                'u5b44652' /* Copiar */,
+              ),
+              style: FlutterFlowTheme.of(context).bodyLarge.override(
+                    font: FlutterFlowTheme.of(context).bodyLarge,
+                    letterSpacing: 0.0,
                   ),
-                );
-              },
-            ).then((value) => safeSetState(() {}));
-          },
+            ),
+          ),
+          offset: 4.0,
+          preferredDirection: AxisDirection.down,
+          borderRadius: BorderRadius.circular(8.0),
+          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+          elevation: 4.0,
+          tailBaseWidth: 24.0,
+          tailLength: 12.0,
+          waitDuration: Duration(milliseconds: 100),
+          showDuration: Duration(milliseconds: 1500),
+          triggerMode: TooltipTriggerMode.tap,
+          child: FlutterFlowIconButton(
+            borderColor: FlutterFlowTheme.of(context).customColor1,
+            borderRadius: 16.0,
+            borderWidth: 6.0,
+            buttonSize: widget.cpSize.toDouble(),
+            icon: Icon(
+              Icons.copy_all,
+              color: FlutterFlowTheme.of(context).customColor1,
+              size: 30.0,
+            ),
+            showLoadingIndicator: true,
+            onPressed: () async {
+              await showModalBottomSheet(
+                isScrollControlled: true,
+                backgroundColor: Colors.transparent,
+                enableDrag: false,
+                context: context,
+                builder: (context) {
+                  return Padding(
+                    padding: MediaQuery.viewInsetsOf(context),
+                    child: MdOVECreateWidget(
+                      cpOperation: 'duplicate',
+                      cpDtOve: widget.cpDtOve,
+                    ),
+                  );
+                },
+              ).then((value) => safeSetState(() {}));
+            },
+          ),
         ),
         wrapWithModel(
           model: _model.cpOveFollowModel,

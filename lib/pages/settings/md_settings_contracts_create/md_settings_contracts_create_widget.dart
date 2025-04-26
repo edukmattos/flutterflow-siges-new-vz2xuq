@@ -8,7 +8,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_settings_contracts_create_model.dart';
 export 'md_settings_contracts_create_model.dart';
@@ -116,15 +115,10 @@ class _MdSettingsContractsCreateWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .headlineSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
+                                                        .headlineSmall,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(FlutterFlowTheme
-                                                            .of(context)
-                                                        .headlineSmallFamily),
                                               ),
                                         ),
                                       ),
@@ -290,30 +284,28 @@ class _MdSettingsContractsCreateWidgetState
                                                               24.0, 0.0),
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primary,
-                                                  textStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily,
-                                                            color: Colors.white,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmallFamily),
-                                                          ),
+                                                      .info,
+                                                  textStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w800,
+                                                      ),
                                                   elevation: 5.0,
                                                   borderSide: BorderSide(
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .info,
+                                                        .primary,
                                                     width: 6.0,
                                                   ),
                                                   borderRadius:

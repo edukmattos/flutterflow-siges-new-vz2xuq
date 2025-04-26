@@ -20,7 +20,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_show_model.dart';
 export 'cp_o_show_model.dart';
@@ -411,20 +410,15 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                                                     context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleSmallFamily,
+                                                                      .titleSmall,
                                                                   color: Colors
                                                                       .white,
                                                                   fontSize:
                                                                       20.0,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleSmallFamily),
                                                                 ),
                                                         elevation: 3.0,
                                                         borderSide: BorderSide(
@@ -548,21 +542,15 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .headlineMedium,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
                                                   fontSize: 20.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(FlutterFlowTheme
-                                                              .of(context)
-                                                          .headlineMediumFamily),
                                                 ),
                                           ),
                                         ).animateOnPageLoad(animationsMap[
@@ -575,16 +563,9 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation2']!),
@@ -595,19 +576,12 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleSmall,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmallFamily),
                                             ),
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation3']!),
@@ -628,16 +602,10 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelSmallFamily,
+                                                        .labelSmall,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelSmallFamily),
                                               ),
                                         ).animateOnPageLoad(animationsMap[
                                             'textOnPageLoadAnimation4']!),
@@ -691,16 +659,10 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ).animateOnPageLoad(animationsMap[
                                             'textOnPageLoadAnimation5']!),
@@ -718,17 +680,10 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation6']!),
@@ -740,17 +695,10 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation7']!),
@@ -770,17 +718,10 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation8']!),
@@ -792,17 +733,10 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation9']!),
@@ -855,14 +789,9 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ],
@@ -934,25 +863,21 @@ class _CpOShowWidgetState extends State<CpOShowWidget>
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               24.0, 0.0, 24.0, 0.0),
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
+                                      color: FlutterFlowTheme.of(context).info,
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmallFamily,
-                                            color: Colors.white,
+                                            font: FlutterFlowTheme.of(context)
+                                                .titleSmall,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily),
+                                            fontWeight: FontWeight.w800,
                                           ),
                                       elevation: 5.0,
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
                                         width: 6.0,
                                       ),
                                       borderRadius: BorderRadius.circular(16.0),

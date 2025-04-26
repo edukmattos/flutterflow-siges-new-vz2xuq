@@ -5,7 +5,6 @@ import '/actions/actions.dart' as action_blocks;
 import '/index.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'md_units_menu_options_model.dart';
 export 'md_units_menu_options_model.dart';
 
@@ -94,13 +93,9 @@ class _MdUnitsMenuOptionsWidgetState extends State<MdUnitsMenuOptionsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .headlineSmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .headlineSmallFamily),
                                   ),
                             ),
                             Align(
@@ -180,16 +175,12 @@ class _MdUnitsMenuOptionsWidgetState extends State<MdUnitsMenuOptionsWidget> {
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleMedium,
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(
@@ -252,16 +243,12 @@ class _MdUnitsMenuOptionsWidgetState extends State<MdUnitsMenuOptionsWidget> {
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleMedium,
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(

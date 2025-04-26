@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_settings_profile_permission_list_item_model.dart';
 export 'cp_settings_profile_permission_list_item_model.dart';
 
@@ -74,11 +73,8 @@ class _CpSettingsProfilePermissionListItemWidgetState
                   child: Text(
                     widget.cpRowProfilePermission!.appPageDescription!,
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),

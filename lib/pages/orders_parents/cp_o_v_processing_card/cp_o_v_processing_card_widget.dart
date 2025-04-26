@@ -4,7 +4,6 @@ import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_v_processing_card_model.dart';
 export 'cp_o_v_processing_card_model.dart';
 
@@ -72,10 +71,8 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
                   'yt75smjk' /* Rascunho */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                      font: FlutterFlowTheme.of(context).bodyLarge,
                       letterSpacing: 0.0,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).bodyLargeFamily),
                     ),
               ),
             ),
@@ -114,10 +111,8 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
                   'dz7ubx12' /* Reportados */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                      font: FlutterFlowTheme.of(context).bodyLarge,
                       letterSpacing: 0.0,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).bodyLargeFamily),
                     ),
               ),
             ),
@@ -156,10 +151,8 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
                   'zrktzwjq' /* Revisados */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                      font: FlutterFlowTheme.of(context).bodyLarge,
                       letterSpacing: 0.0,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).bodyLargeFamily),
                     ),
               ),
             ),
@@ -198,10 +191,8 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
                   '9xdiqdh8' /* Rejeitados */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                      font: FlutterFlowTheme.of(context).bodyLarge,
                       letterSpacing: 0.0,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).bodyLargeFamily),
                     ),
               ),
             ),
@@ -240,10 +231,8 @@ class _CpOVProcessingCardWidgetState extends State<CpOVProcessingCardWidget> {
                   'rk7wo04w' /* Arquivados */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                      font: FlutterFlowTheme.of(context).bodyLarge,
                       letterSpacing: 0.0,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).bodyLargeFamily),
                     ),
               ),
             ),

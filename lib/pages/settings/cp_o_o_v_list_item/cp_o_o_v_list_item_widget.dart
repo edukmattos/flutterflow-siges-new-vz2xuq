@@ -21,7 +21,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_o_v_list_item_model.dart';
 export 'cp_o_o_v_list_item_model.dart';
 
@@ -369,14 +368,9 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                     ),
                                   ],
@@ -412,20 +406,14 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .headlineMedium,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(FlutterFlowTheme
-                                                          .of(context)
-                                                      .headlineMediumFamily),
                                             ),
                                       ),
                                     ).animateOnPageLoad(animationsMap[
@@ -435,15 +423,10 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation2']!),
@@ -456,17 +439,10 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation3']!),
@@ -519,16 +495,11 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .titleSmall,
                                             color: FlutterFlowTheme.of(context)
                                                 .info,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily),
                                           ),
                                       borderSide: BorderSide(
                                         color:
@@ -630,13 +601,9 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation4']!),
@@ -646,13 +613,9 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily),
                                       ),
                                 ).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation5']!),
@@ -667,13 +630,9 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .labelMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .labelMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily),
                                       ),
                                 ).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation6']!),
@@ -731,17 +690,10 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
@@ -792,13 +744,9 @@ class _CpOOVListItemWidgetState extends State<CpOOVListItemWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleLarge,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleLargeFamily),
                                   ),
                             ),
                           ].divide(SizedBox(width: 8.0)),

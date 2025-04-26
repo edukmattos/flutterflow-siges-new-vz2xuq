@@ -2,7 +2,6 @@ import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_user_notifications_list_item_model.dart';
 export 'cp_user_notifications_list_item_model.dart';
 
@@ -100,14 +99,10 @@ class _CpUserNotificationsListItemWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyLargeFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily),
                                       ),
                                 ),
                               ],
@@ -123,15 +118,11 @@ class _CpUserNotificationsListItemWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                             ),
@@ -143,13 +134,9 @@ class _CpUserNotificationsListItemWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelSmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily),
                                     ),
                               ),
                             ),

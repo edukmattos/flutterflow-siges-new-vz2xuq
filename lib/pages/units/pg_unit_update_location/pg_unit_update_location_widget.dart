@@ -15,8 +15,8 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
 import 'package:provider/provider.dart';
 import 'pg_unit_update_location_model.dart';
@@ -102,13 +102,11 @@ class _PgUnitUpdateLocationWidgetState
               'fl7394ag' /* Unidade */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -166,14 +164,9 @@ class _PgUnitUpdateLocationWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .headlineMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -217,19 +210,13 @@ class _PgUnitUpdateLocationWidgetState
                                                   context)
                                               .titleSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily,
+                                                        .titleSmall,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .info,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmallFamily),
                                               ),
                                           elevation: 2.0,
                                           borderSide: BorderSide(
@@ -259,16 +246,10 @@ class _PgUnitUpdateLocationWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -321,18 +302,11 @@ class _PgUnitUpdateLocationWidgetState
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall,
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily),
                                                     ),
                                             elevation: 3.0,
                                             borderSide: BorderSide(
@@ -367,40 +341,25 @@ class _PgUnitUpdateLocationWidgetState
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily),
                                         ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
                                         ),
                                     errorStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           color: FlutterFlowTheme.of(context)
                                               .error,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -462,13 +421,9 @@ class _PgUnitUpdateLocationWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyLargeFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily),
                                       ),
                                   minLines: 1,
                                   cursorColor:
@@ -476,6 +431,17 @@ class _PgUnitUpdateLocationWidgetState
                                   validator: _model
                                       .tfStreetComplementTextControllerValidator
                                       .asValidator(context),
+                                  inputFormatters: [
+                                    if (!isAndroid && !isiOS)
+                                      TextInputFormatter.withFunction(
+                                          (oldValue, newValue) {
+                                        return TextEditingValue(
+                                          selection: newValue.selection,
+                                          text: newValue.text.toCapitalization(
+                                              TextCapitalization.none),
+                                        );
+                                      }),
+                                  ],
                                 ),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -641,27 +607,23 @@ class _PgUnitUpdateLocationWidgetState
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 24.0, 0.0, 24.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                        color:
+                                            FlutterFlowTheme.of(context).info,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily:
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleSmall,
+                                              color:
                                                   FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily,
-                                              color: Colors.white,
+                                                      .primary,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmallFamily),
+                                              fontWeight: FontWeight.w800,
                                             ),
                                         elevation: 5.0,
                                         borderSide: BorderSide(
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
                                           width: 6.0,
                                         ),
                                         borderRadius:

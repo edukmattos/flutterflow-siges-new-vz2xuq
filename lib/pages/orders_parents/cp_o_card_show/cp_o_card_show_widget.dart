@@ -15,7 +15,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_card_show_model.dart';
 export 'cp_o_card_show_model.dart';
@@ -470,13 +469,9 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelSmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation1']!),
@@ -540,16 +535,13 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .headlineMediumFamily,
+                                  font: FlutterFlowTheme.of(context)
+                                      .headlineMedium,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   fontSize: 20.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .headlineMediumFamily),
                                 ),
                           ),
                         ).animateOnPageLoad(
@@ -561,13 +553,9 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                           'Setor',
                         ),
                         style: FlutterFlowTheme.of(context).titleSmall.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleSmallFamily,
+                              font: FlutterFlowTheme.of(context).titleSmall,
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleSmallFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation3']!),
@@ -577,13 +565,9 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                           'Serviços solicitados',
                         ),
                         style: FlutterFlowTheme.of(context).titleSmall.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleSmallFamily,
+                              font: FlutterFlowTheme.of(context).titleSmall,
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleSmallFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation4']!),
@@ -597,13 +581,9 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation5']!),
@@ -647,15 +627,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation6']!),
@@ -667,15 +643,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation7']!),
@@ -725,15 +697,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .labelMediumFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .labelMediumFamily),
                                   ),
                             ),
                             Text(
@@ -744,16 +712,12 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation8']!),
@@ -765,15 +729,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation9']!),
@@ -785,15 +745,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation10']!),
@@ -807,15 +763,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation11']!),
@@ -833,14 +785,11 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                           ),
                           Text(
@@ -851,14 +800,10 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation12']!),
@@ -870,14 +815,10 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation13']!),
@@ -889,14 +830,10 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation14']!),
@@ -908,14 +845,10 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation15']!),
@@ -927,14 +860,10 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation16']!),
@@ -978,17 +907,12 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .titleSmall
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleSmallFamily,
-                              color: Colors.white,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleSmallFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  font: FlutterFlowTheme.of(context).titleSmall,
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 3.0,
                         borderSide: BorderSide(
                           color: Colors.transparent,
@@ -1023,17 +947,12 @@ class _CpOCardShowWidgetState extends State<CpOCardShowWidget>
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).success,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .titleSmall
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleSmallFamily,
-                              color: Colors.white,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleSmallFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  font: FlutterFlowTheme.of(context).titleSmall,
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 3.0,
                         borderSide: BorderSide(
                           color: Colors.transparent,

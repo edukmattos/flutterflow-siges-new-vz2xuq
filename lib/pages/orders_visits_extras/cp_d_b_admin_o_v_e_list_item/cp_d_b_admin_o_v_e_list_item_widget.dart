@@ -2,7 +2,6 @@ import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_d_b_admin_o_v_e_list_item_model.dart';
 export 'cp_d_b_admin_o_v_e_list_item_model.dart';
 
@@ -59,10 +58,8 @@ class _CpDBAdminOVEListItemWidgetState
               'brmmiu4z' /* Hello World */,
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                  font: FlutterFlowTheme.of(context).bodyMedium,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).bodyMediumFamily),
                 ),
           ),
         ],

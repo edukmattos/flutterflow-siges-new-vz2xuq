@@ -9,7 +9,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_p_programming_model.dart';
 export 'pg_o_p_programming_model.dart';
@@ -143,14 +142,11 @@ class _PgOPProgrammingWidgetState extends State<PgOPProgrammingWidget>
                   '6t8hsf6k' /* Programação */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: Colors.white,
                       fontSize: 28.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
             ],
@@ -209,15 +205,11 @@ class _PgOPProgrammingWidgetState extends State<PgOPProgrammingWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelLarge,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLargeFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation']!),

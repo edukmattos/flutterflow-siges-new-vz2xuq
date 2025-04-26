@@ -28,7 +28,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_v_show_model.dart';
 export 'pg_o_v_show_model.dart';
@@ -185,13 +184,11 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
               'mhpb8201' /* Atendimento */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -254,16 +251,10 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                       ),
@@ -330,16 +321,10 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                       ),
@@ -393,16 +378,10 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                       ),
@@ -479,17 +458,11 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                           context)
                                                       .headlineSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .headlineSmallFamily,
+                                                                .headlineSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineSmallFamily),
                                                       ),
                                                 ),
                                                 if (!FFAppState()
@@ -785,18 +758,14 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w500,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -815,17 +784,13 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()
@@ -1417,16 +1382,11 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                     context)
                                                                 .headlineSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineSmallFamily,
+                                                                      .headlineSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineSmallFamily),
                                                                 ),
                                                       ),
                                                     ],
@@ -1685,10 +1645,9 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                             Text(
                                                                               gcOVServicesItem.description,
                                                                               style: FlutterFlowTheme.of(context).titleMedium.override(
-                                                                                    fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
+                                                                                    font: FlutterFlowTheme.of(context).titleMedium,
                                                                                     color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
-                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                                   ),
                                                                             ),
                                                                           ],
@@ -1789,18 +1748,16 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                               'yp1plqo1' /* R$ Unit */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                           Text(
                                                                             functions.cfConvDoubleToCurrency2Decimals(gcOVServicesItem.valueUnit.toString(),
                                                                                 2),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ],
@@ -1816,18 +1773,16 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                               'ntgs8cv5' /* A/D */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                           Text(
                                                                             functions.cfConvDoubleToCurrency2Decimals(gcOVServicesItem.discount.toString(),
                                                                                 2),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ],
@@ -1843,17 +1798,15 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                               'svlye24n' /* Qte */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                           Text(
                                                                             '${functions.cfConvDoubleToCurrency2Decimals(gcOVServicesItem.amount.toString(), 2)} ${gcOVServicesItem.unit}',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                 ),
                                                                           ),
                                                                         ],
@@ -1869,19 +1822,17 @@ class _PgOVShowWidgetState extends State<PgOVShowWidget>
                                                                               '1na81oto' /* R$ Total */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                                 ),
                                                                           ),
                                                                           Text(
                                                                             functions.cfConvDoubleToCurrency2Decimals(gcOVServicesItem.valueTotal.toString(),
                                                                                 2),
                                                                             style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w600,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                                 ),
                                                                           ),
                                                                         ],

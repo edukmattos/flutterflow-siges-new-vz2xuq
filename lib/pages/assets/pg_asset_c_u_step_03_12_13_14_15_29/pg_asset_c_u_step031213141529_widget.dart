@@ -17,7 +17,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_asset_c_u_step031213141529_model.dart';
 export 'pg_asset_c_u_step031213141529_model.dart';
@@ -196,13 +195,10 @@ class _PgAssetCUStep031213141529WidgetState
                     ? 'Novo Ativo'
                     : 'Editar Ativo',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: FlutterFlowTheme.of(context).info,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
             ],
@@ -313,53 +309,33 @@ class _PgAssetCUStep031213141529WidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
-                                                        ),
-                                                errorStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
+                                                          font: FlutterFlowTheme
                                                                   .of(context)
-                                                              .error,
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
+                                                errorStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -439,17 +415,11 @@ class _PgAssetCUStep031213141529WidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               minLines: 1,
                                               cursorColor:
@@ -458,6 +428,21 @@ class _PgAssetCUStep031213141529WidgetState
                                               validator: _model
                                                   .tfVoltageTextControllerValidator
                                                   .asValidator(context),
+                                              inputFormatters: [
+                                                if (!isAndroid && !isiOS)
+                                                  TextInputFormatter
+                                                      .withFunction(
+                                                          (oldValue, newValue) {
+                                                    return TextEditingValue(
+                                                      selection:
+                                                          newValue.selection,
+                                                      text: newValue.text
+                                                          .toCapitalization(
+                                                              TextCapitalization
+                                                                  .none),
+                                                    );
+                                                  }),
+                                              ],
                                             ).animateOnPageLoad(animationsMap[
                                                 'textFieldOnPageLoadAnimation1']!),
                                             TextFormField(
@@ -488,53 +473,33 @@ class _PgAssetCUStep031213141529WidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
-                                                        ),
-                                                errorStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
+                                                          font: FlutterFlowTheme
                                                                   .of(context)
-                                                              .error,
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
+                                                errorStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -614,17 +579,11 @@ class _PgAssetCUStep031213141529WidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               minLines: 1,
                                               cursorColor:
@@ -633,6 +592,21 @@ class _PgAssetCUStep031213141529WidgetState
                                               validator: _model
                                                   .tfAmperageTextControllerValidator
                                                   .asValidator(context),
+                                              inputFormatters: [
+                                                if (!isAndroid && !isiOS)
+                                                  TextInputFormatter
+                                                      .withFunction(
+                                                          (oldValue, newValue) {
+                                                    return TextEditingValue(
+                                                      selection:
+                                                          newValue.selection,
+                                                      text: newValue.text
+                                                          .toCapitalization(
+                                                              TextCapitalization
+                                                                  .none),
+                                                    );
+                                                  }),
+                                              ],
                                             ).animateOnPageLoad(animationsMap[
                                                 'textFieldOnPageLoadAnimation2']!),
                                             wrapWithModel(
@@ -681,53 +655,33 @@ class _PgAssetCUStep031213141529WidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
-                                                        ),
-                                                errorStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
+                                                          font: FlutterFlowTheme
                                                                   .of(context)
-                                                              .error,
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
+                                                errorStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -807,17 +761,11 @@ class _PgAssetCUStep031213141529WidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               minLines: 1,
                                               keyboardType:
@@ -829,6 +777,19 @@ class _PgAssetCUStep031213141529WidgetState
                                                   .tfWeightAmountTextControllerValidator
                                                   .asValidator(context),
                                               inputFormatters: [
+                                                if (!isAndroid && !isiOS)
+                                                  TextInputFormatter
+                                                      .withFunction(
+                                                          (oldValue, newValue) {
+                                                    return TextEditingValue(
+                                                      selection:
+                                                          newValue.selection,
+                                                      text: newValue.text
+                                                          .toCapitalization(
+                                                              TextCapitalization
+                                                                  .none),
+                                                    );
+                                                  }),
                                                 FilteringTextInputFormatter
                                                     .allow(RegExp('[0-9]'))
                                               ],
@@ -884,18 +845,13 @@ class _PgAssetCUStep031213141529WidgetState
                                                                   context)
                                                               .titleSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleSmallFamily,
+                                                                    .titleSmall,
                                                                 color: Colors
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily),
                                                               ),
                                                       elevation: 3.0,
                                                       borderSide: BorderSide(
@@ -1267,18 +1223,13 @@ class _PgAssetCUStep031213141529WidgetState
                                                                   context)
                                                               .titleSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleSmallFamily,
+                                                                    .titleSmall,
                                                                 color: Colors
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily),
                                                               ),
                                                       elevation: 3.0,
                                                       borderSide: BorderSide(

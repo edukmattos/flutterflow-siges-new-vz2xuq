@@ -10,6 +10,7 @@ import '/pages/users/cp_d_b_user_available/cp_d_b_user_available_widget.dart';
 import '/actions/actions.dart' as action_blocks;
 import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
+import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
@@ -19,7 +20,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_db_user_ove_model.dart';
 export 'pg_db_user_ove_model.dart';
@@ -140,14 +140,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                 '5xw9oyzr' /* Meu Painel */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily:
-                        FlutterFlowTheme.of(context).headlineMediumFamily,
+                    font: FlutterFlowTheme.of(context).headlineMedium,
                     color: FlutterFlowTheme.of(context).info,
                     fontSize: 28.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w600,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).headlineMediumFamily),
                   ),
             ),
             actions: [],
@@ -214,27 +211,21 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     .getText(
                                                   '90wtdvzs' /* Serviços EXTRAS */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineMediumFamily,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .headlineMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .headlineMedium,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineMediumFamily),
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                               Text(
                                                 FFLocalizations.of(context)
@@ -245,17 +236,10 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .labelSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmallFamily),
                                                         ),
                                               ),
                                             ],
@@ -270,18 +254,12 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .titleSmallFamily,
+                                                                .titleSmall,
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
                                                       ),
                                             ),
                                             showBadge: FFAppState()
@@ -301,109 +279,186 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                             animationType:
                                                 badges.BadgeAnimationType.scale,
                                             toAnimate: true,
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 8.0, 0.0),
-                                              child: FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 54.0,
-                                                icon: FaIcon(
-                                                  FontAwesomeIcons
-                                                      .solidBookmark,
-                                                  color: FlutterFlowTheme.of(
+                                            child: AlignedTooltip(
+                                              content: Padding(
+                                                padding: EdgeInsets.all(4.0),
+                                                child: Text(
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'ic5yiyb4' /* Favoritos */,
+                                                  ),
+                                                  style: FlutterFlowTheme.of(
                                                           context)
-                                                      .primary,
-                                                  size: 24.0,
+                                                      .bodyLarge
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                                 ),
-                                                showLoadingIndicator: true,
-                                                onPressed: (FFAppState()
-                                                            .stUserOveFollowing
-                                                            .length ==
-                                                        0)
-                                                    ? null
-                                                    : () async {
-                                                        if (_model
-                                                            .lpsvOveFollowingIsVisible) {
-                                                          _model.lpsvOveFollowingIsVisible =
-                                                              false;
-                                                          safeSetState(() {});
-                                                        } else {
-                                                          _model.lpsvOveFollowingIsVisible =
-                                                              true;
-                                                          safeSetState(() {});
-                                                        }
-                                                      },
+                                              ),
+                                              offset: 4.0,
+                                              preferredDirection:
+                                                  AxisDirection.down,
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              backgroundColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              elevation: 4.0,
+                                              tailBaseWidth: 24.0,
+                                              tailLength: 12.0,
+                                              waitDuration:
+                                                  Duration(milliseconds: 100),
+                                              showDuration:
+                                                  Duration(milliseconds: 1500),
+                                              triggerMode:
+                                                  TooltipTriggerMode.tap,
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 8.0, 0.0),
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: FaIcon(
+                                                    FontAwesomeIcons
+                                                        .solidBookmark,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    size: 24.0,
+                                                  ),
+                                                  showLoadingIndicator: true,
+                                                  onPressed: (FFAppState()
+                                                              .stUserOveFollowing
+                                                              .length ==
+                                                          0)
+                                                      ? null
+                                                      : () async {
+                                                          if (_model
+                                                              .lpsvOveFollowingIsVisible) {
+                                                            _model.lpsvOveFollowingIsVisible =
+                                                                false;
+                                                            safeSetState(() {});
+                                                          } else {
+                                                            _model.lpsvOveFollowingIsVisible =
+                                                                true;
+                                                            safeSetState(() {});
+                                                          }
+                                                        },
+                                                ),
                                               ),
                                             ),
                                           ),
-                                          FlutterFlowIconButton(
-                                            borderColor:
+                                          AlignedTooltip(
+                                            content: Padding(
+                                              padding: EdgeInsets.all(4.0),
+                                              child: Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'kbyd35ie' /* Nova */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                              ),
+                                            ),
+                                            offset: 4.0,
+                                            preferredDirection:
+                                                AxisDirection.down,
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            backgroundColor:
                                                 FlutterFlowTheme.of(context)
-                                                    .primary,
-                                            borderRadius: 16.0,
-                                            borderWidth: 6.0,
-                                            buttonSize: 54.0,
-                                            icon: FaIcon(
-                                              FontAwesomeIcons.plusCircle,
-                                              color:
+                                                    .secondaryBackground,
+                                            elevation: 4.0,
+                                            tailBaseWidth: 24.0,
+                                            tailLength: 12.0,
+                                            waitDuration:
+                                                Duration(milliseconds: 100),
+                                            showDuration:
+                                                Duration(milliseconds: 1500),
+                                            triggerMode: TooltipTriggerMode.tap,
+                                            child: FlutterFlowIconButton(
+                                              borderColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
-                                              size: 24.0,
-                                            ),
-                                            showLoadingIndicator: true,
-                                            onPressed: () async {
-                                              var _shouldSetState = false;
-                                              _model.isAllowedOveCreate =
-                                                  await action_blocks
-                                                      .abGuardian(
-                                                context,
-                                                abPgRequestedId: 28,
-                                              );
-                                              _shouldSetState = true;
-                                              if (_model.isAllowedOveCreate!) {
-                                                await showModalBottomSheet(
-                                                  isScrollControlled: true,
-                                                  backgroundColor:
-                                                      Colors.transparent,
-                                                  enableDrag: false,
-                                                  context: context,
-                                                  builder: (context) {
-                                                    return GestureDetector(
-                                                      onTap: () {
-                                                        FocusScope.of(context)
-                                                            .unfocus();
-                                                        FocusManager.instance
-                                                            .primaryFocus
-                                                            ?.unfocus();
-                                                      },
-                                                      child: Padding(
-                                                        padding: MediaQuery
-                                                            .viewInsetsOf(
-                                                                context),
-                                                        child:
-                                                            MdOVECreateWidget(),
-                                                      ),
-                                                    );
-                                                  },
-                                                ).then((value) =>
-                                                    safeSetState(() {}));
-                                              } else {
-                                                context.pushNamed(
-                                                    PgNotAllowedWidget
-                                                        .routeName);
+                                              borderRadius: 16.0,
+                                              borderWidth: 6.0,
+                                              buttonSize: 54.0,
+                                              icon: FaIcon(
+                                                FontAwesomeIcons.plusCircle,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                size: 24.0,
+                                              ),
+                                              showLoadingIndicator: true,
+                                              onPressed: () async {
+                                                var _shouldSetState = false;
+                                                _model.isAllowedOveCreate =
+                                                    await action_blocks
+                                                        .abGuardian(
+                                                  context,
+                                                  abPgRequestedId: 28,
+                                                );
+                                                _shouldSetState = true;
+                                                if (_model
+                                                    .isAllowedOveCreate!) {
+                                                  await showModalBottomSheet(
+                                                    isScrollControlled: true,
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    enableDrag: false,
+                                                    context: context,
+                                                    builder: (context) {
+                                                      return GestureDetector(
+                                                        onTap: () {
+                                                          FocusScope.of(context)
+                                                              .unfocus();
+                                                          FocusManager.instance
+                                                              .primaryFocus
+                                                              ?.unfocus();
+                                                        },
+                                                        child: Padding(
+                                                          padding: MediaQuery
+                                                              .viewInsetsOf(
+                                                                  context),
+                                                          child:
+                                                              MdOVECreateWidget(),
+                                                        ),
+                                                      );
+                                                    },
+                                                  ).then((value) =>
+                                                      safeSetState(() {}));
+                                                } else {
+                                                  context.pushNamed(
+                                                      PgNotAllowedWidget
+                                                          .routeName);
+
+                                                  if (_shouldSetState)
+                                                    safeSetState(() {});
+                                                  return;
+                                                }
 
                                                 if (_shouldSetState)
                                                   safeSetState(() {});
-                                                return;
-                                              }
-
-                                              if (_shouldSetState)
-                                                safeSetState(() {});
-                                            },
+                                              },
+                                            ),
                                           ),
                                         ].divide(SizedBox(width: 8.0)),
                                       ),
@@ -425,18 +480,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               showBadge: FFAppState()
@@ -458,31 +506,69 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               animationType: badges
                                                   .BadgeAnimationType.scale,
                                               toAnimate: true,
-                                              child: FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 54.0,
-                                                icon: Icon(
-                                                  Icons.draw,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primary,
-                                                  size: 30.0,
+                                              child: AlignedTooltip(
+                                                content: Padding(
+                                                  padding: EdgeInsets.all(4.0),
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'zite4x7y' /* Rascunho */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
                                                 ),
-                                                showLoadingIndicator: true,
-                                                onPressed: () async {
-                                                  _model.lpsvOveFollowingIsVisible =
-                                                      false;
-                                                  safeSetState(() {});
-                                                  _model.lpsvOveProcessingId =
-                                                      1;
-                                                  _model.lpsvOveProcessingIsFiled =
-                                                      false;
-                                                  safeSetState(() {});
-                                                },
+                                                offset: 4.0,
+                                                preferredDirection:
+                                                    AxisDirection.down,
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                elevation: 4.0,
+                                                tailBaseWidth: 24.0,
+                                                tailLength: 12.0,
+                                                waitDuration:
+                                                    Duration(milliseconds: 100),
+                                                showDuration: Duration(
+                                                    milliseconds: 1500),
+                                                triggerMode:
+                                                    TooltipTriggerMode.tap,
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: Icon(
+                                                    Icons.draw,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    size: 30.0,
+                                                  ),
+                                                  showLoadingIndicator: true,
+                                                  onPressed: () async {
+                                                    _model.lpsvOveFollowingIsVisible =
+                                                        false;
+                                                    safeSetState(() {});
+                                                    FFAppState()
+                                                        .stOVEProcessingId = 1;
+                                                    FFAppState().stOVEIsFiled =
+                                                        false;
+                                                    safeSetState(() {});
+                                                  },
+                                                ),
                                               ),
                                             ),
                                             badges.Badge(
@@ -498,18 +584,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               showBadge: FFAppState()
@@ -531,29 +610,70 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               animationType: badges
                                                   .BadgeAnimationType.scale,
                                               toAnimate: true,
-                                              child: FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .tertiary,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 54.0,
-                                                icon: Icon(
-                                                  Icons.report_problem_outlined,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .tertiary,
-                                                  size: 30.0,
+                                              child: AlignedTooltip(
+                                                content: Padding(
+                                                  padding: EdgeInsets.all(4.0),
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '1phds7bt' /* Reportadas */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
                                                 ),
-                                                showLoadingIndicator: true,
-                                                onPressed: () async {
-                                                  _model.lpsvOveFollowingIsVisible =
-                                                      false;
-                                                  safeSetState(() {});
-                                                  _model.lpsvOveProcessingId =
-                                                      2;
-                                                  safeSetState(() {});
-                                                },
+                                                offset: 4.0,
+                                                preferredDirection:
+                                                    AxisDirection.down,
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                elevation: 4.0,
+                                                tailBaseWidth: 24.0,
+                                                tailLength: 12.0,
+                                                waitDuration:
+                                                    Duration(milliseconds: 100),
+                                                showDuration: Duration(
+                                                    milliseconds: 1500),
+                                                triggerMode:
+                                                    TooltipTriggerMode.tap,
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .tertiary,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: Icon(
+                                                    Icons
+                                                        .report_problem_outlined,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .tertiary,
+                                                    size: 30.0,
+                                                  ),
+                                                  showLoadingIndicator: true,
+                                                  onPressed: () async {
+                                                    _model.lpsvOveFollowingIsVisible =
+                                                        false;
+                                                    safeSetState(() {});
+                                                    FFAppState()
+                                                        .stOVEProcessingId = 2;
+                                                    FFAppState().stOVEIsFiled =
+                                                        false;
+                                                    safeSetState(() {});
+                                                  },
+                                                ),
                                               ),
                                             ),
                                             badges.Badge(
@@ -569,18 +689,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               showBadge: FFAppState()
@@ -602,29 +715,70 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               animationType: badges
                                                   .BadgeAnimationType.scale,
                                               toAnimate: true,
-                                              child: FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 54.0,
-                                                icon: Icon(
-                                                  Icons.remove_red_eye_outlined,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryText,
-                                                  size: 30.0,
+                                              child: AlignedTooltip(
+                                                content: Padding(
+                                                  padding: EdgeInsets.all(4.0),
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'zehdxj19' /* Revisadas */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
                                                 ),
-                                                showLoadingIndicator: true,
-                                                onPressed: () async {
-                                                  _model.lpsvOveFollowingIsVisible =
-                                                      false;
-                                                  safeSetState(() {});
-                                                  _model.lpsvOveProcessingId =
-                                                      3;
-                                                  safeSetState(() {});
-                                                },
+                                                offset: 4.0,
+                                                preferredDirection:
+                                                    AxisDirection.down,
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                elevation: 4.0,
+                                                tailBaseWidth: 24.0,
+                                                tailLength: 12.0,
+                                                waitDuration:
+                                                    Duration(milliseconds: 100),
+                                                showDuration: Duration(
+                                                    milliseconds: 1500),
+                                                triggerMode:
+                                                    TooltipTriggerMode.tap,
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondaryText,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: Icon(
+                                                    Icons
+                                                        .remove_red_eye_outlined,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryText,
+                                                    size: 30.0,
+                                                  ),
+                                                  showLoadingIndicator: true,
+                                                  onPressed: () async {
+                                                    FFAppState()
+                                                        .stOVEProcessingId = 3;
+                                                    FFAppState().stOVEIsFiled =
+                                                        false;
+                                                    safeSetState(() {});
+                                                    _model.lpsvOveFollowingIsVisible =
+                                                        false;
+                                                    safeSetState(() {});
+                                                  },
+                                                ),
                                               ),
                                             ),
                                             badges.Badge(
@@ -640,18 +794,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               showBadge: FFAppState()
@@ -673,29 +820,69 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               animationType: badges
                                                   .BadgeAnimationType.scale,
                                               toAnimate: true,
-                                              child: FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .error,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 54.0,
-                                                icon: FaIcon(
-                                                  FontAwesomeIcons.thumbsDown,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .error,
-                                                  size: 30.0,
+                                              child: AlignedTooltip(
+                                                content: Padding(
+                                                  padding: EdgeInsets.all(4.0),
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'ooc8n5uz' /* Rejeitadas */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
                                                 ),
-                                                showLoadingIndicator: true,
-                                                onPressed: () async {
-                                                  _model.lpsvOveFollowingIsVisible =
-                                                      false;
-                                                  safeSetState(() {});
-                                                  _model.lpsvOveProcessingId =
-                                                      4;
-                                                  safeSetState(() {});
-                                                },
+                                                offset: 4.0,
+                                                preferredDirection:
+                                                    AxisDirection.down,
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                elevation: 4.0,
+                                                tailBaseWidth: 24.0,
+                                                tailLength: 12.0,
+                                                waitDuration:
+                                                    Duration(milliseconds: 100),
+                                                showDuration: Duration(
+                                                    milliseconds: 1500),
+                                                triggerMode:
+                                                    TooltipTriggerMode.tap,
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .error,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: FaIcon(
+                                                    FontAwesomeIcons.thumbsDown,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .error,
+                                                    size: 30.0,
+                                                  ),
+                                                  showLoadingIndicator: true,
+                                                  onPressed: () async {
+                                                    _model.lpsvOveFollowingIsVisible =
+                                                        false;
+                                                    safeSetState(() {});
+                                                    FFAppState()
+                                                        .stOVEProcessingId = 4;
+                                                    FFAppState().stOVEIsFiled =
+                                                        false;
+                                                    safeSetState(() {});
+                                                  },
+                                                ),
                                               ),
                                             ),
                                             badges.Badge(
@@ -711,18 +898,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               showBadge: FFAppState()
@@ -744,29 +924,69 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               animationType: badges
                                                   .BadgeAnimationType.scale,
                                               toAnimate: true,
-                                              child: FlutterFlowIconButton(
-                                                borderColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .success,
-                                                borderRadius: 16.0,
-                                                borderWidth: 6.0,
-                                                buttonSize: 54.0,
-                                                icon: FaIcon(
-                                                  FontAwesomeIcons.thumbsUp,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .success,
-                                                  size: 30.0,
+                                              child: AlignedTooltip(
+                                                content: Padding(
+                                                  padding: EdgeInsets.all(4.0),
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'vj1d19it' /* Autorizadas */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
                                                 ),
-                                                showLoadingIndicator: true,
-                                                onPressed: () async {
-                                                  _model.lpsvOveFollowingIsVisible =
-                                                      false;
-                                                  safeSetState(() {});
-                                                  _model.lpsvOveProcessingId =
-                                                      5;
-                                                  safeSetState(() {});
-                                                },
+                                                offset: 4.0,
+                                                preferredDirection:
+                                                    AxisDirection.down,
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                elevation: 4.0,
+                                                tailBaseWidth: 24.0,
+                                                tailLength: 12.0,
+                                                waitDuration:
+                                                    Duration(milliseconds: 100),
+                                                showDuration: Duration(
+                                                    milliseconds: 1500),
+                                                triggerMode:
+                                                    TooltipTriggerMode.tap,
+                                                child: FlutterFlowIconButton(
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .success,
+                                                  borderRadius: 16.0,
+                                                  borderWidth: 6.0,
+                                                  buttonSize: 54.0,
+                                                  icon: FaIcon(
+                                                    FontAwesomeIcons.thumbsUp,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .success,
+                                                    size: 30.0,
+                                                  ),
+                                                  showLoadingIndicator: true,
+                                                  onPressed: () async {
+                                                    _model.lpsvOveFollowingIsVisible =
+                                                        false;
+                                                    safeSetState(() {});
+                                                    FFAppState()
+                                                        .stOVEProcessingId = 5;
+                                                    FFAppState().stOVEIsFiled =
+                                                        false;
+                                                    safeSetState(() {});
+                                                  },
+                                                ),
                                               ),
                                             ),
                                           ].divide(SizedBox(width: 12.0)),
@@ -833,19 +1053,14 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelMediumFamily,
+                                                                      .labelMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
                                                                 ),
                                                       ).animateOnPageLoad(
                                                           animationsMap[
@@ -905,17 +1120,13 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()
@@ -969,9 +1180,10 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   true,
                                                               onPressed:
                                                                   () async {
-                                                                _model.lpsvOveProcessingId =
-                                                                    1;
-                                                                _model.lpsvOveProcessingIsFiled =
+                                                                FFAppState()
+                                                                    .stOVEProcessingId = 1;
+                                                                FFAppState()
+                                                                        .stOVEIsFiled =
                                                                     false;
                                                                 safeSetState(
                                                                     () {});
@@ -992,17 +1204,13 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()
@@ -1057,8 +1265,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   true,
                                                               onPressed:
                                                                   () async {
-                                                                _model.lpsvOveProcessingId =
-                                                                    2;
+                                                                FFAppState()
+                                                                    .stOVEProcessingId = 2;
+                                                                FFAppState()
+                                                                        .stOVEIsFiled =
+                                                                    false;
                                                                 safeSetState(
                                                                     () {});
                                                               },
@@ -1078,17 +1289,13 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()
@@ -1143,8 +1350,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   true,
                                                               onPressed:
                                                                   () async {
-                                                                _model.lpsvOveProcessingId =
-                                                                    3;
+                                                                FFAppState()
+                                                                    .stOVEProcessingId = 3;
+                                                                FFAppState()
+                                                                        .stOVEIsFiled =
+                                                                    false;
                                                                 safeSetState(
                                                                     () {});
                                                               },
@@ -1164,17 +1374,13 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()
@@ -1229,8 +1435,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   true,
                                                               onPressed:
                                                                   () async {
-                                                                _model.lpsvOveProcessingId =
-                                                                    4;
+                                                                FFAppState()
+                                                                    .stOVEProcessingId = 4;
+                                                                FFAppState()
+                                                                        .stOVEIsFiled =
+                                                                    false;
                                                                 safeSetState(
                                                                     () {});
                                                               },
@@ -1250,17 +1459,13 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()
@@ -1315,8 +1520,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   true,
                                                               onPressed:
                                                                   () async {
-                                                                _model.lpsvOveProcessingId =
-                                                                    5;
+                                                                FFAppState()
+                                                                    .stOVEProcessingId = 5;
+                                                                FFAppState()
+                                                                        .stOVEIsFiled =
+                                                                    true;
                                                                 safeSetState(
                                                                     () {});
                                                               },
@@ -1351,7 +1559,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               minWidth: 390.0,
                                               minHeight: 300.0,
                                               maxWidth: 390.0,
-                                              maxHeight: 420.0,
+                                              maxHeight: 430.0,
                                             ),
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.only(
@@ -1365,15 +1573,19 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                             ),
                                             child: Builder(
                                               builder: (context) {
-                                                final gcOVEFilters = FFAppState()
-                                                    .stDBUsersOVEFilters
-                                                    .map((e) => e)
-                                                    .toList()
-                                                    .where((e) =>
-                                                        e.processingId ==
-                                                        _model
-                                                            .lpsvOveProcessingId)
-                                                    .toList();
+                                                final gcOVEFilters =
+                                                    FFAppState()
+                                                        .stDBUsersOVEFilters
+                                                        .map((e) => e)
+                                                        .toList()
+                                                        .where((e) =>
+                                                            e.processingId ==
+                                                            valueOrDefault<int>(
+                                                              FFAppState()
+                                                                  .stOVEProcessingId,
+                                                              1,
+                                                            ))
+                                                        .toList();
 
                                                 return ListView.separated(
                                                   padding: EdgeInsets.fromLTRB(
@@ -1437,7 +1649,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               minWidth: 390.0,
                                               minHeight: 300.0,
                                               maxWidth: 390.0,
-                                              maxHeight: 420.0,
+                                              maxHeight: 430.0,
                                             ),
                                             decoration: BoxDecoration(),
                                             child: Builder(

@@ -9,7 +9,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_o_to_schedule_model.dart';
 export 'md_o_to_schedule_model.dart';
@@ -128,17 +127,10 @@ class _MdOToScheduleWidgetState extends State<MdOToScheduleWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -202,20 +194,13 @@ class _MdOToScheduleWidgetState extends State<MdOToScheduleWidget> {
                                                               context)
                                                           .headlineLarge
                                                           .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineLargeFamily,
+                                                            font: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .headlineLarge,
                                                             fontSize: 32.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w600,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .headlineLargeFamily),
                                                           ),
                                                   pickerBackgroundColor:
                                                       FlutterFlowTheme.of(
@@ -267,22 +252,15 @@ class _MdOToScheduleWidgetState extends State<MdOToScheduleWidget> {
                                                                 context)
                                                             .headlineLarge
                                                             .override(
-                                                              fontFamily:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineLargeFamily,
+                                                              font: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .headlineLarge,
                                                               fontSize: 32.0,
                                                               letterSpacing:
                                                                   0.0,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
-                                                              useGoogleFonts: GoogleFonts
-                                                                      .asMap()
-                                                                  .containsKey(
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .headlineLargeFamily),
                                                             ),
                                                     pickerBackgroundColor:
                                                         FlutterFlowTheme.of(
@@ -351,18 +329,11 @@ class _MdOToScheduleWidgetState extends State<MdOToScheduleWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall,
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily),
                                                     ),
                                             elevation: 0.0,
                                             borderRadius:
@@ -381,19 +352,13 @@ class _MdOToScheduleWidgetState extends State<MdOToScheduleWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineSmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineSmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .headlineSmall,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(FlutterFlowTheme
-                                                              .of(context)
-                                                          .headlineSmallFamily),
                                                 ),
                                           ),
                                         Row(
@@ -522,30 +487,27 @@ class _MdOToScheduleWidgetState extends State<MdOToScheduleWidget> {
                                                                 24.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .primary,
+                                                        .info,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
-                                                          color: Colors.white,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .primary,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:

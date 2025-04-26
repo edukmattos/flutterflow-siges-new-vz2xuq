@@ -440,6 +440,8 @@ dynamic deserializeParam<T>(
             return VOrdersVisitsExtrasFollowersRow(data);
           case CfgOrdersStatusesRow:
             return CfgOrdersStatusesRow(data);
+          case N8nChatHistoriesRow:
+            return N8nChatHistoriesRow(data);
           case OrdersVisitsExtrasFollowersRow:
             return OrdersVisitsExtrasFollowersRow(data);
           case CfgOrdersPrioritiesRow:

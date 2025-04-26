@@ -11,7 +11,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_t_m_create_model.dart';
 export 'md_t_m_create_model.dart';
@@ -127,17 +126,10 @@ class _MdTMCreateWidgetState extends State<MdTMCreateWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -330,30 +322,27 @@ class _MdTMCreateWidgetState extends State<MdTMCreateWidget> {
                                                                 24.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .primary,
+                                                        .info,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
-                                                          color: Colors.white,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .primary,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:

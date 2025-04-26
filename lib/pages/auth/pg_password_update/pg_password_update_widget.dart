@@ -8,7 +8,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pg_password_update_model.dart';
 export 'pg_password_update_model.dart';
 
@@ -189,16 +188,9 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .displaySmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .displaySmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -240,14 +232,9 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelSmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelSmall,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmallFamily),
                                           ),
                                     ),
                                   ),
@@ -276,16 +263,10 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                                   context)
                                               .labelLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelLargeFamily,
+                                                        .labelLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelLargeFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -356,16 +337,9 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
@@ -392,16 +366,10 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                                   context)
                                               .labelLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelLargeFamily,
+                                                        .labelLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelLargeFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -472,16 +440,9 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
@@ -540,29 +501,25 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 24.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily,
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily),
-                                                    ),
+                                                .info,
+                                            textStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .titleSmall
+                                                .override(
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .titleSmall,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w800,
+                                                ),
                                             elevation: 5.0,
                                             borderSide: BorderSide(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .info,
+                                                      .primary,
                                               width: 6.0,
                                             ),
                                             borderRadius:
@@ -620,37 +577,24 @@ class _PgPasswordUpdateWidgetState extends State<PgPasswordUpdateWidget>
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily,
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
-                                                    useGoogleFonts: GoogleFonts
-                                                            .asMap()
-                                                        .containsKey(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily),
                                                   ),
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),

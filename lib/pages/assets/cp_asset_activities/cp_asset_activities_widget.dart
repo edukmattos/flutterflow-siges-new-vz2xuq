@@ -7,8 +7,8 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_activities_model.dart';
 export 'cp_asset_activities_model.dart';
@@ -67,10 +67,8 @@ class _CpAssetActivitiesWidgetState extends State<CpAssetActivitiesWidget> {
                   'aa0l0ped' /* Intervenções */,
                 ),
                 style: FlutterFlowTheme.of(context).titleLarge.override(
-                      fontFamily: FlutterFlowTheme.of(context).titleLargeFamily,
+                      font: FlutterFlowTheme.of(context).titleLarge,
                       letterSpacing: 0.0,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).titleLargeFamily),
                     ),
               ),
               Row(
@@ -94,35 +92,23 @@ class _CpAssetActivitiesWidgetState extends State<CpAssetActivitiesWidget> {
                         labelText: FFLocalizations.of(context).getText(
                           'oq4f11lu' /* Pesquisar */,
                         ),
-                        labelStyle: FlutterFlowTheme.of(context)
-                            .bodyLarge
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyLargeFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyLargeFamily),
-                            ),
-                        hintStyle:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                        labelStyle:
+                            FlutterFlowTheme.of(context).bodyLarge.override(
+                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
-                        errorStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
+                        hintStyle: FlutterFlowTheme.of(context)
+                            .labelMedium
                             .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              color: FlutterFlowTheme.of(context).error,
+                              font: FlutterFlowTheme.of(context).labelMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
+                        errorStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  color: FlutterFlowTheme.of(context).error,
+                                  letterSpacing: 0.0,
+                                ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: FlutterFlowTheme.of(context).alternate,
@@ -171,16 +157,23 @@ class _CpAssetActivitiesWidgetState extends State<CpAssetActivitiesWidget> {
                             : null,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                       minLines: 1,
                       cursorColor: FlutterFlowTheme.of(context).primary,
                       validator:
                           _model.textControllerValidator.asValidator(context),
+                      inputFormatters: [
+                        if (!isAndroid && !isiOS)
+                          TextInputFormatter.withFunction((oldValue, newValue) {
+                            return TextEditingValue(
+                              selection: newValue.selection,
+                              text: newValue.text
+                                  .toCapitalization(TextCapitalization.none),
+                            );
+                          }),
+                      ],
                     ),
                   ),
                   FlutterFlowIconButton(

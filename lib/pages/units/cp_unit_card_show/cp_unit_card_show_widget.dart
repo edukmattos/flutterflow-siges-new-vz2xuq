@@ -10,7 +10,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_unit_card_show_model.dart';
 export 'cp_unit_card_show_model.dart';
@@ -190,12 +189,8 @@ class _CpUnitCardShowWidgetState extends State<CpUnitCardShowWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleLargeFamily,
+                                font: FlutterFlowTheme.of(context).titleLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleLargeFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation1']!),
@@ -259,11 +254,8 @@ class _CpUnitCardShowWidgetState extends State<CpUnitCardShowWidget>
                     child: Text(
                       '${FFAppState().stUnitSelected.systemParentDescription} / ${FFAppState().stUnitSelected.systemChildDescription} / ${FFAppState().stUnitSelected.unitTypeParentDescription}',
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation2']!),
@@ -283,11 +275,8 @@ class _CpUnitCardShowWidgetState extends State<CpUnitCardShowWidget>
                         child: Text(
                       FFAppState().stUnitSelected.addressFull,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     )).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation3']!),

@@ -2,7 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'table04_invoices_model.dart';
 export 'table04_invoices_model.dart';
 
@@ -97,13 +97,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .headlineMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineMediumFamily),
                                       ),
                                 ),
                               ),
@@ -125,14 +121,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -149,13 +140,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
                                   ),
                             ),
                           ),
@@ -186,13 +173,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                               hintStyle: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
@@ -233,15 +216,22 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                             validator: _model.textControllerValidator
                                 .asValidator(context),
+                            inputFormatters: [
+                              if (!isAndroid && !isiOS)
+                                TextInputFormatter.withFunction(
+                                    (oldValue, newValue) {
+                                  return TextEditingValue(
+                                    selection: newValue.selection,
+                                    text: newValue.text.toCapitalization(
+                                        TextCapitalization.sentences),
+                                  );
+                                }),
+                            ],
                           ),
                         ),
                       ),
@@ -313,13 +303,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodySmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodySmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmallFamily),
                                       ),
                                 ),
                               ],
@@ -339,13 +325,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodySmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily),
                                     ),
                               ),
                             ),
@@ -364,13 +346,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodySmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily),
                                     ),
                               ),
                             ),
@@ -383,13 +361,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
                                   ),
                             ),
                           ),
@@ -406,13 +380,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodySmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily),
                                     ),
                               ),
                             ),
@@ -426,13 +396,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
                                   ),
                             ),
                           ),
@@ -522,16 +488,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                     ],
@@ -562,16 +521,10 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       if (responsiveVisibility(
@@ -590,17 +543,10 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodySmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodySmall,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmallFamily),
                                                 ),
                                           ),
                                         ),
@@ -622,14 +568,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -657,17 +598,11 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color: Colors.white,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -688,14 +623,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLargeFamily),
                                         ),
                                   ),
                                 ),
@@ -804,16 +734,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                     ],
@@ -844,16 +767,10 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       if (responsiveVisibility(
@@ -872,17 +789,10 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodySmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodySmall,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmallFamily),
                                                 ),
                                           ),
                                         ),
@@ -904,14 +814,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -939,17 +844,11 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color: Colors.white,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -970,14 +869,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLargeFamily),
                                         ),
                                   ),
                                 ),
@@ -1086,16 +980,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                     ],
@@ -1126,16 +1013,10 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       if (responsiveVisibility(
@@ -1154,17 +1035,10 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodySmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodySmall,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmallFamily),
                                                 ),
                                           ),
                                         ),
@@ -1186,14 +1060,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -1221,17 +1090,11 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color: Colors.white,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -1252,14 +1115,9 @@ class _Table04InvoicesWidgetState extends State<Table04InvoicesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLargeFamily),
                                         ),
                                   ),
                                 ),

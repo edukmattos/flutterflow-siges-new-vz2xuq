@@ -13,9 +13,9 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_v_selected_asset_cart_model.dart';
 export 'cp_o_v_selected_asset_cart_model.dart';
@@ -124,10 +124,8 @@ class _CpOVSelectedAssetCartWidgetState
                 'bwg6w403' /* Carrinho */,
               ),
               style: FlutterFlowTheme.of(context).titleLarge.override(
-                    fontFamily: FlutterFlowTheme.of(context).titleLargeFamily,
+                    font: FlutterFlowTheme.of(context).titleLarge,
                     letterSpacing: 0.0,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).titleLargeFamily),
                   ),
             ),
           ],
@@ -155,34 +153,23 @@ class _CpOVSelectedAssetCartWidgetState
                       'r2jgyfh8' /* Inclusão Material */,
                     ),
                     labelStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                     hintText: FFLocalizations.of(context).getText(
                       '8niov5bx' /* Código e/ou descrição */,
                     ),
-                    hintStyle: FlutterFlowTheme.of(context)
-                        .labelMedium
-                        .override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).labelMediumFamily,
-                          letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).labelMediumFamily),
-                        ),
-                    errorStyle: FlutterFlowTheme.of(context)
-                        .bodyMedium
-                        .override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color: FlutterFlowTheme.of(context).error,
-                          letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyMediumFamily),
-                        ),
+                    hintStyle:
+                        FlutterFlowTheme.of(context).labelMedium.override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
+                    errorStyle:
+                        FlutterFlowTheme.of(context).bodyMedium.override(
+                              font: FlutterFlowTheme.of(context).bodyMedium,
+                              color: FlutterFlowTheme.of(context).error,
+                              letterSpacing: 0.0,
+                            ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                         color: FlutterFlowTheme.of(context).alternate,
@@ -231,16 +218,23 @@ class _CpOVSelectedAssetCartWidgetState
                             : null,
                   ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                        font: FlutterFlowTheme.of(context).bodyLarge,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).bodyLargeFamily),
                       ),
                   minLines: 1,
                   cursorColor: FlutterFlowTheme.of(context).primary,
                   validator: _model.tfSearchTermsTextControllerValidator
                       .asValidator(context),
+                  inputFormatters: [
+                    if (!isAndroid && !isiOS)
+                      TextInputFormatter.withFunction((oldValue, newValue) {
+                        return TextEditingValue(
+                          selection: newValue.selection,
+                          text: newValue.text
+                              .toCapitalization(TextCapitalization.none),
+                        );
+                      }),
+                  ],
                 ),
               ),
               Opacity(
@@ -313,12 +307,9 @@ class _CpOVSelectedAssetCartWidgetState
                   badgeContent: Text(
                     FFAppState().XstCartMaterialsAmount.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: Colors.white,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: FFAppState().XstCartMaterialsAmount > 0,

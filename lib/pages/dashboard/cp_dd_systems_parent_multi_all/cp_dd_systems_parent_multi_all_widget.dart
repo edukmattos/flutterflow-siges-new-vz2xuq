@@ -5,7 +5,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_dd_systems_parent_multi_all_model.dart';
 export 'cp_dd_systems_parent_multi_all_model.dart';
@@ -72,22 +71,16 @@ class _CpDdSystemsParentMultiAllWidgetState
       width: double.infinity,
       height: 48.0,
       searchHintTextStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+            font: FlutterFlowTheme.of(context).bodyLarge,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
           ),
       searchTextStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+            font: FlutterFlowTheme.of(context).bodyMedium,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
           ),
       textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+            font: FlutterFlowTheme.of(context).bodyLarge,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
           ),
       hintText: FFLocalizations.of(context).getText(
         'o3omnzcd' /* Sistemas */,

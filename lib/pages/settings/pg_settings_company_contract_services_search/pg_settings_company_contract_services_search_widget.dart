@@ -13,7 +13,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_settings_company_contract_services_search_model.dart';
 export 'pg_settings_company_contract_services_search_model.dart';
@@ -119,12 +118,10 @@ class _PgSettingsCompanyContractServicesSearchWidgetState
               '68pdmxxz' /* Page Title */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).accent4,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],

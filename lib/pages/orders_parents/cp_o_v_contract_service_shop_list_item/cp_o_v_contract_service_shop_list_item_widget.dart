@@ -12,7 +12,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_v_contract_service_shop_list_item_model.dart';
 export 'cp_o_v_contract_service_shop_list_item_model.dart';
@@ -178,12 +177,9 @@ class _CpOVContractServiceShopListItemWidgetState
                         'Descricao',
                       ),
                       style: FlutterFlowTheme.of(context).titleMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleMediumFamily,
+                            font: FlutterFlowTheme.of(context).titleMedium,
                             color: FlutterFlowTheme.of(context).secondaryText,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleMediumFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation1']!),
@@ -199,15 +195,12 @@ class _CpOVContractServiceShopListItemWidgetState
                     Expanded(
                       child: Text(
                         widget.cpContractServiceDt!.code,
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation2']!),
                     ),
@@ -283,15 +276,11 @@ class _CpOVContractServiceShopListItemWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleMediumFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .titleMedium,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleMediumFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation3']!),

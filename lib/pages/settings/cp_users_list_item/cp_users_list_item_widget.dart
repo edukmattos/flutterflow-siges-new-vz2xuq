@@ -12,7 +12,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_users_list_item_model.dart';
 export 'cp_users_list_item_model.dart';
@@ -141,15 +140,10 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                     ),
                                     Text(
@@ -160,15 +154,10 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                     ),
                                   ],
@@ -470,13 +459,9 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .labelMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .labelMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily),
                                       ),
                                 ),
                               ],
@@ -508,13 +493,9 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .labelMediumFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .labelMediumFamily),
                                   ),
                             ),
                             Text(
@@ -525,13 +506,9 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
                                   ),
                             ),
                           ].divide(SizedBox(width: 8.0)),
@@ -544,12 +521,8 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                       ],
@@ -567,13 +540,9 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                             ),
                           ),
@@ -635,13 +604,9 @@ class _CpUsersListItemWidgetState extends State<CpUsersListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                             ),
                           ),

@@ -5,7 +5,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_d_b_admin_o_v_e_show_mini_model.dart';
 export 'cp_d_b_admin_o_v_e_show_mini_model.dart';
 
@@ -223,18 +222,13 @@ class _CpDBAdminOVEShowMiniWidgetState extends State<CpDBAdminOVEShowMiniWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .headlineMedium,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineMediumFamily),
                                         ),
                                   ),
                                 ).animateOnPageLoad(
@@ -256,15 +250,11 @@ class _CpDBAdminOVEShowMiniWidgetState extends State<CpDBAdminOVEShowMiniWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleSmall,
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmallFamily),
                                       ),
                                 )).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation2']!),
@@ -285,15 +275,11 @@ class _CpDBAdminOVEShowMiniWidgetState extends State<CpDBAdminOVEShowMiniWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleSmall,
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmallFamily),
                                       ),
                                 )).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation3']!),
@@ -316,11 +302,8 @@ class _CpDBAdminOVEShowMiniWidgetState extends State<CpDBAdminOVEShowMiniWidget>
                         locale: FFLocalizations.of(context).languageCode,
                       )}h',
                       style: FlutterFlowTheme.of(context).labelMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelMediumFamily,
+                            font: FlutterFlowTheme.of(context).labelMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).labelMediumFamily),
                           ),
                     )).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation4']!),

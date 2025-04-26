@@ -8,7 +8,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_p_show_model.dart';
 export 'pg_o_p_show_model.dart';
@@ -95,14 +94,11 @@ class _PgOPShowWidgetState extends State<PgOPShowWidget> {
                   'kbmhrhgm' /* SS */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: Colors.white,
                       fontSize: 28.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
             ],

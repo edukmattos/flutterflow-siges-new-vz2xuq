@@ -8,7 +8,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_v_vehicles_list_item_model.dart';
 export 'cp_o_v_vehicles_list_item_model.dart';
@@ -81,12 +80,9 @@ class _CpOVVehiclesListItemWidgetState
                     Text(
                       widget.cpDtOVVehicle!.vehicleDescription,
                       style: FlutterFlowTheme.of(context).titleMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleMediumFamily,
+                            font: FlutterFlowTheme.of(context).titleMedium,
                             color: FlutterFlowTheme.of(context).primaryText,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleMediumFamily),
                           ),
                     ),
                     Row(
@@ -111,14 +107,10 @@ class _CpOVVehiclesListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                       ],
@@ -140,14 +132,10 @@ class _CpOVVehiclesListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleMediumFamily,
+                                font: FlutterFlowTheme.of(context).titleMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleMediumFamily),
                               ),
                         ),
                       ],

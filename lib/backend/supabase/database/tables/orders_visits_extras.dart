@@ -187,4 +187,12 @@ class OrdersVisitsExtrasRow extends SupabaseDataRow {
 
   DateTime? get unblockedAt => getField<DateTime>('unblocked_at');
   set unblockedAt(DateTime? value) => setField<DateTime>('unblocked_at', value);
+
+  int? get unarchivedUserId => getField<int>('unarchived_user_id');
+  set unarchivedUserId(int? value) =>
+      setField<int>('unarchived_user_id', value);
+
+  DateTime? get unarchivedAt => getField<DateTime>('unarchived_at');
+  set unarchivedAt(DateTime? value) =>
+      setField<DateTime>('unarchived_at', value);
 }

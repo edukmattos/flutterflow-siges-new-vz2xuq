@@ -5,7 +5,6 @@ import '/actions/actions.dart' as action_blocks;
 import '/index.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'md_o_p_menu_options_model.dart';
 export 'md_o_p_menu_options_model.dart';
 
@@ -104,13 +103,9 @@ class _MdOPMenuOptionsWidgetState extends State<MdOPMenuOptionsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .headlineSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .headlineSmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineSmallFamily),
                                     ),
                               ),
                               Align(
@@ -192,23 +187,21 @@ class _MdOPMenuOptionsWidgetState extends State<MdOPMenuOptionsWidget> {
                                         24.0, 0.0, 24.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    color: FlutterFlowTheme.of(context).primary,
+                                    color: FlutterFlowTheme.of(context).info,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
-                                          color: Colors.white,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
+                                          fontWeight: FontWeight.w800,
                                         ),
                                     elevation: 5.0,
                                     borderSide: BorderSide(
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                       width: 6.0,
                                     ),
                                     borderRadius: BorderRadius.circular(16.0),
@@ -270,16 +263,12 @@ class _MdOPMenuOptionsWidgetState extends State<MdOPMenuOptionsWidget> {
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleMedium,
                                         color:
                                             FlutterFlowTheme.of(context).info,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(

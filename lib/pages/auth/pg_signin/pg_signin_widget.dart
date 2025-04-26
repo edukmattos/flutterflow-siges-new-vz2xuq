@@ -12,7 +12,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'pg_signin_model.dart';
 export 'pg_signin_model.dart';
@@ -166,16 +166,10 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .headlineLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(FlutterFlowTheme
-                                                              .of(context)
-                                                          .headlineLargeFamily),
                                                 ),
                                           ),
                                         ),
@@ -196,17 +190,11 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelSmallFamily,
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
                                                       ),
                                             ),
                                           ),
@@ -237,16 +225,11 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                     ),
                                                     Row(
@@ -263,16 +246,11 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                         Switch.adaptive(
@@ -358,59 +336,39 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                       .getText(
                                                     'ifsk7r1n' /* Usuário */,
                                                   ),
-                                                  labelStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLarge
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyLargeFamily),
-                                                          ),
-                                                  hintStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelMediumFamily),
-                                                          ),
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .bodyLarge
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                  hintStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                                   errorStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
@@ -497,17 +455,10 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 minLines: 1,
                                                 cursorColor:
@@ -516,6 +467,21 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                 validator: _model
                                                     .tfUserNameTextControllerValidator
                                                     .asValidator(context),
+                                                inputFormatters: [
+                                                  if (!isAndroid && !isiOS)
+                                                    TextInputFormatter
+                                                        .withFunction((oldValue,
+                                                            newValue) {
+                                                      return TextEditingValue(
+                                                        selection:
+                                                            newValue.selection,
+                                                        text: newValue.text
+                                                            .toCapitalization(
+                                                                TextCapitalization
+                                                                    .none),
+                                                      );
+                                                    }),
+                                                ],
                                               ),
                                               TextFormField(
                                                 controller: _model
@@ -534,23 +500,16 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                       .getText(
                                                     'qnlqhchc' /* Senha */,
                                                   ),
-                                                  labelStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelLarge
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelLargeFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelLargeFamily),
-                                                          ),
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelLarge
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelLarge,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -635,17 +594,10 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 cursorColor:
                                                     FlutterFlowTheme.of(context)
@@ -792,30 +744,27 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                 24.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .primary,
+                                                        .info,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
-                                                          color: Colors.white,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .primary,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:
@@ -856,22 +805,16 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .titleMediumFamily,
+                                                                .titleMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMediumFamily),
                                                       ),
                                               elevation: 5.0,
                                               borderSide: BorderSide(
@@ -936,9 +879,9 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -947,11 +890,6 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       )
                                                     ],
@@ -959,17 +897,10 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1027,9 +958,9 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1038,11 +969,6 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       )
                                                     ],
@@ -1050,17 +976,10 @@ class _PgSigninWidgetState extends State<PgSigninWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),

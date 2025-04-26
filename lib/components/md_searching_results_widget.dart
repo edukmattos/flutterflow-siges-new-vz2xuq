@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'md_searching_results_model.dart';
 export 'md_searching_results_model.dart';
 
@@ -70,11 +69,8 @@ class _MdSearchingResultsWidgetState extends State<MdSearchingResultsWidget> {
               ),
               textAlign: TextAlign.center,
               style: FlutterFlowTheme.of(context).headlineSmall.override(
-                    fontFamily:
-                        FlutterFlowTheme.of(context).headlineSmallFamily,
+                    font: FlutterFlowTheme.of(context).headlineSmall,
                     letterSpacing: 0.0,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).headlineSmallFamily),
                   ),
             ),
             Text(
@@ -83,11 +79,9 @@ class _MdSearchingResultsWidgetState extends State<MdSearchingResultsWidget> {
               ),
               textAlign: TextAlign.center,
               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                    font: FlutterFlowTheme.of(context).bodyMedium,
                     color: FlutterFlowTheme.of(context).secondaryText,
                     letterSpacing: 0.0,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).bodyMediumFamily),
                   ),
             ),
           ].divide(SizedBox(height: 16.0)),

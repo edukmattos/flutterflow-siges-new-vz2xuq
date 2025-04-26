@@ -116,6 +116,7 @@ Future abAppOfflineUpdatesTablesTeams(BuildContext context) async {
   resTeams = await ApiTeamsGroup.apiTeamsAllCall.call(
     apiKey: FFDevEnvironmentValues().envApiKey,
     accessToken: currentJwtToken,
+    apiUrl: FFDevEnvironmentValues().envApiUrl,
   );
 
   if ((resTeams.succeeded ?? true)) {
@@ -573,6 +574,21 @@ Future abAppOfflineUpdatesTables(
     await action_blocks.abAppOfflineUpdatesTablesUnitsStatuses(context);
   } else if (abTableName == 'teams') {
     await action_blocks.abAppOfflineUpdatesTablesTeams(context);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          'Equipes atualizadas: ${valueOrDefault<String>(
+            FFAppState().stOfflineTeams.length.toString(),
+            '0',
+          )}',
+          style: TextStyle(
+            color: FlutterFlowTheme.of(context).info,
+          ),
+        ),
+        duration: Duration(milliseconds: 4000),
+        backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      ),
+    );
   } else if (abTableName == 'orders_suspended_reasons') {
     await action_blocks.abAppOfflineUpdatesTablesOSuspendedReasons(context);
   } else if (abTableName == 'vehicles') {
@@ -6279,6 +6295,7 @@ Future abOVEProcessing(
   String? abDisapprovedComments,
   required int? abOTypeSubId,
   required int? abOCauseReasonId,
+  int? abUnblockedUserId,
 }) async {
   List<VUnitsRow>? resUnit;
   ApiCallResponse? apiResultsue;
@@ -6293,12 +6310,12 @@ Future abOVEProcessing(
     data: {
       'o_mask': abOMask,
       'started_at': supaSerialize<DateTime>(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt!)),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt!)),
       'ended_at': supaSerialize<DateTime>(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt!)),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt!)),
       'duration_hours': functions.cfGetDifDecHoursBetweenDates(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt),
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt),
           2),
       'unit_id': abUnitId,
       'o_type_id': abOTypeId,
@@ -6322,13 +6339,13 @@ Future abOVEProcessing(
         0,
       ),
       'started_at_date': supaSerialize<DateTime>(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt)),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt)),
       'started_at_hour_min': supaSerialize<PostgresTime>(PostgresTime(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt))),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt))),
       'ended_at_date': supaSerialize<DateTime>(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt)),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt)),
       'ended_at_hour_min': supaSerialize<PostgresTime>(PostgresTime(
-          functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt))),
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt))),
       'o_type_sub_id': abOTypeSubId,
       'o_cause_reason_id': abOCauseReasonId,
     },
@@ -6363,17 +6380,20 @@ Future abOVEProcessing(
       await OrdersVisitsExtrasTeamsTable().update(
         data: {
           'duration_hours': functions.cfGetDifDecHoursBetweenDates(
-              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt),
-              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt),
+              functions
+                  .cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt),
+              functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt),
               2),
-          'started_at_date': supaSerialize<DateTime>(
-              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt)),
+          'started_at_date': supaSerialize<DateTime>(functions
+              .cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt)),
           'started_at_hour_min': supaSerialize<PostgresTime>(PostgresTime(
-              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt))),
-          'ended_at_date': supaSerialize<DateTime>(
-              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt)),
+              functions
+                  .cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt))),
+          'ended_at_date': supaSerialize<DateTime>(functions
+              .cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt)),
           'ended_at_hour_min': supaSerialize<PostgresTime>(PostgresTime(
-              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt))),
+              functions
+                  .cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt))),
         },
         matchingRows: (rows) => rows.eqOrNull(
           'id',
@@ -6405,17 +6425,77 @@ Future abOVEProcessing(
       ),
     );
   } else if (abProcessingId == 2) {
-    await OrdersVisitsExtrasTable().update(
-      data: {
-        'reported_user_id': abUserId,
-        'reported_at': supaSerialize<DateTime>(getCurrentTimestamp),
-        'processing_id': abProcessingId,
-      },
-      matchingRows: (rows) => rows.eqOrNull(
-        'id',
-        abOVEId,
-      ),
-    );
+    if (functions.cfConvDatetimeBrStringToDatetimeEn(abStartedAt)! >=
+        getCurrentTimestamp) {
+      await OrdersVisitsExtrasTable().update(
+        data: {
+          'reported_user_id': abUserId,
+          'reported_at': supaSerialize<DateTime>(getCurrentTimestamp),
+          'processing_id': abProcessingId,
+        },
+        matchingRows: (rows) => rows.eqOrNull(
+          'id',
+          abOVEId,
+        ),
+      );
+    } else {
+      if (functions.cfIsIntervalGreaterDifIntDaysBetweenDates(
+          functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt),
+          getCurrentTimestamp,
+          1)) {
+        if (abUnblockedUserId! > 0) {
+          await OrdersVisitsExtrasTable().update(
+            data: {
+              'reported_user_id': abUserId,
+              'reported_at': supaSerialize<DateTime>(getCurrentTimestamp),
+              'processing_id': abProcessingId,
+            },
+            matchingRows: (rows) => rows.eqOrNull(
+              'id',
+              abOVEId,
+            ),
+          );
+        } else {
+          await OrdersVisitsExtrasTable().update(
+            data: {
+              'is_blocked': true,
+            },
+            matchingRows: (rows) => rows.eqOrNull(
+              'id',
+              abOVEId,
+            ),
+          );
+          await showDialog(
+            context: context,
+            builder: (alertDialogContext) {
+              return AlertDialog(
+                title: Text('Ops...'),
+                content: Text(
+                    'Serviço Extraordinário foi bloqueado por estar fora do prazo de comunicacao.'),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(alertDialogContext),
+                    child: Text('Ok'),
+                  ),
+                ],
+              );
+            },
+          );
+        }
+      } else {
+        await OrdersVisitsExtrasTable().update(
+          data: {
+            'reported_user_id': abUserId,
+            'reported_at': supaSerialize<DateTime>(getCurrentTimestamp),
+            'processing_id': abProcessingId,
+          },
+          matchingRows: (rows) => rows.eqOrNull(
+            'id',
+            abOVEId,
+          ),
+        );
+      }
+    }
   } else if (abProcessingId == 3) {
     await OrdersVisitsExtrasTable().update(
       data: {
@@ -6495,8 +6575,8 @@ Future abOVEProcessing(
     await OrdersVisitsExtrasTeamsTable().update(
       data: {
         'duration_hours': functions.cfGetDifDecHoursBetweenDates(
-            functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abStartedAt),
-            functions.cfConvDateStringBrToDatetimeENYmdHHmm00(abEndedAt),
+            functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abStartedAt),
+            functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(abEndedAt),
             2),
       },
       matchingRows: (rows) => rows.eqOrNull(
@@ -6654,5 +6734,61 @@ Future abDbAdminOOVENoFiledFilters(BuildContext context) async {
     FFAppState().update(() {});
   } else {
     return;
+  }
+}
+
+Future abOveSearchById(
+  BuildContext context, {
+  required int? abOveId,
+}) async {
+  ApiCallResponse? resOve;
+
+  FFAppState().stDBAdminOOVEFilters = [];
+  FFAppState().stDBAdminOVEFilters = [];
+  resOve = await ApiOrdersVisitsExtrasGroup.apiOVEByIdCall.call(
+    apiUrl: FFDevEnvironmentValues().envApiUrl,
+    apiKey: FFDevEnvironmentValues().envApiKey,
+    accessToken: currentJwtToken,
+    oveId: abOveId,
+  );
+
+  if ((resOve.succeeded ?? true)) {
+    FFAppState().stDBAdminOOVEFilters = ((resOve.jsonBody ?? '')
+            .toList()
+            .map<DtOrderVisitExtraStruct?>(DtOrderVisitExtraStruct.maybeFromMap)
+            .toList() as Iterable<DtOrderVisitExtraStruct?>)
+        .withoutNulls
+        .toList()
+        .cast<DtOrderVisitExtraStruct>();
+    FFAppState().stDBAdminOVEFilters = ((resOve.jsonBody ?? '')
+            .toList()
+            .map<DtOrderVisitExtraStruct?>(DtOrderVisitExtraStruct.maybeFromMap)
+            .toList() as Iterable<DtOrderVisitExtraStruct?>)
+        .withoutNulls
+        .toList()
+        .cast<DtOrderVisitExtraStruct>();
+    FFAppState().update(() {});
+    if (FFAppState().stDBAdminOOVEFilters.length > 0) {
+      FFAppState().stOVEProcessingId = valueOrDefault<int>(
+        FFAppState().stDBAdminOOVEFilters.firstOrNull?.processingId,
+        1,
+      );
+      FFAppState().stOVEIsFiled = valueOrDefault<bool>(
+        FFAppState().stDBAdminOOVEFilters.firstOrNull?.isFiled,
+        false,
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'Ops... Nenhum registro localizado.',
+            style: TextStyle(),
+          ),
+          duration: Duration(milliseconds: 4000),
+          backgroundColor: FlutterFlowTheme.of(context).error,
+        ),
+      );
+      return;
+    }
   }
 }

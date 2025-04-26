@@ -17,7 +17,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_db_admin_ove_card_original_model.dart';
 export 'cp_db_admin_ove_card_original_model.dart';
@@ -225,6 +224,7 @@ class _CpDbAdminOveCardOriginalWidgetState
                               cpShowLoadingIndicator: false,
                               cpDisabled: false,
                               cpIsFiled: widget.cpDtOVE!.isFiled,
+                              cpOveId: widget.cpDtOVE!.id,
                             ),
                           ),
                         ].divide(SizedBox(width: 12.0)),
@@ -252,19 +252,12 @@ class _CpDbAdminOveCardOriginalWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleMedium,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -276,14 +269,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                     ),
                                     Text(
@@ -294,14 +282,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                     ),
                                     Text(
@@ -313,14 +296,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodySmall,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodySmallFamily),
                                           ),
                                     ),
                                   ],
@@ -344,13 +322,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation1']!),
@@ -359,13 +333,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelSmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation2']!),
@@ -381,13 +351,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation3']!),
@@ -420,14 +386,9 @@ class _CpDbAdminOveCardOriginalWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ],
@@ -456,18 +417,11 @@ class _CpDbAdminOveCardOriginalWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               showBadge:
@@ -514,21 +468,15 @@ class _CpDbAdminOveCardOriginalWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelSmallFamily,
+                                                                .labelSmall,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
                                                       ),
                                             ),
                                           ],

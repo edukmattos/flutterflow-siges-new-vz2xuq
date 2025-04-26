@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_walktrought_msg_model.dart';
 export 'cp_walktrought_msg_model.dart';
 
@@ -73,12 +72,9 @@ class _CpWalktroughtMsgWidgetState extends State<CpWalktroughtMsgWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineMediumFamily,
+                                font:
+                                    FlutterFlowTheme.of(context).headlineMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily),
                               ),
                         ),
                       ],
@@ -96,12 +92,8 @@ class _CpWalktroughtMsgWidgetState extends State<CpWalktroughtMsgWidget> {
                           style: FlutterFlowTheme.of(context)
                               .labelLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelLargeFamily,
+                                font: FlutterFlowTheme.of(context).labelLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .labelLargeFamily),
                               ),
                         ),
                       ],

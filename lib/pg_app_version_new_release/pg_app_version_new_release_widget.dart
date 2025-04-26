@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pg_app_version_new_release_model.dart';
 export 'pg_app_version_new_release_model.dart';
 
@@ -213,12 +212,8 @@ class _PgAppVersionNewReleaseWidgetState
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .displaySmallFamily,
+                                font: FlutterFlowTheme.of(context).displaySmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .displaySmallFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation1']!),
@@ -233,12 +228,8 @@ class _PgAppVersionNewReleaseWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelLargeFamily,
+                                  font: FlutterFlowTheme.of(context).labelLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelLargeFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation2']!),
@@ -254,12 +245,8 @@ class _PgAppVersionNewReleaseWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelLargeFamily,
+                                  font: FlutterFlowTheme.of(context).labelLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelLargeFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation3']!),

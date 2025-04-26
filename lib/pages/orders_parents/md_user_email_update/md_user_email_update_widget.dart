@@ -10,7 +10,7 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'md_user_email_update_model.dart';
 export 'md_user_email_update_model.dart';
@@ -131,17 +131,10 @@ class _MdUserEmailUpdateWidgetState extends State<MdUserEmailUpdateWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -212,51 +205,36 @@ class _MdUserEmailUpdateWidgetState extends State<MdUserEmailUpdateWidget> {
                                                                   context)
                                                               .bodyLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyLargeFamily,
+                                                                    .bodyLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily),
                                                               ),
                                                       hintStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelMediumFamily,
+                                                                    .labelMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelMediumFamily),
                                                               ),
                                                       errorStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .error,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
@@ -343,17 +321,10 @@ class _MdUserEmailUpdateWidgetState extends State<MdUserEmailUpdateWidget> {
                                                             context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                     minLines: 1,
                                                     cursorColor:
@@ -363,6 +334,22 @@ class _MdUserEmailUpdateWidgetState extends State<MdUserEmailUpdateWidget> {
                                                     validator: _model
                                                         .tfUserEmailPrefixTextControllerValidator
                                                         .asValidator(context),
+                                                    inputFormatters: [
+                                                      if (!isAndroid && !isiOS)
+                                                        TextInputFormatter
+                                                            .withFunction(
+                                                                (oldValue,
+                                                                    newValue) {
+                                                          return TextEditingValue(
+                                                            selection: newValue
+                                                                .selection,
+                                                            text: newValue.text
+                                                                .toCapitalization(
+                                                                    TextCapitalization
+                                                                        .none),
+                                                          );
+                                                        }),
+                                                    ],
                                                   ),
                                                 ),
                                                 Text(
@@ -373,17 +360,11 @@ class _MdUserEmailUpdateWidgetState extends State<MdUserEmailUpdateWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                               ],
@@ -498,30 +479,27 @@ class _MdUserEmailUpdateWidgetState extends State<MdUserEmailUpdateWidget> {
                                                                 24.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .primary,
+                                                        .info,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
-                                                          color: Colors.white,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .primary,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:

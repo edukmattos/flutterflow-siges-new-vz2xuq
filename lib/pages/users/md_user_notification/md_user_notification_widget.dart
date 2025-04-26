@@ -9,7 +9,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_user_notification_model.dart';
 export 'md_user_notification_model.dart';
@@ -134,17 +133,10 @@ class _MdUserNotificationWidgetState extends State<MdUserNotificationWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -227,18 +219,14 @@ class _MdUserNotificationWidgetState extends State<MdUserNotificationWidget> {
                                                                       .of(context)
                                                                   .bodyLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyLarge,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -264,19 +252,14 @@ class _MdUserNotificationWidgetState extends State<MdUserNotificationWidget> {
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelMediumFamily,
+                                                                    .labelMedium,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelMediumFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -294,16 +277,11 @@ class _MdUserNotificationWidgetState extends State<MdUserNotificationWidget> {
                                                                   .of(context)
                                                               .labelSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelSmallFamily,
+                                                                    .labelSmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelSmallFamily),
                                                               ),
                                                         ),
                                                       ),

@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_t_m_show_model.dart';
 export 'cp_t_m_show_model.dart';
 
@@ -162,11 +161,8 @@ class _CpTMShowWidgetState extends State<CpTMShowWidget>
                         'Descricao',
                       ),
                       style: FlutterFlowTheme.of(context).titleLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleLargeFamily,
+                            font: FlutterFlowTheme.of(context).titleLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleLargeFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation1']!),
@@ -183,11 +179,8 @@ class _CpTMShowWidgetState extends State<CpTMShowWidget>
                       child: Text(
                         widget.cpTMDt!.assetTypeDescription,
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyLargeFamily,
+                              font: FlutterFlowTheme.of(context).bodyLarge,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyLargeFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation2']!),
@@ -199,11 +192,8 @@ class _CpTMShowWidgetState extends State<CpTMShowWidget>
                       child: Text(
                         widget.cpTMDt!.tmTypeDescription,
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyLargeFamily,
+                              font: FlutterFlowTheme.of(context).bodyLarge,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyLargeFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation3']!),

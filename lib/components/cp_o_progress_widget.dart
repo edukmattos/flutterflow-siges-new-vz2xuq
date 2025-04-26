@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'cp_o_progress_model.dart';
 export 'cp_o_progress_model.dart';
@@ -77,10 +76,8 @@ class _CpOProgressWidgetState extends State<CpOProgressWidget> {
           '0',
         ),
         style: FlutterFlowTheme.of(context).bodySmall.override(
-              fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+              font: FlutterFlowTheme.of(context).bodySmall,
               letterSpacing: 0.0,
-              useGoogleFonts: GoogleFonts.asMap()
-                  .containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
             ),
       ),
     );

@@ -2,7 +2,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'cp_input_text_model.dart';
 export 'cp_input_text_model.dart';
 
@@ -69,23 +69,17 @@ class _CpInputTextWidgetState extends State<CpInputTextWidget> {
       decoration: InputDecoration(
         labelText: widget.cpLabelText,
         labelStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-              fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+              font: FlutterFlowTheme.of(context).bodyLarge,
               letterSpacing: 0.0,
-              useGoogleFonts: GoogleFonts.asMap()
-                  .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
             ),
         hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-              fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+              font: FlutterFlowTheme.of(context).labelMedium,
               letterSpacing: 0.0,
-              useGoogleFonts: GoogleFonts.asMap()
-                  .containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
             ),
         errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+              font: FlutterFlowTheme.of(context).bodyMedium,
               color: FlutterFlowTheme.of(context).error,
               letterSpacing: 0.0,
-              useGoogleFonts: GoogleFonts.asMap()
-                  .containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
             ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
@@ -133,15 +127,22 @@ class _CpInputTextWidgetState extends State<CpInputTextWidget> {
             : null,
       ),
       style: FlutterFlowTheme.of(context).bodyLarge.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+            font: FlutterFlowTheme.of(context).bodyLarge,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
           ),
       maxLines: 10,
       minLines: 1,
       cursorColor: FlutterFlowTheme.of(context).primary,
       validator: _model.inputTextTextControllerValidator.asValidator(context),
+      inputFormatters: [
+        if (!isAndroid && !isiOS)
+          TextInputFormatter.withFunction((oldValue, newValue) {
+            return TextEditingValue(
+              selection: newValue.selection,
+              text: newValue.text.toCapitalization(TextCapitalization.none),
+            );
+          }),
+      ],
     );
   }
 }

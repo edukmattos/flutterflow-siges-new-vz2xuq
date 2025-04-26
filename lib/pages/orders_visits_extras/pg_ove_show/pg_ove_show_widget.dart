@@ -23,7 +23,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_ove_show_model.dart';
 export 'pg_ove_show_model.dart';
@@ -194,13 +193,11 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
               'ybrlu8i0' /* Serviço Extra */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -302,6 +299,8 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                           cpIsFiled: FFAppState()
                                               .stOVESelected
                                               .isFiled,
+                                          cpOveId:
+                                              FFAppState().stOVESelected.id,
                                         ),
                                       ),
                                     ].divide(SizedBox(width: 8.0)),
@@ -331,18 +330,12 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineSmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineSmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .headlineSmall,
                                                   fontSize: 20.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(FlutterFlowTheme
-                                                              .of(context)
-                                                          .headlineSmallFamily),
                                                 ),
                                           ),
                                         ),
@@ -356,17 +349,11 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                         Text(
@@ -379,17 +366,11 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                         Text(
@@ -402,17 +383,11 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                       ],
@@ -431,14 +406,9 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation1']!),
@@ -447,14 +417,9 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodySmall,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodySmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation2']!),
@@ -463,14 +428,9 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation3']!),
@@ -493,16 +453,9 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
                                             ),
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation4']!),
@@ -722,14 +675,12 @@ class _PgOveShowWidgetState extends State<PgOveShowWidget>
                                                                           context)
                                                                       .bodySmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodySmall,
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                       ),
                                                                   elevation:
                                                                       0.0,

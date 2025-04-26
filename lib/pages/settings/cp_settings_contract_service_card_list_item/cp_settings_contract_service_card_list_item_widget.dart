@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_settings_contract_service_card_list_item_model.dart';
 export 'cp_settings_contract_service_card_list_item_model.dart';
 
@@ -162,12 +161,8 @@ class _CpSettingsContractServiceCardListItemWidgetState
                       child: Text(
                         widget.cpContractServiceDt!.description,
                         style: FlutterFlowTheme.of(context).titleLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleLargeFamily,
+                              font: FlutterFlowTheme.of(context).titleLarge,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleLargeFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation1']!),
@@ -183,11 +178,8 @@ class _CpSettingsContractServiceCardListItemWidgetState
                     child: Text(
                       widget.cpContractServiceDt!.unit,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation2']!),

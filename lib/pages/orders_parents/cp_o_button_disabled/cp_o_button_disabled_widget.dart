@@ -4,7 +4,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_button_disabled_model.dart';
 export 'cp_o_button_disabled_model.dart';
 
@@ -120,8 +119,7 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                       style: FlutterFlowTheme.of(context)
                           .headlineSmall
                           .override(
-                            fontFamily: FlutterFlowTheme.of(context)
-                                .headlineSmallFamily,
+                            font: FlutterFlowTheme.of(context).headlineSmall,
                             color: () {
                               if (widget.cpOPriorityId == 1) {
                                 return FlutterFlowTheme.of(context).info;
@@ -132,9 +130,6 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                               }
                             }(),
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily),
                           ),
                     ),
                   ),
@@ -154,8 +149,7 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                         ),
                         minFontSize: 10.0,
                         style: FlutterFlowTheme.of(context).labelSmall.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).labelSmallFamily,
+                              font: FlutterFlowTheme.of(context).labelSmall,
                               color: () {
                                 if (widget.cpOPriorityId == 1) {
                                   return FlutterFlowTheme.of(context).info;
@@ -168,17 +162,13 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                                 }
                               }(),
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .labelSmallFamily),
                             ),
                       ),
                       AutoSizeText(
                         '${widget.cpOTypeCode}/${widget.cpOTypeSubCode}/${widget.cpOObjectCode}',
                         minFontSize: 10.0,
                         style: FlutterFlowTheme.of(context).labelSmall.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).labelSmallFamily,
+                              font: FlutterFlowTheme.of(context).labelSmall,
                               color: () {
                                 if (widget.cpOPriorityId == 1) {
                                   return FlutterFlowTheme.of(context).info;
@@ -191,9 +181,6 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                                 }
                               }(),
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .labelSmallFamily),
                             ),
                       ),
                     ].divide(SizedBox(width: 4.0)),
@@ -201,8 +188,7 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                   Text(
                     widget.cpOPriorityCode!,
                     style: FlutterFlowTheme.of(context).labelSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).labelSmallFamily,
+                          font: FlutterFlowTheme.of(context).labelSmall,
                           color: () {
                             if (widget.cpOPriorityId == 1) {
                               return FlutterFlowTheme.of(context).info;
@@ -213,8 +199,6 @@ class _CpOButtonDisabledWidgetState extends State<CpOButtonDisabledWidget>
                             }
                           }(),
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).labelSmallFamily),
                         ),
                   ),
                 ].divide(SizedBox(width: 8.0)),

@@ -15,7 +15,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_p_show_model.dart';
 export 'cp_o_p_show_model.dart';
@@ -293,17 +292,13 @@ class _CpOPShowWidgetState extends State<CpOPShowWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .headlineMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .headlineMedium,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       fontSize: 20.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineMediumFamily),
                                     ),
                               ),
                             ).animateOnPageLoad(
@@ -315,12 +310,8 @@ class _CpOPShowWidgetState extends State<CpOPShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyLargeFamily,
+                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily),
                                 ),
                           )).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation2']!),
@@ -330,14 +321,10 @@ class _CpOPShowWidgetState extends State<CpOPShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                           )).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation3']!),

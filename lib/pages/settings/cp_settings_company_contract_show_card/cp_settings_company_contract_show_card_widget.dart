@@ -6,7 +6,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_settings_company_contract_show_card_model.dart';
 export 'cp_settings_company_contract_show_card_model.dart';
@@ -150,12 +149,8 @@ class _CpSettingsCompanyContractShowCardWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .bodyLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyLargeFamily,
+                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily),
                                 ),
                           ),
                         ),
@@ -164,12 +159,8 @@ class _CpSettingsCompanyContractShowCardWidgetState
                           style: FlutterFlowTheme.of(context)
                               .labelMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelMediumFamily,
+                                font: FlutterFlowTheme.of(context).labelMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .labelMediumFamily),
                               ),
                         ),
                         Text(
@@ -177,12 +168,8 @@ class _CpSettingsCompanyContractShowCardWidgetState
                           style: FlutterFlowTheme.of(context)
                               .labelMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelMediumFamily,
+                                font: FlutterFlowTheme.of(context).labelMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .labelMediumFamily),
                               ),
                         ),
                       ],
@@ -209,12 +196,8 @@ class _CpSettingsCompanyContractShowCardWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodyLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyLargeFamily,
+                                font: FlutterFlowTheme.of(context).bodyLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily),
                               ),
                         ),
                       ),
@@ -236,12 +219,8 @@ class _CpSettingsCompanyContractShowCardWidgetState
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),

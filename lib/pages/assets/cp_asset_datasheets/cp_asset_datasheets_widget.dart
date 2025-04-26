@@ -6,7 +6,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_datasheets_model.dart';
 export 'cp_asset_datasheets_model.dart';
@@ -1301,13 +1300,9 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation1']!),
@@ -1327,15 +1322,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation2']!),
@@ -1352,15 +1343,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation3']!),
@@ -1380,15 +1367,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation4']!),
@@ -1401,15 +1384,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation5']!),
@@ -1429,15 +1408,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation6']!),
@@ -1450,15 +1425,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation7']!),
@@ -1478,15 +1449,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation8']!),
@@ -1503,15 +1470,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation9']!),
@@ -1531,15 +1494,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation10']!),
@@ -1552,15 +1511,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation11']!),
@@ -1580,15 +1535,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation12']!),
@@ -1601,15 +1552,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation13']!),
@@ -1663,13 +1610,9 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation14']!),
@@ -1689,15 +1632,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation15']!),
@@ -1718,16 +1657,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation16']!),
@@ -1736,16 +1670,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation17']!),
@@ -1754,16 +1683,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation18']!),
@@ -1785,15 +1709,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation19']!),
@@ -1806,15 +1726,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation20']!),
@@ -1834,15 +1750,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation21']!),
@@ -1855,15 +1767,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation22']!),
@@ -1883,15 +1791,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation23']!),
@@ -1904,15 +1808,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation24']!),
@@ -1932,15 +1832,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation25']!),
@@ -1953,15 +1849,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation26']!),
@@ -1981,15 +1873,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation27']!),
@@ -2002,15 +1890,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation28']!),
@@ -2030,15 +1914,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation29']!),
@@ -2051,15 +1931,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation30']!),
@@ -2112,13 +1988,9 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation31']!),
@@ -2138,15 +2010,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation32']!),
@@ -2159,15 +2027,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation33']!),
@@ -2187,15 +2051,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation34']!),
@@ -2208,15 +2068,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation35']!),
@@ -2236,15 +2092,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation36']!),
@@ -2257,15 +2109,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation37']!),
@@ -2285,15 +2133,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation38']!),
@@ -2306,15 +2150,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation39']!),
@@ -2334,15 +2174,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation40']!),
@@ -2355,15 +2191,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation41']!),
@@ -2383,15 +2215,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation42']!),
@@ -2407,15 +2235,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation43']!),
@@ -2435,15 +2259,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation44']!),
@@ -2456,15 +2276,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation45']!),
@@ -2521,13 +2337,9 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation46']!),
@@ -2547,15 +2359,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation47']!),
@@ -2572,16 +2380,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation48']!),
@@ -2603,15 +2406,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation49']!),
@@ -2628,16 +2427,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation50']!),
@@ -2659,15 +2453,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation51']!),
@@ -2684,16 +2474,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation52']!),
@@ -2715,15 +2500,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation53']!),
@@ -2744,16 +2525,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation54']!),
@@ -2775,15 +2551,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation55']!),
@@ -2800,16 +2572,11 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation56']!),
@@ -2841,11 +2608,8 @@ class _CpAssetDatasheetsWidgetState extends State<CpAssetDatasheetsWidget>
                     'pn4etdi9' /* NÃO DISPONÍVEL */,
                   ),
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).headlineSmallFamily,
+                        font: FlutterFlowTheme.of(context).headlineSmall,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).headlineSmallFamily),
                       ),
                 ),
               ],

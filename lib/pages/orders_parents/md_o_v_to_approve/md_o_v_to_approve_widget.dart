@@ -18,7 +18,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_o_v_to_approve_model.dart';
 export 'md_o_v_to_approve_model.dart';
@@ -278,17 +277,10 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -345,20 +337,13 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelLarge,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLargeFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation1']!),
@@ -396,20 +381,13 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelLarge,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLargeFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation2']!),
@@ -447,20 +425,13 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelLarge,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLargeFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation3']!),
@@ -506,19 +477,14 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                                   context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelLargeFamily,
+                                                                    .labelLarge,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelLargeFamily),
                                                               ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
@@ -558,20 +524,13 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelLarge,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLargeFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation5']!),
@@ -609,20 +568,13 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelLarge,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLargeFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation6']!),
@@ -655,20 +607,13 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelLarge,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLargeFamily),
                                                         ),
                                                   ).animateOnPageLoad(animationsMap[
                                                       'textOnPageLoadAnimation7']!),
@@ -859,30 +804,27 @@ class _MdOVToApproveWidgetState extends State<MdOVToApproveWidget>
                                                                 24.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .primary,
+                                                        .info,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
-                                                          color: Colors.white,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
+                                                          fontWeight:
+                                                              FontWeight.w800,
                                                         ),
                                                     elevation: 5.0,
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .info,
+                                                              .primary,
                                                       width: 6.0,
                                                     ),
                                                     borderRadius:

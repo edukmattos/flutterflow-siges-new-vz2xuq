@@ -3,7 +3,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'modal11_create_note_model.dart';
 export 'modal11_create_note_model.dart';
 
@@ -112,12 +112,9 @@ class _Modal11CreateNoteWidgetState extends State<Modal11CreateNoteWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily,
+                                font:
+                                    FlutterFlowTheme.of(context).headlineSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily),
                               ),
                         ),
                       ),
@@ -131,12 +128,8 @@ class _Modal11CreateNoteWidgetState extends State<Modal11CreateNoteWidget> {
                           style: FlutterFlowTheme.of(context)
                               .labelMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelMediumFamily,
+                                font: FlutterFlowTheme.of(context).labelMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .labelMediumFamily),
                               ),
                         ),
                       ),
@@ -152,12 +145,8 @@ class _Modal11CreateNoteWidgetState extends State<Modal11CreateNoteWidget> {
                             labelStyle: FlutterFlowTheme.of(context)
                                 .bodyLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyLargeFamily,
+                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily),
                                 ),
                             hintText: FFLocalizations.of(context).getText(
                               'loecqg36' /* Leave note here... */,
@@ -165,12 +154,8 @@ class _Modal11CreateNoteWidgetState extends State<Modal11CreateNoteWidget> {
                             hintStyle: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelLargeFamily,
+                                  font: FlutterFlowTheme.of(context).labelLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelLargeFamily),
                                 ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -209,17 +194,24 @@ class _Modal11CreateNoteWidgetState extends State<Modal11CreateNoteWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                           maxLines: 4,
                           cursorColor: FlutterFlowTheme.of(context).primary,
                           validator: _model.emailAddressTextControllerValidator
                               .asValidator(context),
+                          inputFormatters: [
+                            if (!isAndroid && !isiOS)
+                              TextInputFormatter.withFunction(
+                                  (oldValue, newValue) {
+                                return TextEditingValue(
+                                  selection: newValue.selection,
+                                  text: newValue.text.toCapitalization(
+                                      TextCapitalization.sentences),
+                                );
+                              }),
+                          ],
                         ),
                       ),
                       Padding(
@@ -243,13 +235,9 @@ class _Modal11CreateNoteWidgetState extends State<Modal11CreateNoteWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color: Colors.white,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                             elevation: 2.0,
                             borderSide: BorderSide(

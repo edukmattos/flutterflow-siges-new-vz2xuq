@@ -14,7 +14,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_materials_list_item_model.dart';
 export 'cp_asset_materials_list_item_model.dart';
@@ -82,13 +81,10 @@ class _CpAssetMaterialsListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineMediumFamily,
+                                font:
+                                    FlutterFlowTheme.of(context).headlineMedium,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily),
                               ),
                         ),
                       ),

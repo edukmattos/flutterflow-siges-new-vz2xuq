@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pppp_model.dart';
 export 'pppp_model.dart';
 
@@ -68,12 +67,10 @@ class _PpppWidgetState extends State<PpppWidget> {
               'y7trdvlz' /* Page Title */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).accent4,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],

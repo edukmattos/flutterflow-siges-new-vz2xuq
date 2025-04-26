@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_no_records_founded_model.dart';
 export 'cp_no_records_founded_model.dart';
 
@@ -66,11 +65,8 @@ class _CpNoRecordsFoundedWidgetState extends State<CpNoRecordsFoundedWidget> {
             Text(
               widget.cpTitle,
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily:
-                        FlutterFlowTheme.of(context).headlineMediumFamily,
+                    font: FlutterFlowTheme.of(context).headlineMedium,
                     letterSpacing: 0.0,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).headlineMediumFamily),
                   ),
             ),
             Expanded(
@@ -90,11 +86,8 @@ class _CpNoRecordsFoundedWidgetState extends State<CpNoRecordsFoundedWidget> {
                     child: Text(
                       widget.cpBody,
                       style: FlutterFlowTheme.of(context).labelMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelMediumFamily,
+                            font: FlutterFlowTheme.of(context).labelMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).labelMediumFamily),
                           ),
                     ),
                   ),

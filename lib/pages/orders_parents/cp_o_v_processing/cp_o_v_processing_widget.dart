@@ -5,7 +5,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_v_processing_model.dart';
 export 'cp_o_v_processing_model.dart';
 
@@ -475,10 +474,8 @@ class _CpOVProcessingWidgetState extends State<CpOVProcessingWidget>
               '77tm266l' /*   */,
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                  font: FlutterFlowTheme.of(context).bodyMedium,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).bodyMediumFamily),
                 ),
           );
         }

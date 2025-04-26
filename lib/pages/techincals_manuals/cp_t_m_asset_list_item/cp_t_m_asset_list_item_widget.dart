@@ -8,7 +8,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_t_m_asset_list_item_model.dart';
 export 'cp_t_m_asset_list_item_model.dart';
@@ -342,13 +341,9 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineSmallFamily),
                                       ),
                                 ).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation1']!),
@@ -382,13 +377,9 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleMediumFamily,
+                                font: FlutterFlowTheme.of(context).titleMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleMediumFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation2']!),
@@ -410,11 +401,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                           'Unidade',
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyLargeFamily,
+                              font: FlutterFlowTheme.of(context).bodyLarge,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyLargeFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation3']!),
@@ -442,12 +430,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation4']!),
@@ -459,12 +443,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation5']!),
@@ -476,12 +456,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation6']!),
@@ -503,13 +479,9 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation7']!),
@@ -524,13 +496,9 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation8']!),
@@ -551,12 +519,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                       Text(
                         'R\$ ${functions.cfConvDoubleToCurrency2Decimals(widget.cpAssetDt!.acquisitionValue.toString(), 2)}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation9']!),
@@ -570,12 +534,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                           'Observações',
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation10']!),
@@ -592,11 +552,8 @@ class _CpTMAssetListItemWidgetState extends State<CpTMAssetListItemWidget>
                       'Observações',
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyMediumFamily),
                         ),
                   ).animateOnPageLoad(
                       animationsMap['textOnPageLoadAnimation11']!),

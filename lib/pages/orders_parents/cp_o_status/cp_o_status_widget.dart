@@ -5,7 +5,6 @@ import 'package:badges/badges.dart' as badges;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_status_model.dart';
 export 'cp_o_status_model.dart';
 
@@ -235,11 +234,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       '10syenrb' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -257,11 +253,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -294,12 +287,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -322,11 +311,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       'zo6hwhlw' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -344,11 +330,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -381,12 +364,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -409,11 +388,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       '00yubm6i' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -431,11 +407,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -468,12 +441,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -496,11 +465,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       'zvcf3cyx' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -518,11 +484,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -555,12 +518,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -583,11 +542,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       'cyd5609j' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -605,11 +561,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -642,12 +595,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -670,11 +619,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       'hjccmjhn' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -692,11 +638,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -729,12 +672,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -757,11 +696,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       '23kx69vi' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -779,11 +715,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -816,12 +749,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),
@@ -844,11 +773,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                       'pjjirjpb' /* Não Programadas */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyLargeFamily),
                         ),
                   ),
                 ),
@@ -866,11 +792,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                   badgeContent: Text(
                     widget.cpBadge!.toString(),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                   ),
                   showBadge: widget.cpBadge! > 0,
@@ -903,12 +826,8 @@ class _CpOStatusWidgetState extends State<CpOStatusWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                         ),
                       ),

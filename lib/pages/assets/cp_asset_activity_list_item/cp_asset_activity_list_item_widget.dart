@@ -10,7 +10,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_activity_list_item_model.dart';
 export 'cp_asset_activity_list_item_model.dart';
@@ -188,13 +187,9 @@ class _CpAssetActivityListItemWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation1']!),
@@ -213,13 +208,9 @@ class _CpAssetActivityListItemWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelSmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily),
                                     ),
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation2']!),
@@ -235,14 +226,9 @@ class _CpAssetActivityListItemWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelSmall,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmallFamily),
                                         ),
                                   )).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation3']!),
@@ -255,14 +241,9 @@ class _CpAssetActivityListItemWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelSmall,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmallFamily),
                                         ),
                                   )).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation4']!),
@@ -306,14 +287,10 @@ class _CpAssetActivityListItemWidgetState
                         ),
                         maxLines: 2,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ),
                       Padding(
@@ -328,14 +305,10 @@ class _CpAssetActivityListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.normal,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                       ),
@@ -348,14 +321,10 @@ class _CpAssetActivityListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.normal,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                       ),
@@ -368,14 +337,10 @@ class _CpAssetActivityListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.normal,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                       ),
@@ -469,13 +434,9 @@ class _CpAssetActivityListItemWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ),
@@ -501,14 +462,10 @@ class _CpAssetActivityListItemWidgetState
                         ),
                         maxLines: 2,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ),
                     ),
@@ -519,14 +476,10 @@ class _CpAssetActivityListItemWidgetState
                         widget.cpOVAssetDt!.activitiesSearchable,
                         maxLines: 2,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ),
                     ),
@@ -551,14 +504,10 @@ class _CpAssetActivityListItemWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w600,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                       ),
@@ -575,15 +524,11 @@ class _CpAssetActivityListItemWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.normal,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ),
                         ),
@@ -597,15 +542,11 @@ class _CpAssetActivityListItemWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.normal,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ),
                         ),
@@ -619,15 +560,11 @@ class _CpAssetActivityListItemWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.normal,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ),
                         ),
@@ -722,13 +659,9 @@ class _CpAssetActivityListItemWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ),
@@ -754,14 +687,10 @@ class _CpAssetActivityListItemWidgetState
                         ),
                         maxLines: 2,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ),
                     ),
@@ -799,14 +728,9 @@ class _CpAssetActivityListItemWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ),
@@ -815,14 +739,9 @@ class _CpAssetActivityListItemWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ],

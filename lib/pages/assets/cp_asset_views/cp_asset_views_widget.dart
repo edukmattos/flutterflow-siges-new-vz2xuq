@@ -24,7 +24,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_views_model.dart';
 export 'cp_asset_views_model.dart';
@@ -119,11 +118,8 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                         'r3aztfhf' /* Componentes */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ),
                   ),
@@ -177,11 +173,8 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                         'f6uj9cgc' /* Movimentações */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ),
                   ),
@@ -231,11 +224,8 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                         '6d4k754b' /* Message... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ),
                   ),
@@ -286,12 +276,9 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                           .cartMaterialsAmount
                           .toString(),
                       style: FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleSmallFamily,
+                            font: FlutterFlowTheme.of(context).titleSmall,
                             color: Colors.white,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleSmallFamily),
                           ),
                     ),
                     showBadge: true,
@@ -338,11 +325,8 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                         'mpwzz2y0' /* Intervenções */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ),
                   ),
@@ -398,11 +382,8 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                         '69jmmxw5' /* Substituir */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ),
                   ),
@@ -455,11 +436,8 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                         's3u0gqtv' /* Substituir */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyLargeFamily,
+                            font: FlutterFlowTheme.of(context).bodyLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyLargeFamily),
                           ),
                     ),
                   ),
@@ -637,36 +615,24 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily),
                                     ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                                 errorStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       color: FlutterFlowTheme.of(context).error,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -720,13 +686,9 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                               minLines: 1,
                               keyboardType: TextInputType.number,
@@ -734,6 +696,15 @@ class _CpAssetViewsWidgetState extends State<CpAssetViewsWidget>
                               validator: _model.textControllerValidator
                                   .asValidator(context),
                               inputFormatters: [
+                                if (!isAndroid && !isiOS)
+                                  TextInputFormatter.withFunction(
+                                      (oldValue, newValue) {
+                                    return TextEditingValue(
+                                      selection: newValue.selection,
+                                      text: newValue.text.toCapitalization(
+                                          TextCapitalization.none),
+                                    );
+                                  }),
                                 FilteringTextInputFormatter.allow(
                                     RegExp('[0-9]'))
                               ],

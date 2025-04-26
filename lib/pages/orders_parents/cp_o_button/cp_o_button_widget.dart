@@ -7,7 +7,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_button_model.dart';
 export 'cp_o_button_model.dart';
 
@@ -196,8 +195,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleLarge,
                                     color: () {
                                       if (widget.cpODt?.priorityId == 1) {
                                         return FlutterFlowTheme.of(context)
@@ -212,10 +211,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                       }
                                     }(),
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleLargeFamily),
                                   ),
                             ),
                           ],
@@ -238,9 +233,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodySmall,
                                           color: () {
                                             if (widget.cpODt?.priorityId ==
                                                 1) {
@@ -260,10 +254,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                             }
                                           }(),
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodySmallFamily),
                                         ),
                                   ),
                                   AutoSizeText(
@@ -272,9 +262,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodySmall,
                                           color: () {
                                             if (widget.cpODt?.priorityId ==
                                                 1) {
@@ -294,10 +283,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                             }
                                           }(),
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodySmallFamily),
                                         ),
                                   ),
                                 ].divide(SizedBox(width: 4.0)),
@@ -308,8 +293,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     color: () {
                                       if (widget.cpODt?.priorityId == 1) {
                                         return FlutterFlowTheme.of(context)
@@ -324,10 +309,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                       }
                                     }(),
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
                                   ),
                             ),
                           ].divide(SizedBox(width: 8.0)),
@@ -384,8 +365,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                             style: FlutterFlowTheme.of(context)
                                 .headlineSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .headlineSmallFamily,
+                                  font: FlutterFlowTheme.of(context)
+                                      .headlineSmall,
                                   color: () {
                                     if (widget.cpODt?.priorityId == 1) {
                                       return FlutterFlowTheme.of(context).info;
@@ -398,9 +379,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                     }
                                   }(),
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .headlineSmallFamily),
                                 ),
                           ),
                         ),
@@ -423,8 +401,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelSmall,
                                       color: () {
                                         if (widget.cpODt?.priorityId == 1) {
                                           return FlutterFlowTheme.of(context)
@@ -439,10 +417,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                         }
                                       }(),
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily),
                                     ),
                               ),
                               AutoSizeText(
@@ -451,8 +425,8 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelSmall,
                                       color: () {
                                         if (widget.cpODt?.priorityId == 1) {
                                           return FlutterFlowTheme.of(context)
@@ -467,10 +441,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                         }
                                       }(),
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily),
                                     ),
                               ),
                             ].divide(SizedBox(width: 4.0)),
@@ -481,8 +451,7 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                           style: FlutterFlowTheme.of(context)
                               .labelSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelSmallFamily,
+                                font: FlutterFlowTheme.of(context).labelSmall,
                                 color: () {
                                   if (widget.cpODt?.priorityId == 1) {
                                     return FlutterFlowTheme.of(context).info;
@@ -495,9 +464,6 @@ class _CpOButtonWidgetState extends State<CpOButtonWidget>
                                   }
                                 }(),
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .labelSmallFamily),
                               ),
                         ),
                       ].divide(SizedBox(width: 8.0)),

@@ -7,7 +7,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_v_selected_asset_cart_list_item_model.dart';
 export 'cp_o_v_selected_asset_cart_list_item_model.dart';
 
@@ -168,11 +167,8 @@ class _CpOVSelectedAssetCartListItemWidgetState
                         'Descricao',
                       ),
                       style: FlutterFlowTheme.of(context).titleLarge.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleLargeFamily,
+                            font: FlutterFlowTheme.of(context).titleLarge,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleLargeFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation1']!),
@@ -189,13 +185,9 @@ class _CpOVSelectedAssetCartListItemWidgetState
                       child: Text(
                         widget.cpCartMaterialDt!.code,
                         style: FlutterFlowTheme.of(context).titleLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleLargeFamily,
+                              font: FlutterFlowTheme.of(context).titleLarge,
                               color: FlutterFlowTheme.of(context).secondaryText,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleLargeFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation2']!),
@@ -215,12 +207,8 @@ class _CpOVSelectedAssetCartListItemWidgetState
                       Text(
                         '${functions.cfConvDoubleToCurrency2Decimals(widget.cpCartMaterialDt!.amount.toString(), 2)} ${widget.cpCartMaterialDt?.unit}',
                         style: FlutterFlowTheme.of(context).titleLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleLargeFamily,
+                              font: FlutterFlowTheme.of(context).titleLarge,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleLargeFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation3']!),

@@ -21,7 +21,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'x_xmd_o_v_e_show_model.dart';
 export 'x_xmd_o_v_e_show_model.dart';
@@ -223,6 +222,7 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                               cpShowLoadingIndicator: false,
                               cpDisabled: true,
                               cpIsFiled: FFAppState().stOVESelected.isFiled,
+                              cpOveId: FFAppState().stOVESelected.id,
                             ),
                           ),
                         ].divide(SizedBox(width: 8.0)),
@@ -248,15 +248,11 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .headlineSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .headlineSmall,
                                       fontSize: 20.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineSmallFamily),
                                     ),
                               ),
                             ),
@@ -268,14 +264,10 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                             ),
                             Text(
@@ -286,14 +278,10 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                             ),
                             Text(
@@ -306,14 +294,10 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                             ),
                           ],
@@ -329,35 +313,24 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                       Text(
                         '${functions.cfConvDatetimeEnStringToDatetimeBrString(FFAppState().stOVESelected.startedAt)}h',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation1']!),
                       Text(
                         '(${functions.cfConvDoubleToCurrency2Decimals(FFAppState().stOVESelected.durationHours.toString(), 2)}h )',
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodySmallFamily,
+                              font: FlutterFlowTheme.of(context).bodySmall,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodySmallFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation2']!),
                       Text(
                         '${functions.cfConvDatetimeEnStringToDatetimeBrString(FFAppState().stOVESelected.endedAt)}h',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation3']!),
@@ -381,12 +354,8 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation4']!),
@@ -637,19 +606,14 @@ class _XXmdOVEShowWidgetState extends State<XXmdOVEShowWidget>
                                                                   context)
                                                               .bodySmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmallFamily,
+                                                                    .bodySmall,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodySmallFamily),
                                                               ),
                                                       elevation: 0.0,
                                                       borderSide: BorderSide(

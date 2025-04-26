@@ -4,7 +4,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_moves_model.dart';
 export 'cp_asset_moves_model.dart';
@@ -70,13 +69,10 @@ class _CpAssetMovesWidgetState extends State<CpAssetMovesWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineMediumFamily,
+                                font:
+                                    FlutterFlowTheme.of(context).headlineMedium,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily),
                               ),
                         ),
                       ),

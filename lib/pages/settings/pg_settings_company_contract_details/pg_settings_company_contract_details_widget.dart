@@ -17,7 +17,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_settings_company_contract_details_model.dart';
 export 'pg_settings_company_contract_details_model.dart';
@@ -51,6 +50,7 @@ class _PgSettingsCompanyContractDetailsWidgetState
       length: 2,
       initialIndex: 0,
     )..addListener(() => safeSetState(() {}));
+
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -104,13 +104,11 @@ class _PgSettingsCompanyContractDetailsWidgetState
               'rez7y8zq' /* Contrato */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).info,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -161,13 +159,9 @@ class _PgSettingsCompanyContractDetailsWidgetState
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .labelMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .labelMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily),
                                       ),
                                   unselectedLabelStyle: TextStyle(),
                                   labelColor:
@@ -385,9 +379,8 @@ class _PgSettingsCompanyContractDetailsWidgetState
                                                                                 'i3sch5w7' /* Remover */,
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                    font: FlutterFlowTheme.of(context).bodyLarge,
                                                                                     letterSpacing: 0.0,
-                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                                   ),
                                                                             ),
                                                                           ),
@@ -472,9 +465,8 @@ class _PgSettingsCompanyContractDetailsWidgetState
                                                                                       'nameShort',
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                          font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                           letterSpacing: 0.0,
-                                                                                          useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                                         ),
                                                                                   ),
                                                                                 ),
@@ -630,9 +622,8 @@ class _PgSettingsCompanyContractDetailsWidgetState
                                                                                                     'nameFull',
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                                        font: FlutterFlowTheme.of(context).bodyLarge,
                                                                                                         letterSpacing: 0.0,
-                                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                                                       ),
                                                                                                 ),
                                                                                                 Padding(
@@ -643,9 +634,8 @@ class _PgSettingsCompanyContractDetailsWidgetState
                                                                                                       'teamDescription',
                                                                                                     ),
                                                                                                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                                                          font: FlutterFlowTheme.of(context).labelMedium,
                                                                                                           letterSpacing: 0.0,
-                                                                                                          useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                                                         ),
                                                                                                   ),
                                                                                                 ),

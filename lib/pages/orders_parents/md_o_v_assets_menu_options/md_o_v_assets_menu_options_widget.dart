@@ -10,7 +10,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_o_v_assets_menu_options_model.dart';
 export 'md_o_v_assets_menu_options_model.dart';
@@ -104,13 +103,9 @@ class _MdOVAssetsMenuOptionsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .headlineSmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .headlineSmallFamily),
                                   ),
                             ),
                             Align(
@@ -190,16 +185,12 @@ class _MdOVAssetsMenuOptionsWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleMedium,
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(
@@ -364,16 +355,12 @@ class _MdOVAssetsMenuOptionsWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleMedium,
                                         color:
                                             FlutterFlowTheme.of(context).info,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 5.0,
                                   borderSide: BorderSide(

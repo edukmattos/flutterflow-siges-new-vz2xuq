@@ -642,6 +642,13 @@ class FFAppState extends ChangeNotifier {
         }
       }
     });
+    _safeInit(() {
+      _stOVEProcessingId =
+          prefs.getInt('ff_stOVEProcessingId') ?? _stOVEProcessingId;
+    });
+    _safeInit(() {
+      _stOVEIsFiled = prefs.getBool('ff_stOVEIsFiled') ?? _stOVEIsFiled;
+    });
   }
 
   void update(VoidCallback callback) {
@@ -4353,6 +4360,20 @@ class FFAppState extends ChangeNotifier {
   void insertAtIndexInStDbUserOveFollowing(
       int index, DtOrderVisitExtraStruct value) {
     stDbUserOveFollowing.insert(index, value);
+  }
+
+  int _stOVEProcessingId = 1;
+  int get stOVEProcessingId => _stOVEProcessingId;
+  set stOVEProcessingId(int value) {
+    _stOVEProcessingId = value;
+    prefs.setInt('ff_stOVEProcessingId', value);
+  }
+
+  bool _stOVEIsFiled = false;
+  bool get stOVEIsFiled => _stOVEIsFiled;
+  set stOVEIsFiled(bool value) {
+    _stOVEIsFiled = value;
+    prefs.setBool('ff_stOVEIsFiled', value);
   }
 }
 

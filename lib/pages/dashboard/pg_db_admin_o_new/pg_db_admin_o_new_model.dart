@@ -22,29 +22,23 @@ class PgDbAdminONewModel extends FlutterFlowModel<PgDbAdminONewWidget> {
 
   int lpsvOTeamId = 0;
 
-  int lpsvOveProcessingId = 0;
-
-  bool lpsvOveIsFiled = false;
-
   ///  State fields for stateful widgets in this page.
 
   // Model for cpMenu component.
   late CpMenuModel cpMenuModel;
   // Model for cpDBUserAvailable component.
   late CpDBUserAvailableModel cpDBUserAvailableModel;
+  // Stores action output result for [Action Block - abGuardian] action in IconButton widget.
+  bool? isAllowedOveCreate;
   // State field(s) for tf_ove_id widget.
   FocusNode? tfOveIdFocusNode;
   TextEditingController? tfOveIdTextController;
   String? Function(BuildContext, String?)? tfOveIdTextControllerValidator;
-  // Stores action output result for [Backend Call - API (apiOVEById)] action in IconButton widget.
-  ApiCallResponse? resOve;
   DateTime? datePicked;
   // Stores action output result for [Backend Call - API (apiOVEFilters)] action in IconButton widget.
   ApiCallResponse? resDBAdminOOVExtras;
   // Model for cpDBAdminNavBar component.
   late CpDBAdminNavBarModel cpDBAdminNavBarModel;
-  // Stores action output result for [Action Block - abGuardian] action in IconButton widget.
-  bool? isAllowedOveCreate;
 
   @override
   void initState(BuildContext context) {

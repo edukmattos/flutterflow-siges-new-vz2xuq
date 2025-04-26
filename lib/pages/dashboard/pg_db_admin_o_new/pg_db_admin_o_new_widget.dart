@@ -24,8 +24,8 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_db_admin_o_new_model.dart';
 export 'pg_db_admin_o_new_model.dart';
@@ -173,62 +173,6 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        floatingActionButton: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
-          child: FloatingActionButton(
-            onPressed: () {
-              print('FloatingActionButton pressed ...');
-            },
-            elevation: 8.0,
-            child: FlutterFlowIconButton(
-              borderColor: FlutterFlowTheme.of(context).primary,
-              borderRadius: 16.0,
-              borderWidth: 6.0,
-              buttonSize: 54.0,
-              icon: FaIcon(
-                FontAwesomeIcons.plusCircle,
-                color: FlutterFlowTheme.of(context).primary,
-                size: 24.0,
-              ),
-              showLoadingIndicator: true,
-              onPressed: () async {
-                var _shouldSetState = false;
-                _model.isAllowedOveCreate = await action_blocks.abGuardian(
-                  context,
-                  abPgRequestedId: 28,
-                );
-                _shouldSetState = true;
-                if (_model.isAllowedOveCreate!) {
-                  await showModalBottomSheet(
-                    isScrollControlled: true,
-                    backgroundColor: Colors.transparent,
-                    enableDrag: false,
-                    context: context,
-                    builder: (context) {
-                      return GestureDetector(
-                        onTap: () {
-                          FocusScope.of(context).unfocus();
-                          FocusManager.instance.primaryFocus?.unfocus();
-                        },
-                        child: Padding(
-                          padding: MediaQuery.viewInsetsOf(context),
-                          child: MdOVECreateWidget(),
-                        ),
-                      );
-                    },
-                  ).then((value) => safeSetState(() {}));
-                } else {
-                  context.pushNamed(PgNotAllowedWidget.routeName);
-
-                  if (_shouldSetState) safeSetState(() {});
-                  return;
-                }
-
-                if (_shouldSetState) safeSetState(() {});
-              },
-            ),
-          ),
-        ),
         endDrawer: Drawer(
           elevation: 16.0,
           child: wrapWithModel(
@@ -245,13 +189,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
               'm5r5fsb7' /* Painel Geral */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -319,16 +261,9 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
                                             ),
                                       ),
                                       SingleChildScrollView(
@@ -455,15 +390,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                                       .of(context)
                                                                   .bodySmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodySmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodySmall,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodySmallFamily),
                                                                   ),
                                                             ),
                                                           ],
@@ -509,20 +440,14 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .headlineMedium,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(FlutterFlowTheme
-                                                              .of(context)
-                                                          .headlineMediumFamily),
                                                 ),
                                           ),
                                           Text(
@@ -532,20 +457,74 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelSmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelSmall,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelSmallFamily),
                                                 ),
                                           ),
                                         ],
+                                      ),
+                                      FlutterFlowIconButton(
+                                        borderColor:
+                                            FlutterFlowTheme.of(context)
+                                                .primary,
+                                        borderRadius: 16.0,
+                                        borderWidth: 6.0,
+                                        buttonSize: 54.0,
+                                        icon: FaIcon(
+                                          FontAwesomeIcons.plusCircle,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
+                                          size: 24.0,
+                                        ),
+                                        showLoadingIndicator: true,
+                                        onPressed: () async {
+                                          var _shouldSetState = false;
+                                          _model.isAllowedOveCreate =
+                                              await action_blocks.abGuardian(
+                                            context,
+                                            abPgRequestedId: 28,
+                                          );
+                                          _shouldSetState = true;
+                                          if (_model.isAllowedOveCreate!) {
+                                            await showModalBottomSheet(
+                                              isScrollControlled: true,
+                                              backgroundColor:
+                                                  Colors.transparent,
+                                              enableDrag: false,
+                                              context: context,
+                                              builder: (context) {
+                                                return GestureDetector(
+                                                  onTap: () {
+                                                    FocusScope.of(context)
+                                                        .unfocus();
+                                                    FocusManager
+                                                        .instance.primaryFocus
+                                                        ?.unfocus();
+                                                  },
+                                                  child: Padding(
+                                                    padding:
+                                                        MediaQuery.viewInsetsOf(
+                                                            context),
+                                                    child: MdOVECreateWidget(),
+                                                  ),
+                                                );
+                                              },
+                                            ).then(
+                                                (value) => safeSetState(() {}));
+                                          } else {
+                                            context.pushNamed(
+                                                PgNotAllowedWidget.routeName);
+
+                                            if (_shouldSetState)
+                                              safeSetState(() {});
+                                            return;
+                                          }
+
+                                          if (_shouldSetState)
+                                            safeSetState(() {});
+                                        },
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -577,17 +556,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 hintText:
                                                     FFLocalizations.of(context)
@@ -598,37 +570,24 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
-                                                        ),
-                                                errorStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
+                                                          font: FlutterFlowTheme
                                                                   .of(context)
-                                                              .error,
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
+                                                errorStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -708,17 +667,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               minLines: 1,
                                               keyboardType:
@@ -729,6 +682,21 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               validator: _model
                                                   .tfOveIdTextControllerValidator
                                                   .asValidator(context),
+                                              inputFormatters: [
+                                                if (!isAndroid && !isiOS)
+                                                  TextInputFormatter
+                                                      .withFunction(
+                                                          (oldValue, newValue) {
+                                                    return TextEditingValue(
+                                                      selection:
+                                                          newValue.selection,
+                                                      text: newValue.text
+                                                          .toCapitalization(
+                                                              TextCapitalization
+                                                                  .none),
+                                                    );
+                                                  }),
+                                              ],
                                             ),
                                           ),
                                           AlignedTooltip(
@@ -743,17 +711,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                               ),
                                             ),
@@ -780,8 +741,8 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               borderRadius: 16.0,
                                               borderWidth: 6.0,
                                               buttonSize: 54.0,
-                                              icon: FaIcon(
-                                                FontAwesomeIcons.searchengin,
+                                              icon: Icon(
+                                                Icons.flash_on,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,
@@ -789,87 +750,13 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               ),
                                               showLoadingIndicator: true,
                                               onPressed: () async {
-                                                var _shouldSetState = false;
-                                                FFAppState()
-                                                    .stDBAdminOOVEFilters = [];
-                                                safeSetState(() {});
-                                                _model.resOve =
-                                                    await ApiOrdersVisitsExtrasGroup
-                                                        .apiOVEByIdCall
-                                                        .call(
-                                                  apiUrl:
-                                                      FFDevEnvironmentValues()
-                                                          .envApiUrl,
-                                                  apiKey:
-                                                      FFDevEnvironmentValues()
-                                                          .envApiKey,
-                                                  accessToken: currentJwtToken,
-                                                  oveId: int.tryParse(_model
+                                                await action_blocks
+                                                    .abOveSearchById(
+                                                  context,
+                                                  abOveId: int.tryParse(_model
                                                       .tfOveIdTextController
                                                       .text),
                                                 );
-
-                                                _shouldSetState = true;
-                                                if ((_model.resOve?.succeeded ??
-                                                    true)) {
-                                                  FFAppState()
-                                                      .stDBAdminOOVEFilters = ((_model
-                                                                      .resOve
-                                                                      ?.jsonBody ??
-                                                                  '')
-                                                              .toList()
-                                                              .map<DtOrderVisitExtraStruct?>(
-                                                                  DtOrderVisitExtraStruct
-                                                                      .maybeFromMap)
-                                                              .toList()
-                                                          as Iterable<
-                                                              DtOrderVisitExtraStruct?>)
-                                                      .withoutNulls
-                                                      .toList()
-                                                      .cast<
-                                                          DtOrderVisitExtraStruct>();
-                                                  safeSetState(() {});
-                                                  if (FFAppState()
-                                                          .stDBAdminOOVEFilters
-                                                          .length >
-                                                      0) {
-                                                    _model.lpsvOveProcessingId =
-                                                        valueOrDefault<int>(
-                                                      FFAppState()
-                                                          .stDBAdminOOVEFilters
-                                                          .firstOrNull
-                                                          ?.processingId,
-                                                      0,
-                                                    );
-                                                    safeSetState(() {});
-                                                  } else {
-                                                    ScaffoldMessenger.of(
-                                                            context)
-                                                        .showSnackBar(
-                                                      SnackBar(
-                                                        content: Text(
-                                                          'Ops... Nenhum registro localizado.',
-                                                          style: TextStyle(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .info,
-                                                          ),
-                                                        ),
-                                                        duration: Duration(
-                                                            milliseconds: 4000),
-                                                        backgroundColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .error,
-                                                      ),
-                                                    );
-                                                    if (_shouldSetState)
-                                                      safeSetState(() {});
-                                                    return;
-                                                  }
-                                                }
-                                                if (_shouldSetState)
-                                                  safeSetState(() {});
                                               },
                                             ),
                                           ),
@@ -885,17 +772,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                                 ),
                                           ),
                                         ),
@@ -953,20 +833,13 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                               context)
                                                           .headlineLarge
                                                           .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineLargeFamily,
+                                                            font: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .headlineLarge,
                                                             fontSize: 32.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w600,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .headlineLargeFamily),
                                                           ),
                                                   pickerBackgroundColor:
                                                       FlutterFlowTheme.of(
@@ -1164,17 +1037,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .titleSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily,
+                                                        .titleSmall,
                                                 color: Colors.white,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmallFamily),
                                               ),
                                         ),
                                         showBadge:
@@ -1284,18 +1151,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                                   ),
                                                   showBadge: FFAppState()
@@ -1339,10 +1199,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {
-                                                      _model.lpsvOveProcessingId =
-                                                          1;
-                                                      _model.lpsvOveIsFiled =
-                                                          false;
+                                                      FFAppState()
+                                                          .stOVEProcessingId = 1;
+                                                      FFAppState()
+                                                          .stOVEIsFiled = false;
                                                       safeSetState(() {});
                                                     },
                                                   ),
@@ -1365,18 +1225,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                                   ),
                                                   showBadge: FFAppState()
@@ -1421,10 +1274,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {
-                                                      _model.lpsvOveProcessingId =
-                                                          2;
-                                                      _model.lpsvOveIsFiled =
-                                                          false;
+                                                      FFAppState()
+                                                          .stOVEProcessingId = 2;
+                                                      FFAppState()
+                                                          .stOVEIsFiled = false;
                                                       safeSetState(() {});
                                                     },
                                                   ),
@@ -1447,18 +1300,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                                   ),
                                                   showBadge: FFAppState()
@@ -1503,10 +1349,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {
-                                                      _model.lpsvOveProcessingId =
-                                                          3;
-                                                      _model.lpsvOveIsFiled =
-                                                          false;
+                                                      FFAppState()
+                                                          .stOVEProcessingId = 3;
+                                                      FFAppState()
+                                                          .stOVEIsFiled = false;
                                                       safeSetState(() {});
                                                     },
                                                   ),
@@ -1529,18 +1375,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                                   ),
                                                   showBadge: FFAppState()
@@ -1585,10 +1424,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {
-                                                      _model.lpsvOveProcessingId =
-                                                          4;
-                                                      _model.lpsvOveIsFiled =
-                                                          false;
+                                                      FFAppState()
+                                                          .stOVEProcessingId = 4;
+                                                      FFAppState()
+                                                          .stOVEIsFiled = false;
                                                       safeSetState(() {});
                                                     },
                                                   ),
@@ -1614,18 +1453,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .titleSmall,
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
                                                         ),
                                                   ),
                                                   showBadge: FFAppState()
@@ -1671,10 +1503,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                     ),
                                                     showLoadingIndicator: true,
                                                     onPressed: () async {
-                                                      _model.lpsvOveProcessingId =
-                                                          5;
-                                                      _model.lpsvOveIsFiled =
-                                                          false;
+                                                      FFAppState()
+                                                          .stOVEProcessingId = 5;
+                                                      FFAppState()
+                                                          .stOVEIsFiled = false;
                                                       safeSetState(() {});
                                                     },
                                                   ),
@@ -1721,10 +1553,14 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               .stDBAdminOOVEFilters
                                               .where((e) =>
                                                   (e.processingId ==
-                                                      _model
-                                                          .lpsvOveProcessingId) &&
+                                                      valueOrDefault<int>(
+                                                        FFAppState()
+                                                            .stOVEProcessingId,
+                                                        1,
+                                                      )) &&
                                                   (e.isFiled ==
-                                                      _model.lpsvOveIsFiled))
+                                                      FFAppState()
+                                                          .stOVEIsFiled))
                                               .toList()
                                               .map((e) => e)
                                               .toList()

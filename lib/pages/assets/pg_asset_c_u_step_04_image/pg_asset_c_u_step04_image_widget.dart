@@ -16,7 +16,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_asset_c_u_step04_image_model.dart';
 export 'pg_asset_c_u_step04_image_model.dart';
@@ -120,13 +119,10 @@ class _PgAssetCUStep04ImageWidgetState extends State<PgAssetCUStep04ImageWidget>
               Text(
                 widget.ppOperation == 'create' ? 'Novo Ativo' : 'Editar Ativo',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: FlutterFlowTheme.of(context).info,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
             ],
@@ -557,22 +553,16 @@ class _PgAssetCUStep04ImageWidgetState extends State<PgAssetCUStep04ImageWidget>
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .titleMediumFamily,
+                                                                .titleMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .info,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMediumFamily),
                                                       ),
                                               elevation: 5.0,
                                               borderSide: BorderSide(
@@ -617,29 +607,25 @@ class _PgAssetCUStep04ImageWidgetState extends State<PgAssetCUStep04ImageWidget>
                                                       24.0, 0.0, 24.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
+                                                      .info,
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .titleSmall
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .titleSmall,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w800,
+                                                  ),
                                               elevation: 5.0,
                                               borderSide: BorderSide(
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .info,
+                                                        .primary,
                                                 width: 6.0,
                                               ),
                                               borderRadius:

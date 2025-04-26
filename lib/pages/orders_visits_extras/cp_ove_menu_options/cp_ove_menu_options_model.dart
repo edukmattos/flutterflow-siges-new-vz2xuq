@@ -21,6 +21,11 @@ class CpOveMenuOptionsModel extends FlutterFlowModel<CpOveMenuOptionsWidget> {
 
   bool lpsvIsVisibleDisapprovedComments = false;
 
+  ///  State fields for stateful widgets in this component.
+
+  // Stores action output result for [Action Block - abGuardian] action in Button widget.
+  bool? isAllowUnclock;
+
   @override
   void initState(BuildContext context) {}
 

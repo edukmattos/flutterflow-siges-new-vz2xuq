@@ -23,9 +23,9 @@ import 'package:flip_card/flip_card.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_d_b_admin_o_model.dart';
 export 'pg_d_b_admin_o_model.dart';
@@ -433,14 +433,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                 'sdzl4y99' /* Painel Geral */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily:
-                        FlutterFlowTheme.of(context).headlineMediumFamily,
+                    font: FlutterFlowTheme.of(context).headlineMedium,
                     color: Colors.white,
                     fontSize: 28.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w600,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).headlineMediumFamily),
                   ),
             ),
             actions: [],
@@ -633,19 +630,13 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .headlineMedium,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(FlutterFlowTheme
-                                                          .of(context)
-                                                      .headlineMediumFamily),
                                             ),
                                       ),
                                       Text(
@@ -655,16 +646,9 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelSmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmallFamily),
                                             ),
                                       ),
                                     ],
@@ -682,17 +666,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                                 ),
                                           ),
                                         ),
@@ -722,18 +699,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .titleSmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .titleSmall,
                                                   color: Colors.white,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily),
                                                 ),
                                           ),
                                           showBadge: FFAppState()
@@ -879,53 +849,33 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
-                                                        ),
-                                                errorStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
+                                                          font: FlutterFlowTheme
                                                                   .of(context)
-                                                              .error,
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
+                                                errorStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -986,17 +936,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               minLines: 1,
                                               cursorColor:
@@ -1005,6 +949,21 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                               validator: _model
                                                   .textFieldOTextController1Validator
                                                   .asValidator(context),
+                                              inputFormatters: [
+                                                if (!isAndroid && !isiOS)
+                                                  TextInputFormatter
+                                                      .withFunction(
+                                                          (oldValue, newValue) {
+                                                    return TextEditingValue(
+                                                      selection:
+                                                          newValue.selection,
+                                                      text: newValue.text
+                                                          .toCapitalization(
+                                                              TextCapitalization
+                                                                  .none),
+                                                    );
+                                                  }),
+                                              ],
                                             ),
                                           ),
                                           Expanded(
@@ -1028,59 +987,39 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                       .getText(
                                                     'javo5v7g' /* Seq */,
                                                   ),
-                                                  labelStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLarge
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyLargeFamily),
-                                                          ),
-                                                  hintStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelMediumFamily),
-                                                          ),
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .bodyLarge
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                  hintStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                                   errorStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
@@ -1148,17 +1087,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 minLines: 1,
                                                 cursorColor:
@@ -1167,6 +1099,21 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                 validator: _model
                                                     .textFieldOTextController2Validator
                                                     .asValidator(context),
+                                                inputFormatters: [
+                                                  if (!isAndroid && !isiOS)
+                                                    TextInputFormatter
+                                                        .withFunction((oldValue,
+                                                            newValue) {
+                                                      return TextEditingValue(
+                                                        selection:
+                                                            newValue.selection,
+                                                        text: newValue.text
+                                                            .toCapitalization(
+                                                                TextCapitalization
+                                                                    .none),
+                                                      );
+                                                    }),
+                                                ],
                                               ),
                                             ),
                                           ),
@@ -1191,59 +1138,39 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                       .getText(
                                                     'kt4k2hax' /* Ano */,
                                                   ),
-                                                  labelStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLarge
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyLargeFamily),
-                                                          ),
-                                                  hintStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelMediumFamily),
-                                                          ),
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .bodyLarge
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                  hintStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                                   errorStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
@@ -1311,17 +1238,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLargeFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyLargeFamily),
                                                         ),
                                                 minLines: 1,
                                                 cursorColor:
@@ -1330,6 +1250,21 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                 validator: _model
                                                     .textFieldOTextController3Validator
                                                     .asValidator(context),
+                                                inputFormatters: [
+                                                  if (!isAndroid && !isiOS)
+                                                    TextInputFormatter
+                                                        .withFunction((oldValue,
+                                                            newValue) {
+                                                      return TextEditingValue(
+                                                        selection:
+                                                            newValue.selection,
+                                                        text: newValue.text
+                                                            .toCapitalization(
+                                                                TextCapitalization
+                                                                    .none),
+                                                      );
+                                                    }),
+                                                ],
                                               ),
                                             ),
                                           ),
@@ -1489,16 +1424,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                   context)
                                                               .bodyLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyLargeFamily,
+                                                                    .bodyLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily),
                                                               ),
                                                     ),
                                                   ),
@@ -1592,9 +1522,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).headlineLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Align(
@@ -1610,9 +1539,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .labelMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).labelMedium,
                                                                                 letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                               ),
                                                                         ),
                                                                       ),
@@ -1691,9 +1619,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).headlineLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -1704,9 +1631,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).labelMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -1784,9 +1710,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).headlineLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -1797,9 +1722,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).labelMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -1877,9 +1801,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).headlineLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -1890,9 +1813,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).labelMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -1970,9 +1892,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).headlineLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -1983,9 +1904,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).labelMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -2063,9 +1983,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).headlineLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -2076,9 +1995,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).labelMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -2270,19 +2188,14 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelMediumFamily,
+                                                                      .labelMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
                                                                 ),
                                                       ).animateOnPageLoad(
                                                           animationsMap[
@@ -2312,15 +2225,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         context)
                                                                     .bodyLarge
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -2386,12 +2295,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .titleSmall,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                       ),
                                                                 ),
                                                                 showBadge: FFAppState()
@@ -2463,9 +2370,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .titleSmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).titleSmall,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                             ),
                                                                       ),
                                                                     ),
@@ -2497,15 +2403,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         context)
                                                                     .bodyLarge
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -2571,12 +2473,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .titleSmall,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                       ),
                                                                 ),
                                                                 showBadge: FFAppState()
@@ -2648,9 +2548,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .titleSmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).titleSmall,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                             ),
                                                                       ),
                                                                     ),
@@ -2682,15 +2581,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         context)
                                                                     .bodyLarge
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -2756,12 +2651,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .titleSmall,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                       ),
                                                                 ),
                                                                 showBadge: FFAppState()
@@ -2833,9 +2726,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .titleSmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).titleSmall,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                             ),
                                                                       ),
                                                                     ),
@@ -2867,15 +2759,11 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         context)
                                                                     .bodyLarge
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyLarge,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -2941,12 +2829,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .titleSmall,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                       ),
                                                                 ),
                                                                 showBadge: FFAppState()
@@ -3018,9 +2904,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .titleSmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).titleSmall,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                             ),
                                                                       ),
                                                                     ),
@@ -3061,12 +2946,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodyLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                       ),
                                                                 ),
                                                               ),
@@ -3134,12 +3017,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                         ),
                                                                   ),
                                                                   showBadge: FFAppState()
@@ -3213,9 +3094,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                font: FlutterFlowTheme.of(context).titleSmall,
                                                                                 letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                               ),
                                                                         ),
                                                                       ),
@@ -3287,19 +3167,14 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelMediumFamily,
+                                                                      .labelMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
                                                                 ),
                                                       ).animateOnPageLoad(
                                                           animationsMap[
@@ -3335,12 +3210,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodyLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                       ),
                                                                 ),
                                                               ),
@@ -3410,12 +3283,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                         ),
                                                                   ),
                                                                   showBadge: FFAppState()
@@ -3489,9 +3360,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                font: FlutterFlowTheme.of(context).titleSmall,
                                                                                 letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                               ),
                                                                         ),
                                                                       ),
@@ -3524,12 +3394,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodyLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                       ),
                                                                 ),
                                                               ),
@@ -3599,12 +3467,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                         ),
                                                                   ),
                                                                   showBadge: FFAppState()
@@ -3678,9 +3544,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                font: FlutterFlowTheme.of(context).titleSmall,
                                                                                 letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                               ),
                                                                         ),
                                                                       ),
@@ -3713,12 +3578,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodyLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                       ),
                                                                 ),
                                                               ),
@@ -3788,12 +3651,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                         ),
                                                                   ),
                                                                   showBadge: FFAppState()
@@ -3862,9 +3723,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .titleSmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).titleSmall,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                             ),
                                                                       ),
                                                                     ),
@@ -3896,12 +3756,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodyLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                       ),
                                                                 ),
                                                               ),
@@ -3971,12 +3829,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                         ),
                                                                   ),
                                                                   showBadge: FFAppState()
@@ -4045,9 +3901,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .titleSmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).titleSmall,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                             ),
                                                                       ),
                                                                     ),
@@ -4160,12 +4015,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Row(
@@ -4207,9 +4060,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                                         '0',
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                            font: FlutterFlowTheme.of(context).titleSmall,
                                                                                             letterSpacing: 0.0,
-                                                                                            useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                           ),
                                                                                     ),
                                                                                     showBadge: valueOrDefault<int>(
@@ -4243,9 +4095,8 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                                         Text(
                                                                                           gcUsersAvailableItem.nameShort,
                                                                                           style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                                fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                                font: FlutterFlowTheme.of(context).bodySmall,
                                                                                                 letterSpacing: 0.0,
-                                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                               ),
                                                                                         ),
                                                                                       ],
@@ -4336,18 +4187,13 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleSmallFamily,
+                                                                      .titleSmall,
                                                                   color: Colors
                                                                       .white,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleSmallFamily),
                                                                 ),
                                                           ),
                                                           showBadge: true,
@@ -4392,12 +4238,10 @@ class _PgDBAdminOWidgetState extends State<PgDBAdminOWidget>
                                                                           context)
                                                                       .bodySmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .bodySmall,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                       ),
                                                                 ),
                                                               ],

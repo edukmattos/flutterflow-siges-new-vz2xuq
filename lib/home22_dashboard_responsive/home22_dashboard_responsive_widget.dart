@@ -6,7 +6,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'home22_dashboard_responsive_model.dart';
 export 'home22_dashboard_responsive_model.dart';
@@ -138,13 +137,9 @@ class _Home22DashboardResponsiveWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .headlineMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .headlineMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineMediumFamily),
                                     ),
                               ),
                             ),
@@ -171,13 +166,9 @@ class _Home22DashboardResponsiveWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                             ),
@@ -217,16 +208,10 @@ class _Home22DashboardResponsiveWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -271,16 +256,10 @@ class _Home22DashboardResponsiveWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -325,16 +304,10 @@ class _Home22DashboardResponsiveWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -353,13 +326,9 @@ class _Home22DashboardResponsiveWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                             ),
@@ -400,17 +369,10 @@ class _Home22DashboardResponsiveWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -439,21 +401,15 @@ class _Home22DashboardResponsiveWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .info,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -500,16 +456,10 @@ class _Home22DashboardResponsiveWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -554,16 +504,10 @@ class _Home22DashboardResponsiveWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -662,10 +606,9 @@ class _Home22DashboardResponsiveWidgetState
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
                                                       color: Theme.of(context)
                                                                   .brightness ==
                                                               Brightness.light
@@ -676,12 +619,6 @@ class _Home22DashboardResponsiveWidgetState
                                                                   context)
                                                               .secondaryText,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily),
                                                     ),
                                               ),
                                             ),
@@ -754,10 +691,9 @@ class _Home22DashboardResponsiveWidgetState
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
                                                       color: Theme.of(context)
                                                                   .brightness ==
                                                               Brightness.dark
@@ -768,12 +704,6 @@ class _Home22DashboardResponsiveWidgetState
                                                                   context)
                                                               .secondaryText,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily),
                                                     ),
                                               ),
                                             ),
@@ -844,14 +774,9 @@ class _Home22DashboardResponsiveWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .headlineMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineMediumFamily),
                                           ),
                                     ),
                                     Padding(
@@ -864,16 +789,9 @@ class _Home22DashboardResponsiveWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -934,17 +852,10 @@ class _Home22DashboardResponsiveWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                                 ),
                                           ),
                                           Text(
@@ -954,17 +865,10 @@ class _Home22DashboardResponsiveWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMediumFamily),
                                                 ),
                                           ),
                                         ],
@@ -1040,17 +944,10 @@ class _Home22DashboardResponsiveWidgetState
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ),
                                                   Row(
@@ -1076,16 +973,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     .of(context)
                                                                 .displaySmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .displaySmallFamily,
+                                                                      .displaySmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .displaySmallFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -1154,17 +1046,10 @@ class _Home22DashboardResponsiveWidgetState
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ),
                                                   Row(
@@ -1189,16 +1074,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                   .of(context)
                                                               .displaySmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .displaySmallFamily,
+                                                                    .displaySmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .displaySmallFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -1266,17 +1146,10 @@ class _Home22DashboardResponsiveWidgetState
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ),
                                                   Row(
@@ -1301,16 +1174,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                   .of(context)
                                                               .displaySmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .displaySmallFamily,
+                                                                    .displaySmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .displaySmallFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -1378,17 +1246,10 @@ class _Home22DashboardResponsiveWidgetState
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily),
                                                         ),
                                                   ),
                                                   Row(
@@ -1413,16 +1274,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                   .of(context)
                                                               .displaySmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .displaySmallFamily,
+                                                                    .displaySmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .displaySmallFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -1519,17 +1375,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                                 ),
                                                 Row(
@@ -1555,16 +1405,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .displaySmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .displaySmallFamily,
+                                                                      .displaySmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .displaySmallFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -1598,17 +1443,10 @@ class _Home22DashboardResponsiveWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .headlineMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineMediumFamily),
                                                         ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1683,17 +1521,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                                 ),
                                                 Row(
@@ -1719,16 +1551,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .displaySmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .displaySmallFamily,
+                                                                      .displaySmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .displaySmallFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -1850,15 +1677,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                             Padding(
@@ -1879,15 +1702,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).labelMediumFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -1949,17 +1768,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .displaySmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .displaySmallFamily,
+                                                                .displaySmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .displaySmallFamily),
                                                       ),
                                                 ),
                                               ),
@@ -1978,17 +1791,11 @@ class _Home22DashboardResponsiveWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                             ),
                                           ),
@@ -2005,17 +1812,11 @@ class _Home22DashboardResponsiveWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelSmallFamily,
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
                                                       ),
                                             ),
                                           ),
@@ -2090,16 +1891,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .headlineMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineMediumFamily,
+                                                                      .headlineMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -2122,16 +1918,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelMediumFamily,
+                                                                      .labelMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -2166,24 +1957,17 @@ class _Home22DashboardResponsiveWidgetState
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily,
-                                                            fontSize: 14.0,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmallFamily),
-                                                          ),
+                                                  textStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall,
+                                                        fontSize: 14.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                                   elevation: 2.0,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
@@ -2242,16 +2026,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                   .of(context)
                                                               .labelSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelSmallFamily,
+                                                                    .labelSmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelSmallFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -2268,16 +2047,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelSmallFamily,
+                                                                      .labelSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelSmallFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -2297,16 +2071,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                   .of(context)
                                                               .labelSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelSmallFamily,
+                                                                    .labelSmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelSmallFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -2323,16 +2092,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelSmallFamily,
+                                                                      .labelSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelSmallFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -2351,16 +2115,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelSmallFamily,
+                                                                      .labelSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelSmallFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -2423,15 +2182,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -2503,10 +2258,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -2521,10 +2275,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               '2vacxg9q' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -2552,15 +2305,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -2610,12 +2359,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -2712,15 +2459,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -2792,10 +2535,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -2810,10 +2552,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               'ljjpbwzv' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -2841,15 +2582,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -2899,12 +2636,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -3001,15 +2736,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3081,10 +2812,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -3099,10 +2829,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               'jkk9i51z' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -3130,15 +2859,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3188,12 +2913,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -3290,15 +3013,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3370,10 +3089,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -3388,10 +3106,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               '48i9vejl' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -3419,15 +3136,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3477,12 +3190,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -3579,15 +3290,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3659,10 +3366,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -3677,10 +3383,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               'dsa3zw4v' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -3708,15 +3413,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3760,12 +3461,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -3862,15 +3561,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -3942,10 +3637,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -3960,10 +3654,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               'w3pkfik4' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -3991,15 +3684,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -4043,12 +3732,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -4145,15 +3832,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -4225,10 +3908,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).bodyMedium,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Padding(
@@ -4243,10 +3925,9 @@ class _Home22DashboardResponsiveWidgetState
                                                                               'ufhmtfpk' /* Business Name */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                                  font: FlutterFlowTheme.of(context).bodySmall,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                 ),
                                                                           ),
                                                                         ),
@@ -4274,15 +3955,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .titleLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleLargeFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -4326,12 +4003,10 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -4442,17 +4117,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .headlineMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .headlineMediumFamily,
+                                                                .headlineMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineMediumFamily),
                                                       ),
                                                 ),
                                               ),
@@ -4469,17 +4138,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                                 ),
                                               ),
@@ -4514,18 +4177,11 @@ class _Home22DashboardResponsiveWidgetState
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall,
                                                       fontSize: 14.0,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily),
                                                     ),
                                             elevation: 2.0,
                                             borderSide: BorderSide(
@@ -4577,17 +4233,10 @@ class _Home22DashboardResponsiveWidgetState
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmallFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -4602,17 +4251,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelSmallFamily,
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
                                                       ),
                                                 ),
                                               ),
@@ -4631,17 +4274,10 @@ class _Home22DashboardResponsiveWidgetState
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmallFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -4656,17 +4292,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelSmallFamily,
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
                                                       ),
                                                 ),
                                               ),
@@ -4682,17 +4312,11 @@ class _Home22DashboardResponsiveWidgetState
                                                           context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelSmallFamily,
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelSmallFamily),
                                                       ),
                                                 ),
                                               ),
@@ -4754,16 +4378,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -4834,14 +4453,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -4861,14 +4478,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -4897,16 +4512,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -4954,15 +4564,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -5052,16 +4658,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -5132,14 +4733,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -5159,14 +4758,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -5195,16 +4792,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -5252,15 +4844,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -5350,16 +4938,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -5430,14 +5013,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -5457,14 +5038,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -5493,16 +5072,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -5550,15 +5124,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -5648,16 +5218,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -5728,14 +5293,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -5755,14 +5318,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -5791,16 +5352,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -5848,15 +5404,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -5946,16 +5498,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -6026,14 +5573,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -6053,14 +5598,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -6089,16 +5632,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -6141,15 +5679,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -6239,16 +5773,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -6319,14 +5848,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -6346,14 +5873,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -6382,16 +5907,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -6434,15 +5954,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -6532,16 +6048,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -6612,14 +6123,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                   Padding(
@@ -6639,14 +6148,12 @@ class _Home22DashboardResponsiveWidgetState
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodySmall,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -6675,16 +6182,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -6727,15 +6229,11 @@ class _Home22DashboardResponsiveWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                   ),
                                                             ),
                                                           ),

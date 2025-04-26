@@ -6,7 +6,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_rpt_extensions_options_model.dart';
 export 'md_rpt_extensions_options_model.dart';
@@ -105,13 +104,9 @@ class _MdRptExtensionsOptionsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .headlineSmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .headlineSmallFamily),
                                   ),
                             ),
                             Align(

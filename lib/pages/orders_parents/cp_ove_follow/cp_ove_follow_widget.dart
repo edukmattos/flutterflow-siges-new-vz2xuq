@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:async';
 import '/actions/actions.dart' as action_blocks;
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
@@ -63,103 +64,158 @@ class _CpOveFollowWidgetState extends State<CpOveFollowWidget> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            if (!functions.cfContainInList(
-                FFAppState().stUserOveFollowing.map((e) => e.oveId).toList(),
-                widget.cpOveId!)!)
-              FlutterFlowIconButton(
-                borderColor: FlutterFlowTheme.of(context).secondaryText,
-                borderRadius: 16.0,
-                borderWidth: 6.0,
-                buttonSize: widget.cpSize.toDouble(),
-                icon: FaIcon(
-                  FontAwesomeIcons.solidBookmark,
-                  color: FlutterFlowTheme.of(context).secondaryText,
-                  size: 24.0,
-                ),
-                showLoadingIndicator: true,
-                onPressed: () async {
-                  unawaited(
-                    () async {
-                      await OrdersVisitsExtrasFollowersTable().insert({
-                        'user_id': FFAppState().stUserCurrent.id,
-                        'ove_id': widget.cpOveId,
-                      });
-                    }(),
-                  );
-                  unawaited(
-                    () async {
-                      await action_blocks.abUserOveFollowing(context);
-                      safeSetState(() {});
-                    }(),
-                  );
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        'SE adicionado aos favoritos.',
-                        style: TextStyle(
-                          color: FlutterFlowTheme.of(context).info,
-                        ),
+            AlignedTooltip(
+              content: Padding(
+                padding: EdgeInsets.all(4.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'uvzoc6ef' /* Favoritar */,
+                  ),
+                  style: FlutterFlowTheme.of(context).bodyLarge.override(
+                        font: FlutterFlowTheme.of(context).bodyLarge,
+                        letterSpacing: 0.0,
                       ),
-                      duration: Duration(milliseconds: 4000),
-                      backgroundColor: FlutterFlowTheme.of(context).success,
-                    ),
-                  );
-                },
+                ),
               ),
-            if (functions.cfContainInList(
+              offset: 4.0,
+              preferredDirection: AxisDirection.down,
+              borderRadius: BorderRadius.circular(8.0),
+              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              elevation: 4.0,
+              tailBaseWidth: 24.0,
+              tailLength: 12.0,
+              waitDuration: Duration(milliseconds: 100),
+              showDuration: Duration(milliseconds: 1500),
+              triggerMode: TooltipTriggerMode.tap,
+              child: Visibility(
+                visible: !functions.cfContainInList(
                     FFAppState()
                         .stUserOveFollowing
                         .map((e) => e.oveId)
                         .toList(),
-                    widget.cpOveId!) ??
-                true)
-              FlutterFlowIconButton(
-                borderColor: FlutterFlowTheme.of(context).success,
-                borderRadius: 16.0,
-                borderWidth: 6.0,
-                buttonSize: widget.cpSize.toDouble(),
-                icon: FaIcon(
-                  FontAwesomeIcons.solidBookmark,
-                  color: FlutterFlowTheme.of(context).success,
-                  size: 24.0,
-                ),
-                showLoadingIndicator: true,
-                onPressed: () async {
-                  unawaited(
-                    () async {
-                      await OrdersVisitsExtrasFollowersTable().delete(
-                        matchingRows: (rows) => rows
-                            .eqOrNull(
-                              'user_id',
-                              FFAppState().stUserCurrent.id,
-                            )
-                            .eqOrNull(
-                              'ove_id',
-                              widget.cpOveId,
-                            ),
-                      );
-                    }(),
-                  );
-                  unawaited(
-                    () async {
-                      await action_blocks.abUserOveFollowing(context);
-                      safeSetState(() {});
-                    }(),
-                  );
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        'SE removido dos favoritos.',
-                        style: TextStyle(
-                          color: FlutterFlowTheme.of(context).info,
+                    widget.cpOveId!)!,
+                child: FlutterFlowIconButton(
+                  borderColor: FlutterFlowTheme.of(context).secondaryText,
+                  borderRadius: 16.0,
+                  borderWidth: 6.0,
+                  buttonSize: widget.cpSize.toDouble(),
+                  icon: FaIcon(
+                    FontAwesomeIcons.solidBookmark,
+                    color: FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  showLoadingIndicator: true,
+                  onPressed: () async {
+                    unawaited(
+                      () async {
+                        await OrdersVisitsExtrasFollowersTable().insert({
+                          'user_id': FFAppState().stUserCurrent.id,
+                          'ove_id': widget.cpOveId,
+                        });
+                      }(),
+                    );
+                    unawaited(
+                      () async {
+                        await action_blocks.abUserOveFollowing(context);
+                        safeSetState(() {});
+                      }(),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          'SE adicionado aos favoritos.',
+                          style: TextStyle(
+                            color: FlutterFlowTheme.of(context).info,
+                          ),
                         ),
+                        duration: Duration(milliseconds: 4000),
+                        backgroundColor: FlutterFlowTheme.of(context).success,
                       ),
-                      duration: Duration(milliseconds: 4000),
-                      backgroundColor: FlutterFlowTheme.of(context).error,
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ),
+            ),
+            AlignedTooltip(
+              content: Padding(
+                padding: EdgeInsets.all(4.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    '2si1a5fb' /* Desfavoritar */,
+                  ),
+                  style: FlutterFlowTheme.of(context).bodyLarge.override(
+                        font: FlutterFlowTheme.of(context).bodyLarge,
+                        letterSpacing: 0.0,
+                      ),
+                ),
+              ),
+              offset: 4.0,
+              preferredDirection: AxisDirection.down,
+              borderRadius: BorderRadius.circular(8.0),
+              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              elevation: 4.0,
+              tailBaseWidth: 24.0,
+              tailLength: 12.0,
+              waitDuration: Duration(milliseconds: 100),
+              showDuration: Duration(milliseconds: 1500),
+              triggerMode: TooltipTriggerMode.tap,
+              child: Visibility(
+                visible: functions.cfContainInList(
+                        FFAppState()
+                            .stUserOveFollowing
+                            .map((e) => e.oveId)
+                            .toList(),
+                        widget.cpOveId!) ??
+                    true,
+                child: FlutterFlowIconButton(
+                  borderColor: FlutterFlowTheme.of(context).success,
+                  borderRadius: 16.0,
+                  borderWidth: 6.0,
+                  buttonSize: widget.cpSize.toDouble(),
+                  icon: FaIcon(
+                    FontAwesomeIcons.solidBookmark,
+                    color: FlutterFlowTheme.of(context).success,
+                    size: 24.0,
+                  ),
+                  showLoadingIndicator: true,
+                  onPressed: () async {
+                    unawaited(
+                      () async {
+                        await OrdersVisitsExtrasFollowersTable().delete(
+                          matchingRows: (rows) => rows
+                              .eqOrNull(
+                                'user_id',
+                                FFAppState().stUserCurrent.id,
+                              )
+                              .eqOrNull(
+                                'ove_id',
+                                widget.cpOveId,
+                              ),
+                        );
+                      }(),
+                    );
+                    unawaited(
+                      () async {
+                        await action_blocks.abUserOveFollowing(context);
+                        safeSetState(() {});
+                      }(),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          'SE removido dos favoritos.',
+                          style: TextStyle(
+                            color: FlutterFlowTheme.of(context).info,
+                          ),
+                        ),
+                        duration: Duration(milliseconds: 4000),
+                        backgroundColor: FlutterFlowTheme.of(context).error,
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
           ],
         ),
       ],

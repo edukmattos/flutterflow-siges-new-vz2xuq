@@ -18,7 +18,7 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_create_copy_model.dart';
 export 'pg_o_create_copy_model.dart';
@@ -101,13 +101,11 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
               'zbvg1u2m' /* Nova OS */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -193,40 +191,25 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                       errorStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             color: FlutterFlowTheme.of(context)
                                                 .error,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
                                           ),
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -292,14 +275,9 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily),
                                         ),
                                     maxLines: 5,
                                     minLines: 2,
@@ -308,6 +286,18 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
                                     validator: _model
                                         .tfRequestedServicesTextControllerValidator
                                         .asValidator(context),
+                                    inputFormatters: [
+                                      if (!isAndroid && !isiOS)
+                                        TextInputFormatter.withFunction(
+                                            (oldValue, newValue) {
+                                          return TextEditingValue(
+                                            selection: newValue.selection,
+                                            text: newValue.text
+                                                .toCapitalization(
+                                                    TextCapitalization.none),
+                                          );
+                                        }),
+                                    ],
                                   ),
                                   wrapWithModel(
                                     model: _model.cpDropdownOrdersTypesModel,
@@ -371,40 +361,25 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                       errorStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             color: FlutterFlowTheme.of(context)
                                                 .error,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
                                           ),
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -470,14 +445,9 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily),
                                         ),
                                     minLines: 1,
                                     keyboardType: TextInputType.number,
@@ -830,29 +800,25 @@ class _PgOCreateCopyWidgetState extends State<PgOCreateCopyWidget> {
                                                       24.0, 0.0, 24.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
+                                                      .info,
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .titleSmall
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .titleSmall,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w800,
+                                                  ),
                                               elevation: 5.0,
                                               borderSide: BorderSide(
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .info,
+                                                        .primary,
                                                 width: 6.0,
                                               ),
                                               borderRadius:

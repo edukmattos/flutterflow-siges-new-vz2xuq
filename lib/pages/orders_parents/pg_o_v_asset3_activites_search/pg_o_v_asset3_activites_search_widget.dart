@@ -17,7 +17,6 @@ import 'package:flip_card/flip_card.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_v_asset3_activites_search_model.dart';
 export 'pg_o_v_asset3_activites_search_model.dart';
@@ -97,13 +96,11 @@ class _PgOVAsset3ActivitesSearchWidgetState
               'tc2fda29' /* Atendimento */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -210,16 +207,11 @@ class _PgOVAsset3ActivitesSearchWidgetState
                                                                   context)
                                                               .titleLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleLargeFamily,
+                                                                    .titleLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily),
                                                               ),
                                                     ),
                                                   ),
@@ -293,14 +285,12 @@ class _PgOVAsset3ActivitesSearchWidgetState
                                                                             context)
                                                                         .titleMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleMedium,
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryText,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -573,14 +563,12 @@ class _PgOVAsset3ActivitesSearchWidgetState
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
                                                                           color:
                                                                               Colors.white,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                         ),
                                                                     elevation:
                                                                         3.0,
@@ -676,14 +664,12 @@ class _PgOVAsset3ActivitesSearchWidgetState
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .titleSmall,
                                                                         color: Colors
                                                                             .white,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                       ),
                                                               elevation: 3.0,
                                                               borderSide:

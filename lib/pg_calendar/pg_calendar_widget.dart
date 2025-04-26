@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pg_calendar_model.dart';
 export 'pg_calendar_model.dart';
 
@@ -75,18 +74,15 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                       FFLocalizations.of(context).getText(
                         'q7pwotb5' /* 2023 */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineMedium.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineMediumFamily,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                fontSize: 24.0,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.w500,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineMedium
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineMedium,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            fontSize: 24.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w500,
+                          ),
                     ),
                     FlutterFlowIconButton(
                       borderRadius: 30.0,
@@ -124,16 +120,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -153,16 +144,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -182,16 +168,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -211,16 +192,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -240,16 +216,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -269,16 +240,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -298,16 +264,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -327,16 +288,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -356,16 +312,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -385,16 +336,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -414,16 +360,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -443,16 +384,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -481,16 +417,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -510,16 +441,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -539,16 +465,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -568,16 +489,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -597,16 +513,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -626,16 +537,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -655,16 +561,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -684,16 +585,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -713,16 +609,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -742,16 +633,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -771,16 +657,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -800,16 +681,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -829,16 +705,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -858,16 +729,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -887,16 +753,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -916,16 +777,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -945,16 +801,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -974,16 +825,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1003,16 +849,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1032,16 +873,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1061,16 +897,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1090,16 +921,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1119,16 +945,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1148,16 +969,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1177,16 +993,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1206,16 +1017,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1235,16 +1041,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1264,16 +1065,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1293,16 +1089,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1322,16 +1113,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -1351,16 +1137,11 @@ class _PgCalendarWidgetState extends State<PgCalendarWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 2.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),

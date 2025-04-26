@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_dropdown_o_close_statuses_model.dart';
 export 'cp_dropdown_o_close_statuses_model.dart';
 
@@ -68,22 +67,16 @@ class _CpDropdownOCloseStatusesWidgetState
       width: double.infinity,
       height: 48.0,
       searchHintTextStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+            font: FlutterFlowTheme.of(context).bodyLarge,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
           ),
       searchTextStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+            font: FlutterFlowTheme.of(context).bodyMedium,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
           ),
       textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+            font: FlutterFlowTheme.of(context).bodyLarge,
             letterSpacing: 0.0,
-            useGoogleFonts: GoogleFonts.asMap()
-                .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
           ),
       hintText: widget.cpHintText,
       searchHintText: widget.cpHintText,

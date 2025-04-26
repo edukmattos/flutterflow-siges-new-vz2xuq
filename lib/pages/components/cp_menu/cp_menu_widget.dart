@@ -10,7 +10,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_menu_model.dart';
 export 'cp_menu_model.dart';
@@ -122,12 +121,8 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ),
                           Text(
@@ -135,12 +130,8 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelSmallFamily,
+                                  font: FlutterFlowTheme.of(context).labelSmall,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelSmallFamily),
                                 ),
                           ),
                         ],
@@ -195,12 +186,8 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ),
                           Text(
@@ -208,12 +195,8 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelSmallFamily,
+                                  font: FlutterFlowTheme.of(context).labelSmall,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelSmallFamily),
                                 ),
                           ),
                           Text(
@@ -221,12 +204,8 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelSmallFamily,
+                                  font: FlutterFlowTheme.of(context).labelSmall,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelSmallFamily),
                                 ),
                           ),
                         ],
@@ -254,27 +233,21 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                         FFLocalizations.of(context).getText(
                           'hjo1y486' /* Menu */,
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                       Text(
                         FFAppState().stAppVersionDevice,
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                     ],
                   ),
@@ -334,16 +307,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -422,16 +389,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -510,16 +471,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -598,16 +553,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -682,16 +631,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -779,17 +722,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -886,17 +822,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -991,17 +920,10 @@ class _CpMenuWidgetState extends State<CpMenuWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),

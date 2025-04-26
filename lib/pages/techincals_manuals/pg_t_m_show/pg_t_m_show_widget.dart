@@ -23,7 +23,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_t_m_show_model.dart';
 export 'pg_t_m_show_model.dart';
@@ -142,13 +141,11 @@ class _PgTMShowWidgetState extends State<PgTMShowWidget>
               'b9x220kp' /* Biblioteca */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).info,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -246,16 +243,11 @@ class _PgTMShowWidgetState extends State<PgTMShowWidget>
                                                                     context)
                                                                 .titleLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleLargeFamily,
+                                                                      .titleLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleLargeFamily),
                                                                 ),
                                                       ),
                                                       FlutterFlowIconButton(
@@ -730,16 +722,11 @@ class _PgTMShowWidgetState extends State<PgTMShowWidget>
                                                                   .of(context)
                                                               .titleLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleLargeFamily,
+                                                                    .titleLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily),
                                                               ),
                                                         ),
                                                         Expanded(
@@ -920,17 +907,13 @@ class _PgTMShowWidgetState extends State<PgTMShowWidget>
                                                                       .of(context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
                                                                     color: Colors
                                                                         .white,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                             ),
                                                             showBadge: FFAppState()

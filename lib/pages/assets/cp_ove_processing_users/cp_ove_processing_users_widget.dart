@@ -7,7 +7,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_ove_processing_users_model.dart';
 export 'cp_ove_processing_users_model.dart';
 
@@ -322,6 +321,26 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
           ),
         ],
       ),
+      'textOnPageLoadAnimation14': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1600.ms),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 1600.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 1600.0.ms,
+            duration: 600.0.ms,
+            begin: Offset(0.0, 50.0),
+            end: Offset(0.0, 0.0),
+          ),
+        ],
+      ),
     });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -374,12 +393,8 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleLargeFamily,
+                                font: FlutterFlowTheme.of(context).titleLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleLargeFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation1']!),
@@ -419,15 +434,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation2']!),
@@ -445,15 +456,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation3']!),
@@ -495,15 +502,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation4']!),
@@ -521,15 +524,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation5']!),
@@ -571,15 +570,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation6']!),
@@ -597,15 +592,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation7']!),
@@ -647,15 +638,11 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation8']!),
@@ -673,18 +660,33 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation9']!),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(1.0, 0.0),
+                            child: Text(
+                              valueOrDefault<String>(
+                                widget.cpDtOve?.disapprovedComments,
+                                '.',
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    letterSpacing: 0.0,
+                                  ),
+                            ).animateOnPageLoad(
+                                animationsMap['textOnPageLoadAnimation10']!),
                           ),
                         ],
                       ),
@@ -723,18 +725,14 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
-                                animationsMap['textOnPageLoadAnimation10']!),
+                                animationsMap['textOnPageLoadAnimation11']!),
                           ),
                           Align(
                             alignment: AlignmentDirectional(1.0, 0.0),
@@ -749,18 +747,14 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
-                                animationsMap['textOnPageLoadAnimation11']!),
+                                animationsMap['textOnPageLoadAnimation12']!),
                           ),
                         ],
                       ),
@@ -799,18 +793,14 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
-                                animationsMap['textOnPageLoadAnimation12']!),
+                                animationsMap['textOnPageLoadAnimation13']!),
                           ),
                           Align(
                             alignment: AlignmentDirectional(1.0, 0.0),
@@ -825,18 +815,14 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
                                   ),
                             ).animateOnPageLoad(
-                                animationsMap['textOnPageLoadAnimation13']!),
+                                animationsMap['textOnPageLoadAnimation14']!),
                           ),
                         ],
                       ),

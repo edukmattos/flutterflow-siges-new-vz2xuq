@@ -5,7 +5,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_priority_model.dart';
 export 'cp_o_priority_model.dart';
 
@@ -94,10 +93,8 @@ class _CpOPriorityWidgetState extends State<CpOPriorityWidget>
           child: Text(
             widget.cpOPriorityDscription!,
             style: FlutterFlowTheme.of(context).bodyLarge.override(
-                  fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                  font: FlutterFlowTheme.of(context).bodyLarge,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).bodyLargeFamily),
                 ),
           ),
         ),

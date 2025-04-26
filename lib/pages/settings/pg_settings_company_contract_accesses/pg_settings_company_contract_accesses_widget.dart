@@ -24,7 +24,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_settings_company_contract_accesses_model.dart';
 export 'pg_settings_company_contract_accesses_model.dart';
@@ -69,6 +68,7 @@ class _PgSettingsCompanyContractAccessesWidgetState
       length: 2,
       initialIndex: 0,
     )..addListener(() => safeSetState(() {}));
+
     animationsMap.addAll({
       'choiceChipsOnPageLoadAnimation': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -145,13 +145,11 @@ class _PgSettingsCompanyContractAccessesWidgetState
               'xj4yjo0h' /* Acessibilidade */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -218,17 +216,10 @@ class _PgSettingsCompanyContractAccessesWidgetState
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMediumFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily),
                                                     ),
                                             unselectedLabelStyle: TextStyle(),
                                             labelColor:
@@ -345,18 +336,14 @@ class _PgSettingsCompanyContractAccessesWidgetState
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                     ),
                                                             iconColor:
                                                                 FlutterFlowTheme.of(
@@ -392,18 +379,14 @@ class _PgSettingsCompanyContractAccessesWidgetState
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                     ),
                                                             iconColor:
                                                                 FlutterFlowTheme.of(

@@ -23,7 +23,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_v_asset4_materials_search_model.dart';
 export 'pg_o_v_asset4_materials_search_model.dart';
@@ -113,13 +112,11 @@ class _PgOVAsset4MaterialsSearchWidgetState
               'n5sesbih' /* Atendimento */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -231,19 +228,14 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                     .of(context)
                                                                 .headlineMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineMediumFamily,
+                                                                      .headlineMedium,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w500,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -522,11 +514,10 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .titleMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).titleMedium,
                                                                                 color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.normal,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                               ),
                                                                         ),
                                                                         Text(
@@ -535,9 +526,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .labelMedium
                                                                               .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
+                                                                                font: FlutterFlowTheme.of(context).labelMedium,
                                                                                 letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).labelMediumFamily),
                                                                               ),
                                                                         ),
                                                                       ],
@@ -650,9 +640,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -662,9 +651,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -685,9 +673,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -697,9 +684,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -720,9 +706,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -730,9 +715,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyMedium,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -753,9 +737,8 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyLarge,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -765,10 +748,9 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyLarge
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodyLarge,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                             ),
                                                                       ),
                                                                     ],
@@ -846,18 +828,11 @@ class _PgOVAsset4MaterialsSearchWidgetState
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily,
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall,
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily),
                                                     ),
                                             elevation: 3.0,
                                             borderSide: BorderSide(

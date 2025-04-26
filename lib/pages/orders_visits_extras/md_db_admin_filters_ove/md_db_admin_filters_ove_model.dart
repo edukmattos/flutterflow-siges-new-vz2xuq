@@ -17,6 +17,17 @@ class MdDbAdminFiltersOveModel
   ///  State fields for stateful widgets in this component.
 
   final formKey = GlobalKey<FormState>();
+  // State field(s) for tf_ove_date_start widget.
+  FocusNode? tfOveDateStartFocusNode;
+  TextEditingController? tfOveDateStartTextController;
+  String? Function(BuildContext, String?)?
+      tfOveDateStartTextControllerValidator;
+  DateTime? datePicked1;
+  // State field(s) for tf_ove_date_end widget.
+  FocusNode? tfOveDateEndFocusNode;
+  TextEditingController? tfOveDateEndTextController;
+  String? Function(BuildContext, String?)? tfOveDateEndTextControllerValidator;
+  DateTime? datePicked2;
   // Model for cpDdSystemsParentMultiAll component.
   late CpDdSystemsParentMultiAllModel cpDdSystemsParentMultiAllModel;
   // Model for cpDdSystemsSubsMultiAll component.
@@ -66,6 +77,12 @@ class MdDbAdminFiltersOveModel
 
   @override
   void dispose() {
+    tfOveDateStartFocusNode?.dispose();
+    tfOveDateStartTextController?.dispose();
+
+    tfOveDateEndFocusNode?.dispose();
+    tfOveDateEndTextController?.dispose();
+
     cpDdSystemsParentMultiAllModel.dispose();
     cpDdSystemsSubsMultiAllModel.dispose();
     cpDropdownFiltersUnitsTypesParentModel.dispose();

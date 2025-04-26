@@ -6,7 +6,6 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_asset_moves_list_item_model.dart';
 export 'cp_asset_moves_list_item_model.dart';
 
@@ -292,11 +291,8 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                     'yc4h5u55' /* ORIGEM */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                        font: FlutterFlowTheme.of(context).bodyLarge,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).bodyLargeFamily),
                       ),
                 ),
                 wrapWithModel(
@@ -326,36 +322,24 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                       Text(
                         widget.cpOVADt!.beforeUnitDescription,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation1']!),
                       Text(
                         widget.cpOVADt!.beforeTagDescription,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation2']!),
                       Text(
                         widget.cpOVADt!.beforeTagSubDescription,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation3']!),
@@ -380,11 +364,8 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                         locale: FFLocalizations.of(context).languageCode,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation4']!),
@@ -392,11 +373,8 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                   Text(
                     '${functions.cfGetDifIntDaysBetweenDates(widget.cpOVADt!.beforeStatusDatetime!, widget.cpOVADt!.afterStatusDatetime!).toString()} dia(s)',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyMediumFamily),
                         ),
                   ),
                   Align(
@@ -408,11 +386,8 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                         locale: FFLocalizations.of(context).languageCode,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation5']!),
@@ -429,11 +404,8 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                     'ku4h9cv9' /* DESTINO */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                        font: FlutterFlowTheme.of(context).bodyLarge,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).bodyLargeFamily),
                       ),
                 ),
                 wrapWithModel(
@@ -463,36 +435,24 @@ class _CpAssetMovesListItemWidgetState extends State<CpAssetMovesListItemWidget>
                       Text(
                         widget.cpOVADt!.afterUnitDescription,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation6']!),
                       Text(
                         widget.cpOVADt!.afterTagDescription,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation7']!),
                       Text(
                         widget.cpOVADt!.afterTagSubDescription,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation8']!),

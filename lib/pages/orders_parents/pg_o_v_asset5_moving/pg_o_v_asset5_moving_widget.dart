@@ -17,7 +17,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:flip_card/flip_card.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_o_v_asset5_moving_model.dart';
 export 'pg_o_v_asset5_moving_model.dart';
@@ -87,13 +86,11 @@ class _PgOVAsset5MovingWidgetState extends State<PgOVAsset5MovingWidget> {
               '6zdb9hst' /* Atendimento */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -166,14 +163,9 @@ class _PgOVAsset5MovingWidgetState extends State<PgOVAsset5MovingWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .titleLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleLargeFamily),
                                           ),
                                     ),
                                   ),
@@ -245,18 +237,13 @@ class _PgOVAsset5MovingWidgetState extends State<PgOVAsset5MovingWidget> {
                                                   context)
                                               .headlineSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
+                                                        .headlineSmall,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .info,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(FlutterFlowTheme
-                                                            .of(context)
-                                                        .headlineSmallFamily),
                                               ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(
@@ -312,18 +299,13 @@ class _PgOVAsset5MovingWidgetState extends State<PgOVAsset5MovingWidget> {
                                                   context)
                                               .headlineSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
+                                                        .headlineSmall,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .info,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(FlutterFlowTheme
-                                                            .of(context)
-                                                        .headlineSmallFamily),
                                               ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(
@@ -381,16 +363,11 @@ class _PgOVAsset5MovingWidgetState extends State<PgOVAsset5MovingWidget> {
                                                                   .of(context)
                                                               .titleLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleLargeFamily,
+                                                                    .titleLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleLargeFamily),
                                                               ),
                                                         ),
                                                       ),

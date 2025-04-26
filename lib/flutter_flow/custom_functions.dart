@@ -46,7 +46,7 @@ String? cfConvDatetimeEnStringToDateBrStringDmy(String dateRef) {
   }
 }
 
-DateTime cfConvDateStringBrToDatetimeENYmdHHmm00(String datetimeBR) {
+DateTime cfConvDatetimeStringBrToDatetimeENYmdHHmm00(String datetimeBR) {
   /// REMOVE espaços extras da string
   datetimeBR = datetimeBR.trim();
 
@@ -94,18 +94,13 @@ bool? cfContainInList(
 }
 
 DateTime? cfConvDatetimeBrStringToDatetimeEn(String argDatetimeBrString) {
-  // Remove espaços extras
-  argDatetimeBrString = argDatetimeBrString.trim();
-
-  // Retorna DateTime convertido para o local ou null se não for possível converter
-  DateTime? parsedDate = DateTime.tryParse(argDatetimeBrString);
-
-  if (parsedDate != null) {
-    return DateFormat("yyyy-MM-dd HH:mm:ss")
-        .parse(parsedDate.toLocal().toString());
+  try {
+    final inputFormat = DateFormat("dd/MM/yyyy HH:mm");
+    final parsedDate = inputFormat.parse(argDatetimeBrString.trim());
+    return parsedDate;
+  } catch (e) {
+    return null;
   }
-
-  return null;
 }
 
 String cfConvStringToStringCurrency2Decimals(

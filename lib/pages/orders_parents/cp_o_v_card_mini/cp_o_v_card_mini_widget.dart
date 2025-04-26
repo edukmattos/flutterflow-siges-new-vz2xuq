@@ -19,7 +19,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_o_v_card_mini_model.dart';
 export 'cp_o_v_card_mini_model.dart';
 
@@ -247,12 +246,9 @@ class _CpOVCardMiniWidgetState extends State<CpOVCardMiniWidget>
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                           ),
                         ],
@@ -292,13 +288,9 @@ class _CpOVCardMiniWidgetState extends State<CpOVCardMiniWidget>
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 color: FlutterFlowTheme.of(context).info,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                           borderSide: BorderSide(
                             color: FlutterFlowTheme.of(context).info,
@@ -405,11 +397,8 @@ class _CpOVCardMiniWidgetState extends State<CpOVCardMiniWidget>
                       locale: FFLocalizations.of(context).languageCode,
                     )}h',
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).labelMediumFamily,
+                          font: FlutterFlowTheme.of(context).labelMedium,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).labelMediumFamily),
                         ),
                   ).animateOnPageLoad(
                       animationsMap['textOnPageLoadAnimation1']!),
@@ -422,11 +411,8 @@ class _CpOVCardMiniWidgetState extends State<CpOVCardMiniWidget>
                             locale: '',
                           ), 2)}h )',
                       style: FlutterFlowTheme.of(context).labelSmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelSmallFamily,
+                            font: FlutterFlowTheme.of(context).labelSmall,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).labelSmallFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation2']!),
@@ -438,11 +424,8 @@ class _CpOVCardMiniWidgetState extends State<CpOVCardMiniWidget>
                         locale: FFLocalizations.of(context).languageCode,
                       )}h',
                       style: FlutterFlowTheme.of(context).labelMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelMediumFamily,
+                            font: FlutterFlowTheme.of(context).labelMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).labelMediumFamily),
                           ),
                     ).animateOnPageLoad(
                         animationsMap['textOnPageLoadAnimation3']!),
@@ -493,14 +476,9 @@ class _CpOVCardMiniWidgetState extends State<CpOVCardMiniWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ].divide(SizedBox(height: 4.0)),

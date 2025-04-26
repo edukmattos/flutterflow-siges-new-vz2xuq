@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'home17_calendar_model.dart';
 export 'home17_calendar_model.dart';
 
@@ -34,6 +33,7 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
       length: 2,
       initialIndex: 0,
     )..addListener(() => safeSetState(() {}));
+
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -62,10 +62,8 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
               'soapypu2' /* Calendar */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [
@@ -77,12 +75,9 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                     '6xc4amss' /* 1 */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodyMediumFamily,
+                        font: FlutterFlowTheme.of(context).bodyMedium,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).bodyMediumFamily),
                       ),
                 ),
                 showBadge: true,
@@ -119,15 +114,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                     child: FlutterFlowButtonTabBar(
                       useToggleButtonStyle: true,
                       isScrollable: true,
-                      labelStyle: FlutterFlowTheme.of(context)
-                          .titleMedium
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleMediumFamily,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleMediumFamily),
-                          ),
+                      labelStyle:
+                          FlutterFlowTheme.of(context).titleMedium.override(
+                                font: FlutterFlowTheme.of(context).titleMedium,
+                                letterSpacing: 0.0,
+                              ),
                       unselectedLabelStyle: TextStyle(),
                       labelColor: FlutterFlowTheme.of(context).primaryText,
                       unselectedLabelColor:
@@ -208,65 +199,40 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                     titleStyle: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLargeFamily),
                                         ),
                                     dayOfWeekStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
                                         ),
                                     dateStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
-                                    selectedDateStyle: FlutterFlowTheme.of(
-                                            context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
-                                        ),
-                                    inactiveDateStyle: FlutterFlowTheme.of(
-                                            context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
-                                        ),
+                                    selectedDateStyle:
+                                        FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleSmall,
+                                              letterSpacing: 0.0,
+                                            ),
+                                    inactiveDateStyle:
+                                        FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .override(
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
+                                              letterSpacing: 0.0,
+                                            ),
                                     locale: FFLocalizations.of(context)
                                         .languageCode,
                                   ),
@@ -285,16 +251,9 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -367,16 +326,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineSmallFamily,
+                                                                      .headlineSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineSmallFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -433,14 +387,12 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).tertiary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -456,15 +408,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                         context)
                                                                     .bodySmall
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodySmallFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodySmallFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -522,16 +470,9 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -604,16 +545,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineSmallFamily,
+                                                                      .headlineSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineSmallFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -660,14 +596,12 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primary,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -691,15 +625,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                         context)
                                                                     .bodySmall
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodySmallFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodySmallFamily),
                                                                     ),
                                                               ),
                                                             ),
@@ -795,65 +725,40 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                     titleStyle: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLargeFamily),
                                         ),
                                     dayOfWeekStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
                                         ),
                                     dateStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
-                                    selectedDateStyle: FlutterFlowTheme.of(
-                                            context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
-                                        ),
-                                    inactiveDateStyle: FlutterFlowTheme.of(
-                                            context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
-                                        ),
+                                    selectedDateStyle:
+                                        FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleSmall,
+                                              letterSpacing: 0.0,
+                                            ),
+                                    inactiveDateStyle:
+                                        FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .override(
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
+                                              letterSpacing: 0.0,
+                                            ),
                                     locale: FFLocalizations.of(context)
                                         .languageCode,
                                   ),
@@ -872,16 +777,9 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -954,16 +852,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineSmallFamily,
+                                                                      .headlineSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineSmallFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -1020,14 +913,12 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                            font:
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).tertiary,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                           ),
                                                                     ),
                                                                   ),
@@ -1043,15 +934,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                         context)
                                                                     .bodySmall
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodySmallFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodySmallFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -1109,16 +996,9 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -1191,16 +1071,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .headlineSmallFamily,
+                                                                      .headlineSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineSmallFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -1247,14 +1122,12 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).bodyMedium,
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primary,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1278,15 +1151,11 @@ class _Home17CalendarWidgetState extends State<Home17CalendarWidget>
                                                                         context)
                                                                     .bodySmall
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodySmallFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).bodySmallFamily),
                                                                     ),
                                                               ),
                                                             ),

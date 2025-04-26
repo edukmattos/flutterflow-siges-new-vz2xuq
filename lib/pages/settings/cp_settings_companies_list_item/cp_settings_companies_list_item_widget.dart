@@ -5,7 +5,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_settings_companies_list_item_model.dart';
 export 'cp_settings_companies_list_item_model.dart';
@@ -111,15 +110,11 @@ class _CpSettingsCompaniesListItemWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleMediumFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .titleMedium,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleMediumFamily),
                                   ),
                             ),
                             Text(
@@ -130,13 +125,9 @@ class _CpSettingsCompaniesListItemWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyLargeFamily),
                                   ),
                             ),
                           ],

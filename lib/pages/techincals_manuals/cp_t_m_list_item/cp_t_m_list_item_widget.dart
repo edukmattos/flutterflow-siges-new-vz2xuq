@@ -7,7 +7,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_t_m_list_item_model.dart';
 export 'cp_t_m_list_item_model.dart';
 
@@ -172,12 +171,8 @@ class _CpTMListItemWidgetState extends State<CpTMListItemWidget>
                           style: FlutterFlowTheme.of(context)
                               .titleLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleLargeFamily,
+                                font: FlutterFlowTheme.of(context).titleLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleLargeFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation1']!),
@@ -191,12 +186,8 @@ class _CpTMListItemWidgetState extends State<CpTMListItemWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyLarge
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyLargeFamily,
+                                  font: FlutterFlowTheme.of(context).bodyLarge,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily),
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation2']!),
@@ -209,12 +200,8 @@ class _CpTMListItemWidgetState extends State<CpTMListItemWidget>
                           style: FlutterFlowTheme.of(context)
                               .bodyLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyLargeFamily,
+                                font: FlutterFlowTheme.of(context).bodyLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily),
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation3']!),

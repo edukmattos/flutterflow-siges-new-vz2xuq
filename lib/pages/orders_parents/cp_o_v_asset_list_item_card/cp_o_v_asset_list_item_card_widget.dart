@@ -10,7 +10,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_o_v_asset_list_item_card_model.dart';
 export 'cp_o_v_asset_list_item_card_model.dart';
@@ -204,14 +203,9 @@ class _CpOVAssetListItemCardWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .titleLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleLargeFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation1']!),
@@ -222,16 +216,11 @@ class _CpOVAssetListItemCardWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .titleMedium,
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleMediumFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation2']!),
@@ -309,14 +298,9 @@ class _CpOVAssetListItemCardWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyLarge,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation3']!),
@@ -338,14 +322,9 @@ class _CpOVAssetListItemCardWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation4']!),
@@ -360,14 +339,9 @@ class _CpOVAssetListItemCardWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation5']!),

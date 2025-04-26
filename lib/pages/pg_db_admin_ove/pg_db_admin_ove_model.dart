@@ -1,4 +1,3 @@
-import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/components/cp_menu/cp_menu_widget.dart';
 import '/pages/users/cp_d_b_user_available/cp_d_b_user_available_widget.dart';
@@ -7,35 +6,27 @@ import 'pg_db_admin_ove_widget.dart' show PgDbAdminOveWidget;
 import 'package:flutter/material.dart';
 
 class PgDbAdminOveModel extends FlutterFlowModel<PgDbAdminOveWidget> {
-  ///  Local state fields for this page.
-
-  int? lpsvOveProcessingId;
-
-  bool lpsvOveProcessingIsFiled = false;
-
   ///  State fields for stateful widgets in this page.
 
   // Model for cpMenu component.
   late CpMenuModel cpMenuModel;
   // Model for cpDBUserAvailable component.
   late CpDBUserAvailableModel cpDBUserAvailableModel;
-  // State field(s) for tf_ove_date_start widget.
-  FocusNode? tfOveDateStartFocusNode;
-  TextEditingController? tfOveDateStartTextController;
+  // State field(s) for tf_ove_date_start1 widget.
+  FocusNode? tfOveDateStart1FocusNode;
+  TextEditingController? tfOveDateStart1TextController;
   String? Function(BuildContext, String?)?
-      tfOveDateStartTextControllerValidator;
+      tfOveDateStart1TextControllerValidator;
   DateTime? datePicked1;
-  // State field(s) for tf_ove_date_end widget.
-  FocusNode? tfOveDateEndFocusNode;
-  TextEditingController? tfOveDateEndTextController;
-  String? Function(BuildContext, String?)? tfOveDateEndTextControllerValidator;
+  // State field(s) for tf_ove_date_end1 widget.
+  FocusNode? tfOveDateEnd1FocusNode;
+  TextEditingController? tfOveDateEnd1TextController;
+  String? Function(BuildContext, String?)? tfOveDateEnd1TextControllerValidator;
   DateTime? datePicked2;
   // State field(s) for tf_ove_id widget.
   FocusNode? tfOveIdFocusNode;
   TextEditingController? tfOveIdTextController;
   String? Function(BuildContext, String?)? tfOveIdTextControllerValidator;
-  // Stores action output result for [Backend Call - API (apiOVEById)] action in IconButton widget.
-  ApiCallResponse? resOve;
   // Stores action output result for [Action Block - abGuardian] action in IconButton widget.
   bool? isAllowedOveCreate;
 
@@ -50,11 +41,11 @@ class PgDbAdminOveModel extends FlutterFlowModel<PgDbAdminOveWidget> {
   void dispose() {
     cpMenuModel.dispose();
     cpDBUserAvailableModel.dispose();
-    tfOveDateStartFocusNode?.dispose();
-    tfOveDateStartTextController?.dispose();
+    tfOveDateStart1FocusNode?.dispose();
+    tfOveDateStart1TextController?.dispose();
 
-    tfOveDateEndFocusNode?.dispose();
-    tfOveDateEndTextController?.dispose();
+    tfOveDateEnd1FocusNode?.dispose();
+    tfOveDateEnd1TextController?.dispose();
 
     tfOveIdFocusNode?.dispose();
     tfOveIdTextController?.dispose();

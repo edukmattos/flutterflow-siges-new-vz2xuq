@@ -21,7 +21,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_db_admin_ove_card_model.dart';
 export 'cp_db_admin_ove_card_model.dart';
@@ -221,6 +220,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                               cpShowLoadingIndicator: false,
                               cpDisabled: false,
                               cpIsFiled: widget.cpDtOVE!.isFiled,
+                              cpOveId: widget.cpDtOVE!.id,
                             ),
                           ),
                         ].divide(SizedBox(width: 12.0)),
@@ -248,19 +248,12 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleMedium,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -272,17 +265,13 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
                                     ),
-                                    Text(
+                                    SelectionArea(
+                                        child: Text(
                                       valueOrDefault<String>(
                                         widget.cpDtOVE?.requestedServices,
                                         'Serviços a realizar N/I',
@@ -290,16 +279,11 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily),
                                           ),
-                                    ),
+                                    )),
                                     Text(
                                       valueOrDefault<String>(
                                         widget
@@ -309,14 +293,9 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodySmall,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodySmallFamily),
                                           ),
                                     ),
                                   ],
@@ -357,16 +336,11 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation1']!),
@@ -375,16 +349,11 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelSmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelSmall,
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmallFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation2']!),
@@ -400,16 +369,11 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation3']!),
@@ -426,16 +390,11 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ],
@@ -602,10 +561,9 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                         textStyle: FlutterFlowTheme.of(context)
                                                                             .bodySmall
                                                                             .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                                                                              font: FlutterFlowTheme.of(context).bodySmall,
                                                                               color: FlutterFlowTheme.of(context).secondaryText,
                                                                               letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                             ),
                                                                         elevation:
                                                                             0.0,
@@ -751,7 +709,7 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                           ),
                         ].divide(SizedBox(width: 20.0)),
                       ),
-                      if (!widget.cpDtOVE!.isFiled)
+                      if (widget.cpDtOVE?.isFiled == false)
                         Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -871,15 +829,17 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                 ),
                               ].divide(SizedBox(width: 4.0)),
                             ),
-                            Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
-                              child: wrapWithModel(
-                                model: _model.cpOveMenuOptionsModel,
-                                updateCallback: () => safeSetState(() {}),
-                                updateOnChange: true,
-                                child: CpOveMenuOptionsWidget(
-                                  cpDtOve: widget.cpDtOVE!,
-                                  cpSize: 50,
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                child: wrapWithModel(
+                                  model: _model.cpOveMenuOptionsModel,
+                                  updateCallback: () => safeSetState(() {}),
+                                  updateOnChange: true,
+                                  child: CpOveMenuOptionsWidget(
+                                    cpDtOve: widget.cpDtOVE!,
+                                    cpSize: 50,
+                                  ),
                                 ),
                               ),
                             ),

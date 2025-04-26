@@ -11,7 +11,6 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'dart:async';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pg_user_migration_model.dart';
 export 'pg_user_migration_model.dart';
 
@@ -77,12 +76,10 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
               '1030ge5b' /* Page Title */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).accent4,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -135,11 +132,8 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                     width: 200.0,
                     height: 40.0,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyMediumFamily,
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyMediumFamily),
                         ),
                     icon: Icon(
                       Icons.keyboard_arrow_down_rounded,
@@ -211,12 +205,9 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 0.0,
                   borderRadius: BorderRadius.circular(8.0),
@@ -311,12 +302,9 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 0.0,
                   borderRadius: BorderRadius.circular(8.0),
@@ -343,12 +331,9 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).error,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 0.0,
                   borderRadius: BorderRadius.circular(8.0),

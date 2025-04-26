@@ -19,7 +19,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_d_b_user_o_v_model.dart';
 export 'pg_d_b_user_o_v_model.dart';
@@ -135,14 +134,11 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                 'y6o1y0jn' /* Meu Painel */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily:
-                        FlutterFlowTheme.of(context).headlineMediumFamily,
+                    font: FlutterFlowTheme.of(context).headlineMedium,
                     color: FlutterFlowTheme.of(context).info,
                     fontSize: 28.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w600,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).headlineMediumFamily),
                   ),
             ),
             actions: [],
@@ -197,19 +193,14 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .headlineMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .headlineMediumFamily,
+                                                        .headlineMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(FlutterFlowTheme
-                                                            .of(context)
-                                                        .headlineMediumFamily),
                                               ),
                                         ),
                                         Text(
@@ -219,16 +210,10 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelSmallFamily,
+                                                        .labelSmall,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelSmallFamily),
                                               ),
                                         ),
                                       ],
@@ -243,16 +228,10 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ),
                                       ),
@@ -378,21 +357,15 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                                 ).animateOnPageLoad(animationsMap[
                                                     'textOnPageLoadAnimation']!),
@@ -468,16 +441,11 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleSmallFamily,
+                                                                      .titleSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleSmallFamily),
                                                                 ),
                                                           ),
                                                           showBadge: FFAppState()
@@ -563,16 +531,11 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleSmallFamily,
+                                                                      .titleSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleSmallFamily),
                                                                 ),
                                                           ),
                                                           showBadge: FFAppState()
@@ -658,16 +621,11 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleSmallFamily,
+                                                                      .titleSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleSmallFamily),
                                                                 ),
                                                           ),
                                                           showBadge: FFAppState()
@@ -753,16 +711,11 @@ class _PgDBUserOVWidgetState extends State<PgDBUserOVWidget>
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .titleSmallFamily,
+                                                                      .titleSmall,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .titleSmallFamily),
                                                                 ),
                                                           ),
                                                           showBadge: FFAppState()

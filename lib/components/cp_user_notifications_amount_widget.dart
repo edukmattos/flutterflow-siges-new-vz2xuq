@@ -6,7 +6,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_user_notifications_amount_model.dart';
 export 'cp_user_notifications_amount_model.dart';
@@ -69,11 +68,9 @@ class _CpUserNotificationsAmountWidgetState
         badgeContent: Text(
           widget.cpNotificationsAmount.toString(),
           style: FlutterFlowTheme.of(context).titleSmall.override(
-                fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                font: FlutterFlowTheme.of(context).titleSmall,
                 color: Colors.white,
                 letterSpacing: 0.0,
-                useGoogleFonts: GoogleFonts.asMap()
-                    .containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
               ),
         ),
         showBadge: widget.cpNotificationsAmount > 0,

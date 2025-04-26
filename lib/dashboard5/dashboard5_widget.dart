@@ -7,7 +7,6 @@ import 'package:badges/badges.dart' as badges;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'dashboard5_model.dart';
 export 'dashboard5_model.dart';
 
@@ -149,10 +148,8 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
               're2akmyi' /* Dashboard */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [
@@ -218,12 +215,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                           ),
                         ),
@@ -265,17 +259,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .displaySmall,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .displaySmallFamily),
                                                 ),
                                           ),
                                           Padding(
@@ -291,17 +278,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -338,20 +319,13 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .displaySmall,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .tertiary,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .displaySmallFamily),
                                                 ),
                                           ),
                                           Padding(
@@ -367,17 +341,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -414,20 +382,13 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .displaySmall,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .displaySmallFamily),
                                                 ),
                                           ),
                                           Padding(
@@ -443,17 +404,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -517,16 +472,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .headlineSmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineSmallFamily),
                                             ),
                                       ),
                                       Padding(
@@ -539,16 +487,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -584,16 +526,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .displaySmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .displaySmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily),
                                             ),
                                       ),
                                       Padding(
@@ -606,16 +541,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -639,16 +568,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .displaySmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .displaySmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily),
                                             ),
                                       ),
                                       Padding(
@@ -661,16 +583,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -729,14 +645,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                       style: FlutterFlowTheme.of(context)
                                           .headlineSmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineSmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .headlineSmall,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily),
                                           ),
                                     ),
                                     Padding(
@@ -749,16 +660,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -843,16 +747,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   context)
                                                               .bodySmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmallFamily,
+                                                                    .bodySmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodySmallFamily),
                                                               ),
                                                     ),
                                                     Icon(
@@ -879,17 +778,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -919,16 +811,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelMediumFamily,
+                                                                    .labelMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelMediumFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -943,16 +830,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -967,18 +849,13 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 color: Colors
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                         showBadge: true,
@@ -1016,19 +893,14 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -1102,16 +974,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   context)
                                                               .bodySmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmallFamily,
+                                                                    .bodySmall,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodySmallFamily),
                                                               ),
                                                     ),
                                                     Icon(
@@ -1138,17 +1005,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1178,16 +1038,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelMediumFamily,
+                                                                    .labelMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .labelMediumFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -1202,16 +1057,11 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -1226,18 +1076,13 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMediumFamily,
+                                                                    .bodyMedium,
                                                                 color: Colors
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                         showBadge: true,
@@ -1275,19 +1120,14 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily,
+                                                                      .bodyMedium,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyMediumFamily),
                                                                 ),
                                                           ),
                                                         ),
@@ -1348,13 +1188,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .headlineSmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .headlineSmallFamily),
                                   ),
                             ),
                           ),
@@ -1368,13 +1204,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .labelMediumFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .labelMediumFamily),
                                   ),
                             ),
                           ),
@@ -1420,17 +1252,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -1473,17 +1298,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -1526,17 +1344,10 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -1616,13 +1427,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                   titleTextStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily),
                                       ),
                                 ),
                                 yAxisLabelInfo: AxisLabelInfo(
@@ -1632,13 +1439,9 @@ class _Dashboard5WidgetState extends State<Dashboard5Widget>
                                   titleTextStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),

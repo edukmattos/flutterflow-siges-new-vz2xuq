@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'md_asset_img_main_model.dart';
 export 'md_asset_img_main_model.dart';
 
@@ -113,13 +112,10 @@ class _MdAssetImgMainWidgetState extends State<MdAssetImgMainWidget> {
                 child: Text(
                   '${widget.cpAssetDt?.code} - ${widget.cpAssetDt?.description}',
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                        font: FlutterFlowTheme.of(context).bodyLarge,
                         color: FlutterFlowTheme.of(context).warning,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.w800,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).bodyLargeFamily),
                       ),
                 ),
               ),

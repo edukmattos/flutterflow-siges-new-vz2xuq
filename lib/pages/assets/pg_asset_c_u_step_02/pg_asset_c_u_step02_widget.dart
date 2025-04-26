@@ -20,8 +20,8 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_asset_c_u_step02_model.dart';
 export 'pg_asset_c_u_step02_model.dart';
@@ -136,13 +136,10 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                     ? 'Novo Ativo'
                     : 'Editar Ativo',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: FlutterFlowTheme.of(context).info,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
             ],
@@ -223,49 +220,31 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -336,16 +315,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         cursorColor:
@@ -354,6 +326,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         validator: _model
                                             .tfBrandTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .none),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       TextFormField(
                                         controller:
@@ -378,49 +363,31 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -491,16 +458,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         cursorColor:
@@ -509,6 +469,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         validator: _model
                                             .tfModelTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .none),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       TextFormField(
                                         controller:
@@ -533,49 +506,31 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -647,16 +602,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         cursorColor:
@@ -665,6 +613,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         validator: _model
                                             .tfSerialTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .none),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       wrapWithModel(
                                         model: _model.cpDropdownUnitsModel,
@@ -735,49 +696,31 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -849,16 +792,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         cursorColor:
@@ -867,6 +803,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         validator: _model
                                             .tfLocationTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .none),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       wrapWithModel(
                                         model: _model
@@ -903,31 +852,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -999,16 +936,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         keyboardType: TextInputType.datetime,
@@ -1045,49 +975,31 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -1159,16 +1071,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         maxLines: 5,
                                         minLines: 2,
@@ -1178,6 +1083,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         validator: _model
                                             .tfCommentsTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .none),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       TextFormField(
                                         controller:
@@ -1203,31 +1121,19 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -1299,16 +1205,9 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         keyboardType: TextInputType.datetime,
@@ -1383,22 +1282,16 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                           .of(context)
                                                       .titleMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .titleMediumFamily,
+                                                                .titleMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .info,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMediumFamily),
                                                       ),
                                                   elevation: 5.0,
                                                   borderSide: BorderSide(
@@ -2237,30 +2130,28 @@ class _PgAssetCUStep02WidgetState extends State<PgAssetCUStep02Widget> {
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primary,
-                                                  textStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily,
-                                                            color: Colors.white,
-                                                            letterSpacing: 0.0,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmallFamily),
-                                                          ),
+                                                      .info,
+                                                  textStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w800,
+                                                      ),
                                                   elevation: 5.0,
                                                   borderSide: BorderSide(
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .info,
+                                                        .primary,
                                                     width: 6.0,
                                                   ),
                                                   borderRadius:

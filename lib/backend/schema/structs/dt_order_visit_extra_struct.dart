@@ -74,6 +74,15 @@ class DtOrderVisitExtraStruct extends BaseStruct {
     int? unitTypeId,
     int? oCauseReasonId,
     String? oCauseReasonDescription,
+    bool? isBlocked,
+    String? unblockedAt,
+    DateTime? unblockedDatetime,
+    int? unblockedUserId,
+    String? unblockedUserNameShort,
+    String? unarchivedAt,
+    DateTime? unarchivedDatetime,
+    int? unarchivedUserId,
+    String? unarchivedUserNameShort,
   })  : _id = id,
         _oMask = oMask,
         _unitId = unitId,
@@ -140,7 +149,16 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         _unitTypeParentId = unitTypeParentId,
         _unitTypeId = unitTypeId,
         _oCauseReasonId = oCauseReasonId,
-        _oCauseReasonDescription = oCauseReasonDescription;
+        _oCauseReasonDescription = oCauseReasonDescription,
+        _isBlocked = isBlocked,
+        _unblockedAt = unblockedAt,
+        _unblockedDatetime = unblockedDatetime,
+        _unblockedUserId = unblockedUserId,
+        _unblockedUserNameShort = unblockedUserNameShort,
+        _unarchivedAt = unarchivedAt,
+        _unarchivedDatetime = unarchivedDatetime,
+        _unarchivedUserId = unarchivedUserId,
+        _unarchivedUserNameShort = unarchivedUserNameShort;
 
   // "id" field.
   int? _id;
@@ -674,6 +692,75 @@ class DtOrderVisitExtraStruct extends BaseStruct {
 
   bool hasOCauseReasonDescription() => _oCauseReasonDescription != null;
 
+  // "is_blocked" field.
+  bool? _isBlocked;
+  bool get isBlocked => _isBlocked ?? false;
+  set isBlocked(bool? val) => _isBlocked = val;
+
+  bool hasIsBlocked() => _isBlocked != null;
+
+  // "unblocked_at" field.
+  String? _unblockedAt;
+  String get unblockedAt => _unblockedAt ?? '';
+  set unblockedAt(String? val) => _unblockedAt = val;
+
+  bool hasUnblockedAt() => _unblockedAt != null;
+
+  // "unblocked_datetime" field.
+  DateTime? _unblockedDatetime;
+  DateTime? get unblockedDatetime => _unblockedDatetime;
+  set unblockedDatetime(DateTime? val) => _unblockedDatetime = val;
+
+  bool hasUnblockedDatetime() => _unblockedDatetime != null;
+
+  // "unblocked_user_id" field.
+  int? _unblockedUserId;
+  int get unblockedUserId => _unblockedUserId ?? 0;
+  set unblockedUserId(int? val) => _unblockedUserId = val;
+
+  void incrementUnblockedUserId(int amount) =>
+      unblockedUserId = unblockedUserId + amount;
+
+  bool hasUnblockedUserId() => _unblockedUserId != null;
+
+  // "unblocked_user_name_short" field.
+  String? _unblockedUserNameShort;
+  String get unblockedUserNameShort => _unblockedUserNameShort ?? '';
+  set unblockedUserNameShort(String? val) => _unblockedUserNameShort = val;
+
+  bool hasUnblockedUserNameShort() => _unblockedUserNameShort != null;
+
+  // "unarchived_at" field.
+  String? _unarchivedAt;
+  String get unarchivedAt => _unarchivedAt ?? '';
+  set unarchivedAt(String? val) => _unarchivedAt = val;
+
+  bool hasUnarchivedAt() => _unarchivedAt != null;
+
+  // "unarchived_datetime" field.
+  DateTime? _unarchivedDatetime;
+  DateTime? get unarchivedDatetime => _unarchivedDatetime;
+  set unarchivedDatetime(DateTime? val) => _unarchivedDatetime = val;
+
+  bool hasUnarchivedDatetime() => _unarchivedDatetime != null;
+
+  // "unarchived_user_id" field.
+  int? _unarchivedUserId;
+  int get unarchivedUserId => _unarchivedUserId ?? 0;
+  set unarchivedUserId(int? val) => _unarchivedUserId = val;
+
+  void incrementUnarchivedUserId(int amount) =>
+      unarchivedUserId = unarchivedUserId + amount;
+
+  bool hasUnarchivedUserId() => _unarchivedUserId != null;
+
+  // "unarchived_user_name_short" field.
+  String? _unarchivedUserNameShort;
+  String get unarchivedUserNameShort => _unarchivedUserNameShort ?? '';
+  set unarchivedUserNameShort(String? val) => _unarchivedUserNameShort = val;
+
+  bool hasUnarchivedUserNameShort() => _unarchivedUserNameShort != null;
+
   static DtOrderVisitExtraStruct fromMap(Map<String, dynamic> data) =>
       DtOrderVisitExtraStruct(
         id: castToType<int>(data['id']),
@@ -749,6 +836,15 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         unitTypeId: castToType<int>(data['unit_type_id']),
         oCauseReasonId: castToType<int>(data['o_cause_reason_id']),
         oCauseReasonDescription: data['o_cause_reason_description'] as String?,
+        isBlocked: data['is_blocked'] as bool?,
+        unblockedAt: data['unblocked_at'] as String?,
+        unblockedDatetime: data['unblocked_datetime'] as DateTime?,
+        unblockedUserId: castToType<int>(data['unblocked_user_id']),
+        unblockedUserNameShort: data['unblocked_user_name_short'] as String?,
+        unarchivedAt: data['unarchived_at'] as String?,
+        unarchivedDatetime: data['unarchived_datetime'] as DateTime?,
+        unarchivedUserId: castToType<int>(data['unarchived_user_id']),
+        unarchivedUserNameShort: data['unarchived_user_name_short'] as String?,
       );
 
   static DtOrderVisitExtraStruct? maybeFromMap(dynamic data) => data is Map
@@ -823,6 +919,15 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         'unit_type_id': _unitTypeId,
         'o_cause_reason_id': _oCauseReasonId,
         'o_cause_reason_description': _oCauseReasonDescription,
+        'is_blocked': _isBlocked,
+        'unblocked_at': _unblockedAt,
+        'unblocked_datetime': _unblockedDatetime,
+        'unblocked_user_id': _unblockedUserId,
+        'unblocked_user_name_short': _unblockedUserNameShort,
+        'unarchived_at': _unarchivedAt,
+        'unarchived_datetime': _unarchivedDatetime,
+        'unarchived_user_id': _unarchivedUserId,
+        'unarchived_user_name_short': _unarchivedUserNameShort,
       }.withoutNulls;
 
   @override
@@ -1093,6 +1198,42 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         ),
         'o_cause_reason_description': serializeParam(
           _oCauseReasonDescription,
+          ParamType.String,
+        ),
+        'is_blocked': serializeParam(
+          _isBlocked,
+          ParamType.bool,
+        ),
+        'unblocked_at': serializeParam(
+          _unblockedAt,
+          ParamType.String,
+        ),
+        'unblocked_datetime': serializeParam(
+          _unblockedDatetime,
+          ParamType.DateTime,
+        ),
+        'unblocked_user_id': serializeParam(
+          _unblockedUserId,
+          ParamType.int,
+        ),
+        'unblocked_user_name_short': serializeParam(
+          _unblockedUserNameShort,
+          ParamType.String,
+        ),
+        'unarchived_at': serializeParam(
+          _unarchivedAt,
+          ParamType.String,
+        ),
+        'unarchived_datetime': serializeParam(
+          _unarchivedDatetime,
+          ParamType.DateTime,
+        ),
+        'unarchived_user_id': serializeParam(
+          _unarchivedUserId,
+          ParamType.int,
+        ),
+        'unarchived_user_name_short': serializeParam(
+          _unarchivedUserNameShort,
           ParamType.String,
         ),
       }.withoutNulls;
@@ -1435,6 +1576,51 @@ class DtOrderVisitExtraStruct extends BaseStruct {
           ParamType.String,
           false,
         ),
+        isBlocked: deserializeParam(
+          data['is_blocked'],
+          ParamType.bool,
+          false,
+        ),
+        unblockedAt: deserializeParam(
+          data['unblocked_at'],
+          ParamType.String,
+          false,
+        ),
+        unblockedDatetime: deserializeParam(
+          data['unblocked_datetime'],
+          ParamType.DateTime,
+          false,
+        ),
+        unblockedUserId: deserializeParam(
+          data['unblocked_user_id'],
+          ParamType.int,
+          false,
+        ),
+        unblockedUserNameShort: deserializeParam(
+          data['unblocked_user_name_short'],
+          ParamType.String,
+          false,
+        ),
+        unarchivedAt: deserializeParam(
+          data['unarchived_at'],
+          ParamType.String,
+          false,
+        ),
+        unarchivedDatetime: deserializeParam(
+          data['unarchived_datetime'],
+          ParamType.DateTime,
+          false,
+        ),
+        unarchivedUserId: deserializeParam(
+          data['unarchived_user_id'],
+          ParamType.int,
+          false,
+        ),
+        unarchivedUserNameShort: deserializeParam(
+          data['unarchived_user_name_short'],
+          ParamType.String,
+          false,
+        ),
       );
 
   @override
@@ -1509,7 +1695,16 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         unitTypeParentId == other.unitTypeParentId &&
         unitTypeId == other.unitTypeId &&
         oCauseReasonId == other.oCauseReasonId &&
-        oCauseReasonDescription == other.oCauseReasonDescription;
+        oCauseReasonDescription == other.oCauseReasonDescription &&
+        isBlocked == other.isBlocked &&
+        unblockedAt == other.unblockedAt &&
+        unblockedDatetime == other.unblockedDatetime &&
+        unblockedUserId == other.unblockedUserId &&
+        unblockedUserNameShort == other.unblockedUserNameShort &&
+        unarchivedAt == other.unarchivedAt &&
+        unarchivedDatetime == other.unarchivedDatetime &&
+        unarchivedUserId == other.unarchivedUserId &&
+        unarchivedUserNameShort == other.unarchivedUserNameShort;
   }
 
   @override
@@ -1580,7 +1775,16 @@ class DtOrderVisitExtraStruct extends BaseStruct {
         unitTypeParentId,
         unitTypeId,
         oCauseReasonId,
-        oCauseReasonDescription
+        oCauseReasonDescription,
+        isBlocked,
+        unblockedAt,
+        unblockedDatetime,
+        unblockedUserId,
+        unblockedUserNameShort,
+        unarchivedAt,
+        unarchivedDatetime,
+        unarchivedUserId,
+        unarchivedUserNameShort
       ]);
 }
 
@@ -1652,6 +1856,15 @@ DtOrderVisitExtraStruct createDtOrderVisitExtraStruct({
   int? unitTypeId,
   int? oCauseReasonId,
   String? oCauseReasonDescription,
+  bool? isBlocked,
+  String? unblockedAt,
+  DateTime? unblockedDatetime,
+  int? unblockedUserId,
+  String? unblockedUserNameShort,
+  String? unarchivedAt,
+  DateTime? unarchivedDatetime,
+  int? unarchivedUserId,
+  String? unarchivedUserNameShort,
 }) =>
     DtOrderVisitExtraStruct(
       id: id,
@@ -1721,4 +1934,13 @@ DtOrderVisitExtraStruct createDtOrderVisitExtraStruct({
       unitTypeId: unitTypeId,
       oCauseReasonId: oCauseReasonId,
       oCauseReasonDescription: oCauseReasonDescription,
+      isBlocked: isBlocked,
+      unblockedAt: unblockedAt,
+      unblockedDatetime: unblockedDatetime,
+      unblockedUserId: unblockedUserId,
+      unblockedUserNameShort: unblockedUserNameShort,
+      unarchivedAt: unarchivedAt,
+      unarchivedDatetime: unarchivedDatetime,
+      unarchivedUserId: unarchivedUserId,
+      unarchivedUserNameShort: unarchivedUserNameShort,
     );

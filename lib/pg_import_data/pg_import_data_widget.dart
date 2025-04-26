@@ -10,7 +10,6 @@ import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_import_data_model.dart';
 export 'pg_import_data_model.dart';
@@ -80,12 +79,10 @@ class _PgImportDataWidgetState extends State<PgImportDataWidget> {
               '3ojpnc5q' /* Page Title */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).accent4,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -298,17 +295,12 @@ class _PgImportDataWidgetState extends State<PgImportDataWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .titleSmall
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).titleSmallFamily,
-                              color: Colors.white,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .titleSmallFamily),
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  font: FlutterFlowTheme.of(context).titleSmall,
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                ),
                         elevation: 0.0,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -347,14 +339,9 @@ class _PgImportDataWidgetState extends State<PgImportDataWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ));
                                 },
@@ -390,14 +377,9 @@ class _PgImportDataWidgetState extends State<PgImportDataWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ));
                                 },

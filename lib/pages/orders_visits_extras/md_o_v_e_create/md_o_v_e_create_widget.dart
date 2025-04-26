@@ -13,14 +13,13 @@ import '/pages/orders_parents/cp_dropdown_orders_priorities/cp_dropdown_orders_p
 import '/pages/orders_parents/cp_dropdown_orders_types/cp_dropdown_orders_types_widget.dart';
 import '/actions/actions.dart' as action_blocks;
 import '/flutter_flow/custom_functions.dart' as functions;
-import '/index.dart';
 import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'md_o_v_e_create_model.dart';
 export 'md_o_v_e_create_model.dart';
@@ -208,17 +207,10 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
                                                         .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineSmall,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -286,53 +278,35 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                               errorStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -406,17 +380,10 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                                 ),
                                             minLines: 1,
                                             cursorColor:
@@ -425,6 +392,20 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                             validator: _model
                                                 .tfOMaskTextControllerValidator
                                                 .asValidator(context),
+                                            inputFormatters: [
+                                              if (!isAndroid && !isiOS)
+                                                TextInputFormatter.withFunction(
+                                                    (oldValue, newValue) {
+                                                  return TextEditingValue(
+                                                    selection:
+                                                        newValue.selection,
+                                                    text: newValue.text
+                                                        .toCapitalization(
+                                                            TextCapitalization
+                                                                .none),
+                                                  );
+                                                }),
+                                            ],
                                           ),
                                           wrapWithModel(
                                             model: _model.cpDropdownUnitsModel,
@@ -473,53 +454,35 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyLargeFamily,
+                                                                .bodyLarge,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLargeFamily),
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .labelMediumFamily,
+                                                                .labelMedium,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMediumFamily),
                                                       ),
                                               errorStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMediumFamily,
+                                                                .bodyMedium,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -593,17 +556,10 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyLargeFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                                 ),
                                             maxLines: 3,
                                             minLines: 1,
@@ -613,6 +569,20 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                             validator: _model
                                                 .tfRequetedServicesTextControllerValidator
                                                 .asValidator(context),
+                                            inputFormatters: [
+                                              if (!isAndroid && !isiOS)
+                                                TextInputFormatter.withFunction(
+                                                    (oldValue, newValue) {
+                                                  return TextEditingValue(
+                                                    selection:
+                                                        newValue.selection,
+                                                    text: newValue.text
+                                                        .toCapitalization(
+                                                            TextCapitalization
+                                                                .none),
+                                                  );
+                                                }),
+                                            ],
                                           ),
                                           wrapWithModel(
                                             model: _model
@@ -698,32 +668,22 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                     context)
                                                                 .bodyLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyLargeFamily,
+                                                                      .bodyLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily),
                                                                 ),
                                                         hintStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelMediumFamily,
+                                                                      .labelMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
                                                                 ),
                                                         enabledBorder:
                                                             OutlineInputBorder(
@@ -799,16 +759,11 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                   context)
                                                               .bodyLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyLargeFamily,
+                                                                    .bodyLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily),
                                                               ),
                                                       minLines: 1,
                                                       keyboardType:
@@ -884,16 +839,14 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         fontSize:
                                                                             32.0,
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                   pickerBackgroundColor:
                                                                       FlutterFlowTheme.of(
@@ -948,16 +901,14 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                             context)
                                                                         .headlineLarge
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).headlineLarge,
                                                                           fontSize:
                                                                               32.0,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.w600,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                         ),
                                                                     pickerBackgroundColor:
                                                                         FlutterFlowTheme.of(context)
@@ -1080,32 +1031,22 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                     context)
                                                                 .bodyLarge
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyLargeFamily,
+                                                                      .bodyLarge,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodyLargeFamily),
                                                                 ),
                                                         hintStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                  font: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .labelMediumFamily,
+                                                                      .labelMedium,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
                                                                 ),
                                                         enabledBorder:
                                                             OutlineInputBorder(
@@ -1202,16 +1143,11 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                   context)
                                                               .bodyLarge
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyLargeFamily,
+                                                                    .bodyLarge,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily),
                                                               ),
                                                       minLines: 1,
                                                       keyboardType:
@@ -1287,16 +1223,14 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         fontSize:
                                                                             32.0,
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                   pickerBackgroundColor:
                                                                       FlutterFlowTheme.of(
@@ -1351,16 +1285,14 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                             context)
                                                                         .headlineLarge
                                                                         .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).headlineLarge,
                                                                           fontSize:
                                                                               32.0,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.w600,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                         ),
                                                                     pickerBackgroundColor:
                                                                         FlutterFlowTheme.of(context)
@@ -1652,13 +1584,13 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                               .text,
                                                           'started_at': supaSerialize<
                                                                   DateTime>(
-                                                              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(
+                                                              functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(
                                                                   _model
                                                                       .tfStartedAtTextController
                                                                       .text)),
                                                           'ended_at': supaSerialize<
                                                                   DateTime>(
-                                                              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(
+                                                              functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(
                                                                   _model
                                                                       .tfEndedAtTextController
                                                                       .text)),
@@ -1705,11 +1637,11 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                               .cpDropdownOrdersPrioritiesModel
                                                               .dropdownOrdersPrioritiesValue,
                                                           'duration_hours': functions.cfGetDifDecHoursBetweenDates(
-                                                              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(
+                                                              functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(
                                                                   _model
                                                                       .tfStartedAtTextController
                                                                       .text),
-                                                              functions.cfConvDateStringBrToDatetimeENYmdHHmm00(
+                                                              functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(
                                                                   _model
                                                                       .tfEndedAtTextController
                                                                       .text),
@@ -1784,11 +1716,11 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                     .id,
                                                             'is_leader': true,
                                                             'duration_hours': functions.cfGetDifDecHoursBetweenDates(
-                                                                functions.cfConvDateStringBrToDatetimeENYmdHHmm00(
+                                                                functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(
                                                                     _model
                                                                         .tfStartedAtTextController
                                                                         .text),
-                                                                functions.cfConvDateStringBrToDatetimeENYmdHHmm00(
+                                                                functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(
                                                                     _model
                                                                         .tfEndedAtTextController
                                                                         .text),
@@ -1910,10 +1842,10 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                             .stCounterLoop)
                                                                     ?.isLeader,
                                                                 'duration_hours': functions.cfGetDifDecHoursBetweenDates(
-                                                                    functions.cfConvDateStringBrToDatetimeENYmdHHmm00(_model
+                                                                    functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(_model
                                                                         .tfStartedAtTextController
                                                                         .text),
-                                                                    functions.cfConvDateStringBrToDatetimeENYmdHHmm00(_model
+                                                                    functions.cfConvDatetimeStringBrToDatetimeENYmdHHmm00(_model
                                                                         .tfEndedAtTextController
                                                                         .text),
                                                                     2),
@@ -1955,16 +1887,12 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                         }
 
                                                         Navigator.pop(context);
-                                                        await action_blocks
-                                                            .abOVESelected(
-                                                          context,
-                                                          abOVEId: _model
-                                                              .resOVEAdded?.id,
-                                                        );
-
-                                                        context.pushNamed(
-                                                            PgOveShowWidget
-                                                                .routeName);
+                                                        FFAppState()
+                                                            .stOVEProcessingId = 1;
+                                                        FFAppState()
+                                                                .stOVEIsFiled =
+                                                            false;
+                                                        safeSetState(() {});
                                                       } else {
                                                         await showDialog(
                                                           context: context,
@@ -2020,31 +1948,30 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primary,
+                                                              .info,
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .titleSmall
                                                               .override(
-                                                                fontFamily: FlutterFlowTheme.of(
+                                                                font: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .titleSmallFamily,
-                                                                color: Colors
-                                                                    .white,
+                                                                    .titleSmall,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleSmallFamily),
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w800,
                                                               ),
                                                       elevation: 5.0,
                                                       borderSide: BorderSide(
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .info,
+                                                                .primary,
                                                         width: 6.0,
                                                       ),
                                                       borderRadius:

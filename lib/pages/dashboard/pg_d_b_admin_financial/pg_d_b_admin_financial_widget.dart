@@ -15,7 +15,6 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_d_b_admin_financial_model.dart';
 export 'pg_d_b_admin_financial_model.dart';
@@ -104,13 +103,11 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
               'qlgkunhm' /* Painel Geral */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).info,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -162,16 +159,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .headlineSmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineSmallFamily),
                                             ),
                                       ),
                                     ],
@@ -235,22 +225,15 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                 context)
                                                             .headlineLarge
                                                             .override(
-                                                              fontFamily:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineLargeFamily,
+                                                              font: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .headlineLarge,
                                                               fontSize: 32.0,
                                                               letterSpacing:
                                                                   0.0,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
-                                                              useGoogleFonts: GoogleFonts
-                                                                      .asMap()
-                                                                  .containsKey(
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .headlineLargeFamily),
                                                             ),
                                                     pickerBackgroundColor:
                                                         FlutterFlowTheme.of(
@@ -355,21 +338,15 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .titleSmallFamily,
+                                                                .titleSmall,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
                                                       ),
                                               elevation: 0.0,
                                               borderRadius:
@@ -409,22 +386,15 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                 context)
                                                             .headlineLarge
                                                             .override(
-                                                              fontFamily:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineLargeFamily,
+                                                              font: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .headlineLarge,
                                                               fontSize: 32.0,
                                                               letterSpacing:
                                                                   0.0,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
-                                                              useGoogleFonts: GoogleFonts
-                                                                      .asMap()
-                                                                  .containsKey(
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .headlineLargeFamily),
                                                             ),
                                                     pickerBackgroundColor:
                                                         FlutterFlowTheme.of(
@@ -529,21 +499,15 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .titleSmallFamily,
+                                                                .titleSmall,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
                                                       ),
                                               elevation: 0.0,
                                               borderRadius:
@@ -698,14 +662,12 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineSmallFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineSmall,
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineSmallFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -743,12 +705,10 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -877,14 +837,12 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineMediumFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium,
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -922,12 +880,10 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1056,14 +1012,12 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineMediumFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium,
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1101,12 +1055,10 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1235,14 +1187,12 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineMediumFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium,
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1276,12 +1226,10 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1410,14 +1358,12 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineMediumFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium,
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1451,12 +1397,10 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                           context)
                                                                       .headlineLarge
                                                                       .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .headlineLarge,
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineLargeFamily),
                                                                       ),
                                                                 ),
                                                               ],
@@ -1551,9 +1495,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -1562,10 +1506,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -1649,9 +1589,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -1660,10 +1600,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -1747,9 +1683,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -1758,10 +1694,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -1845,9 +1777,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -1856,10 +1788,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -1970,9 +1898,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -1981,10 +1909,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2092,9 +2016,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2103,10 +2027,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2214,9 +2134,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2225,10 +2145,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2336,9 +2252,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2347,10 +2263,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2461,9 +2373,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2472,10 +2384,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2583,9 +2491,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2594,10 +2502,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2705,9 +2609,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2716,10 +2620,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2823,9 +2723,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2834,10 +2734,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -2948,9 +2844,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -2959,10 +2855,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3070,9 +2962,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3081,10 +2973,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3192,9 +3080,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3203,10 +3091,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3314,9 +3198,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3325,10 +3209,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3439,9 +3319,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3450,10 +3330,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3561,9 +3437,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3572,10 +3448,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3683,9 +3555,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3694,10 +3566,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3805,9 +3673,9 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                         context)
                                                                     .headlineMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .headlineMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
@@ -3816,10 +3684,6 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).headlineMediumFamily),
                                                                     ),
                                                               ),
                                                             ],
@@ -3840,17 +3704,10 @@ class _PgDBAdminFinancialWidgetState extends State<PgDBAdminFinancialWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
                                                 ),
                                           );
                                         }

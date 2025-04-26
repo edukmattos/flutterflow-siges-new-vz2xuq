@@ -6,7 +6,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'md_d_b_admin_team_users_model.dart';
 export 'md_d_b_admin_team_users_model.dart';
@@ -129,17 +128,11 @@ class _MdDBAdminTeamUsersWidgetState extends State<MdDBAdminTeamUsersWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .headlineSmall
                                                       .override(
-                                                        fontFamily:
+                                                        font:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .headlineSmallFamily,
+                                                                .headlineSmall,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineSmallFamily),
                                                       ),
                                             ),
                                           ),
@@ -243,15 +236,11 @@ class _MdDBAdminTeamUsersWidgetState extends State<MdDBAdminTeamUsersWidget> {
                                                                       .of(context)
                                                                   .bodyLarge
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .bodyLargeFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyLarge,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).bodyLargeFamily),
                                                                   ),
                                                             ),
                                                             Padding(
@@ -269,15 +258,11 @@ class _MdDBAdminTeamUsersWidgetState extends State<MdDBAdminTeamUsersWidget> {
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily,
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              FlutterFlowTheme.of(context).labelMediumFamily),
                                                                     ),
                                                               ),
                                                             ),

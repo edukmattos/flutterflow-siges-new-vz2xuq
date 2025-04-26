@@ -14,7 +14,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_cart_show_model.dart';
 export 'pg_cart_show_model.dart';
@@ -137,14 +136,11 @@ class _PgCartShowWidgetState extends State<PgCartShowWidget>
                   'zzuw6v92' /* Carrinho */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: FlutterFlowTheme.of(context).info,
                       fontSize: 28.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
               if (FFAppState().XstCartMaterialsAmount > 0)
@@ -154,12 +150,9 @@ class _PgCartShowWidgetState extends State<PgCartShowWidget>
                     badgeContent: Text(
                       FFAppState().XstCartMaterialsAmount.toString(),
                       style: FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleSmallFamily,
+                            font: FlutterFlowTheme.of(context).titleSmall,
                             color: Colors.white,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleSmallFamily),
                           ),
                     ),
                     showBadge: true,

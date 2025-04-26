@@ -77,15 +77,12 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                       FFLocalizations.of(context).getText(
                         'sez62png' /* Custos */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineMedium.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineMediumFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineMedium
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineMedium,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     Divider(
                       height: 32.0,
@@ -133,14 +130,9 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                     ),
                                   ].divide(SizedBox(width: 8.0)),
@@ -156,13 +148,9 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyLargeFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily),
                                       ),
                                 ),
                               ],
@@ -202,14 +190,9 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                     ),
                                   ].divide(SizedBox(width: 8.0)),
@@ -225,13 +208,9 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyLargeFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily),
                                       ),
                                 ),
                               ],
@@ -271,14 +250,9 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelMedium,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
                                           ),
                                     ),
                                   ].divide(SizedBox(width: 8.0)),
@@ -294,13 +268,9 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyLargeFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyLargeFamily),
                                       ),
                                 ),
                               ],
@@ -346,14 +316,20 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: GoogleFonts.outfit(
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .fontStyle,
+                                    ),
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey('Outfit'),
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleMedium
+                                        .fontStyle,
                                   ),
                             ),
                           ].divide(SizedBox(width: 8.0)),
@@ -368,12 +344,8 @@ class _CpOVValuesWidgetState extends State<CpOVValuesWidget> {
                           style: FlutterFlowTheme.of(context)
                               .titleLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleLargeFamily,
+                                font: FlutterFlowTheme.of(context).titleLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleLargeFamily),
                               ),
                         ),
                       ],

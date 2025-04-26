@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/components/cp_menu/cp_menu_widget.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pg_not_allowed_model.dart';
 export 'pg_not_allowed_model.dart';
 
@@ -113,12 +112,9 @@ class _PgNotAllowedWidgetState extends State<PgNotAllowedWidget> {
                       '932ee3mh' /* Acesso Restrito */,
                     ),
                     style: FlutterFlowTheme.of(context).displaySmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).displaySmallFamily,
+                          font: FlutterFlowTheme.of(context).displaySmall,
                           color: FlutterFlowTheme.of(context).primary,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).displaySmallFamily),
                         ),
                   ),
                 ),
@@ -130,11 +126,8 @@ class _PgNotAllowedWidgetState extends State<PgNotAllowedWidget> {
                     ),
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).labelLargeFamily,
+                          font: FlutterFlowTheme.of(context).labelLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).labelLargeFamily),
                         ),
                   ),
                 ),

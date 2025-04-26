@@ -194,14 +194,11 @@ class _PgOShowWidgetState extends State<PgOShowWidget>
                   '57lzchfm' /* OS */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      fontFamily:
-                          FlutterFlowTheme.of(context).headlineMediumFamily,
+                      font: FlutterFlowTheme.of(context).headlineMedium,
                       color: Colors.white,
                       fontSize: 28.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
-                      useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).headlineMediumFamily),
                     ),
               ),
               FFButtonWidget(
@@ -234,11 +231,8 @@ class _PgOShowWidgetState extends State<PgOShowWidget>
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleMedium.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleMediumFamily,
+                        font: FlutterFlowTheme.of(context).titleMedium,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleMediumFamily),
                       ),
                   elevation: 3.0,
                   borderSide: BorderSide(
@@ -315,10 +309,25 @@ class _PgOShowWidgetState extends State<PgOShowWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          fontFamily: 'Outfit',
+                                          font: GoogleFonts.outfit(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleLarge
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleLarge
+                                                    .fontStyle,
+                                          ),
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey('Outfit'),
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleLarge
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleLarge
+                                                  .fontStyle,
                                         ),
                                   ),
                                   Row(

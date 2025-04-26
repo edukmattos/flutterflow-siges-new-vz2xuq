@@ -204,6 +204,20 @@ class VOrdersVisitsExtrasRow extends SupabaseDataRow {
   set reportedUserNameShort(String? value) =>
       setField<String>('reported_user_name_short', value);
 
+  bool? get isBlocked => getField<bool>('is_blocked');
+  set isBlocked(bool? value) => setField<bool>('is_blocked', value);
+
+  DateTime? get unblockedAt => getField<DateTime>('unblocked_at');
+  set unblockedAt(DateTime? value) => setField<DateTime>('unblocked_at', value);
+
+  int? get unblockedUserId => getField<int>('unblocked_user_id');
+  set unblockedUserId(int? value) => setField<int>('unblocked_user_id', value);
+
+  String? get unblockedUserNameShort =>
+      getField<String>('unblocked_user_name_short');
+  set unblockedUserNameShort(String? value) =>
+      setField<String>('unblocked_user_name_short', value);
+
   DateTime? get revisedAt => getField<DateTime>('revised_at');
   set revisedAt(DateTime? value) => setField<DateTime>('revised_at', value);
 
@@ -252,6 +266,19 @@ class VOrdersVisitsExtrasRow extends SupabaseDataRow {
   String? get filedUserNameShort => getField<String>('filed_user_name_short');
   set filedUserNameShort(String? value) =>
       setField<String>('filed_user_name_short', value);
+
+  DateTime? get unarchivedAt => getField<DateTime>('unarchived_at');
+  set unarchivedAt(DateTime? value) =>
+      setField<DateTime>('unarchived_at', value);
+
+  int? get unarchivedUserId => getField<int>('unarchived_user_id');
+  set unarchivedUserId(int? value) =>
+      setField<int>('unarchived_user_id', value);
+
+  String? get unarchivedUserNameShort =>
+      getField<String>('unarchived_user_name_short');
+  set unarchivedUserNameShort(String? value) =>
+      setField<String>('unarchived_user_name_short', value);
 
   int? get teamLeaderId => getField<int>('team_leader_id');
   set teamLeaderId(int? value) => setField<int>('team_leader_id', value);

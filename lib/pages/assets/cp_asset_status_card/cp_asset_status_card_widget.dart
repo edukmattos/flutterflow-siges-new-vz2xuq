@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_asset_status_card_model.dart';
 export 'cp_asset_status_card_model.dart';
 
@@ -67,12 +66,9 @@ class _CpAssetStatusCardWidgetState extends State<CpAssetStatusCardWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).success,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
                   borderSide: BorderSide(
@@ -103,12 +99,9 @@ class _CpAssetStatusCardWidgetState extends State<CpAssetStatusCardWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).tertiary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: FlutterFlowTheme.of(context).primaryText,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
                   borderSide: BorderSide(
@@ -139,12 +132,9 @@ class _CpAssetStatusCardWidgetState extends State<CpAssetStatusCardWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).error,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
                   borderSide: BorderSide(
@@ -175,12 +165,9 @@ class _CpAssetStatusCardWidgetState extends State<CpAssetStatusCardWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).error,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
                   borderSide: BorderSide(
@@ -211,12 +198,9 @@ class _CpAssetStatusCardWidgetState extends State<CpAssetStatusCardWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).secondaryText,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
+                        font: FlutterFlowTheme.of(context).titleSmall,
                         color: Colors.white,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
                   borderSide: BorderSide(

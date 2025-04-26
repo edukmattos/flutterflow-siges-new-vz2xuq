@@ -16,7 +16,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_settings_o_types_activities_model.dart';
 export 'pg_settings_o_types_activities_model.dart';
@@ -96,13 +95,11 @@ class _PgSettingsOTypesActivitiesWidgetState
               '9xfsfd9z' /* Atividades */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: FlutterFlowTheme.of(context).info,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -363,9 +360,9 @@ class _PgSettingsOTypesActivitiesWidgetState
                                                                       .of(context)
                                                                   .titleMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .titleMediumFamily,
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleMedium,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
@@ -374,10 +371,6 @@ class _PgSettingsOTypesActivitiesWidgetState
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w500,
-                                                                    useGoogleFonts: GoogleFonts
-                                                                            .asMap()
-                                                                        .containsKey(
-                                                                            FlutterFlowTheme.of(context).titleMediumFamily),
                                                                   ),
                                                             ),
                                                           ),
@@ -546,10 +539,9 @@ class _PgSettingsOTypesActivitiesWidgetState
                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                               color: FlutterFlowTheme.of(context).error,
                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                    fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                    font: FlutterFlowTheme.of(context).titleSmall,
                                                                                     color: Colors.white,
                                                                                     letterSpacing: 0.0,
-                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                   ),
                                                                               elevation: 3.0,
                                                                               borderSide: BorderSide(
@@ -594,10 +586,9 @@ class _PgSettingsOTypesActivitiesWidgetState
                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                               color: FlutterFlowTheme.of(context).success,
                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                    fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                    font: FlutterFlowTheme.of(context).titleSmall,
                                                                                     color: Colors.white,
                                                                                     letterSpacing: 0.0,
-                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                   ),
                                                                               elevation: 3.0,
                                                                               borderSide: BorderSide(

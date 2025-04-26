@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_input_date_model.dart';
 export 'cp_input_date_model.dart';
 
@@ -68,27 +67,21 @@ class _CpInputDateWidgetState extends State<CpInputDateWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         isDense: true,
-                        labelStyle:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
+                        labelStyle: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                         hintText: FFLocalizations.of(context).getText(
                           'u2760ivu' /* TextField */,
                         ),
-                        hintStyle:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
+                        hintStyle: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
@@ -122,11 +115,8 @@ class _CpInputDateWidgetState extends State<CpInputDateWidget> {
                             FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                       cursorColor: FlutterFlowTheme.of(context).primaryText,
                       validator:
@@ -149,12 +139,9 @@ class _CpInputDateWidgetState extends State<CpInputDateWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: Colors.white,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                     elevation: 0.0,
                     borderRadius: BorderRadius.circular(8.0),

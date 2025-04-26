@@ -13,7 +13,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_my_profile_model.dart';
 export 'pg_my_profile_model.dart';
@@ -91,13 +90,11 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
               'v73s2if4' /* Meu Perfil */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
+                  font: FlutterFlowTheme.of(context).headlineMedium,
                   color: Colors.white,
                   fontSize: 28.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
-                  useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).headlineMediumFamily),
                 ),
           ),
           actions: [],
@@ -368,13 +365,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleLargeFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .titleLarge,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleLargeFamily),
                                       ),
                                 ),
                                 Padding(
@@ -385,14 +378,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -401,13 +389,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .labelMediumFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .labelMedium,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily),
                                       ),
                                 ),
                               ],
@@ -426,11 +410,8 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                     'xs1g7u6b' /* Meus ajustes */,
                   ),
                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).labelLargeFamily,
+                        font: FlutterFlowTheme.of(context).labelLarge,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).labelLargeFamily),
                       ),
                 ),
               ),
@@ -484,13 +465,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily),
                                     ),
                               ),
                             ),
@@ -560,13 +537,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily),
                                     ),
                               ),
                             ),
@@ -653,13 +626,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily),
                                     ),
                               ),
                             ),
@@ -748,13 +717,9 @@ class _PgMyProfileWidgetState extends State<PgMyProfileWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyLargeFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyLarge,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily),
                                     ),
                               ),
                             ),

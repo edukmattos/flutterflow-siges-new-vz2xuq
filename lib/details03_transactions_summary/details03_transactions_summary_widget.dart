@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'details03_transactions_summary_model.dart';
 export 'details03_transactions_summary_model.dart';
 
@@ -207,12 +206,8 @@ class _Details03TransactionsSummaryWidgetState
                       'hrxcus8t' /* Profit Details */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).headlineMediumFamily,
+                          font: FlutterFlowTheme.of(context).headlineMedium,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context)
-                                  .headlineMediumFamily),
                         ),
                   ),
                 ),
@@ -224,11 +219,8 @@ class _Details03TransactionsSummaryWidgetState
                     ),
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).labelMediumFamily,
+                          font: FlutterFlowTheme.of(context).labelMedium,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).labelMediumFamily),
                         ),
                   ),
                 ),
@@ -276,13 +268,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .displaySmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .displaySmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ),
@@ -294,13 +282,9 @@ class _Details03TransactionsSummaryWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                             ],
@@ -337,15 +321,11 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .displaySmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .displaySmall,
                                         color:
                                             FlutterFlowTheme.of(context).info,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ),
@@ -357,13 +337,9 @@ class _Details03TransactionsSummaryWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleSmall,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
                                     ),
                               ),
                             ],
@@ -400,13 +376,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .displaySmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .displaySmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ),
@@ -418,13 +390,9 @@ class _Details03TransactionsSummaryWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                             ],
@@ -461,13 +429,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .displaySmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .displaySmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ),
@@ -479,13 +443,9 @@ class _Details03TransactionsSummaryWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                             ],
@@ -504,11 +464,8 @@ class _Details03TransactionsSummaryWidgetState
                     ),
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).labelLargeFamily,
+                          font: FlutterFlowTheme.of(context).labelLarge,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).labelLargeFamily),
                         ),
                   ).animateOnPageLoad(
                       animationsMap['textOnPageLoadAnimation']!),
@@ -562,16 +519,9 @@ class _Details03TransactionsSummaryWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                       Padding(
@@ -584,16 +534,10 @@ class _Details03TransactionsSummaryWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -608,13 +552,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineSmallFamily),
                                       ),
                                 ),
                               ],
@@ -663,16 +603,9 @@ class _Details03TransactionsSummaryWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                       Padding(
@@ -685,16 +618,10 @@ class _Details03TransactionsSummaryWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -709,13 +636,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineSmallFamily),
                                       ),
                                 ),
                               ],
@@ -764,16 +687,9 @@ class _Details03TransactionsSummaryWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                       Padding(
@@ -786,16 +702,10 @@ class _Details03TransactionsSummaryWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -810,13 +720,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineSmallFamily),
                                       ),
                                 ),
                               ],
@@ -865,16 +771,9 @@ class _Details03TransactionsSummaryWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                       ),
                                       Padding(
@@ -887,16 +786,10 @@ class _Details03TransactionsSummaryWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -911,13 +804,9 @@ class _Details03TransactionsSummaryWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineSmallFamily),
                                       ),
                                 ),
                               ],

@@ -115,6 +115,7 @@ export 'tables/logs.dart';
 export 'tables/v_assets_tags.dart';
 export 'tables/v_orders_visits_extras_followers.dart';
 export 'tables/cfg_orders_statuses.dart';
+export 'tables/n8n_chat_histories.dart';
 export 'tables/orders_visits_extras_followers.dart';
 export 'tables/cfg_orders_priorities.dart';
 export 'tables/orders_visits_assets_materials.dart';

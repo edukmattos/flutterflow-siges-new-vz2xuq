@@ -3784,6 +3784,34 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Atualização automática',
       'en': '',
     },
+    'ic5yiyb4': {
+      'pt': 'Favoritos',
+      'en': '',
+    },
+    'kbyd35ie': {
+      'pt': 'Nova',
+      'en': '',
+    },
+    'zite4x7y': {
+      'pt': 'Rascunho',
+      'en': '',
+    },
+    '1phds7bt': {
+      'pt': 'Reportadas',
+      'en': '',
+    },
+    'zehdxj19': {
+      'pt': 'Revisadas',
+      'en': '',
+    },
+    'ooc8n5uz': {
+      'pt': 'Rejeitadas',
+      'en': '',
+    },
+    'vj1d19it': {
+      'pt': 'Autorizadas',
+      'en': '',
+    },
     'wmmvvmxi': {
       'pt': 'Processamento',
       'en': '',
@@ -3933,6 +3961,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Data final',
       'en': '',
     },
+    '5uf5fglm': {
+      'pt': 'Filtrar',
+      'en': '',
+    },
     'w80e37ut': {
       'pt': '',
       'en': '',
@@ -3941,8 +3973,44 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'SE nr',
       'en': '',
     },
+    'ryqjaqfs': {
+      'pt': 'Pesquisa rápida',
+      'en': '',
+    },
+    'sf77smj2': {
+      'pt': 'Incluir',
+      'en': '',
+    },
+    'mqrpybcg': {
+      'pt': 'Imprimir',
+      'en': '',
+    },
     'aeg8zuqc': {
       'pt': 'Processamento',
+      'en': '',
+    },
+    'qk3o9dvn': {
+      'pt': 'Rascunhos',
+      'en': '',
+    },
+    '94gsxpzv': {
+      'pt': 'Reportados',
+      'en': '',
+    },
+    'ejosi0jj': {
+      'pt': 'Revisados',
+      'en': '',
+    },
+    '963apvj0': {
+      'pt': 'Rejeitados',
+      'en': '',
+    },
+    'mr750pps': {
+      'pt': 'Autorizados',
+      'en': '',
+    },
+    '8xupkg70': {
+      'pt': 'Arquivados',
       'en': '',
     },
     'pb948h8d': {
@@ -5777,7 +5845,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     '8eb305u4': {
-      'pt': 'APROVAR',
+      'pt': 'AUTORIZAR',
       'en': '',
     },
     'wzi8jl8l': {
@@ -5858,12 +5926,73 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Filtros',
       'en': '',
     },
+    'x42tq5ih': {
+      'pt': 'Data inicial',
+      'en': '',
+    },
+    '4h3s9q34': {
+      'pt': 'Data final',
+      'en': '',
+    },
     '3c4xwslx': {
       'pt': 'Limpar',
       'en': '',
     },
     'tat62mmq': {
       'pt': 'Aplicar',
+      'en': '',
+    },
+  },
+  // cpOveMenuOptions
+  {
+    '3f94vdo8': {
+      'pt': 'Rascunho',
+      'en': '',
+    },
+    'rkwayu8t': {
+      'pt': 'Reportar',
+      'en': '',
+    },
+    '24m8fn6n': {
+      'pt': 'Revisar',
+      'en': '',
+    },
+    'pubnhp36': {
+      'pt': 'Autorizar',
+      'en': '',
+    },
+    'hcobbo3a': {
+      'pt': 'Arquivar',
+      'en': '',
+    },
+    '7kehye84': {
+      'pt': 'Rejeitar',
+      'en': '',
+    },
+    '8oete615': {
+      'pt': 'Excluir',
+      'en': '',
+    },
+    'ykptlqmv': {
+      'pt': 'Desbloquear',
+      'en': '',
+    },
+  },
+  // cpOveMenuExtras
+  {
+    'u5b44652': {
+      'pt': 'Copiar',
+      'en': '',
+    },
+  },
+  // cpOveFollow
+  {
+    'uvzoc6ef': {
+      'pt': 'Favoritar',
+      'en': '',
+    },
+    '2si1a5fb': {
+      'pt': 'Desfavoritar',
       'en': '',
     },
   },
@@ -5976,6 +6105,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '839fz8it': {
       'pt': 'REVISAR',
+      'en': '',
+    },
+    'd7m5a70f': {
+      'pt': 'Desbloquear',
       'en': '',
     },
     'uxw1wc50': {

@@ -6,8 +6,8 @@ import '/index.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'pg_password_recovery_model.dart';
 export 'pg_password_recovery_model.dart';
 
@@ -163,16 +163,9 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .displaySmallFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .displaySmall,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .displaySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -214,14 +207,9 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelSmallFamily,
+                                            font: FlutterFlowTheme.of(context)
+                                                .labelSmall,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmallFamily),
                                           ),
                                     ),
                                   ),
@@ -256,49 +244,31 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                                   context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -370,16 +340,9 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         keyboardType:
@@ -390,6 +353,19 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                         validator: _model
                                             .tfRecoveryEmailTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .none),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -461,29 +437,25 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 24.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmallFamily,
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                      useGoogleFonts: GoogleFonts
-                                                              .asMap()
-                                                          .containsKey(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily),
-                                                    ),
+                                                .info,
+                                            textStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .titleSmall
+                                                .override(
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .titleSmall,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w800,
+                                                ),
                                             elevation: 5.0,
                                             borderSide: BorderSide(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .info,
+                                                      .primary,
                                               width: 6.0,
                                             ),
                                             borderRadius:
@@ -541,37 +513,24 @@ class _PgPasswordRecoveryWidgetState extends State<PgPasswordRecoveryWidget>
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily,
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
-                                                    useGoogleFonts: GoogleFonts
-                                                            .asMap()
-                                                        .containsKey(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily),
                                                   ),
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),

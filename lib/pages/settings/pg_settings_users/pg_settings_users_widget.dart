@@ -13,7 +13,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'pg_settings_users_model.dart';
 export 'pg_settings_users_model.dart';
@@ -86,6 +85,7 @@ class _PgSettingsUsersWidgetState extends State<PgSettingsUsersWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => safeSetState(() {}));
+
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -150,12 +150,8 @@ class _PgSettingsUsersWidgetState extends State<PgSettingsUsersWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
                                 ),
                           ),
                           ListView(
@@ -171,13 +167,9 @@ class _PgSettingsUsersWidgetState extends State<PgSettingsUsersWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ],
@@ -192,14 +184,9 @@ class _PgSettingsUsersWidgetState extends State<PgSettingsUsersWidget>
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelMedium,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily),
                                         ),
                                     unselectedLabelStyle: TextStyle(),
                                     labelColor: FlutterFlowTheme.of(context)

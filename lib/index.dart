@@ -137,7 +137,7 @@ export '/pages/orders_visits_extras/pg_ove_show/pg_ove_show_widget.dart'
     show PgOveShowWidget;
 export '/pages/orders_visits_extras/pg_o_v_e_show_copy/pg_o_v_e_show_copy_widget.dart'
     show PgOVEShowCopyWidget;
-export '/pages/orders_visits_extras/pg_db_admin_ove/pg_db_admin_ove_widget.dart'
+export '/pages/pg_db_admin_ove/pg_db_admin_ove_widget.dart'
     show PgDbAdminOveWidget;
 export '/pages/dashboard/pg_db_admin_o_new_original/pg_db_admin_o_new_original_widget.dart'
     show PgDbAdminONewOriginalWidget;

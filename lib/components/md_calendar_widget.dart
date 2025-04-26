@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'md_calendar_model.dart';
 export 'md_calendar_model.dart';
 
@@ -79,13 +78,9 @@ class _MdCalendarWidgetState extends State<MdCalendarWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                         ),
                         FlutterFlowCalendar(
@@ -101,52 +96,32 @@ class _MdCalendarWidgetState extends State<MdCalendarWidget> {
                           titleStyle: FlutterFlowTheme.of(context)
                               .titleLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleLargeFamily,
+                                font: FlutterFlowTheme.of(context).titleLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleLargeFamily),
                               ),
                           dayOfWeekStyle: FlutterFlowTheme.of(context)
                               .bodyLarge
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyLargeFamily,
+                                font: FlutterFlowTheme.of(context).bodyLarge,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily),
                               ),
                           dateStyle: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                           selectedDateStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .titleSmallFamily),
                               ),
                           inactiveDateStyle: FlutterFlowTheme.of(context)
                               .labelMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelMediumFamily,
+                                font: FlutterFlowTheme.of(context).labelMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .labelMediumFamily),
                               ),
                           locale: FFLocalizations.of(context).languageCode,
                         ),
@@ -172,12 +147,9 @@ class _MdCalendarWidgetState extends State<MdCalendarWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: FlutterFlowTheme.of(context).info,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                     elevation: 0.0,
                     borderRadius: BorderRadius.circular(25.0),

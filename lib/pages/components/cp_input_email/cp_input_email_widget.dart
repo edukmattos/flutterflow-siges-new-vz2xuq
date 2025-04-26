@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'cp_input_email_model.dart';
 export 'cp_input_email_model.dart';
 
@@ -54,10 +53,8 @@ class _CpInputEmailWidgetState extends State<CpInputEmailWidget> {
             'qo58syou' /* E-mail */,
           ),
           labelStyle: FlutterFlowTheme.of(context).labelLarge.override(
-                fontFamily: FlutterFlowTheme.of(context).labelLargeFamily,
+                font: FlutterFlowTheme.of(context).labelLarge,
                 letterSpacing: 0.0,
-                useGoogleFonts: GoogleFonts.asMap()
-                    .containsKey(FlutterFlowTheme.of(context).labelLargeFamily),
               ),
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
@@ -91,10 +88,8 @@ class _CpInputEmailWidgetState extends State<CpInputEmailWidget> {
           fillColor: FlutterFlowTheme.of(context).primaryBackground,
         ),
         style: FlutterFlowTheme.of(context).bodyLarge.override(
-              fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+              font: FlutterFlowTheme.of(context).bodyLarge,
               letterSpacing: 0.0,
-              useGoogleFonts: GoogleFonts.asMap()
-                  .containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
             ),
         minLines: 1,
         keyboardType: TextInputType.emailAddress,

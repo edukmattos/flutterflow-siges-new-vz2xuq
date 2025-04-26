@@ -10,7 +10,6 @@ import 'package:date_picker_fey059/app_state.dart'
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_asset_materials_model.dart';
 export 'cp_asset_materials_model.dart';
@@ -88,15 +87,12 @@ class _CpAssetMaterialsWidgetState extends State<CpAssetMaterialsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).titleMedium,
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.normal,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleMediumFamily),
                                 ),
                           ),
                           Text(
@@ -104,12 +100,9 @@ class _CpAssetMaterialsWidgetState extends State<CpAssetMaterialsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                           ),
                         ],
@@ -128,13 +121,9 @@ class _CpAssetMaterialsWidgetState extends State<CpAssetMaterialsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelMediumFamily,
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily),
                                     ),
                               ),
                               Switch.adaptive(
@@ -171,12 +160,9 @@ class _CpAssetMaterialsWidgetState extends State<CpAssetMaterialsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                           ),
                           Text(
@@ -184,12 +170,9 @@ class _CpAssetMaterialsWidgetState extends State<CpAssetMaterialsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                           ),
                         ].divide(SizedBox(width: 8.0)),

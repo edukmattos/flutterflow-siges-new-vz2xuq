@@ -14,7 +14,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cp_d_b_admin_o_list_item_model.dart';
 export 'cp_d_b_admin_o_list_item_model.dart';
@@ -345,29 +344,20 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                                 replacement: '…',
                                               ),
                                               minFontSize: 16.0,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .headlineMediumFamily,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
-                                                        fontSize: 20.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineMediumFamily),
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .headlineMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .headlineMedium,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
+                                                    fontSize: 20.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ).animateOnPageLoad(animationsMap[
                                               'textOnPageLoadAnimation1']!),
@@ -380,17 +370,11 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLargeFamily,
+                                                        .bodyLarge,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyLargeFamily),
                                               ),
                                         ).animateOnPageLoad(animationsMap[
                                             'textOnPageLoadAnimation2']!),
@@ -405,19 +389,13 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .titleSmall
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily,
+                                                        .titleSmall,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmallFamily),
                                               ),
                                         ).animateOnPageLoad(animationsMap[
                                             'textOnPageLoadAnimation3']!),
@@ -469,16 +447,9 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation4']!),
@@ -490,16 +461,9 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
+                                              font: FlutterFlowTheme.of(context)
+                                                  .labelMedium,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily),
                                             ),
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation5']!),
@@ -510,16 +474,10 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                fontFamily:
+                                                font:
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily,
+                                                        .labelMedium,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMediumFamily),
                                               ),
                                         ).animateOnPageLoad(animationsMap[
                                             'textOnPageLoadAnimation6']!),
@@ -560,13 +518,9 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .labelSmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .labelSmall,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .labelSmallFamily),
                                       ),
                                 ),
                               ].divide(SizedBox(height: 4.0)),
@@ -596,14 +550,9 @@ class _CpDBAdminOListItemWidgetState extends State<CpDBAdminOListItemWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily,
+                                          font: FlutterFlowTheme.of(context)
+                                              .labelSmall,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmallFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation7']!),
