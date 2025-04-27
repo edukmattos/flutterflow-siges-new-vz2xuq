@@ -55,6 +55,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
         _model.lcsvIsVisibleFiled = false;
         _model.lpsvIsVisibleDelete = false;
         safeSetState(() {});
+        return;
       } else {
         if (widget.cpDtOve?.processingId == 2) {
           _model.lcsvIsVisibleDraft = false;
@@ -63,51 +64,56 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
           _model.lcsvIsVisibleDisapproved = true;
           _model.lcsvIsVisibleApproved = false;
           _model.lcsvIsVisibleFiled = false;
-          _model.lpsvIsVisibleDelete = true;
+          _model.lpsvIsVisibleDelete = false;
           safeSetState(() {});
+          return;
         } else {
           if (widget.cpDtOve?.processingId == 3) {
             _model.lcsvIsVisibleDraft = false;
             _model.lcsvIsVisibleReported = false;
-            _model.lcsvIsVisibleRevised = false;
+            _model.lcsvIsVisibleRevised = true;
             _model.lcsvIsVisibleDisapproved = true;
-            _model.lcsvIsVisibleApproved = true;
+            _model.lcsvIsVisibleApproved = false;
             _model.lcsvIsVisibleFiled = false;
             _model.lpsvIsVisibleDelete = false;
             safeSetState(() {});
+            return;
           } else {
             if (widget.cpDtOve?.processingId == 4) {
-              _model.lcsvIsVisibleDraft = true;
+              _model.lcsvIsVisibleDraft = false;
               _model.lcsvIsVisibleReported = false;
               _model.lcsvIsVisibleRevised = false;
               _model.lcsvIsVisibleDisapproved = false;
               _model.lcsvIsVisibleApproved = false;
               _model.lcsvIsVisibleFiled = true;
               _model.lpsvIsVisibleDelete = false;
-              _model.lpsvIsVisibleDisapprovedComments = true;
+              _model.lpsvIsVisibleDisapprovedComments = false;
               safeSetState(() {});
+              return;
             } else {
               if ((widget.cpDtOve?.processingId == 5) &&
                   (widget.cpDtOve?.isArchived == false)) {
                 _model.lcsvIsVisibleDraft = false;
                 _model.lcsvIsVisibleReported = false;
                 _model.lcsvIsVisibleRevised = false;
-                _model.lcsvIsVisibleDisapproved = true;
+                _model.lcsvIsVisibleDisapproved = false;
                 _model.lcsvIsVisibleApproved = false;
                 _model.lcsvIsVisibleFiled = true;
                 _model.lpsvIsVisibleDelete = false;
                 safeSetState(() {});
+                return;
               } else {
                 if ((widget.cpDtOve?.processingId == 5) &&
                     (widget.cpDtOve?.isArchived == true)) {
                   _model.lcsvIsVisibleDraft = false;
                   _model.lcsvIsVisibleReported = false;
                   _model.lcsvIsVisibleRevised = false;
-                  _model.lcsvIsVisibleDisapproved = true;
+                  _model.lcsvIsVisibleDisapproved = false;
                   _model.lcsvIsVisibleApproved = false;
-                  _model.lcsvIsVisibleFiled = true;
-                  _model.lpsvIsVisibleDelete = true;
+                  _model.lcsvIsVisibleFiled = false;
+                  _model.lpsvIsVisibleDelete = false;
                   safeSetState(() {});
+                  return;
                 }
               }
             }
@@ -131,526 +137,531 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
     context.watch<FFAppState>();
     context.watch<date_picker_fey059_app_state.FFAppState>();
 
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        if (!widget.cpDtOve!.isBlocked)
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              if (_model.lcsvIsVisibleDraft)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        'okca4rrx' /* Rascunho */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).primary,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: Icon(
-                      Icons.draw,
-                      color: FlutterFlowTheme.of(context).primary,
-                      size: 30.0,
-                    ),
-                    showLoadingIndicator: true,
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 1,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 28,
-                              ),
+    return Align(
+      alignment: AlignmentDirectional(1.0, 0.0),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          if (!widget.cpDtOve!.isBlocked)
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                if (_model.lcsvIsVisibleDraft)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'okca4rrx' /* Rascunho */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
                             ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-              if (_model.lcsvIsVisibleReported)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        'rkwayu8t' /* Reportar */,
                       ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
                     ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).customColor3,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: Icon(
-                      FFIcons.kkfileExport,
-                      color: FlutterFlowTheme.of(context).customColor3,
-                      size: 30.0,
-                    ),
-                    showLoadingIndicator: true,
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 2,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 28,
-                              ),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-              if (_model.lcsvIsVisibleApproved)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        '24m8fn6n' /* Revisar */,
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).primary,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: Icon(
+                        Icons.draw,
+                        color: FlutterFlowTheme.of(context).primary,
+                        size: 30.0,
                       ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).secondaryText,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: FaIcon(
-                      FontAwesomeIcons.fileSignature,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 24.0,
-                    ),
-                    showLoadingIndicator: true,
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 3,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 29,
+                      showLoadingIndicator: true,
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 1,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 28,
+                                ),
                               ),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-              if (_model.lcsvIsVisibleRevised)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        'pubnhp36' /* Autorizar */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).success,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: FaIcon(
-                      FontAwesomeIcons.thumbsUp,
-                      color: FlutterFlowTheme.of(context).success,
-                      size: 30.0,
-                    ),
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 5,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 33,
-                              ),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-              if (_model.lcsvIsVisibleFiled && !widget.cpDtOve!.isArchived)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        'hcobbo3a' /* Arquivar */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).tertiary,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: Icon(
-                      Icons.archive_sharp,
-                      color: FlutterFlowTheme.of(context).tertiary,
-                      size: 30.0,
-                    ),
-                    showLoadingIndicator: true,
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 5,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 30,
-                                cpIsFiled: true,
-                              ),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-              if (_model.lcsvIsVisibleDisapproved)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        '3s6qzvl5' /* Rejeitar */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).error,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: FaIcon(
-                      FontAwesomeIcons.thumbsDown,
-                      color: FlutterFlowTheme.of(context).error,
-                      size: 30.0,
-                    ),
-                    showLoadingIndicator: true,
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 4,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 29,
-                              ),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-              if (_model.lpsvIsVisibleDelete)
-                AlignedTooltip(
-                  content: Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        '8oete615' /* Excluir */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: FlutterFlowTheme.of(context).bodyLarge,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                  offset: 4.0,
-                  preferredDirection: AxisDirection.down,
-                  borderRadius: BorderRadius.circular(8.0),
-                  backgroundColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 4.0,
-                  tailBaseWidth: 24.0,
-                  tailLength: 12.0,
-                  waitDuration: Duration(milliseconds: 100),
-                  showDuration: Duration(milliseconds: 1500),
-                  triggerMode: TooltipTriggerMode.tap,
-                  child: FlutterFlowIconButton(
-                    borderColor: FlutterFlowTheme.of(context).error,
-                    borderRadius: 16.0,
-                    borderWidth: 6.0,
-                    buttonSize: widget.cpSize.toDouble(),
-                    icon: FaIcon(
-                      FontAwesomeIcons.solidTrashAlt,
-                      color: FlutterFlowTheme.of(context).error,
-                      size: 24.0,
-                    ),
-                    showLoadingIndicator: true,
-                    onPressed: () async {
-                      await showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        enableDrag: false,
-                        useSafeArea: true,
-                        context: context,
-                        builder: (context) {
-                          return Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: Container(
-                              height: MediaQuery.sizeOf(context).height * 0.9,
-                              child: MdOveMenuProcessingWidget(
-                                cpProcessingId: 99,
-                                cpDtOve: widget.cpDtOve!,
-                                cpPageId: 29,
-                              ),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                  ),
-                ),
-            ].divide(SizedBox(width: 8.0)),
-          ),
-        if (widget.cpDtOve?.isBlocked ?? true)
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              FFButtonWidget(
-                onPressed: () async {
-                  var _shouldSetState = false;
-                  _model.isAllowUnclock = await action_blocks.abGuardian(
-                    context,
-                    abPgRequestedId: 35,
-                  );
-                  _shouldSetState = true;
-                  if (_model.isAllowUnclock!) {
-                    await OrdersVisitsExtrasTable().update(
-                      data: {
-                        'is_blocked': false,
-                        'unblocked_user_id': FFAppState().stUserCurrent.id,
-                        'unblocked_at':
-                            supaSerialize<DateTime>(getCurrentTimestamp),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
                       },
-                      matchingRows: (rows) => rows.eqOrNull(
-                        'id',
-                        widget.cpDtOve?.id,
-                      ),
-                    );
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text(
-                          'Serviço Extraordinário DESBLOQUEADO !',
-                          style: TextStyle(
-                            color: FlutterFlowTheme.of(context).info,
-                          ),
-                        ),
-                        duration: Duration(milliseconds: 4000),
-                        backgroundColor: FlutterFlowTheme.of(context).secondary,
-                      ),
-                    );
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text(
-                          'Ops ... Acesso restrito.',
-                          style: TextStyle(
-                            color: FlutterFlowTheme.of(context).info,
-                          ),
-                        ),
-                        duration: Duration(milliseconds: 4000),
-                        backgroundColor: FlutterFlowTheme.of(context).error,
-                      ),
-                    );
-                    if (_shouldSetState) safeSetState(() {});
-                    return;
-                  }
-
-                  if (_shouldSetState) safeSetState(() {});
-                },
-                text: FFLocalizations.of(context).getText(
-                  'ykptlqmv' /* Desbloquear */,
-                ),
-                icon: FaIcon(
-                  FontAwesomeIcons.unlockAlt,
-                  color: FlutterFlowTheme.of(context).error,
-                  size: 15.0,
-                ),
-                options: FFButtonOptions(
-                  height: 50.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                  iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: Color(0x00EF3939),
-                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        font: FlutterFlowTheme.of(context).titleSmall,
-                        color: FlutterFlowTheme.of(context).error,
-                        letterSpacing: 0.0,
-                      ),
-                  elevation: 0.0,
-                  borderSide: BorderSide(
-                    color: FlutterFlowTheme.of(context).error,
-                    width: 6.0,
+                    ),
                   ),
-                  borderRadius: BorderRadius.circular(16.0),
+                if (_model.lcsvIsVisibleReported)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'rkwayu8t' /* Reportar */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).customColor3,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: Icon(
+                        FFIcons.kkfileExport,
+                        color: FlutterFlowTheme.of(context).customColor3,
+                        size: 30.0,
+                      ),
+                      showLoadingIndicator: true,
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 2,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 28,
+                                ),
+                              ),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
+                      },
+                    ),
+                  ),
+                if (_model.lcsvIsVisibleRevised)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          '24m8fn6n' /* Revisar */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).secondaryText,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: FaIcon(
+                        FontAwesomeIcons.fileSignature,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 24.0,
+                      ),
+                      showLoadingIndicator: true,
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 3,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 29,
+                                ),
+                              ),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
+                      },
+                    ),
+                  ),
+                if (_model.lcsvIsVisibleApproved)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'pubnhp36' /* Autorizar */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).success,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: FaIcon(
+                        FontAwesomeIcons.thumbsUp,
+                        color: FlutterFlowTheme.of(context).success,
+                        size: 30.0,
+                      ),
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 5,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 33,
+                                ),
+                              ),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
+                      },
+                    ),
+                  ),
+                if (_model.lcsvIsVisibleFiled)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'hcobbo3a' /* Arquivar */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).tertiary,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: Icon(
+                        Icons.archive_sharp,
+                        color: FlutterFlowTheme.of(context).tertiary,
+                        size: 30.0,
+                      ),
+                      showLoadingIndicator: true,
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 5,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 30,
+                                  cpIsFiled: true,
+                                ),
+                              ),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
+                      },
+                    ),
+                  ),
+                if (_model.lcsvIsVisibleDisapproved)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          '3s6qzvl5' /* Rejeitar */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).error,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: FaIcon(
+                        FontAwesomeIcons.thumbsDown,
+                        color: FlutterFlowTheme.of(context).error,
+                        size: 30.0,
+                      ),
+                      showLoadingIndicator: true,
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 4,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 29,
+                                ),
+                              ),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
+                      },
+                    ),
+                  ),
+                if (_model.lpsvIsVisibleDelete)
+                  AlignedTooltip(
+                    content: Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          '8oete615' /* Excluir */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              font: FlutterFlowTheme.of(context).bodyLarge,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
+                    offset: 4.0,
+                    preferredDirection: AxisDirection.down,
+                    borderRadius: BorderRadius.circular(8.0),
+                    backgroundColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    elevation: 4.0,
+                    tailBaseWidth: 24.0,
+                    tailLength: 12.0,
+                    waitDuration: Duration(milliseconds: 100),
+                    showDuration: Duration(milliseconds: 1500),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: FlutterFlowIconButton(
+                      borderColor: FlutterFlowTheme.of(context).error,
+                      borderRadius: 16.0,
+                      borderWidth: 6.0,
+                      buttonSize: widget.cpSize.toDouble(),
+                      icon: FaIcon(
+                        FontAwesomeIcons.solidTrashAlt,
+                        color: FlutterFlowTheme.of(context).error,
+                        size: 24.0,
+                      ),
+                      showLoadingIndicator: true,
+                      onPressed: () async {
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          context: context,
+                          builder: (context) {
+                            return Padding(
+                              padding: MediaQuery.viewInsetsOf(context),
+                              child: Container(
+                                height: MediaQuery.sizeOf(context).height * 0.9,
+                                child: MdOveMenuProcessingWidget(
+                                  cpProcessingId: 99,
+                                  cpDtOve: widget.cpDtOve!,
+                                  cpPageId: 29,
+                                ),
+                              ),
+                            );
+                          },
+                        ).then((value) => safeSetState(() {}));
+                      },
+                    ),
+                  ),
+              ].divide(SizedBox(width: 8.0)),
+            ),
+          if (widget.cpDtOve?.isBlocked ?? true)
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                FFButtonWidget(
+                  onPressed: () async {
+                    var _shouldSetState = false;
+                    _model.isAllowUnclock = await action_blocks.abGuardian(
+                      context,
+                      abPgRequestedId: 35,
+                    );
+                    _shouldSetState = true;
+                    if (_model.isAllowUnclock!) {
+                      await OrdersVisitsExtrasTable().update(
+                        data: {
+                          'is_blocked': false,
+                          'unblocked_user_id': FFAppState().stUserCurrent.id,
+                          'unblocked_at':
+                              supaSerialize<DateTime>(getCurrentTimestamp),
+                        },
+                        matchingRows: (rows) => rows.eqOrNull(
+                          'id',
+                          widget.cpDtOve?.id,
+                        ),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            'Serviço Extraordinário DESBLOQUEADO !',
+                            style: TextStyle(
+                              color: FlutterFlowTheme.of(context).info,
+                            ),
+                          ),
+                          duration: Duration(milliseconds: 4000),
+                          backgroundColor:
+                              FlutterFlowTheme.of(context).secondary,
+                        ),
+                      );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            'Ops ... Acesso restrito.',
+                            style: TextStyle(
+                              color: FlutterFlowTheme.of(context).info,
+                            ),
+                          ),
+                          duration: Duration(milliseconds: 4000),
+                          backgroundColor: FlutterFlowTheme.of(context).error,
+                        ),
+                      );
+                      if (_shouldSetState) safeSetState(() {});
+                      return;
+                    }
+
+                    if (_shouldSetState) safeSetState(() {});
+                  },
+                  text: FFLocalizations.of(context).getText(
+                    'ykptlqmv' /* Desbloquear */,
+                  ),
+                  icon: FaIcon(
+                    FontAwesomeIcons.unlockAlt,
+                    color: FlutterFlowTheme.of(context).error,
+                    size: 15.0,
+                  ),
+                  options: FFButtonOptions(
+                    height: 50.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: Color(0x00EF3939),
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          font: FlutterFlowTheme.of(context).titleSmall,
+                          color: FlutterFlowTheme.of(context).error,
+                          letterSpacing: 0.0,
+                        ),
+                    elevation: 0.0,
+                    borderSide: BorderSide(
+                      color: FlutterFlowTheme.of(context).error,
+                      width: 6.0,
+                    ),
+                    borderRadius: BorderRadius.circular(16.0),
+                  ),
                 ),
-              ),
-            ].divide(SizedBox(width: 8.0)),
-          ),
-      ],
+              ].divide(SizedBox(width: 8.0)),
+            ),
+        ],
+      ),
     );
   }
 }

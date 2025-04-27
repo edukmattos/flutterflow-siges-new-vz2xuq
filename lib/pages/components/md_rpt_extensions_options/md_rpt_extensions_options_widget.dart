@@ -13,10 +13,10 @@ export 'md_rpt_extensions_options_model.dart';
 class MdRptExtensionsOptionsWidget extends StatefulWidget {
   const MdRptExtensionsOptionsWidget({
     super.key,
-    required this.cpRptName,
+    required this.cpRptTitle,
   });
 
-  final String? cpRptName;
+  final String? cpRptTitle;
 
   @override
   State<MdRptExtensionsOptionsWidget> createState() =>
@@ -153,30 +153,35 @@ class _MdRptExtensionsOptionsWidgetState
                                   await action_blocks.abReportExtension(
                                     context,
                                     abOutput: 'pdf',
-                                    abRptName: widget.cpRptName,
+                                    abRptTitle: widget.cpRptTitle,
                                   );
                                 },
                               ),
-                              FlutterFlowIconButton(
-                                borderColor:
-                                    FlutterFlowTheme.of(context).primary,
-                                borderRadius: 16.0,
-                                borderWidth: 6.0,
-                                buttonSize: 50.0,
-                                icon: Icon(
-                                  Icons.equalizer_rounded,
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  size: 24.0,
+                              Opacity(
+                                opacity: 0.5,
+                                child: FlutterFlowIconButton(
+                                  borderColor:
+                                      FlutterFlowTheme.of(context).primary,
+                                  borderRadius: 16.0,
+                                  borderWidth: 6.0,
+                                  buttonSize: 50.0,
+                                  icon: Icon(
+                                    Icons.equalizer_rounded,
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    size: 24.0,
+                                  ),
+                                  showLoadingIndicator: true,
+                                  onPressed: true
+                                      ? null
+                                      : () async {
+                                          Navigator.pop(context);
+                                          await action_blocks.abReportExtension(
+                                            context,
+                                            abOutput: 'xls',
+                                            abRptTitle: widget.cpRptTitle,
+                                          );
+                                        },
                                 ),
-                                showLoadingIndicator: true,
-                                onPressed: () async {
-                                  Navigator.pop(context);
-                                  await action_blocks.abReportExtension(
-                                    context,
-                                    abOutput: 'xls',
-                                    abRptName: widget.cpRptName,
-                                  );
-                                },
                               ),
                             ].divide(SizedBox(width: 12.0)),
                           ),

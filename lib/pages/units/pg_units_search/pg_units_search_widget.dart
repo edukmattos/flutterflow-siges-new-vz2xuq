@@ -541,7 +541,7 @@ class _PgUnitsSearchWidgetState extends State<PgUnitsSearchWidget>
                                                   context),
                                               child:
                                                   MdRptExtensionsOptionsWidget(
-                                                cpRptName: 'units_list',
+                                                cpRptTitle: 'units_list',
                                               ),
                                             ),
                                           );

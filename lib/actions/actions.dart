@@ -5474,9 +5474,9 @@ Future abUnitsSearchFiltersResultsOutput(
 Future abReportExtension(
   BuildContext context, {
   required String? abOutput,
-  required String? abRptName,
+  required String? abRptTitle,
 }) async {
-  if (abRptName == 'assets_list') {
+  if (abRptTitle == 'assets_list') {
     await action_blocks.abAssetsSearchFiltersResultsOutput(
       context,
       abOutput: abOutput,
@@ -5484,7 +5484,7 @@ Future abReportExtension(
       abUserUuid: currentUserUid,
       abUserId: FFAppState().stUserCurrent.id,
     );
-  } else if (abRptName == 'units_list') {
+  } else if (abRptTitle == 'units_list') {
     await action_blocks.abUnitsSearchFiltersResultsOutput(
       context,
       abOutput: abOutput,
@@ -5493,10 +5493,19 @@ Future abReportExtension(
       abUserId: FFAppState().stUserCurrent.id,
       abRptSubTitle: '',
     );
-  } else if (abRptName == 'tm_assets_list') {
+  } else if (abRptTitle == 'tm_assets_list') {
     await action_blocks.abAppOfflineUpdatesTablesCompanies(
       context,
       abIsAvailable: false,
+    );
+  } else if (abRptTitle == 'ove_list') {
+    await action_blocks.abOVESearchFiltersResultOutput(
+      context,
+      abOutput: abOutput,
+      abUserUuid: currentUserUid,
+      abRptTitle: 'Serviços Extraordinários',
+      abRptSubTitle:
+          '${functions.cfConvDateToDateBR(FFAppState().stFiltersOVE.dateStart!)}a ${functions.cfConvDateToDateBR(FFAppState().stFiltersOVE.dateEnd!)}',
     );
   }
 
@@ -6773,7 +6782,7 @@ Future abOVESearchById(
         FFAppState().stDBAdminOOVEFilters.firstOrNull?.processingId,
         1,
       );
-      FFAppState().stOVEIsFiled = valueOrDefault<bool>(
+      FFAppState().stOVEIsArchived = valueOrDefault<bool>(
         FFAppState().stDBAdminOOVEFilters.firstOrNull?.isArchived,
         false,
       );
@@ -6791,4 +6800,164 @@ Future abOVESearchById(
       return;
     }
   }
+}
+
+Future abOVESearchFiltersResultOutput(
+  BuildContext context, {
+  required String? abOutput,
+  required String? abUserUuid,
+  required String? abRptTitle,
+  String? abRptSubTitle,
+}) async {
+  await JrOrdersVisitsExtrasTable().delete(
+    matchingRows: (rows) => rows.eqOrNull(
+      'user_uuid',
+      currentUserUid,
+    ),
+  );
+  FFAppState().stCounterLoop = 0;
+  FFAppState().stCounterLoopFinal = valueOrDefault<int>(
+    FFAppState().stDBAdminOVEFilters.length,
+    0,
+  );
+  while (FFAppState().stCounterLoop < FFAppState().stCounterLoopFinal) {
+    if (FFAppState()
+            .stDBAdminOVEFilters
+            .elementAtOrNull(FFAppState().stCounterLoop)
+            ?.processingId ==
+        FFAppState().stOVEProcessingId) {
+      if (FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.isArchived ==
+          FFAppState().stOVEIsArchived) {
+        await JrOrdersVisitsExtrasTable().insert({
+          'ove_id': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.id,
+          'approved_user_name_short': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.approvedUserNameShort,
+          'approved_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .approvedAt)),
+          'disapproved_user_name_short': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.disapprovedUserNameShort,
+          'disapproved_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .disapprovedAt)),
+          'started_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .startedAt)),
+          'ended_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .endedAt)),
+          'processing_description': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.processingDescription,
+          'reported_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .reportedAt)),
+          'reported_user_name_short': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.reportedUserNameShort,
+          'duration_hours': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.durationHours,
+          'disapproved_comments': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.disapprovedComments,
+          'comments': '',
+          'team_names_short': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.teamNamesShort,
+          'unit_description': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.unitDescription,
+          'o_type_code': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.oTypeCode,
+          'company_id': 1,
+          'department_id': 9,
+          'revised_user_name_short': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.revisedUserNameShort,
+          'revised_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .revisedAt)),
+          'requested_services': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.requestedServices,
+          'asset_tag_description': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.assetTagDescription,
+          'provider_company_id': 1,
+          'provider_department_id': 9,
+          'priority_code': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.priorityCode,
+          'team_amount': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.teamAmount,
+          'team_description': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.teamDescription,
+          'archived_user_name_short': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.archivedUserNameShort,
+          'archived_at': supaSerialize<DateTime>(
+              functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
+                  .stDBAdminOVEFilters
+                  .elementAtOrNull(FFAppState().stCounterLoop)!
+                  .archivedAt)),
+          'o_type_sub_code': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.oTypeSubCode,
+          'o_cause_reason_description': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.oCauseReasonDescription,
+          'user_uuid': currentUserUid,
+          'o_mask': FFAppState()
+              .stDBAdminOVEFilters
+              .elementAtOrNull(FFAppState().stCounterLoop)
+              ?.oMask,
+        });
+      }
+    }
+    FFAppState().stCounterLoop = FFAppState().stCounterLoop + 1;
+  }
+  await launchURL(
+      '${FFDevEnvironmentValues().envJSReport}/orders_visits_extras/ove_list.${abOutput}?rpt_title=${abRptTitle}&rpt_sub_title=${abRptSubTitle}&user_uuid=${abUserUuid}&j_username=${FFDevEnvironmentValues().envJSReportUser}&j_password=${FFDevEnvironmentValues().envJSReportPassword}');
 }

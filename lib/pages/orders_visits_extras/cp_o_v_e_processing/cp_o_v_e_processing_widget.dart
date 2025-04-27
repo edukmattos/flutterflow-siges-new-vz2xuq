@@ -463,7 +463,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
               ),
               Icon(
                 Icons.archive_sharp,
-                color: FlutterFlowTheme.of(context).customColor3,
+                color: FlutterFlowTheme.of(context).tertiary,
                 size: 24.0,
               ),
             ],

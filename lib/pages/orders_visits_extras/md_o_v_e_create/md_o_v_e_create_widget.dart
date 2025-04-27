@@ -1890,7 +1890,7 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                         FFAppState()
                                                             .stOVEProcessingId = 1;
                                                         FFAppState()
-                                                                .stOVEIsFiled =
+                                                                .stOVEIsArchived =
                                                             false;
                                                         safeSetState(() {});
                                                       } else {

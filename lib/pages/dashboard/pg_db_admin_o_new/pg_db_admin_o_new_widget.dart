@@ -1321,7 +1321,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         FFAppState()
                                                             .stOVEProcessingId = 1;
                                                         FFAppState()
-                                                                .stOVEIsFiled =
+                                                                .stOVEIsArchived =
                                                             false;
                                                         safeSetState(() {});
                                                       },
@@ -1444,7 +1444,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         FFAppState()
                                                             .stOVEProcessingId = 2;
                                                         FFAppState()
-                                                                .stOVEIsFiled =
+                                                                .stOVEIsArchived =
                                                             false;
                                                         safeSetState(() {});
                                                       },
@@ -1568,7 +1568,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         FFAppState()
                                                             .stOVEProcessingId = 4;
                                                         FFAppState()
-                                                                .stOVEIsFiled =
+                                                                .stOVEIsArchived =
                                                             false;
                                                         safeSetState(() {});
                                                       },
@@ -1690,7 +1690,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         FFAppState()
                                                             .stOVEProcessingId = 3;
                                                         FFAppState()
-                                                                .stOVEIsFiled =
+                                                                .stOVEIsArchived =
                                                             false;
                                                         safeSetState(() {});
                                                       },
@@ -1818,7 +1818,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         FFAppState()
                                                             .stOVEProcessingId = 5;
                                                         FFAppState()
-                                                                .stOVEIsFiled =
+                                                                .stOVEIsArchived =
                                                             false;
                                                         safeSetState(() {});
                                                       },
@@ -1874,7 +1874,7 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                       )) &&
                                                   (e.isArchived ==
                                                       FFAppState()
-                                                          .stOVEIsFiled))
+                                                          .stOVEIsArchived))
                                               .toList()
                                               .map((e) => e)
                                               .toList()

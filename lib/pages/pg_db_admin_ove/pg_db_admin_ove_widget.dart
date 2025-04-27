@@ -1,9 +1,9 @@
-import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/assets/cp_ove_processing_users/cp_ove_processing_users_widget.dart';
 import '/pages/components/cp_menu/cp_menu_widget.dart';
+import '/pages/components/md_rpt_extensions_options/md_rpt_extensions_options_widget.dart';
 import '/pages/orders_visits_extras/cp_db_admin_ove_card/cp_db_admin_ove_card_widget.dart';
 import '/pages/orders_visits_extras/md_db_admin_filters_ove/md_db_admin_filters_ove_widget.dart';
 import '/pages/orders_visits_extras/md_o_v_e_create/md_o_v_e_create_widget.dart';
@@ -1606,7 +1606,15 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                 Duration(milliseconds: 1500),
                                             triggerMode: TooltipTriggerMode.tap,
                                             child: Visibility(
-                                              visible: false,
+                                              visible: FFAppState()
+                                                      .stDBAdminOVEFilters
+                                                      .where((e) =>
+                                                          e.processingId ==
+                                                          FFAppState()
+                                                              .stOVEProcessingId)
+                                                      .toList()
+                                                      .length >
+                                                  0,
                                               child: FlutterFlowIconButton(
                                                 borderColor:
                                                     FlutterFlowTheme.of(context)
@@ -1623,121 +1631,35 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                 ),
                                                 showLoadingIndicator: true,
                                                 onPressed: () async {
-                                                  await JrOrdersVisitsExtrasTable()
-                                                      .delete(
-                                                    matchingRows: (rows) =>
-                                                        rows.eqOrNull(
-                                                      'created_user_id',
-                                                      FFAppState()
-                                                          .stUserCurrent
-                                                          .id,
-                                                    ),
-                                                  );
-                                                  FFAppState().stCounterLoop =
-                                                      0;
-                                                  FFAppState()
-                                                          .stCounterLoopFinal =
-                                                      valueOrDefault<int>(
-                                                    FFAppState()
-                                                        .stDBAdminOVEFilters
-                                                        .length,
-                                                    0,
-                                                  );
-                                                  safeSetState(() {});
-                                                  await showDialog(
+                                                  await showModalBottomSheet(
+                                                    isScrollControlled: true,
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    enableDrag: false,
                                                     context: context,
-                                                    builder:
-                                                        (alertDialogContext) {
-                                                      return AlertDialog(
-                                                        title: Text('Total'),
-                                                        content: Text(
-                                                            valueOrDefault<
-                                                                String>(
-                                                          FFAppState()
-                                                              .stDBAdminOVEFilters
-                                                              .length
-                                                              .toString(),
-                                                          '0',
-                                                        )),
-                                                        actions: [
-                                                          TextButton(
-                                                            onPressed: () =>
-                                                                Navigator.pop(
-                                                                    alertDialogContext),
-                                                            child: Text('Ok'),
+                                                    builder: (context) {
+                                                      return GestureDetector(
+                                                        onTap: () {
+                                                          FocusScope.of(context)
+                                                              .unfocus();
+                                                          FocusManager.instance
+                                                              .primaryFocus
+                                                              ?.unfocus();
+                                                        },
+                                                        child: Padding(
+                                                          padding: MediaQuery
+                                                              .viewInsetsOf(
+                                                                  context),
+                                                          child:
+                                                              MdRptExtensionsOptionsWidget(
+                                                            cpRptTitle:
+                                                                'ove_list',
                                                           ),
-                                                        ],
+                                                        ),
                                                       );
                                                     },
-                                                  );
-                                                  while (FFAppState()
-                                                          .stCounterLoop <
-                                                      FFAppState()
-                                                          .stCounterLoopFinal) {
-                                                    await JrOrdersVisitsExtrasTable()
-                                                        .insert({
-                                                      'created_user_id':
-                                                          FFAppState()
-                                                              .stUserCurrent
-                                                              .id,
-                                                      'o_mask': FFAppState()
-                                                          .stDBAdminOVEFilters
-                                                          .elementAtOrNull(
-                                                              FFAppState()
-                                                                  .stCounterLoop)
-                                                          ?.oMask,
-                                                      'approved_user_id': FFAppState()
-                                                          .stDBAdminOVEFilters
-                                                          .elementAtOrNull(
-                                                              FFAppState()
-                                                                  .stCounterLoop)
-                                                          ?.approvedUserId,
-                                                      'approved_at': supaSerialize<
-                                                              DateTime>(
-                                                          functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
-                                                              .stDBAdminOVEFilters
-                                                              .elementAtOrNull(
-                                                                  FFAppState()
-                                                                      .stCounterLoop)!
-                                                              .approvedAt)),
-                                                      'disapproved_user_id':
-                                                          FFAppState()
-                                                              .stDBAdminOVEFilters
-                                                              .elementAtOrNull(
-                                                                  FFAppState()
-                                                                      .stCounterLoop)
-                                                              ?.disapprovedUserId,
-                                                      'disapproved_at': supaSerialize<
-                                                              DateTime>(
-                                                          functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
-                                                              .stDBAdminOVEFilters
-                                                              .elementAtOrNull(
-                                                                  FFAppState()
-                                                                      .stCounterLoop)!
-                                                              .disapprovedAt)),
-                                                      'started_at': supaSerialize<
-                                                              DateTime>(
-                                                          functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
-                                                              .stDBAdminOVEFilters
-                                                              .elementAtOrNull(
-                                                                  FFAppState()
-                                                                      .stCounterLoop)!
-                                                              .startedAt)),
-                                                      'ended_at': supaSerialize<
-                                                              DateTime>(
-                                                          functions.cfConvDatetimeEnStringToDatetimeEn(FFAppState()
-                                                              .stDBAdminOVEFilters
-                                                              .elementAtOrNull(
-                                                                  FFAppState()
-                                                                      .stCounterLoop)!
-                                                              .endedAt)),
-                                                    });
-                                                    FFAppState().stCounterLoop =
-                                                        FFAppState()
-                                                                .stCounterLoop +
-                                                            1;
-                                                    safeSetState(() {});
-                                                  }
+                                                  ).then((value) =>
+                                                      safeSetState(() {}));
                                                 },
                                               ),
                                             ),
@@ -2001,7 +1923,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                         : () async {
                                                                             FFAppState().stOVEProcessingId =
                                                                                 1;
-                                                                            FFAppState().stOVEIsFiled =
+                                                                            FFAppState().stOVEIsArchived =
                                                                                 false;
                                                                             safeSetState(() {});
                                                                           },
@@ -2175,7 +2097,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                         : () async {
                                                                             FFAppState().stOVEProcessingId =
                                                                                 2;
-                                                                            FFAppState().stOVEIsFiled =
+                                                                            FFAppState().stOVEIsArchived =
                                                                                 false;
                                                                             safeSetState(() {});
                                                                           },
@@ -2347,7 +2269,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                         : () async {
                                                                             FFAppState().stOVEProcessingId =
                                                                                 4;
-                                                                            FFAppState().stOVEIsFiled =
+                                                                            FFAppState().stOVEIsArchived =
                                                                                 false;
                                                                             safeSetState(() {});
                                                                           },
@@ -2516,7 +2438,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                       FFAppState()
                                                                           .stOVEProcessingId = 3;
                                                                       FFAppState()
-                                                                              .stOVEIsFiled =
+                                                                              .stOVEIsArchived =
                                                                           false;
                                                                       safeSetState(
                                                                           () {});
@@ -2686,7 +2608,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                       FFAppState()
                                                                           .stOVEProcessingId = 5;
                                                                       FFAppState()
-                                                                              .stOVEIsFiled =
+                                                                              .stOVEIsArchived =
                                                                           false;
                                                                       safeSetState(
                                                                           () {});
@@ -2858,7 +2780,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                                       FFAppState()
                                                                           .stOVEProcessingId = 5;
                                                                       FFAppState()
-                                                                              .stOVEIsFiled =
+                                                                              .stOVEIsArchived =
                                                                           true;
                                                                       safeSetState(
                                                                           () {});
@@ -2946,7 +2868,7 @@ class _PgDbAdminOveWidgetState extends State<PgDbAdminOveWidget>
                                                             .stOVEProcessingId) &&
                                                     (e.isArchived ==
                                                         FFAppState()
-                                                            .stOVEIsFiled))
+                                                            .stOVEIsArchived))
                                                 .toList()
                                                 .sortedList(
                                                     keyOf: (e) => e.startedAt,

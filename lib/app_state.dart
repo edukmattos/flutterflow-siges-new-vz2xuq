@@ -647,7 +647,8 @@ class FFAppState extends ChangeNotifier {
           prefs.getInt('ff_stOVEProcessingId') ?? _stOVEProcessingId;
     });
     _safeInit(() {
-      _stOVEIsFiled = prefs.getBool('ff_stOVEIsFiled') ?? _stOVEIsFiled;
+      _stOVEIsArchived =
+          prefs.getBool('ff_stOVEIsArchived') ?? _stOVEIsArchived;
     });
   }
 
@@ -4369,11 +4370,11 @@ class FFAppState extends ChangeNotifier {
     prefs.setInt('ff_stOVEProcessingId', value);
   }
 
-  bool _stOVEIsFiled = false;
-  bool get stOVEIsFiled => _stOVEIsFiled;
-  set stOVEIsFiled(bool value) {
-    _stOVEIsFiled = value;
-    prefs.setBool('ff_stOVEIsFiled', value);
+  bool _stOVEIsArchived = false;
+  bool get stOVEIsArchived => _stOVEIsArchived;
+  set stOVEIsArchived(bool value) {
+    _stOVEIsArchived = value;
+    prefs.setBool('ff_stOVEIsArchived', value);
   }
 }
 

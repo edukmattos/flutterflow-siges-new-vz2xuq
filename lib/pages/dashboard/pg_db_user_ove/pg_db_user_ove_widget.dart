@@ -564,7 +564,8 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     safeSetState(() {});
                                                     FFAppState()
                                                         .stOVEProcessingId = 1;
-                                                    FFAppState().stOVEIsFiled =
+                                                    FFAppState()
+                                                            .stOVEIsArchived =
                                                         false;
                                                     safeSetState(() {});
                                                   },
@@ -668,7 +669,8 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     safeSetState(() {});
                                                     FFAppState()
                                                         .stOVEProcessingId = 2;
-                                                    FFAppState().stOVEIsFiled =
+                                                    FFAppState()
+                                                            .stOVEIsArchived =
                                                         false;
                                                     safeSetState(() {});
                                                   },
@@ -772,7 +774,8 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     safeSetState(() {});
                                                     FFAppState()
                                                         .stOVEProcessingId = 4;
-                                                    FFAppState().stOVEIsFiled =
+                                                    FFAppState()
+                                                            .stOVEIsArchived =
                                                         false;
                                                     safeSetState(() {});
                                                   },
@@ -872,7 +875,8 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   onPressed: () async {
                                                     FFAppState()
                                                         .stOVEProcessingId = 3;
-                                                    FFAppState().stOVEIsFiled =
+                                                    FFAppState()
+                                                            .stOVEIsArchived =
                                                         false;
                                                     safeSetState(() {});
                                                     _model.lpsvOveFollowingIsVisible =
@@ -980,7 +984,8 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                     safeSetState(() {});
                                                     FFAppState()
                                                         .stOVEProcessingId = 5;
-                                                    FFAppState().stOVEIsFiled =
+                                                    FFAppState()
+                                                            .stOVEIsArchived =
                                                         false;
                                                     safeSetState(() {});
                                                   },
@@ -1233,7 +1238,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   FFAppState()
                                                                       .stOVEProcessingId = 1;
                                                                   FFAppState()
-                                                                          .stOVEIsFiled =
+                                                                          .stOVEIsArchived =
                                                                       false;
                                                                   safeSetState(
                                                                       () {});
@@ -1371,7 +1376,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   FFAppState()
                                                                       .stOVEProcessingId = 2;
                                                                   FFAppState()
-                                                                          .stOVEIsFiled =
+                                                                          .stOVEIsArchived =
                                                                       false;
                                                                   safeSetState(
                                                                       () {});
@@ -1509,7 +1514,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   FFAppState()
                                                                       .stOVEProcessingId = 4;
                                                                   FFAppState()
-                                                                          .stOVEIsFiled =
+                                                                          .stOVEIsArchived =
                                                                       false;
                                                                   safeSetState(
                                                                       () {});
@@ -1645,7 +1650,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   FFAppState()
                                                                       .stOVEProcessingId = 3;
                                                                   FFAppState()
-                                                                          .stOVEIsFiled =
+                                                                          .stOVEIsArchived =
                                                                       false;
                                                                   safeSetState(
                                                                       () {});
@@ -1783,7 +1788,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                   FFAppState()
                                                                       .stOVEProcessingId = 5;
                                                                   FFAppState()
-                                                                          .stOVEIsFiled =
+                                                                          .stOVEIsArchived =
                                                                       true;
                                                                   safeSetState(
                                                                       () {});

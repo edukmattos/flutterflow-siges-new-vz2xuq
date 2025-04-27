@@ -839,7 +839,7 @@ class _PgAssetsSearchWidgetState extends State<PgAssetsSearchWidget>
                                                                         context),
                                                                 child:
                                                                     MdRptExtensionsOptionsWidget(
-                                                                  cpRptName:
+                                                                  cpRptTitle:
                                                                       'assets_list',
                                                                 ),
                                                               ),
