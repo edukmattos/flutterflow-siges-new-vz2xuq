@@ -1255,49 +1255,16 @@ class _MdDbAdminFiltersOveWidgetState extends State<MdDbAdminFiltersOveWidget> {
                                                             .toList(),
                                                     );
                                                     FFAppState().update(() {});
+                                                    FFAppState()
+                                                            .stDbAdminOVEFiltersModel =
+                                                        'Filters';
+                                                    safeSetState(() {});
                                                     await action_blocks
-                                                        .abFiltersOveCount(
-                                                            context);
-                                                    if (FFAppState()
-                                                            .stFiltersOveCount >
-                                                        0) {
-                                                      if (FFAppState()
-                                                              .stFiltersOVE
-                                                              .pgAdmin ==
-                                                          'OOVE') {
-                                                        await action_blocks
-                                                            .abDbAdminOOVENoFiledFilters(
-                                                                context);
-                                                      } else {
-                                                        await action_blocks
-                                                            .abDBAdminOVEFilters(
-                                                                context);
-                                                      }
-                                                    } else {
-                                                      await showDialog(
-                                                        context: context,
-                                                        builder:
-                                                            (alertDialogContext) {
-                                                          return AlertDialog(
-                                                            title:
-                                                                Text('Ops ...'),
-                                                            content: Text(
-                                                                'Informar ao menos UM campo.'),
-                                                            actions: [
-                                                              TextButton(
-                                                                onPressed: () =>
-                                                                    Navigator.pop(
-                                                                        alertDialogContext),
-                                                                child:
-                                                                    Text('Ok'),
-                                                              ),
-                                                            ],
-                                                          );
-                                                        },
-                                                      );
-                                                      return;
-                                                    }
-
+                                                        .abDbAdminOVEFiltersModel(
+                                                      context,
+                                                      abModel: FFAppState()
+                                                          .stDbAdminOVEFiltersModel,
+                                                    );
                                                     Navigator.pop(context);
                                                   },
                                                   text: FFLocalizations.of(

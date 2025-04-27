@@ -650,6 +650,11 @@ class FFAppState extends ChangeNotifier {
       _stOVEIsArchived =
           prefs.getBool('ff_stOVEIsArchived') ?? _stOVEIsArchived;
     });
+    _safeInit(() {
+      _stDbAdminOVEFiltersModel =
+          prefs.getString('ff_stDbAdminOVEFiltersModel') ??
+              _stDbAdminOVEFiltersModel;
+    });
   }
 
   void update(VoidCallback callback) {
@@ -4375,6 +4380,13 @@ class FFAppState extends ChangeNotifier {
   set stOVEIsArchived(bool value) {
     _stOVEIsArchived = value;
     prefs.setBool('ff_stOVEIsArchived', value);
+  }
+
+  String _stDbAdminOVEFiltersModel = '';
+  String get stDbAdminOVEFiltersModel => _stDbAdminOVEFiltersModel;
+  set stDbAdminOVEFiltersModel(String value) {
+    _stDbAdminOVEFiltersModel = value;
+    prefs.setString('ff_stDbAdminOVEFiltersModel', value);
   }
 }
 

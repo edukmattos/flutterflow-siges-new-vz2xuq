@@ -1,6 +1,3 @@
-import '/auth/supabase_auth/auth_util.dart';
-import '/backend/api_requests/api_calls.dart';
-import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/assets/cp_ove_processing_users/cp_ove_processing_users_widget.dart';
@@ -140,7 +137,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
           await actions.caSupabaseConnect(
             'orders_visits_extras',
             () async {
-              await action_blocks.abDbAdminOOVENoFiledFilters(context);
+              await action_blocks.abDbAdminOVEFiltersModel(
+                context,
+                abModel: FFAppState().stDbAdminOVEFiltersModel,
+                abOveId: int.tryParse(_model.tfOveIdTextController.text),
+              );
             },
           );
         }),
@@ -784,9 +785,15 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                               ),
                                               showLoadingIndicator: true,
                                               onPressed: () async {
+                                                FFAppState()
+                                                        .stDbAdminOVEFiltersModel =
+                                                    'Id';
+                                                safeSetState(() {});
                                                 await action_blocks
-                                                    .abOVESearchById(
+                                                    .abDbAdminOVEFiltersModel(
                                                   context,
+                                                  abModel: FFAppState()
+                                                      .stDbAdminOVEFiltersModel,
                                                   abOveId: int.tryParse(_model
                                                       .tfOveIdTextController
                                                       .text),
@@ -843,7 +850,10 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                           ),
                                           showLoadingIndicator: true,
                                           onPressed: () async {
-                                            var _shouldSetState = false;
+                                            FFAppState()
+                                                    .stDbAdminOVEFiltersModel =
+                                                'Date';
+                                            safeSetState(() {});
                                             final _datePickedDate =
                                                 await showDatePicker(
                                               context: context,
@@ -932,131 +942,11 @@ class _PgDbAdminONewWidgetState extends State<PgDbAdminONewWidget> {
                                                         59),
                                             );
                                             safeSetState(() {});
-                                            _model.resDBAdminOOVExtras =
-                                                await ApiOrdersVisitsExtrasGroup
-                                                    .apiOVEFiltersCall
-                                                    .call(
-                                              apiUrl: FFDevEnvironmentValues()
-                                                  .envApiUrl,
-                                              apiKey: FFDevEnvironmentValues()
-                                                  .envApiKey,
-                                              accessToken: currentJwtToken,
-                                              oTypesIdsList: FFAppState()
-                                                  .stFiltersOVE
-                                                  .oTypesIds,
-                                              teamsIdsList: FFAppState()
-                                                  .stFiltersOVE
-                                                  .teamsIds,
-                                              unitsIdsList: FFAppState()
-                                                  .stFiltersOVE
-                                                  .unitsIds,
-                                              assetsTagsIdsList: FFAppState()
-                                                  .stFiltersOVE
-                                                  .assetsTagsIds,
-                                              dateStart: functions
-                                                  .cfConvDatetimeENToString(
-                                                      FFAppState()
-                                                          .stFiltersOVE
-                                                          .dateStart!),
-                                              dateEnd: functions
-                                                  .cfConvDatetimeENToString(
-                                                      FFAppState()
-                                                          .stFiltersOVE
-                                                          .dateEnd!),
-                                              systemsParentsIdsList:
-                                                  FFAppState()
-                                                      .stFiltersOVE
-                                                      .systemsParentsIds,
-                                              systemsIdsList: FFAppState()
-                                                  .stFiltersOVE
-                                                  .systemsIds,
-                                              unitsTypesParentsIdsList:
-                                                  FFAppState()
-                                                      .stFiltersOVE
-                                                      .unitsTypesParentsIds,
-                                              unitsTypesIdsList: FFAppState()
-                                                  .stFiltersOVE
-                                                  .unitsTypesIds,
-                                              oCausesReasonsIdsList:
-                                                  FFAppState()
-                                                      .stFiltersOVE
-                                                      .oCausesReasonsIds,
+                                            await action_blocks
+                                                .abDbAdminOVEFiltersModel(
+                                              context,
+                                              abModel: 'Date',
                                             );
-
-                                            _shouldSetState = true;
-                                            if ((_model.resDBAdminOOVExtras
-                                                    ?.succeeded ??
-                                                true)) {
-                                              FFAppState()
-                                                  .stDBAdminOOVEFilters = ((_model
-                                                                  .resDBAdminOOVExtras
-                                                                  ?.jsonBody ??
-                                                              '')
-                                                          .toList()
-                                                          .map<DtOrderVisitExtraStruct?>(
-                                                              DtOrderVisitExtraStruct
-                                                                  .maybeFromMap)
-                                                          .toList()
-                                                      as Iterable<
-                                                          DtOrderVisitExtraStruct?>)
-                                                  .withoutNulls
-                                                  .toList()
-                                                  .cast<
-                                                      DtOrderVisitExtraStruct>();
-                                              safeSetState(() {});
-                                              if (FFAppState()
-                                                      .stDBAdminOOVEFilters
-                                                      .length ==
-                                                  0) {
-                                                ScaffoldMessenger.of(context)
-                                                    .showSnackBar(
-                                                  SnackBar(
-                                                    content: Text(
-                                                      'Nenhum registro localizado.',
-                                                      style: TextStyle(
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .info,
-                                                      ),
-                                                    ),
-                                                    duration: Duration(
-                                                        milliseconds: 4000),
-                                                    backgroundColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .tertiary,
-                                                  ),
-                                                );
-                                              }
-                                            } else {
-                                              ScaffoldMessenger.of(context)
-                                                  .showSnackBar(
-                                                SnackBar(
-                                                  content: Text(
-                                                    'Ops...  Erro na busca de registros.',
-                                                    style: TextStyle(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .info,
-                                                    ),
-                                                  ),
-                                                  duration: Duration(
-                                                      milliseconds: 4000),
-                                                  backgroundColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .error,
-                                                ),
-                                              );
-                                              if (_shouldSetState)
-                                                safeSetState(() {});
-                                              return;
-                                            }
-
-                                            if (_shouldSetState)
-                                              safeSetState(() {});
                                           },
                                         ),
                                       ),

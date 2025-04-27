@@ -1,4 +1,3 @@
-import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/components/cp_menu/cp_menu_widget.dart';
 import '/pages/dashboard/cp_d_b_admin_nav_bar/cp_d_b_admin_nav_bar_widget.dart';
@@ -35,8 +34,6 @@ class PgDbAdminONewModel extends FlutterFlowModel<PgDbAdminONewWidget> {
   TextEditingController? tfOveIdTextController;
   String? Function(BuildContext, String?)? tfOveIdTextControllerValidator;
   DateTime? datePicked;
-  // Stores action output result for [Backend Call - API (apiOVEFilters)] action in IconButton widget.
-  ApiCallResponse? resDBAdminOOVExtras;
   // Model for cpDBAdminNavBar component.
   late CpDBAdminNavBarModel cpDBAdminNavBarModel;
 

@@ -6961,3 +6961,102 @@ Future abOVESearchFiltersResultOutput(
   await launchURL(
       '${FFDevEnvironmentValues().envJSReport}/orders_visits_extras/ove_list.${abOutput}?rpt_title=${abRptTitle}&rpt_sub_title=${abRptSubTitle}&user_uuid=${abUserUuid}&j_username=${FFDevEnvironmentValues().envJSReportUser}&j_password=${FFDevEnvironmentValues().envJSReportPassword}');
 }
+
+Future abDbAdminOVEFiltersModel(
+  BuildContext context, {
+  required String? abModel,
+  int? abOveId,
+}) async {
+  ApiCallResponse? resDBAdminOOVExtras;
+
+  if (abModel == 'Id') {
+    await action_blocks.abOVESearchById(
+      context,
+      abOveId: abOveId,
+    );
+  } else if (abModel == 'Date') {
+    resDBAdminOOVExtras =
+        await ApiOrdersVisitsExtrasGroup.apiOVEFiltersCall.call(
+      apiUrl: FFDevEnvironmentValues().envApiUrl,
+      apiKey: FFDevEnvironmentValues().envApiKey,
+      accessToken: currentJwtToken,
+      oTypesIdsList: FFAppState().stFiltersOVE.oTypesIds,
+      teamsIdsList: FFAppState().stFiltersOVE.teamsIds,
+      unitsIdsList: FFAppState().stFiltersOVE.unitsIds,
+      assetsTagsIdsList: FFAppState().stFiltersOVE.assetsTagsIds,
+      dateStart: functions
+          .cfConvDatetimeENToString(FFAppState().stFiltersOVE.dateStart!),
+      dateEnd: functions
+          .cfConvDatetimeENToString(FFAppState().stFiltersOVE.dateEnd!),
+      systemsParentsIdsList: FFAppState().stFiltersOVE.systemsParentsIds,
+      systemsIdsList: FFAppState().stFiltersOVE.systemsIds,
+      unitsTypesParentsIdsList: FFAppState().stFiltersOVE.unitsTypesParentsIds,
+      unitsTypesIdsList: FFAppState().stFiltersOVE.unitsTypesIds,
+      oCausesReasonsIdsList: FFAppState().stFiltersOVE.oCausesReasonsIds,
+    );
+
+    if ((resDBAdminOOVExtras.succeeded ?? true)) {
+      FFAppState().stDBAdminOOVEFilters = ((resDBAdminOOVExtras.jsonBody ?? '')
+              .toList()
+              .map<DtOrderVisitExtraStruct?>(
+                  DtOrderVisitExtraStruct.maybeFromMap)
+              .toList() as Iterable<DtOrderVisitExtraStruct?>)
+          .withoutNulls
+          .toList()
+          .cast<DtOrderVisitExtraStruct>();
+      FFAppState().update(() {});
+      if (FFAppState().stDBAdminOOVEFilters.length == 0) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Nenhum registro localizado.',
+              style: TextStyle(),
+            ),
+            duration: Duration(milliseconds: 4000),
+            backgroundColor: FlutterFlowTheme.of(context).tertiary,
+          ),
+        );
+      }
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'Ops...  Erro na busca de registros.',
+            style: TextStyle(),
+          ),
+          duration: Duration(milliseconds: 4000),
+          backgroundColor: FlutterFlowTheme.of(context).error,
+        ),
+      );
+      return;
+    }
+  } else if (abModel == 'Filters') {
+    await action_blocks.abFiltersOveCount(context);
+    if (FFAppState().stFiltersOveCount > 0) {
+      if (FFAppState().stFiltersOVE.pgAdmin == 'OOVE') {
+        await action_blocks.abDbAdminOOVENoFiledFilters(context);
+      } else {
+        await action_blocks.abDBAdminOVEFilters(context);
+      }
+    } else {
+      await showDialog(
+        context: context,
+        builder: (alertDialogContext) {
+          return AlertDialog(
+            title: Text('Ops ...'),
+            content: Text('Informar ao menos UM campo.'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(alertDialogContext),
+                child: Text('Ok'),
+              ),
+            ],
+          );
+        },
+      );
+      return;
+    }
+
+    FFAppState().stDbAdminOVEFiltersModel = 'Filters';
+  }
+}
