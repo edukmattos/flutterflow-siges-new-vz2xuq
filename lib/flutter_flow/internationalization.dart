@@ -6081,6 +6081,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Processamento',
       'en': '',
     },
+    'p9kggydd': {
+      'pt': 'Rascunho',
+      'en': '',
+    },
+    'daxyndbe': {
+      'pt': 'Reportado',
+      'en': '',
+    },
+    '9ap01ttc': {
+      'pt': 'Autorizado',
+      'en': '',
+    },
+    'r6rmj70n': {
+      'pt': 'Revisado',
+      'en': '',
+    },
+    'u5v62f8x': {
+      'pt': 'Arquivado',
+      'en': '',
+    },
   },
   // cpDdOTypesSubsMultiAvailable
   {

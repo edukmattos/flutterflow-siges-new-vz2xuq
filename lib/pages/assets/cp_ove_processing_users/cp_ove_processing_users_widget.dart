@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -407,18 +408,45 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    FlutterFlowIconButton(
-                      borderRadius: 16.0,
-                      buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).primary,
-                      icon: Icon(
-                        Icons.draw,
-                        color: FlutterFlowTheme.of(context).info,
-                        size: 30.0,
+                    AlignedTooltip(
+                      content: Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'p9kggydd' /* Rascunho */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyLarge
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyLarge,
+                                letterSpacing: 0.0,
+                              ),
+                        ),
                       ),
-                      onPressed: () {
-                        print('IconButton pressed ...');
-                      },
+                      offset: 4.0,
+                      preferredDirection: AxisDirection.down,
+                      borderRadius: BorderRadius.circular(8.0),
+                      backgroundColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      elevation: 4.0,
+                      tailBaseWidth: 24.0,
+                      tailLength: 12.0,
+                      waitDuration: Duration(milliseconds: 100),
+                      showDuration: Duration(milliseconds: 1500),
+                      triggerMode: TooltipTriggerMode.tap,
+                      child: FlutterFlowIconButton(
+                        borderRadius: 16.0,
+                        buttonSize: 50.0,
+                        fillColor: FlutterFlowTheme.of(context).primary,
+                        icon: Icon(
+                          Icons.draw,
+                          color: FlutterFlowTheme.of(context).info,
+                          size: 30.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
                     ),
                     Expanded(
                       child: Column(
@@ -475,18 +503,45 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    FlutterFlowIconButton(
-                      borderRadius: 16.0,
-                      buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).customColor3,
-                      icon: Icon(
-                        FFIcons.kkfileExport,
-                        color: FlutterFlowTheme.of(context).info,
-                        size: 30.0,
+                    AlignedTooltip(
+                      content: Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'daxyndbe' /* Reportado */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyLarge
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyLarge,
+                                letterSpacing: 0.0,
+                              ),
+                        ),
                       ),
-                      onPressed: () {
-                        print('IconButton pressed ...');
-                      },
+                      offset: 4.0,
+                      preferredDirection: AxisDirection.down,
+                      borderRadius: BorderRadius.circular(8.0),
+                      backgroundColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      elevation: 4.0,
+                      tailBaseWidth: 24.0,
+                      tailLength: 12.0,
+                      waitDuration: Duration(milliseconds: 100),
+                      showDuration: Duration(milliseconds: 1500),
+                      triggerMode: TooltipTriggerMode.tap,
+                      child: FlutterFlowIconButton(
+                        borderRadius: 16.0,
+                        buttonSize: 50.0,
+                        fillColor: FlutterFlowTheme.of(context).customColor3,
+                        icon: Icon(
+                          FFIcons.kkfileExport,
+                          color: FlutterFlowTheme.of(context).info,
+                          size: 30.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
                     ),
                     Expanded(
                       child: Column(
@@ -543,18 +598,45 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    FlutterFlowIconButton(
-                      borderRadius: 16.0,
-                      buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).secondaryText,
-                      icon: FaIcon(
-                        FontAwesomeIcons.fileSignature,
-                        color: FlutterFlowTheme.of(context).info,
-                        size: 24.0,
+                    AlignedTooltip(
+                      content: Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            '9ap01ttc' /* Autorizado */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyLarge
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyLarge,
+                                letterSpacing: 0.0,
+                              ),
+                        ),
                       ),
-                      onPressed: () {
-                        print('IconButton pressed ...');
-                      },
+                      offset: 4.0,
+                      preferredDirection: AxisDirection.down,
+                      borderRadius: BorderRadius.circular(8.0),
+                      backgroundColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      elevation: 4.0,
+                      tailBaseWidth: 24.0,
+                      tailLength: 12.0,
+                      waitDuration: Duration(milliseconds: 100),
+                      showDuration: Duration(milliseconds: 1500),
+                      triggerMode: TooltipTriggerMode.tap,
+                      child: FlutterFlowIconButton(
+                        borderRadius: 16.0,
+                        buttonSize: 50.0,
+                        fillColor: FlutterFlowTheme.of(context).success,
+                        icon: FaIcon(
+                          FontAwesomeIcons.thumbsUp,
+                          color: FlutterFlowTheme.of(context).info,
+                          size: 30.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
                     ),
                     Expanded(
                       child: Column(
@@ -698,18 +780,45 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    FlutterFlowIconButton(
-                      borderRadius: 16.0,
-                      buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).success,
-                      icon: FaIcon(
-                        FontAwesomeIcons.thumbsUp,
-                        color: FlutterFlowTheme.of(context).info,
-                        size: 30.0,
+                    AlignedTooltip(
+                      content: Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'r6rmj70n' /* Revisado */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyLarge
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyLarge,
+                                letterSpacing: 0.0,
+                              ),
+                        ),
                       ),
-                      onPressed: () {
-                        print('IconButton pressed ...');
-                      },
+                      offset: 4.0,
+                      preferredDirection: AxisDirection.down,
+                      borderRadius: BorderRadius.circular(8.0),
+                      backgroundColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      elevation: 4.0,
+                      tailBaseWidth: 24.0,
+                      tailLength: 12.0,
+                      waitDuration: Duration(milliseconds: 100),
+                      showDuration: Duration(milliseconds: 1500),
+                      triggerMode: TooltipTriggerMode.tap,
+                      child: FlutterFlowIconButton(
+                        borderRadius: 16.0,
+                        buttonSize: 50.0,
+                        fillColor: FlutterFlowTheme.of(context).secondaryText,
+                        icon: FaIcon(
+                          FontAwesomeIcons.fileSignature,
+                          color: FlutterFlowTheme.of(context).info,
+                          size: 24.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
                     ),
                     Expanded(
                       child: Column(
@@ -766,18 +875,45 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    FlutterFlowIconButton(
-                      borderRadius: 16.0,
-                      buttonSize: 50.0,
-                      fillColor: FlutterFlowTheme.of(context).tertiary,
-                      icon: Icon(
-                        Icons.archive_sharp,
-                        color: FlutterFlowTheme.of(context).info,
-                        size: 30.0,
+                    AlignedTooltip(
+                      content: Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'u5v62f8x' /* Arquivado */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyLarge
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyLarge,
+                                letterSpacing: 0.0,
+                              ),
+                        ),
                       ),
-                      onPressed: () {
-                        print('IconButton pressed ...');
-                      },
+                      offset: 4.0,
+                      preferredDirection: AxisDirection.down,
+                      borderRadius: BorderRadius.circular(8.0),
+                      backgroundColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      elevation: 4.0,
+                      tailBaseWidth: 24.0,
+                      tailLength: 12.0,
+                      waitDuration: Duration(milliseconds: 100),
+                      showDuration: Duration(milliseconds: 1500),
+                      triggerMode: TooltipTriggerMode.tap,
+                      child: FlutterFlowIconButton(
+                        borderRadius: 16.0,
+                        buttonSize: 50.0,
+                        fillColor: FlutterFlowTheme.of(context).tertiary,
+                        icon: Icon(
+                          Icons.archive_sharp,
+                          color: FlutterFlowTheme.of(context).info,
+                          size: 30.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
                     ),
                     Expanded(
                       child: Column(
