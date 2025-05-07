@@ -12,17 +12,6 @@ class PgDbAdminOveModel extends FlutterFlowModel<PgDbAdminOveWidget> {
   late CpMenuModel cpMenuModel;
   // Model for cpDBUserAvailable component.
   late CpDBUserAvailableModel cpDBUserAvailableModel;
-  // State field(s) for tf_ove_date_start1 widget.
-  FocusNode? tfOveDateStart1FocusNode;
-  TextEditingController? tfOveDateStart1TextController;
-  String? Function(BuildContext, String?)?
-      tfOveDateStart1TextControllerValidator;
-  DateTime? datePicked1;
-  // State field(s) for tf_ove_date_end1 widget.
-  FocusNode? tfOveDateEnd1FocusNode;
-  TextEditingController? tfOveDateEnd1TextController;
-  String? Function(BuildContext, String?)? tfOveDateEnd1TextControllerValidator;
-  DateTime? datePicked2;
   // State field(s) for tf_ove_id widget.
   FocusNode? tfOveIdFocusNode;
   TextEditingController? tfOveIdTextController;
@@ -41,12 +30,6 @@ class PgDbAdminOveModel extends FlutterFlowModel<PgDbAdminOveWidget> {
   void dispose() {
     cpMenuModel.dispose();
     cpDBUserAvailableModel.dispose();
-    tfOveDateStart1FocusNode?.dispose();
-    tfOveDateStart1TextController?.dispose();
-
-    tfOveDateEnd1FocusNode?.dispose();
-    tfOveDateEnd1TextController?.dispose();
-
     tfOveIdFocusNode?.dispose();
     tfOveIdTextController?.dispose();
   }

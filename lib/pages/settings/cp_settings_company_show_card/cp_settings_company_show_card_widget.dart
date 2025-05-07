@@ -74,7 +74,7 @@ class _CpSettingsCompanyShowCardWidgetState
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.network(
-                        '${FFDevEnvironmentValues().envStorageUrl}/${FFDevEnvironmentValues().envStorageBucket}/version-${FFAppState().stAppVersionMode?.name}/${FFAppState().stCompanySelected.imgFilePath}/${FFAppState().stCompanySelected.imgFileName}',
+                        '${FFDevEnvironmentValues().envStorageUrl}/${FFDevEnvironmentValues().envStorageBucket}/${FFAppState().stCompanySelected.imgFilePath}/${FFAppState().stCompanySelected.imgFileName}',
                       ).image,
                     ),
                     borderRadius: BorderRadius.circular(16.0),

@@ -3615,7 +3615,7 @@ class FFAppState extends ChangeNotifier {
         _stOfflineTMTypes.map((x) => x.serialize()).toList());
   }
 
-  String _stAppVersionDevice = '1.4.11';
+  String _stAppVersionDevice = '1.5.0';
   String get stAppVersionDevice => _stAppVersionDevice;
   set stAppVersionDevice(String value) {
     _stAppVersionDevice = value;

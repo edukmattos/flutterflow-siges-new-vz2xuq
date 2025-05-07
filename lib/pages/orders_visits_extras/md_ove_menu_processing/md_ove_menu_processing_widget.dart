@@ -2527,6 +2527,8 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             .text,
                                                                     abProcessingId:
                                                                         3,
+                                                                    abIsFiled:
+                                                                        false,
                                                                     abOTypeSubId: _model
                                                                         .cpDdOTypesSubsAvailableMonoModel
                                                                         .ddOTypesSubsAvailableMonoValue,
@@ -2564,7 +2566,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                               text: FFLocalizations
                                                                       .of(context)
                                                                   .getText(
-                                                                'kdee5d42' /* MARCAR COMO REVISADO */,
+                                                                '8eb305u4' /* AUTORIZAR */,
                                                               ),
                                                               options:
                                                                   FFButtonOptions(
@@ -2586,7 +2588,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             0.0),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .info,
+                                                                    .primaryBackground,
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
@@ -2596,16 +2598,19 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                           .titleSmall,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .secondaryText,
+                                                                          .success,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w900,
                                                                     ),
                                                                 elevation: 5.0,
                                                                 borderSide:
                                                                     BorderSide(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .secondaryText,
+                                                                      .success,
                                                                   width: 6.0,
                                                                 ),
                                                                 borderRadius:
@@ -3240,8 +3245,9 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             .text,
                                                                     abProcessingId:
                                                                         5,
-                                                                    abIsFiled:
-                                                                        false,
+                                                                    abIsFiled: widget
+                                                                        .cpDtOve
+                                                                        ?.isArchived,
                                                                     abOTypeSubId: _model
                                                                         .cpDdOTypesSubsAvailableMonoModel
                                                                         .ddOTypesSubsAvailableMonoValue,
@@ -3279,7 +3285,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                               text: FFLocalizations
                                                                       .of(context)
                                                                   .getText(
-                                                                '8eb305u4' /* AUTORIZAR */,
+                                                                'kdee5d42' /* MARCAR COMO REVISADO */,
                                                               ),
                                                               options:
                                                                   FFButtonOptions(
@@ -3301,7 +3307,7 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                             0.0),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .primaryBackground,
+                                                                    .info,
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
@@ -3311,19 +3317,16 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                                           .titleSmall,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .success,
+                                                                          .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w900,
                                                                     ),
                                                                 elevation: 5.0,
                                                                 borderSide:
                                                                     BorderSide(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .success,
+                                                                      .secondaryText,
                                                                   width: 6.0,
                                                                 ),
                                                                 borderRadius:
@@ -3928,13 +3931,6 @@ class _MdOveMenuProcessingWidgetState extends State<MdOveMenuProcessingWidget> {
                                                               abOCauseReasonId: _model
                                                                   .cpDropdownOrdersCausesReasonsModel
                                                                   .dropdownOrdersCausesReasonsValue,
-                                                            );
-                                                            safeSetState(() {});
-                                                            await action_blocks
-                                                                .abOVESelected(
-                                                              context,
-                                                              abOVEId: widget
-                                                                  .cpDtOve?.id,
                                                             );
                                                             safeSetState(() {});
                                                             Navigator.pop(

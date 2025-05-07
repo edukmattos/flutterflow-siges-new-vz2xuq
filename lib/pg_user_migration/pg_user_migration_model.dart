@@ -16,6 +16,8 @@ class PgUserMigrationModel extends FlutterFlowModel<PgUserMigrationWidget> {
   // State field(s) for DropDown widget.
   String? dropDownValue;
   FormFieldController<String>? dropDownValueController;
+  // Stores action output result for [Backend Call - Update Row(s)] action in Button widget.
+  List<UsersRow>? resUserAdded;
   Completer<List<UsersRow>>? requestCompleter;
   bool isDataUploading = false;
   FFUploadedFile uploadedLocalFile =

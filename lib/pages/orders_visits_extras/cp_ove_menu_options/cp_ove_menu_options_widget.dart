@@ -60,9 +60,9 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
         if (widget.cpDtOve?.processingId == 2) {
           _model.lcsvIsVisibleDraft = false;
           _model.lcsvIsVisibleReported = false;
-          _model.lcsvIsVisibleRevised = true;
+          _model.lcsvIsVisibleRevised = false;
           _model.lcsvIsVisibleDisapproved = true;
-          _model.lcsvIsVisibleApproved = false;
+          _model.lcsvIsVisibleApproved = true;
           _model.lcsvIsVisibleFiled = false;
           _model.lpsvIsVisibleDelete = false;
           safeSetState(() {});
@@ -96,7 +96,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                 _model.lcsvIsVisibleDraft = false;
                 _model.lcsvIsVisibleReported = false;
                 _model.lcsvIsVisibleRevised = false;
-                _model.lcsvIsVisibleDisapproved = false;
+                _model.lcsvIsVisibleDisapproved = true;
                 _model.lcsvIsVisibleApproved = false;
                 _model.lcsvIsVisibleFiled = true;
                 _model.lpsvIsVisibleDelete = false;
@@ -155,7 +155,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'okca4rrx' /* Rascunho */,
+                          '3555ilpz' /* Rascunho */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -186,6 +186,10 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       ),
                       showLoadingIndicator: true,
                       onPressed: () async {
+                        await action_blocks.abOVESelected(
+                          context,
+                          abOVEId: widget.cpDtOve?.id,
+                        );
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -199,7 +203,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                                 height: MediaQuery.sizeOf(context).height * 0.9,
                                 child: MdOveMenuProcessingWidget(
                                   cpProcessingId: 1,
-                                  cpDtOve: widget.cpDtOve!,
+                                  cpDtOve: FFAppState().stOVESelected,
                                   cpPageId: 28,
                                 ),
                               ),
@@ -215,7 +219,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'rkwayu8t' /* Reportar */,
+                          'rux3ecgk' /* Reportar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -234,39 +238,47 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                     waitDuration: Duration(milliseconds: 100),
                     showDuration: Duration(milliseconds: 1500),
                     triggerMode: TooltipTriggerMode.tap,
-                    child: FlutterFlowIconButton(
-                      borderColor: FlutterFlowTheme.of(context).customColor3,
-                      borderRadius: 16.0,
-                      borderWidth: 6.0,
-                      buttonSize: widget.cpSize.toDouble(),
-                      icon: Icon(
-                        FFIcons.kkfileExport,
-                        color: FlutterFlowTheme.of(context).customColor3,
-                        size: 30.0,
-                      ),
-                      showLoadingIndicator: true,
-                      onPressed: () async {
-                        await showModalBottomSheet(
-                          isScrollControlled: true,
-                          backgroundColor: Colors.transparent,
-                          enableDrag: false,
-                          useSafeArea: true,
-                          context: context,
-                          builder: (context) {
-                            return Padding(
-                              padding: MediaQuery.viewInsetsOf(context),
-                              child: Container(
-                                height: MediaQuery.sizeOf(context).height * 0.9,
-                                child: MdOveMenuProcessingWidget(
-                                  cpProcessingId: 2,
-                                  cpDtOve: widget.cpDtOve!,
-                                  cpPageId: 28,
+                    child: Visibility(
+                      visible: _model.lcsvIsVisibleReported,
+                      child: FlutterFlowIconButton(
+                        borderColor: FlutterFlowTheme.of(context).customColor3,
+                        borderRadius: 16.0,
+                        borderWidth: 6.0,
+                        buttonSize: widget.cpSize.toDouble(),
+                        icon: Icon(
+                          FFIcons.kkfileExport,
+                          color: FlutterFlowTheme.of(context).customColor3,
+                          size: 30.0,
+                        ),
+                        showLoadingIndicator: true,
+                        onPressed: () async {
+                          await action_blocks.abOVESelected(
+                            context,
+                            abOVEId: widget.cpDtOve?.id,
+                          );
+                          await showModalBottomSheet(
+                            isScrollControlled: true,
+                            backgroundColor: Colors.transparent,
+                            enableDrag: false,
+                            useSafeArea: true,
+                            context: context,
+                            builder: (context) {
+                              return Padding(
+                                padding: MediaQuery.viewInsetsOf(context),
+                                child: Container(
+                                  height:
+                                      MediaQuery.sizeOf(context).height * 0.9,
+                                  child: MdOveMenuProcessingWidget(
+                                    cpProcessingId: 2,
+                                    cpDtOve: FFAppState().stOVESelected,
+                                    cpPageId: 28,
+                                  ),
                                 ),
-                              ),
-                            );
-                          },
-                        ).then((value) => safeSetState(() {}));
-                      },
+                              );
+                            },
+                          ).then((value) => safeSetState(() {}));
+                        },
+                      ),
                     ),
                   ),
                 if (_model.lcsvIsVisibleRevised)
@@ -275,7 +287,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '24m8fn6n' /* Revisar */,
+                          'nif3ilrb' /* Revisar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -306,6 +318,10 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       ),
                       showLoadingIndicator: true,
                       onPressed: () async {
+                        await action_blocks.abOVESelected(
+                          context,
+                          abOVEId: widget.cpDtOve?.id,
+                        );
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -318,8 +334,8 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                               child: Container(
                                 height: MediaQuery.sizeOf(context).height * 0.9,
                                 child: MdOveMenuProcessingWidget(
-                                  cpProcessingId: 3,
-                                  cpDtOve: widget.cpDtOve!,
+                                  cpProcessingId: 5,
+                                  cpDtOve: FFAppState().stOVESelected,
                                   cpPageId: 29,
                                 ),
                               ),
@@ -335,7 +351,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'pubnhp36' /* Autorizar */,
+                          'twl4qvot' /* Autorizar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -365,6 +381,10 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                         size: 30.0,
                       ),
                       onPressed: () async {
+                        await action_blocks.abOVESelected(
+                          context,
+                          abOVEId: widget.cpDtOve?.id,
+                        );
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -377,8 +397,8 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                               child: Container(
                                 height: MediaQuery.sizeOf(context).height * 0.9,
                                 child: MdOveMenuProcessingWidget(
-                                  cpProcessingId: 5,
-                                  cpDtOve: widget.cpDtOve!,
+                                  cpProcessingId: 3,
+                                  cpDtOve: FFAppState().stOVESelected,
                                   cpPageId: 33,
                                 ),
                               ),
@@ -394,7 +414,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'hcobbo3a' /* Arquivar */,
+                          '2pj6m7al' /* Arquivar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -425,6 +445,10 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       ),
                       showLoadingIndicator: true,
                       onPressed: () async {
+                        await action_blocks.abOVESelected(
+                          context,
+                          abOVEId: widget.cpDtOve?.id,
+                        );
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -438,7 +462,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                                 height: MediaQuery.sizeOf(context).height * 0.9,
                                 child: MdOveMenuProcessingWidget(
                                   cpProcessingId: 5,
-                                  cpDtOve: widget.cpDtOve!,
+                                  cpDtOve: FFAppState().stOVESelected,
                                   cpPageId: 30,
                                   cpIsFiled: true,
                                 ),
@@ -455,7 +479,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '3s6qzvl5' /* Rejeitar */,
+                          'ff9p60i3' /* Rejeitar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -486,6 +510,10 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       ),
                       showLoadingIndicator: true,
                       onPressed: () async {
+                        await action_blocks.abOVESelected(
+                          context,
+                          abOVEId: widget.cpDtOve?.id,
+                        );
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -499,7 +527,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                                 height: MediaQuery.sizeOf(context).height * 0.9,
                                 child: MdOveMenuProcessingWidget(
                                   cpProcessingId: 4,
-                                  cpDtOve: widget.cpDtOve!,
+                                  cpDtOve: FFAppState().stOVESelected,
                                   cpPageId: 29,
                                 ),
                               ),
@@ -515,7 +543,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       padding: EdgeInsets.all(4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '8oete615' /* Excluir */,
+                          'u9ma698u' /* Excluir */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               font: FlutterFlowTheme.of(context).bodyLarge,
@@ -546,6 +574,10 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                       ),
                       showLoadingIndicator: true,
                       onPressed: () async {
+                        await action_blocks.abOVESelected(
+                          context,
+                          abOVEId: widget.cpDtOve?.id,
+                        );
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -559,7 +591,7 @@ class _CpOveMenuOptionsWidgetState extends State<CpOveMenuOptionsWidget> {
                                 height: MediaQuery.sizeOf(context).height * 0.9,
                                 child: MdOveMenuProcessingWidget(
                                   cpProcessingId: 99,
-                                  cpDtOve: widget.cpDtOve!,
+                                  cpDtOve: FFAppState().stOVESelected,
                                   cpPageId: 29,
                                 ),
                               ),

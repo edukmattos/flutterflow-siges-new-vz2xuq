@@ -478,6 +478,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: PgAppVersionNewReleaseWidget.routeName,
               path: PgAppVersionNewReleaseWidget.routePath,
+              requireAuth: true,
               builder: (context, params) => PgAppVersionNewReleaseWidget(),
             ),
             FFRoute(
@@ -613,6 +614,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: PgDbAdminONewOriginalWidget.routePath,
               requireAuth: true,
               builder: (context, params) => PgDbAdminONewOriginalWidget(),
+            ),
+            FFRoute(
+              name: PgAppVersionNewReleaseWebWidget.routeName,
+              path: PgAppVersionNewReleaseWebWidget.routePath,
+              requireAuth: true,
+              builder: (context, params) => PgAppVersionNewReleaseWebWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

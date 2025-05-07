@@ -168,7 +168,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
               padding: EdgeInsets.all(4.0),
               child: Text(
                 FFLocalizations.of(context).getText(
-                  '3f94vdo8' /* Rascunho */,
+                  'nlxx84da' /* Rascunho */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
                       font: FlutterFlowTheme.of(context).bodyLarge,
@@ -212,7 +212,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
               padding: EdgeInsets.all(4.0),
               child: Text(
                 FFLocalizations.of(context).getText(
-                  'r7sc5ifz' /* Reportado */,
+                  'f0x3t6oq' /* Reportado */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
                       font: FlutterFlowTheme.of(context).bodyLarge,
@@ -256,7 +256,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
               padding: EdgeInsets.all(4.0),
               child: Text(
                 FFLocalizations.of(context).getText(
-                  '8xu0yzus' /* Autorizado */,
+                  'p3zpdavk' /* Autorizado */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
                       font: FlutterFlowTheme.of(context).bodyLarge,
@@ -296,7 +296,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
               padding: EdgeInsets.all(4.0),
               child: Text(
                 FFLocalizations.of(context).getText(
-                  'x2jqeyr3' /* Rejeitado */,
+                  'ogsbnjm3' /* Rejeitado */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
                       font: FlutterFlowTheme.of(context).bodyLarge,
@@ -343,7 +343,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
                   padding: EdgeInsets.all(4.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      '7kehye84' /* Rejeitar */,
+                      'l858qigc' /* Rejeitar */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
                           font: FlutterFlowTheme.of(context).bodyLarge,
@@ -520,7 +520,7 @@ class _CpOVEProcessingWidgetState extends State<CpOVEProcessingWidget>
                   padding: EdgeInsets.all(4.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'rp2321h8' /* Desarquivar */,
+                      'pjvhrpd7' /* Desarquivar */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
                           font: FlutterFlowTheme.of(context).bodyLarge,

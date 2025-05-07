@@ -59,7 +59,7 @@ class _CpOveMenuExtrasWidgetState extends State<CpOveMenuExtrasWidget> {
             padding: EdgeInsets.all(4.0),
             child: Text(
               FFLocalizations.of(context).getText(
-                'u5b44652' /* Copiar */,
+                'kfszum0r' /* Copiar */,
               ),
               style: FlutterFlowTheme.of(context).bodyLarge.override(
                     font: FlutterFlowTheme.of(context).bodyLarge,

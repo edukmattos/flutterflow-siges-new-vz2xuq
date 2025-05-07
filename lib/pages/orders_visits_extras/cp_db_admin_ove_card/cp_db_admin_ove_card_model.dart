@@ -10,6 +10,7 @@ import '/pages/orders_visits_extras/cp_o_v_e_processing/cp_o_v_e_processing_widg
 import '/pages/orders_visits_extras/cp_ove_menu_extras/cp_ove_menu_extras_widget.dart';
 import '/pages/orders_visits_extras/cp_ove_menu_options/cp_ove_menu_options_widget.dart';
 import 'cp_db_admin_ove_card_widget.dart' show CpDbAdminOveCardWidget;
+import 'dart:async';
 import 'package:flutter/material.dart';
 
 class CpDbAdminOveCardModel extends FlutterFlowModel<CpDbAdminOveCardWidget> {
@@ -29,6 +30,8 @@ class CpDbAdminOveCardModel extends FlutterFlowModel<CpDbAdminOveCardWidget> {
           int index, Function(DtOrderVisitExtraTeamUserStruct) updateFn) =>
       lcsvOVETeamUsers[index] = updateFn(lcsvOVETeamUsers[index]);
 
+  int? lcsvTeamLeaderId;
+
   ///  State fields for stateful widgets in this component.
 
   // Model for cpOVEButton1 component.
@@ -39,6 +42,11 @@ class CpDbAdminOveCardModel extends FlutterFlowModel<CpDbAdminOveCardWidget> {
   late CpOVEProcessingModel cpOVEProcessingModel;
   // Stores action output result for [Backend Call - Query Rows] action in Button widget.
   List<VUsersRow>? resTeamLeader;
+  // Stores action output result for [Backend Call - Update Row(s)] action in Button widget.
+  List<OrdersVisitsExtrasRow>? resOVEUpdated;
+  // Stores action output result for [Backend Call - API (apiTeamUsersByOVEId)] action in Button widget.
+  ApiCallResponse? apiResulthyl;
+  Completer<List<VOrdersVisitsExtrasTeamsRow>>? requestCompleter;
   // Model for cpCompanyLogo component.
   late CpCompanyLogoModel cpCompanyLogoModel;
   // Model for cpDropdownUsersDepartment component.
@@ -93,6 +101,22 @@ class CpDbAdminOveCardModel extends FlutterFlowModel<CpDbAdminOveCardWidget> {
           .withoutNulls
           .toList()
           .cast<DtOrderVisitExtraTeamUserStruct>();
+    }
+  }
+
+  /// Additional helper methods.
+  Future waitForRequestCompleted({
+    double minWait = 0,
+    double maxWait = double.infinity,
+  }) async {
+    final stopwatch = Stopwatch()..start();
+    while (true) {
+      await Future.delayed(Duration(milliseconds: 50));
+      final timeElapsed = stopwatch.elapsedMilliseconds;
+      final requestComplete = requestCompleter?.isCompleted ?? false;
+      if (timeElapsed > maxWait || (requestComplete && timeElapsed > minWait)) {
+        break;
+      }
     }
   }
 }

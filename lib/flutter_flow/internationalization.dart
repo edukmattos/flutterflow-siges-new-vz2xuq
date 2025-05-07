@@ -423,6 +423,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Meu Veículo',
       'en': '',
     },
+    'vm59zyv4': {
+      'pt': 'Alterar Senha',
+      'en': '',
+    },
     'v73s2if4': {
       'pt': 'Meu Perfil',
       'en': '',
@@ -3784,31 +3788,35 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Atualização automática',
       'en': '',
     },
-    'ic5yiyb4': {
-      'pt': 'Favoritos',
-      'en': '',
-    },
-    'kbyd35ie': {
+    'd6pkqi0x': {
       'pt': 'Nova',
       'en': '',
     },
-    'zite4x7y': {
+    'yvqlzeqw': {
+      'pt': 'Favoritos',
+      'en': '',
+    },
+    'otu1pivo': {
+      'pt': 'Buscar por Data',
+      'en': '',
+    },
+    '3tttqzco': {
       'pt': 'Rascunho',
       'en': '',
     },
-    '94gsxpzv': {
+    '6fr4evox': {
       'pt': 'Reportados',
       'en': '',
     },
-    '963apvj0': {
+    'tkfxma4g': {
       'pt': 'Rejeitados',
       'en': '',
     },
-    'mr750pps': {
+    'cz8uucnf': {
       'pt': 'Autorizados',
       'en': '',
     },
-    'ejosi0jj': {
+    'miqll7nz': {
       'pt': 'Revisados',
       'en': '',
     },
@@ -3820,19 +3828,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Rascunho',
       'en': '',
     },
-    'b8g6f7th': {
+    'c5li6tis': {
       'pt': 'Reportados',
       'en': '',
     },
-    'vxe7xt2d': {
+    's41kwv7o': {
       'pt': 'Rejeitados',
       'en': '',
     },
-    'awcf2yjy': {
+    'qkxpjrvs': {
       'pt': 'Autorizados',
       'en': '',
     },
-    '4wjde7jy': {
+    'y4fdshaj': {
       'pt': 'Revisados',
       'en': '',
     },
@@ -3924,8 +3932,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Atualização automática',
       'en': '',
     },
-    'q4gcjhec': {
+    '65uwemqp': {
       'pt': 'Novo',
+      'en': '',
+    },
+    '7wcm5kdy': {
+      'pt': 'Favoritos',
       'en': '',
     },
     '75chuq86': {
@@ -3940,31 +3952,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Busca rápida',
       'en': '',
     },
+    'oihkqspl': {
+      'pt': 'Filtros',
+      'en': '',
+    },
     '6iirir4c': {
       'pt': 'Busca por data',
       'en': '',
     },
-    'd4wd7m8h': {
-      'pt': 'Filtros',
-      'en': '',
-    },
-    'v2ca2lf4': {
+    'wj7swaft': {
       'pt': 'Rascunho',
       'en': '',
     },
-    'sv2eht31': {
+    'k8mrcq50': {
       'pt': 'Reportados',
       'en': '',
     },
-    'sub82wkj': {
+    'ikob1oqu': {
       'pt': 'Rejeitados',
       'en': '',
     },
-    'l2cucsn1': {
+    'kzc3mq75': {
       'pt': 'Autorizados',
       'en': '',
     },
-    'v3s0ohcd': {
+    '9n11j47h': {
       'pt': 'Revisados',
       'en': '',
     },
@@ -4001,15 +4013,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Serviços Extras',
       'en': '',
     },
-    'wzhf2wog': {
-      'pt': 'Data inicial',
-      'en': '',
-    },
-    'wcmii5jn': {
-      'pt': 'Data final',
-      'en': '',
-    },
-    '5uf5fglm': {
+    'of80s59g': {
       'pt': 'Filtrar',
       'en': '',
     },
@@ -4021,44 +4025,40 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'SE nr',
       'en': '',
     },
-    'ryqjaqfs': {
+    'pv47t7ge': {
       'pt': 'Pesquisa rápida',
       'en': '',
     },
-    'sf77smj2': {
+    'ayx7vwod': {
       'pt': 'Incluir',
       'en': '',
     },
-    'mqrpybcg': {
-      'pt': 'Imprimir',
-      'en': '',
-    },
-    'aeg8zuqc': {
-      'pt': 'Processamento',
-      'en': '',
-    },
-    'qk3o9dvn': {
+    '3qh4cdrg': {
       'pt': 'Rascunhos',
       'en': '',
     },
-    'm92hfz43': {
+    'xxhmazyx': {
       'pt': 'Reportados',
       'en': '',
     },
-    'z62h16v5': {
+    '4b05faa9': {
       'pt': 'Rejeitados',
       'en': '',
     },
-    'bks8wsmw': {
+    'qhejyvk8': {
       'pt': 'Autorizados',
       'en': '',
     },
-    'du6dt8lr': {
+    '73ey6lk3': {
       'pt': 'Revisados',
       'en': '',
     },
-    '8xupkg70': {
+    'j7jsv4ty': {
       'pt': 'Arquivados',
+      'en': '',
+    },
+    'b9irzjo3': {
+      'pt': 'Imprimir',
       'en': '',
     },
     'pb948h8d': {
@@ -4249,6 +4249,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     'x1wl0qkh': {
+      'pt': 'Home',
+      'en': '',
+    },
+  },
+  // pgAppVersionNewReleaseWeb
+  {
+    'e310v4m3': {
       'pt': 'Home',
       'en': '',
     },
@@ -5801,23 +5808,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // cpOVEProcessing
   {
-    '3f94vdo8': {
+    'nlxx84da': {
       'pt': 'Rascunho',
       'en': '',
     },
-    'r7sc5ifz': {
+    'f0x3t6oq': {
       'pt': 'Reportado',
       'en': '',
     },
-    '8xu0yzus': {
+    'p3zpdavk': {
       'pt': 'Autorizado',
       'en': '',
     },
-    'x2jqeyr3': {
+    'ogsbnjm3': {
       'pt': 'Rejeitado',
       'en': '',
     },
-    '7kehye84': {
+    'l858qigc': {
       'pt': 'Rejeitar',
       'en': '',
     },
@@ -5825,7 +5832,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Revisado',
       'en': '',
     },
-    'rp2321h8': {
+    'pjvhrpd7': {
       'pt': 'Desarquivar',
       'en': '',
     },
@@ -5915,16 +5922,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'REPORTAR',
       'en': '',
     },
-    'kdee5d42': {
-      'pt': 'MARCAR COMO REVISADO',
+    '8eb305u4': {
+      'pt': 'AUTORIZAR',
       'en': '',
     },
     'xwiof8z3': {
       'pt': 'REJEITAR',
       'en': '',
     },
-    '8eb305u4': {
-      'pt': 'AUTORIZAR',
+    'kdee5d42': {
+      'pt': 'MARCAR COMO REVISADO',
       'en': '',
     },
     'wzi8jl8l': {
@@ -6024,31 +6031,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // cpOveMenuOptions
   {
-    'okca4rrx': {
+    '3555ilpz': {
       'pt': 'Rascunho',
       'en': '',
     },
-    'rkwayu8t': {
+    'rux3ecgk': {
       'pt': 'Reportar',
       'en': '',
     },
-    '24m8fn6n': {
+    'nif3ilrb': {
       'pt': 'Revisar',
       'en': '',
     },
-    'pubnhp36': {
+    'twl4qvot': {
       'pt': 'Autorizar',
       'en': '',
     },
-    'hcobbo3a': {
+    '2pj6m7al': {
       'pt': 'Arquivar',
       'en': '',
     },
-    '3s6qzvl5': {
+    'ff9p60i3': {
       'pt': 'Rejeitar',
       'en': '',
     },
-    '8oete615': {
+    'u9ma698u': {
       'pt': 'Excluir',
       'en': '',
     },
@@ -6059,18 +6066,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // cpOveMenuExtras
   {
-    'u5b44652': {
+    'kfszum0r': {
       'pt': 'Copiar',
       'en': '',
     },
   },
   // cpOveFollow
   {
-    'uvzoc6ef': {
+    '12ze6i3w': {
       'pt': 'Favoritar',
       'en': '',
     },
-    '2si1a5fb': {
+    'nn5cd0yr': {
       'pt': 'Desfavoritar',
       'en': '',
     },
@@ -6085,19 +6092,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Rascunho',
       'en': '',
     },
-    'daxyndbe': {
+    'r3yad5jo': {
       'pt': 'Reportado',
       'en': '',
     },
-    '9ap01ttc': {
+    'p7h1wyli': {
       'pt': 'Autorizado',
       'en': '',
     },
-    'r6rmj70n': {
+    'yztjqd4s': {
       'pt': 'Revisado',
       'en': '',
     },
-    'u5v62f8x': {
+    '7eb01yvp': {
       'pt': 'Arquivado',
       'en': '',
     },
@@ -6121,6 +6128,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'lbvf43rx': {
       'pt': 'Tipos OS\'s',
+      'en': '',
+    },
+  },
+  // mdUserMobileCopy
+  {
+    'njbo1vhl': {
+      'pt': 'Nova Senha',
+      'en': '',
+    },
+    '6zdryxcq': {
+      'pt': 'Senha',
+      'en': '',
+    },
+    'ms5i2dni': {
+      'pt': 'Confirmar Senha',
+      'en': '',
+    },
+    'w7z8jszd': {
+      'pt': 'CONFIRMAR',
+      'en': '',
+    },
+    'bx8rriae': {
+      'pt': 'Obrigatório.',
+      'en': '',
+    },
+    'io19jrki': {
+      'pt': 'Please choose an option from the dropdown',
+      'en': '',
+    },
+    'bwbhdc14': {
+      'pt': 'Obrigatório.',
+      'en': '',
+    },
+    'tmnp6uh6': {
+      'pt': 'Please choose an option from the dropdown',
       'en': '',
     },
   },

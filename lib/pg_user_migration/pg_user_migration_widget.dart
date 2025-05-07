@@ -100,7 +100,7 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                               null,
                             )
                             .order('email', ascending: true),
-                        limit: 5,
+                        limit: 500,
                       )))
                     .future,
                 builder: (context, snapshot) {
@@ -131,10 +131,23 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                         safeSetState(() => _model.dropDownValue = val),
                     width: 200.0,
                     height: 40.0,
+                    searchHintTextStyle:
+                        FlutterFlowTheme.of(context).labelMedium.override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
+                    searchTextStyle:
+                        FlutterFlowTheme.of(context).bodyMedium.override(
+                              font: FlutterFlowTheme.of(context).bodyMedium,
+                              letterSpacing: 0.0,
+                            ),
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           font: FlutterFlowTheme.of(context).bodyMedium,
                           letterSpacing: 0.0,
                         ),
+                    searchHintText: FFLocalizations.of(context).getText(
+                      '6oacbtmc' /* Search... */,
+                    ),
                     icon: Icon(
                       Icons.keyboard_arrow_down_rounded,
                       color: FlutterFlowTheme.of(context).secondaryText,
@@ -149,7 +162,7 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
                         EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                     hidesUnderline: true,
                     isOverButton: false,
-                    isSearchable: false,
+                    isSearchable: true,
                     isMultiSelect: false,
                   );
                 },
@@ -194,6 +207,8 @@ class _PgUserMigrationWidgetState extends State<PgUserMigrationWidget> {
 
                   safeSetState(() => _model.requestCompleter = null);
                   await _model.waitForRequestCompleted();
+
+                  safeSetState(() {});
                 },
                 text: FFLocalizations.of(context).getText(
                   'y1eagyxr' /* Button */,

@@ -1,3 +1,5 @@
+import '/auth/supabase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/backend/schema/structs/index.dart';
 import '/backend/supabase/supabase.dart';
 import '/components/cp_company_logo_widget.dart';
@@ -12,6 +14,7 @@ import '/pages/orders_visits_extras/cp_o_v_e_processing/cp_o_v_e_processing_widg
 import '/pages/orders_visits_extras/cp_ove_menu_extras/cp_ove_menu_extras_widget.dart';
 import '/pages/orders_visits_extras/cp_ove_menu_options/cp_ove_menu_options_widget.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'dart:async';
 import 'package:date_picker_fey059/app_state.dart'
     as date_picker_fey059_app_state;
 import 'package:utility_functions_library_8g4bud/flutter_flow/custom_functions.dart'
@@ -414,14 +417,24 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                           child: FutureBuilder<
                                               List<
                                                   VOrdersVisitsExtrasTeamsRow>>(
-                                            future:
-                                                VOrdersVisitsExtrasTeamsTable()
-                                                    .queryRows(
-                                              queryFn: (q) => q.eqOrNull(
-                                                'ove_id',
-                                                widget.cpDtOVE?.id,
-                                              ),
-                                            ),
+                                            future: (_model.requestCompleter ??=
+                                                    Completer<
+                                                        List<
+                                                            VOrdersVisitsExtrasTeamsRow>>()
+                                                      ..complete(
+                                                          VOrdersVisitsExtrasTeamsTable()
+                                                              .queryRows(
+                                                        queryFn: (q) => q
+                                                            .eqOrNull(
+                                                              'ove_id',
+                                                              widget
+                                                                  .cpDtOVE?.id,
+                                                            )
+                                                            .order('order_by',
+                                                                ascending:
+                                                                    true),
+                                                      )))
+                                                .future,
                                             builder: (context, snapshot) {
                                               // Customize what your widget looks like when it's loading.
                                               if (!snapshot.hasData) {
@@ -460,6 +473,8 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                 keyOf: (e) =>
                                                                     e.orderBy!,
                                                                 desc: false)
+                                                            .toList()
+                                                            .take(10)
                                                             .toList();
 
                                                     return ListView.separated(
@@ -519,18 +534,25 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                               (widget.cpDtOVE?.teamLeaderId == gcOVETeamUsersItem.userId))
                                                                           ? null
                                                                           : () async {
+                                                                              var _shouldSetState = false;
+                                                                              _model.lcsvTeamLeaderId = gcOVETeamUsersItem.userId;
+                                                                              safeSetState(() {});
                                                                               _model.resTeamLeader = await VUsersTable().queryRows(
                                                                                 queryFn: (q) => q.eqOrNull(
                                                                                   'id',
                                                                                   valueOrDefault<int>(
-                                                                                    gcOVETeamUsersItem.userId,
+                                                                                    _model.lcsvTeamLeaderId,
                                                                                     0,
                                                                                   ),
                                                                                 ),
                                                                               );
+                                                                              _shouldSetState = true;
                                                                               await OrdersVisitsExtrasTable().update(
                                                                                 data: {
-                                                                                  'team_leader_id': gcOVETeamUsersItem.userId,
+                                                                                  'team_leader_id': valueOrDefault<int>(
+                                                                                    _model.resTeamLeader?.firstOrNull?.id,
+                                                                                    0,
+                                                                                  ),
                                                                                   'team_id': _model.resTeamLeader?.firstOrNull?.teamId,
                                                                                 },
                                                                                 matchingRows: (rows) => rows.eqOrNull(
@@ -538,8 +560,65 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                                   widget.cpDtOVE?.id,
                                                                                 ),
                                                                               );
+                                                                              _shouldSetState = true;
+                                                                              _model.apiResulthyl = await ApiOrdersVisitsExtrasTeamsGroup.apiTeamUsersByOVEIdCall.call(
+                                                                                apiUrl: FFDevEnvironmentValues().envApiUrl,
+                                                                                apiKey: FFDevEnvironmentValues().envApiKey,
+                                                                                accessToken: currentJwtToken,
+                                                                                oveId: widget.cpDtOVE?.id,
+                                                                              );
 
-                                                                              safeSetState(() {});
+                                                                              _shouldSetState = true;
+                                                                              if ((_model.apiResulthyl?.succeeded ?? true)) {
+                                                                                _model.lcsvOVETeamUsers = ((_model.apiResulthyl?.jsonBody ?? '').toList().map<DtOrderVisitExtraTeamUserStruct?>(DtOrderVisitExtraTeamUserStruct.maybeFromMap).toList() as Iterable<DtOrderVisitExtraTeamUserStruct?>).withoutNulls.sortedList(keyOf: (e) => e.nameShort, desc: false).toList().cast<DtOrderVisitExtraTeamUserStruct>();
+                                                                                safeSetState(() {});
+                                                                                FFAppState().stCounterLoop = 0;
+                                                                                FFAppState().stCounterLoopFinal = valueOrDefault<int>(
+                                                                                  _model.lcsvOVETeamUsers.length,
+                                                                                  0,
+                                                                                );
+                                                                                safeSetState(() {});
+                                                                                while (FFAppState().stCounterLoop < FFAppState().stCounterLoopFinal) {
+                                                                                  if (_model.lcsvOVETeamUsers.elementAtOrNull(FFAppState().stCounterLoop)?.userId ==
+                                                                                      valueOrDefault<int>(
+                                                                                        _model.lcsvTeamLeaderId,
+                                                                                        0,
+                                                                                      )) {
+                                                                                    await OrdersVisitsExtrasTeamsTable().update(
+                                                                                      data: {
+                                                                                        'is_leader': true,
+                                                                                        'order_by': 0,
+                                                                                      },
+                                                                                      matchingRows: (rows) => rows.eqOrNull(
+                                                                                        'id',
+                                                                                        _model.lcsvOVETeamUsers.elementAtOrNull(FFAppState().stCounterLoop)?.id,
+                                                                                      ),
+                                                                                    );
+                                                                                  } else {
+                                                                                    await OrdersVisitsExtrasTeamsTable().update(
+                                                                                      data: {
+                                                                                        'is_leader': false,
+                                                                                        'order_by': FFAppState().stCounterLoop + 1,
+                                                                                      },
+                                                                                      matchingRows: (rows) => rows.eqOrNull(
+                                                                                        'id',
+                                                                                        _model.lcsvOVETeamUsers.elementAtOrNull(FFAppState().stCounterLoop)?.id,
+                                                                                      ),
+                                                                                    );
+                                                                                  }
+
+                                                                                  FFAppState().stCounterLoop = FFAppState().stCounterLoop + 1;
+                                                                                  safeSetState(() {});
+                                                                                }
+                                                                              } else {
+                                                                                if (_shouldSetState) safeSetState(() {});
+                                                                                return;
+                                                                              }
+
+                                                                              safeSetState(() => _model.requestCompleter = null);
+                                                                              await _model.waitForRequestCompleted(minWait: 1000, maxWait: 2000);
+                                                                              if (_shouldSetState)
+                                                                                safeSetState(() {});
                                                                             },
                                                                       text: gcOVETeamUsersItem
                                                                           .nameShort!,
@@ -670,6 +749,13 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                                                               widget.cpDtOVE?.id,
                                                                             ),
                                                                           );
+                                                                          safeSetState(() =>
+                                                                              _model.requestCompleter = null);
+                                                                          await _model.waitForRequestCompleted(
+                                                                              minWait: 1000,
+                                                                              maxWait: 2000);
+                                                                        } else {
+                                                                          return;
                                                                         }
                                                                       },
                                                                     ),
@@ -823,6 +909,10 @@ class _CpDbAdminOveCardWidgetState extends State<CpDbAdminOveCardWidget>
                                           widget.cpDtOVE?.id,
                                         ),
                                       );
+                                      safeSetState(
+                                          () => _model.requestCompleter = null);
+                                      await _model.waitForRequestCompleted(
+                                          minWait: 1000, maxWait: 2000);
                                     }
 
                                     if (_shouldSetState) safeSetState(() {});

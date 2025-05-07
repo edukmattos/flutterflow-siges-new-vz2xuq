@@ -32,6 +32,7 @@ class PgDbUserOveModel extends FlutterFlowModel<PgDbUserOveWidget> {
   late CpDBUserAvailableModel cpDBUserAvailableModel;
   // Stores action output result for [Action Block - abGuardian] action in IconButton widget.
   bool? isAllowedOveCreate;
+  DateTime? datePicked;
   // Model for cpDBUserNavBar component.
   late CpDBUserNavBarModel cpDBUserNavBarModel;
   // Model for cpMenu component.

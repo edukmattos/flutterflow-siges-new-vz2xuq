@@ -508,7 +508,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                         padding: EdgeInsets.all(4.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'daxyndbe' /* Reportado */,
+                            'r3yad5jo' /* Reportado */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyLarge
@@ -603,7 +603,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                         padding: EdgeInsets.all(4.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '9ap01ttc' /* Autorizado */,
+                            'p7h1wyli' /* Autorizado */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyLarge
@@ -785,7 +785,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                         padding: EdgeInsets.all(4.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'r6rmj70n' /* Revisado */,
+                            'yztjqd4s' /* Revisado */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyLarge
@@ -880,7 +880,7 @@ class _CpOveProcessingUsersWidgetState extends State<CpOveProcessingUsersWidget>
                         padding: EdgeInsets.all(4.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'u5v62f8x' /* Arquivado */,
+                            '7eb01yvp' /* Arquivado */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyLarge

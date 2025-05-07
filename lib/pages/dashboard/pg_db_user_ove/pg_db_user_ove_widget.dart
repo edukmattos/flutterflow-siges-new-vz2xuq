@@ -9,6 +9,7 @@ import '/pages/orders_visits_extras/md_o_v_e_create/md_o_v_e_create_widget.dart'
 import '/pages/users/cp_d_b_user_available/cp_d_b_user_available_widget.dart';
 import '/actions/actions.dart' as action_blocks;
 import '/custom_code/actions/index.dart' as actions;
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:badges/badges.dart' as badges;
@@ -49,8 +50,11 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      await action_blocks.abDbUsersOVEFilters(context);
+      FFAppState().stDbAdminOVEFiltersModel = 'UserTeams';
+      FFAppState().update(() {});
+      await action_blocks.abDbUsersOVEFiltersNoArchived(context);
       safeSetState(() {});
+      await action_blocks.abFiltersOveCount(context);
       await actions.caSupabaseDisconnect(
         'orders_visits_extras',
       );
@@ -58,7 +62,14 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
       await actions.caSupabaseConnect(
         'orders_visits_extras',
         () async {
-          await action_blocks.abDbUsersOVEFilters(context);
+          if (FFAppState().stDbAdminOVEFiltersModel == 'UserTeamsDate') {
+            await action_blocks.abDbAdminOVEFiltersModel(
+              context,
+              abModel: FFAppState().stDbAdminOVEFiltersModel,
+            );
+          } else if (FFAppState().stDbAdminOVEFiltersModel == 'UserTeams') {
+            await action_blocks.abDbUsersOVEFiltersNoArchived(context);
+          }
         },
       );
     });
@@ -196,271 +207,501 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  '90wtdvzs' /* Serviços EXTRAS */,
-                                                ),
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .headlineMedium
-                                                    .override(
-                                                      font: FlutterFlowTheme.of(
+                                      SingleChildScrollView(
+                                        scrollDirection: Axis.horizontal,
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      FFLocalizations.of(
                                                               context)
-                                                          .headlineMedium,
+                                                          .getText(
+                                                        '90wtdvzs' /* Serviços EXTRAS */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .headlineMedium
+                                                              .override(
+                                                                font: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineMedium,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
+                                                              ),
+                                                    ),
+                                                    Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '3hdsyjg1' /* Atualização automática */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelSmall
+                                                              .override(
+                                                                font: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmall,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                    ),
+                                                  ],
+                                                ),
+                                                AlignedTooltip(
+                                                  content: Padding(
+                                                    padding:
+                                                        EdgeInsets.all(4.0),
+                                                    child: Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'd6pkqi0x' /* Nova */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                font: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                    ),
+                                                  ),
+                                                  offset: 4.0,
+                                                  preferredDirection:
+                                                      AxisDirection.down,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondaryBackground,
+                                                  elevation: 4.0,
+                                                  tailBaseWidth: 24.0,
+                                                  tailLength: 12.0,
+                                                  waitDuration: Duration(
+                                                      milliseconds: 100),
+                                                  showDuration: Duration(
+                                                      milliseconds: 1500),
+                                                  triggerMode:
+                                                      TooltipTriggerMode.tap,
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
+                                                    borderRadius: 16.0,
+                                                    borderWidth: 6.0,
+                                                    buttonSize: 54.0,
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons
+                                                          .plusCircle,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primaryText,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FontWeight.w600,
+                                                              .primary,
+                                                      size: 24.0,
                                                     ),
-                                              ),
-                                              Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  '3hdsyjg1' /* Atualização automática */,
+                                                    showLoadingIndicator: true,
+                                                    onPressed: () async {
+                                                      var _shouldSetState =
+                                                          false;
+                                                      _model.isAllowedOveCreate =
+                                                          await action_blocks
+                                                              .abGuardian(
+                                                        context,
+                                                        abPgRequestedId: 28,
+                                                      );
+                                                      _shouldSetState = true;
+                                                      if (_model
+                                                          .isAllowedOveCreate!) {
+                                                        await showModalBottomSheet(
+                                                          isScrollControlled:
+                                                              true,
+                                                          backgroundColor:
+                                                              Colors
+                                                                  .transparent,
+                                                          enableDrag: false,
+                                                          context: context,
+                                                          builder: (context) {
+                                                            return GestureDetector(
+                                                              onTap: () {
+                                                                FocusScope.of(
+                                                                        context)
+                                                                    .unfocus();
+                                                                FocusManager
+                                                                    .instance
+                                                                    .primaryFocus
+                                                                    ?.unfocus();
+                                                              },
+                                                              child: Padding(
+                                                                padding: MediaQuery
+                                                                    .viewInsetsOf(
+                                                                        context),
+                                                                child:
+                                                                    MdOVECreateWidget(
+                                                                  cpOperation:
+                                                                      'create',
+                                                                ),
+                                                              ),
+                                                            );
+                                                          },
+                                                        ).then((value) =>
+                                                            safeSetState(
+                                                                () {}));
+                                                      } else {
+                                                        context.pushNamed(
+                                                            PgNotAllowedWidget
+                                                                .routeName);
+
+                                                        if (_shouldSetState)
+                                                          safeSetState(() {});
+                                                        return;
+                                                      }
+
+                                                      if (_shouldSetState)
+                                                        safeSetState(() {});
+                                                    },
+                                                  ),
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmall
+                                              ].divide(SizedBox(width: 8.0)),
+                                            ),
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                badges.Badge(
+                                                  badgeContent: Text(
+                                                    FFAppState()
+                                                        .stUserOveFollowing
+                                                        .length
+                                                        .toString(),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .titleSmall
                                                         .override(
                                                           font: FlutterFlowTheme
                                                                   .of(context)
-                                                              .labelSmall,
+                                                              .titleSmall,
+                                                          color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
-                                              ),
-                                            ],
-                                          ),
-                                          badges.Badge(
-                                            badgeContent: Text(
-                                              FFAppState()
-                                                  .stUserOveFollowing
-                                                  .length
-                                                  .toString(),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        font:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall,
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                            ),
-                                            showBadge: FFAppState()
-                                                    .stUserOveFollowing
-                                                    .length >
-                                                0,
-                                            shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .tertiary,
-                                            elevation: 4.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 8.0, 8.0, 8.0),
-                                            position:
-                                                badges.BadgePosition.topEnd(),
-                                            animationType:
-                                                badges.BadgeAnimationType.scale,
-                                            toAnimate: true,
-                                            child: AlignedTooltip(
-                                              content: Padding(
-                                                padding: EdgeInsets.all(4.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'ic5yiyb4' /* Favoritos */,
                                                   ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyLarge
-                                                      .override(
-                                                        font:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyLarge,
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                                ),
-                                              ),
-                                              offset: 4.0,
-                                              preferredDirection:
-                                                  AxisDirection.down,
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                              backgroundColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              elevation: 4.0,
-                                              tailBaseWidth: 24.0,
-                                              tailLength: 12.0,
-                                              waitDuration:
-                                                  Duration(milliseconds: 100),
-                                              showDuration:
-                                                  Duration(milliseconds: 1500),
-                                              triggerMode:
-                                                  TooltipTriggerMode.tap,
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 8.0, 0.0),
-                                                child: FlutterFlowIconButton(
-                                                  borderColor:
+                                                  showBadge: FFAppState()
+                                                          .stUserOveFollowing
+                                                          .length >
+                                                      0,
+                                                  shape:
+                                                      badges.BadgeShape.circle,
+                                                  badgeColor:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .primary,
-                                                  borderRadius: 16.0,
-                                                  borderWidth: 6.0,
-                                                  buttonSize: 54.0,
-                                                  icon: FaIcon(
-                                                    FontAwesomeIcons
-                                                        .solidBookmark,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    size: 24.0,
-                                                  ),
-                                                  showLoadingIndicator: true,
-                                                  onPressed: (FFAppState()
-                                                              .stUserOveFollowing
-                                                              .length ==
-                                                          0)
-                                                      ? null
-                                                      : () async {
-                                                          if (_model
-                                                              .lpsvOveFollowingIsVisible) {
-                                                            _model.lpsvOveFollowingIsVisible =
-                                                                false;
-                                                            safeSetState(() {});
-                                                          } else {
-                                                            _model.lpsvOveFollowingIsVisible =
-                                                                true;
-                                                            safeSetState(() {});
-                                                          }
-                                                        },
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          AlignedTooltip(
-                                            content: Padding(
-                                              padding: EdgeInsets.all(4.0),
-                                              child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'kbyd35ie' /* Nova */,
-                                                ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          font: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyLarge,
-                                                          letterSpacing: 0.0,
+                                                          .tertiary,
+                                                  elevation: 4.0,
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          8.0, 8.0, 8.0, 8.0),
+                                                  position: badges.BadgePosition
+                                                      .topEnd(),
+                                                  animationType: badges
+                                                      .BadgeAnimationType.scale,
+                                                  toAnimate: true,
+                                                  child: AlignedTooltip(
+                                                    content: Padding(
+                                                      padding:
+                                                          EdgeInsets.all(4.0),
+                                                      child: Text(
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          'yvqlzeqw' /* Favoritos */,
                                                         ),
-                                              ),
-                                            ),
-                                            offset: 4.0,
-                                            preferredDirection:
-                                                AxisDirection.down,
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            backgroundColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondaryBackground,
-                                            elevation: 4.0,
-                                            tailBaseWidth: 24.0,
-                                            tailLength: 12.0,
-                                            waitDuration:
-                                                Duration(milliseconds: 100),
-                                            showDuration:
-                                                Duration(milliseconds: 1500),
-                                            triggerMode: TooltipTriggerMode.tap,
-                                            child: FlutterFlowIconButton(
-                                              borderColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              borderRadius: 16.0,
-                                              borderWidth: 6.0,
-                                              buttonSize: 54.0,
-                                              icon: FaIcon(
-                                                FontAwesomeIcons.plusCircle,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                size: 24.0,
-                                              ),
-                                              showLoadingIndicator: true,
-                                              onPressed: () async {
-                                                var _shouldSetState = false;
-                                                _model.isAllowedOveCreate =
-                                                    await action_blocks
-                                                        .abGuardian(
-                                                  context,
-                                                  abPgRequestedId: 28,
-                                                );
-                                                _shouldSetState = true;
-                                                if (_model
-                                                    .isAllowedOveCreate!) {
-                                                  await showModalBottomSheet(
-                                                    isScrollControlled: true,
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .override(
+                                                                  font: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyLarge,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                      ),
+                                                    ),
+                                                    offset: 4.0,
+                                                    preferredDirection:
+                                                        AxisDirection.down,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
                                                     backgroundColor:
-                                                        Colors.transparent,
-                                                    enableDrag: false,
-                                                    context: context,
-                                                    builder: (context) {
-                                                      return GestureDetector(
-                                                        onTap: () {
-                                                          FocusScope.of(context)
-                                                              .unfocus();
-                                                          FocusManager.instance
-                                                              .primaryFocus
-                                                              ?.unfocus();
-                                                        },
-                                                        child: Padding(
-                                                          padding: MediaQuery
-                                                              .viewInsetsOf(
-                                                                  context),
-                                                          child:
-                                                              MdOVECreateWidget(),
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .secondaryBackground,
+                                                    elevation: 4.0,
+                                                    tailBaseWidth: 24.0,
+                                                    tailLength: 12.0,
+                                                    waitDuration: Duration(
+                                                        milliseconds: 100),
+                                                    showDuration: Duration(
+                                                        milliseconds: 1500),
+                                                    triggerMode:
+                                                        TooltipTriggerMode.tap,
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  0.0,
+                                                                  8.0,
+                                                                  0.0),
+                                                      child:
+                                                          FlutterFlowIconButton(
+                                                        borderColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        borderRadius: 16.0,
+                                                        borderWidth: 6.0,
+                                                        buttonSize: 54.0,
+                                                        icon: FaIcon(
+                                                          FontAwesomeIcons
+                                                              .solidBookmark,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          size: 24.0,
                                                         ),
+                                                        showLoadingIndicator:
+                                                            true,
+                                                        onPressed: (FFAppState()
+                                                                    .stUserOveFollowing
+                                                                    .length ==
+                                                                0)
+                                                            ? null
+                                                            : () async {
+                                                                if (_model
+                                                                    .lpsvOveFollowingIsVisible) {
+                                                                  _model.lpsvOveFollowingIsVisible =
+                                                                      false;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                } else {
+                                                                  _model.lpsvOveFollowingIsVisible =
+                                                                      true;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                }
+                                                              },
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                AlignedTooltip(
+                                                  content: Padding(
+                                                    padding:
+                                                        EdgeInsets.all(4.0),
+                                                    child: Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'otu1pivo' /* Buscar por Data */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                font: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLarge,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                    ),
+                                                  ),
+                                                  offset: 4.0,
+                                                  preferredDirection:
+                                                      AxisDirection.down,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondaryBackground,
+                                                  elevation: 4.0,
+                                                  tailBaseWidth: 24.0,
+                                                  tailLength: 12.0,
+                                                  waitDuration: Duration(
+                                                      milliseconds: 100),
+                                                  showDuration: Duration(
+                                                      milliseconds: 1500),
+                                                  triggerMode:
+                                                      TooltipTriggerMode.tap,
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
+                                                    borderRadius: 16.0,
+                                                    borderWidth: 6.0,
+                                                    buttonSize: 54.0,
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons
+                                                          .calendarAlt,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                      size: 26.0,
+                                                    ),
+                                                    showLoadingIndicator: true,
+                                                    onPressed: () async {
+                                                      FFAppState()
+                                                              .stDbAdminOVEFiltersModel =
+                                                          'UserTeamsDate';
+                                                      safeSetState(() {});
+                                                      final _datePickedDate =
+                                                          await showDatePicker(
+                                                        context: context,
+                                                        initialDate:
+                                                            getCurrentTimestamp,
+                                                        firstDate:
+                                                            DateTime(1900),
+                                                        lastDate:
+                                                            DateTime(2050),
+                                                        builder:
+                                                            (context, child) {
+                                                          return wrapInMaterialDatePickerTheme(
+                                                            context,
+                                                            child!,
+                                                            headerBackgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                            headerForegroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .info,
+                                                            headerTextStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineLarge
+                                                                    .override(
+                                                                      font: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineLarge,
+                                                                      fontSize:
+                                                                          32.0,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                    ),
+                                                            pickerBackgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                            pickerForegroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                            selectedDateTimeBackgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .success,
+                                                            selectedDateTimeForegroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .info,
+                                                            actionButtonForegroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                            iconSize: 24.0,
+                                                          );
+                                                        },
+                                                      );
+
+                                                      if (_datePickedDate !=
+                                                          null) {
+                                                        safeSetState(() {
+                                                          _model.datePicked =
+                                                              DateTime(
+                                                            _datePickedDate
+                                                                .year,
+                                                            _datePickedDate
+                                                                .month,
+                                                            _datePickedDate.day,
+                                                          );
+                                                        });
+                                                      } else if (_model
+                                                              .datePicked !=
+                                                          null) {
+                                                        safeSetState(() {
+                                                          _model.datePicked =
+                                                              getCurrentTimestamp;
+                                                        });
+                                                      }
+                                                      FFAppState()
+                                                          .updateStFiltersOVEStruct(
+                                                        (e) => e
+                                                          ..dateStart = functions
+                                                              .cfSetDatetime(
+                                                                  _model
+                                                                      .datePicked!,
+                                                                  0,
+                                                                  0,
+                                                                  0)
+                                                          ..dateEnd = functions
+                                                              .cfSetDatetime(
+                                                                  _model
+                                                                      .datePicked!,
+                                                                  23,
+                                                                  59,
+                                                                  59),
+                                                      );
+                                                      FFAppState()
+                                                          .update(() {});
+                                                      await action_blocks
+                                                          .abDbAdminOVEFiltersModel(
+                                                        context,
+                                                        abModel: FFAppState()
+                                                            .stDbAdminOVEFiltersModel,
                                                       );
                                                     },
-                                                  ).then((value) =>
-                                                      safeSetState(() {}));
-                                                } else {
-                                                  context.pushNamed(
-                                                      PgNotAllowedWidget
-                                                          .routeName);
-
-                                                  if (_shouldSetState)
-                                                    safeSetState(() {});
-                                                  return;
-                                                }
-
-                                                if (_shouldSetState)
-                                                  safeSetState(() {});
-                                              },
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                          ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                          ].divide(SizedBox(width: 8.0)),
+                                        ),
                                       ),
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
@@ -512,7 +753,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'zite4x7y' /* Rascunho */,
+                                                      '3tttqzco' /* Rascunho */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -617,7 +858,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '94gsxpzv' /* Reportados */,
+                                                      '6fr4evox' /* Reportados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -722,7 +963,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '963apvj0' /* Rejeitados */,
+                                                      'tkfxma4g' /* Rejeitados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -827,7 +1068,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'mr750pps' /* Autorizados */,
+                                                      'cz8uucnf' /* Autorizados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -931,7 +1172,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'ejosi0jj' /* Revisados */,
+                                                      'miqll7nz' /* Revisados */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -992,7 +1233,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 8.0)),
                                         ),
                                       ),
                                     ].divide((MediaQuery.sizeOf(context).width >
@@ -1255,7 +1496,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  'b8g6f7th' /* Reportados */,
+                                                                  'c5li6tis' /* Reportados */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1393,7 +1634,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  'vxe7xt2d' /* Rejeitados */,
+                                                                  's41kwv7o' /* Rejeitados */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1531,7 +1772,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  'awcf2yjy' /* Autorizados */,
+                                                                  'qkxpjrvs' /* Autorizados */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1667,7 +1908,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  '4wjde7jy' /* Revisados */,
+                                                                  'y4fdshaj' /* Revisados */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1825,7 +2066,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               minWidth: 390.0,
                                               minHeight: 300.0,
                                               maxWidth: 390.0,
-                                              maxHeight: 430.0,
+                                              maxHeight: 450.0,
                                             ),
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.only(
@@ -1915,7 +2156,7 @@ class _PgDbUserOveWidgetState extends State<PgDbUserOveWidget>
                                               minWidth: 390.0,
                                               minHeight: 300.0,
                                               maxWidth: 390.0,
-                                              maxHeight: 430.0,
+                                              maxHeight: 450.0,
                                             ),
                                             decoration: BoxDecoration(),
                                             child: Builder(

@@ -141,3 +141,5 @@ export '/pages/pg_db_admin_ove/pg_db_admin_ove_widget.dart'
     show PgDbAdminOveWidget;
 export '/pages/dashboard/pg_db_admin_o_new_original/pg_db_admin_o_new_original_widget.dart'
     show PgDbAdminONewOriginalWidget;
+export '/pg_app_version_new_release_web/pg_app_version_new_release_web_widget.dart'
+    show PgAppVersionNewReleaseWebWidget;

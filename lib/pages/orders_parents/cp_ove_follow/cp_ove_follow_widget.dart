@@ -1,7 +1,6 @@
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:async';
 import '/actions/actions.dart' as action_blocks;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:aligned_tooltip/aligned_tooltip.dart';
@@ -69,7 +68,7 @@ class _CpOveFollowWidgetState extends State<CpOveFollowWidget> {
                 padding: EdgeInsets.all(4.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    'uvzoc6ef' /* Favoritar */,
+                    '12ze6i3w' /* Favoritar */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
                         font: FlutterFlowTheme.of(context).bodyLarge,
@@ -106,20 +105,12 @@ class _CpOveFollowWidgetState extends State<CpOveFollowWidget> {
                   ),
                   showLoadingIndicator: true,
                   onPressed: () async {
-                    unawaited(
-                      () async {
-                        await OrdersVisitsExtrasFollowersTable().insert({
-                          'user_id': FFAppState().stUserCurrent.id,
-                          'ove_id': widget.cpOveId,
-                        });
-                      }(),
-                    );
-                    unawaited(
-                      () async {
-                        await action_blocks.abUserOveFollowing(context);
-                        safeSetState(() {});
-                      }(),
-                    );
+                    await OrdersVisitsExtrasFollowersTable().insert({
+                      'user_id': FFAppState().stUserCurrent.id,
+                      'ove_id': widget.cpOveId,
+                    });
+                    await action_blocks.abUserOveFollowing(context);
+                    safeSetState(() {});
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
@@ -141,7 +132,7 @@ class _CpOveFollowWidgetState extends State<CpOveFollowWidget> {
                 padding: EdgeInsets.all(4.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    '2si1a5fb' /* Desfavoritar */,
+                    'nn5cd0yr' /* Desfavoritar */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
                         font: FlutterFlowTheme.of(context).bodyLarge,
@@ -179,27 +170,19 @@ class _CpOveFollowWidgetState extends State<CpOveFollowWidget> {
                   ),
                   showLoadingIndicator: true,
                   onPressed: () async {
-                    unawaited(
-                      () async {
-                        await OrdersVisitsExtrasFollowersTable().delete(
-                          matchingRows: (rows) => rows
-                              .eqOrNull(
-                                'user_id',
-                                FFAppState().stUserCurrent.id,
-                              )
-                              .eqOrNull(
-                                'ove_id',
-                                widget.cpOveId,
-                              ),
-                        );
-                      }(),
+                    await OrdersVisitsExtrasFollowersTable().delete(
+                      matchingRows: (rows) => rows
+                          .eqOrNull(
+                            'user_id',
+                            FFAppState().stUserCurrent.id,
+                          )
+                          .eqOrNull(
+                            'ove_id',
+                            widget.cpOveId,
+                          ),
                     );
-                    unawaited(
-                      () async {
-                        await action_blocks.abUserOveFollowing(context);
-                        safeSetState(() {});
-                      }(),
-                    );
+                    await action_blocks.abUserOveFollowing(context);
+                    safeSetState(() {});
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(

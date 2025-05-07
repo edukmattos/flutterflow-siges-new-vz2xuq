@@ -4586,17 +4586,18 @@ Future abAppOfflineUpdatesTablesTMTypes(BuildContext context) async {
 Future abAppVersionCheck(BuildContext context) async {
   ApiCallResponse? resApp;
 
-  if (!isWeb) {
-    resApp = await ApiAppGroup.apiAppByIdCall.call(
-      apiKey: FFDevEnvironmentValues().envApiKey,
-      accessToken: currentJwtToken,
-      appId: 1,
-    );
+  resApp = await ApiAppGroup.apiAppByIdCall.call(
+    apiKey: FFDevEnvironmentValues().envApiKey,
+    accessToken: currentJwtToken,
+    appId: 1,
+  );
 
-    if (FFAppState().stAppVersionDevice !=
-        ApiAppGroup.apiAppByIdCall.resAppVersionServer(
-          (resApp.jsonBody ?? ''),
-        )) {
+  if (FFAppState().stAppVersionDevice !=
+      ApiAppGroup.apiAppByIdCall.resAppVersionServer(
+        (resApp.jsonBody ?? ''),
+      )) {
+    if (isWeb) {
+    } else {
       context.pushNamed(PgAppVersionNewReleaseWidget.routeName);
     }
   }
@@ -5505,7 +5506,7 @@ Future abReportExtension(
       abUserUuid: currentUserUid,
       abRptTitle: 'Serviços Extraordinários',
       abRptSubTitle:
-          '${functions.cfConvDateToDateBR(FFAppState().stFiltersOVE.dateStart!)}a ${functions.cfConvDateToDateBR(FFAppState().stFiltersOVE.dateEnd!)}',
+          '${functions.cfConvDateToDateBR(FFAppState().stFiltersOVE.dateStart!)} a ${functions.cfConvDateToDateBR(FFAppState().stFiltersOVE.dateEnd!)}',
     );
   }
 
@@ -5995,7 +5996,7 @@ Future abOVESelectedTeamUsers(
   FFAppState().update(() {});
 }
 
-Future abDbUsersOVEFilters(BuildContext context) async {
+Future abDbUsersOVEFiltersNoArchived(BuildContext context) async {
   ApiCallResponse? resTeamsDescendants;
   ApiCallResponse? resDbUserOve;
 
@@ -6054,9 +6055,6 @@ Future abDbUsersOVEFilters(BuildContext context) async {
     );
     return;
   }
-
-  FFAppState().stFiltersOVE = DtFiltersOVEStruct();
-  FFAppState().update(() {});
 }
 
 Future abDBAdminOVEFilters(BuildContext context) async {
@@ -6980,19 +6978,10 @@ Future abDbAdminOVEFiltersModel(
       apiUrl: FFDevEnvironmentValues().envApiUrl,
       apiKey: FFDevEnvironmentValues().envApiKey,
       accessToken: currentJwtToken,
-      oTypesIdsList: FFAppState().stFiltersOVE.oTypesIds,
-      teamsIdsList: FFAppState().stFiltersOVE.teamsIds,
-      unitsIdsList: FFAppState().stFiltersOVE.unitsIds,
-      assetsTagsIdsList: FFAppState().stFiltersOVE.assetsTagsIds,
       dateStart: functions
           .cfConvDatetimeENToString(FFAppState().stFiltersOVE.dateStart!),
       dateEnd: functions
           .cfConvDatetimeENToString(FFAppState().stFiltersOVE.dateEnd!),
-      systemsParentsIdsList: FFAppState().stFiltersOVE.systemsParentsIds,
-      systemsIdsList: FFAppState().stFiltersOVE.systemsIds,
-      unitsTypesParentsIdsList: FFAppState().stFiltersOVE.unitsTypesParentsIds,
-      unitsTypesIdsList: FFAppState().stFiltersOVE.unitsTypesIds,
-      oCausesReasonsIdsList: FFAppState().stFiltersOVE.oCausesReasonsIds,
     );
 
     if ((resDBAdminOOVExtras.succeeded ?? true)) {
@@ -7058,5 +7047,96 @@ Future abDbAdminOVEFiltersModel(
     }
 
     FFAppState().stDbAdminOVEFiltersModel = 'Filters';
+  } else if (abModel == 'UserTeamsDate') {
+    await action_blocks.abFiltersOveCount(context);
+    await action_blocks.abDbUsersOVEFilters(context);
+  }
+}
+
+Future abDbUsersOVEFilters(BuildContext context) async {
+  ApiCallResponse? resTeamsDescendants;
+  ApiCallResponse? resDbUserOVExtrasTeamsDate;
+
+  FFAppState().updateStFiltersOVEStruct(
+    (e) => e
+      ..unitsIds = []
+      ..oTypesIds = []
+      ..oTypesSubsIds = []
+      ..teamsLeadersIds = []
+      ..systemsParentsIds = []
+      ..assetsTagsIds = []
+      ..systemsIds = []
+      ..unitsTypesParentsIds = []
+      ..unitsTypesIds = []
+      ..oCausesReasonsIds = []
+      ..teamsIds = [],
+  );
+  resTeamsDescendants = await ApiTeamsGroup.apiTeamsDescendantsByIdCall.call(
+    apiUrl: FFDevEnvironmentValues().envApiUrl,
+    apiKey: FFDevEnvironmentValues().envApiKey,
+    accessToken: currentJwtToken,
+    teamId: FFAppState().stUserCurrent.teamId,
+  );
+
+  if ((resTeamsDescendants.succeeded ?? true)) {
+    FFAppState().updateStFiltersOVEStruct(
+      (e) => e
+        ..teamsIds = ((resTeamsDescendants?.jsonBody ?? '')
+                .toList()
+                .map<DtTeamDescendantStruct?>(
+                    DtTeamDescendantStruct.maybeFromMap)
+                .toList() as Iterable<DtTeamDescendantStruct?>)
+            .withoutNulls
+            .map((e) => e.id)
+            .toList()
+            .toList(),
+    );
+    FFAppState().update(() {});
+    resDbUserOVExtrasTeamsDate =
+        await ApiOrdersVisitsExtrasGroup.apiOVEFiltersCall.call(
+      apiUrl: FFDevEnvironmentValues().envApiUrl,
+      apiKey: FFDevEnvironmentValues().envApiKey,
+      accessToken: currentJwtToken,
+      oTypesIdsList: FFAppState().stFiltersOVE.oTypesIds,
+      teamsIdsList: FFAppState().stFiltersOVE.teamsIds,
+      unitsIdsList: FFAppState().stFiltersOVE.unitsIds,
+      assetsTagsIdsList: FFAppState().stFiltersOVE.assetsTagsIds,
+      dateStart: functions
+          .cfConvDatetimeENToString(FFAppState().stFiltersOVE.dateStart!),
+      dateEnd: functions
+          .cfConvDatetimeENToString(FFAppState().stFiltersOVE.dateEnd!),
+      systemsParentsIdsList: FFAppState().stFiltersOVE.systemsParentsIds,
+      systemsIdsList: FFAppState().stFiltersOVE.systemsIds,
+      unitsTypesParentsIdsList: FFAppState().stFiltersOVE.unitsTypesParentsIds,
+      unitsTypesIdsList: FFAppState().stFiltersOVE.unitsTypesIds,
+      oCausesReasonsIdsList: FFAppState().stFiltersOVE.oCausesReasonsIds,
+    );
+
+    if ((resDbUserOVExtrasTeamsDate.succeeded ?? true)) {
+      FFAppState().stDBUsersOVEFilters =
+          ((resDbUserOVExtrasTeamsDate.jsonBody ?? '')
+                  .toList()
+                  .map<DtOrderVisitExtraStruct?>(
+                      DtOrderVisitExtraStruct.maybeFromMap)
+                  .toList() as Iterable<DtOrderVisitExtraStruct?>)
+              .withoutNulls
+              .toList()
+              .cast<DtOrderVisitExtraStruct>();
+      FFAppState().update(() {});
+    } else {
+      return;
+    }
+  } else {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          'Ops ... Error abDbUsersOVEFilters',
+          style: TextStyle(),
+        ),
+        duration: Duration(milliseconds: 4000),
+        backgroundColor: FlutterFlowTheme.of(context).secondary,
+      ),
+    );
+    return;
   }
 }

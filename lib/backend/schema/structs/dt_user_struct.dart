@@ -60,6 +60,7 @@ class DtUserStruct extends BaseStruct {
     int? oObjectIdInProgress,
     String? mobileMask,
     String? mobileWhatsapp,
+    String? migratedAt,
   })  : _id = id,
         _uuid = uuid,
         _companyId = companyId,
@@ -112,7 +113,8 @@ class DtUserStruct extends BaseStruct {
         _oUnitTypeParentIdInProgress = oUnitTypeParentIdInProgress,
         _oObjectIdInProgress = oObjectIdInProgress,
         _mobileMask = mobileMask,
-        _mobileWhatsapp = mobileWhatsapp;
+        _mobileWhatsapp = mobileWhatsapp,
+        _migratedAt = migratedAt;
 
   // "id" field.
   int? _id;
@@ -554,6 +556,13 @@ class DtUserStruct extends BaseStruct {
 
   bool hasMobileWhatsapp() => _mobileWhatsapp != null;
 
+  // "migrated_at" field.
+  String? _migratedAt;
+  String get migratedAt => _migratedAt ?? '';
+  set migratedAt(String? val) => _migratedAt = val;
+
+  bool hasMigratedAt() => _migratedAt != null;
+
   static DtUserStruct fromMap(Map<String, dynamic> data) => DtUserStruct(
         id: castToType<int>(data['id']),
         uuid: data['uuid'] as String?,
@@ -614,6 +623,7 @@ class DtUserStruct extends BaseStruct {
         oObjectIdInProgress: castToType<int>(data['o_object_id_in_progress']),
         mobileMask: data['mobile_mask'] as String?,
         mobileWhatsapp: data['mobile_whatsapp'] as String?,
+        migratedAt: data['migrated_at'] as String?,
       );
 
   static DtUserStruct? maybeFromMap(dynamic data) =>
@@ -673,6 +683,7 @@ class DtUserStruct extends BaseStruct {
         'o_object_id_in_progress': _oObjectIdInProgress,
         'mobile_mask': _mobileMask,
         'mobile_whatsapp': _mobileWhatsapp,
+        'migrated_at': _migratedAt,
       }.withoutNulls;
 
   @override
@@ -887,6 +898,10 @@ class DtUserStruct extends BaseStruct {
         ),
         'mobile_whatsapp': serializeParam(
           _mobileWhatsapp,
+          ParamType.String,
+        ),
+        'migrated_at': serializeParam(
+          _migratedAt,
           ParamType.String,
         ),
       }.withoutNulls;
@@ -1158,6 +1173,11 @@ class DtUserStruct extends BaseStruct {
           ParamType.String,
           false,
         ),
+        migratedAt: deserializeParam(
+          data['migrated_at'],
+          ParamType.String,
+          false,
+        ),
       );
 
   @override
@@ -1218,7 +1238,8 @@ class DtUserStruct extends BaseStruct {
         oUnitTypeParentIdInProgress == other.oUnitTypeParentIdInProgress &&
         oObjectIdInProgress == other.oObjectIdInProgress &&
         mobileMask == other.mobileMask &&
-        mobileWhatsapp == other.mobileWhatsapp;
+        mobileWhatsapp == other.mobileWhatsapp &&
+        migratedAt == other.migratedAt;
   }
 
   @override
@@ -1275,7 +1296,8 @@ class DtUserStruct extends BaseStruct {
         oUnitTypeParentIdInProgress,
         oObjectIdInProgress,
         mobileMask,
-        mobileWhatsapp
+        mobileWhatsapp,
+        migratedAt
       ]);
 }
 
@@ -1333,6 +1355,7 @@ DtUserStruct createDtUserStruct({
   int? oObjectIdInProgress,
   String? mobileMask,
   String? mobileWhatsapp,
+  String? migratedAt,
 }) =>
     DtUserStruct(
       id: id,
@@ -1388,4 +1411,5 @@ DtUserStruct createDtUserStruct({
       oObjectIdInProgress: oObjectIdInProgress,
       mobileMask: mobileMask,
       mobileWhatsapp: mobileWhatsapp,
+      migratedAt: migratedAt,
     );

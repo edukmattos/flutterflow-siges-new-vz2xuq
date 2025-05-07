@@ -1165,10 +1165,9 @@ class _MdDbAdminFiltersOveWidgetState extends State<MdDbAdminFiltersOveWidget> {
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .info,
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1284,7 +1283,7 @@ class _MdDbAdminFiltersOveWidgetState extends State<MdDbAdminFiltersOveWidget> {
                                                                 24.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .info,
+                                                        .primaryBackground,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall

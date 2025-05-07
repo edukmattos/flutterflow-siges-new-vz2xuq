@@ -1698,6 +1698,111 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                               .dropdownOrdersCausesReasonsValue,
                                                         });
                                                         _shouldSetState = true;
+                                                        _model.resOVEAdded1 =
+                                                            await ApiOrdersVisitsExtrasGroup
+                                                                .apiOVEByIdCall
+                                                                .call(
+                                                          apiUrl:
+                                                              FFDevEnvironmentValues()
+                                                                  .envApiUrl,
+                                                          apiKey:
+                                                              FFDevEnvironmentValues()
+                                                                  .envApiKey,
+                                                          accessToken:
+                                                              currentJwtToken,
+                                                          oveId: _model
+                                                              .resOVEAdded?.id,
+                                                        );
+
+                                                        _shouldSetState = true;
+                                                        if ((_model.resOVEAdded1
+                                                                ?.succeeded ??
+                                                            true)) {
+                                                          await Future.wait([
+                                                            Future(() async {
+                                                              FFAppState().addToStDBUsersOVEFilters(((_model
+                                                                              .resOVEAdded1
+                                                                              ?.jsonBody ??
+                                                                          '')
+                                                                      .toList()
+                                                                      .map<DtOrderVisitExtraStruct?>(
+                                                                          DtOrderVisitExtraStruct
+                                                                              .maybeFromMap)
+                                                                      .toList() as Iterable<DtOrderVisitExtraStruct?>)
+                                                                  .withoutNulls
+                                                                  .firstOrNull!);
+                                                              FFAppState()
+                                                                  .update(
+                                                                      () {});
+                                                            }),
+                                                            Future(() async {
+                                                              FFAppState().addToStDBAdminOVEFilters(((_model
+                                                                              .resOVEAdded1
+                                                                              ?.jsonBody ??
+                                                                          '')
+                                                                      .toList()
+                                                                      .map<DtOrderVisitExtraStruct?>(
+                                                                          DtOrderVisitExtraStruct
+                                                                              .maybeFromMap)
+                                                                      .toList() as Iterable<DtOrderVisitExtraStruct?>)
+                                                                  .withoutNulls
+                                                                  .firstOrNull!);
+                                                              FFAppState()
+                                                                  .update(
+                                                                      () {});
+                                                            }),
+                                                            Future(() async {
+                                                              FFAppState().addToStDBAdminOOVEFilters(((_model
+                                                                              .resOVEAdded1
+                                                                              ?.jsonBody ??
+                                                                          '')
+                                                                      .toList()
+                                                                      .map<DtOrderVisitExtraStruct?>(
+                                                                          DtOrderVisitExtraStruct
+                                                                              .maybeFromMap)
+                                                                      .toList() as Iterable<DtOrderVisitExtraStruct?>)
+                                                                  .withoutNulls
+                                                                  .firstOrNull!);
+                                                              FFAppState()
+                                                                  .update(
+                                                                      () {});
+                                                            }),
+                                                          ]);
+                                                          FFAppState()
+                                                              .stOVEProcessingId = 1;
+                                                          FFAppState()
+                                                                  .stOVEIsArchived =
+                                                              false;
+                                                          FFAppState()
+                                                              .update(() {});
+                                                        } else {
+                                                          ScaffoldMessenger.of(
+                                                                  context)
+                                                              .showSnackBar(
+                                                            SnackBar(
+                                                              content: Text(
+                                                                'Ops ... Ocorreu um erro ao recuperar OVE cadastrada.',
+                                                                style:
+                                                                    TextStyle(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .info,
+                                                                ),
+                                                              ),
+                                                              duration: Duration(
+                                                                  milliseconds:
+                                                                      4000),
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .error,
+                                                            ),
+                                                          );
+                                                          if (_shouldSetState)
+                                                            safeSetState(() {});
+                                                          return;
+                                                        }
+
                                                         if (widget
                                                                 .cpOperation ==
                                                             'create') {
@@ -1869,6 +1974,9 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                                     PostgresTime(
                                                                         _model
                                                                             .datePicked2)),
+                                                                'order_by':
+                                                                    FFAppState()
+                                                                        .stCounterLoop,
                                                               });
                                                               FFAppState()
                                                                       .stCounterLoop =
@@ -1887,12 +1995,6 @@ class _MdOVECreateWidgetState extends State<MdOVECreateWidget> {
                                                         }
 
                                                         Navigator.pop(context);
-                                                        FFAppState()
-                                                            .stOVEProcessingId = 1;
-                                                        FFAppState()
-                                                                .stOVEIsArchived =
-                                                            false;
-                                                        safeSetState(() {});
                                                       } else {
                                                         await showDialog(
                                                           context: context,
